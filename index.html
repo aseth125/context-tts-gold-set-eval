@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ContextTTS — Prosody Annotation</title>
 <style>
-  :root{--bg:#fbfbfa;--fg:#1a1a19;--mut:#6b6b68;--line:#e3e3e0;--acc:#2b6cb0;--warn:#c05621}
+  :root{--bg:#fbfbfa;--fg:#1a1a19;--mut:#6b6b68;--line:#e3e3e0;--acc:#2b6cb0;--warn:#c05621;
+        --yes:#2f855a;--no:#c53030}
   *{box-sizing:border-box}
   body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg)}
   header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;gap:14px;align-items:center;z-index:10}
@@ -20,30 +21,54 @@
   .target{background:#fffbe8;border:1px solid #f0e2a8;border-radius:8px;padding:14px 16px;font-size:17px}
   .intent dt{font-weight:600;margin-top:8px;font-size:13px;color:var(--mut)}
   .intent dd{margin:2px 0 0}
-  .clip{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:8px 0;background:#fff;cursor:pointer}
-  .clip:hover{border-color:var(--acc)}
-  .clip.sel{border-color:var(--acc);background:#f0f6fc;box-shadow:0 0 0 1px var(--acc)}
-  .tag{font-weight:700;width:22px;text-align:center}
-  audio{height:34px;flex:1;min-width:0}
-  .brk{font-size:12px;color:var(--mut);white-space:nowrap;display:flex;align-items:center;gap:4px}
+  .cand{border:2px solid var(--line);border-radius:8px;padding:14px 16px;background:#fff}
+  .cand audio{width:100%;height:38px}
+  .brk{font-size:13px;color:var(--mut);display:inline-flex;align-items:center;gap:5px;margin-top:8px}
   .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
   .chip{border:1px solid var(--line);border-radius:20px;padding:6px 14px;cursor:pointer;background:#fff;font-size:14px}
   .chip.sel{border-color:var(--acc);background:var(--acc);color:#fff}
+  /* Binary verdict. Deliberately the same size and weight so neither reads as
+     the default answer. */
+  .verdict{display:flex;gap:12px;margin-top:6px}
+  .vbtn{flex:1;border:2px solid var(--line);border-radius:8px;background:#fff;cursor:pointer;
+        padding:14px 12px;font:inherit;font-size:16px;font-weight:600;text-align:center}
+  .vbtn small{display:block;font-weight:400;font-size:12px;color:var(--mut);margin-top:3px}
+  .vbtn:hover{border-color:var(--mut)}
+  .vbtn.sel[data-v=match]{border-color:var(--yes);background:#f0f8f3;color:var(--yes)}
+  .vbtn.sel[data-v=mismatch]{border-color:var(--no);background:#fdf3f3;color:var(--no)}
+  .vbtn.sel small{color:inherit;opacity:.8}
   footer{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);padding:10px 20px;display:flex;gap:10px;justify-content:center;align-items:center}
   button{font:inherit;padding:8px 18px;border-radius:6px;border:1px solid var(--line);background:#fff;cursor:pointer}
   button.primary{background:var(--acc);color:#fff;border-color:var(--acc)}
   button:disabled{opacity:.4;cursor:not-allowed}
+  button.link{padding:6px 12px;font-size:13px}
   .muted{color:var(--mut);font-size:13px}
   .wrap{max-width:760px;margin:40px auto;padding:0 20px}
   input[type=text]{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:6px;width:230px}
-  .do{background:#f3f9f4;border-left:3px solid #2f855a;padding:10px 14px;margin:8px 0;border-radius:0 6px 6px 0}
+  textarea{font:inherit;width:100%;min-height:70px;padding:10px 12px;border:1px solid var(--line);
+           border-radius:8px;background:#fff;resize:vertical}
+  textarea:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 1px var(--acc)}
+  .do{background:#f3f9f4;border-left:3px solid var(--yes);padding:10px 14px;margin:8px 0;border-radius:0 6px 6px 0}
   .dont{background:#fdf5f2;border-left:3px solid var(--warn);padding:10px 14px;margin:8px 0;border-radius:0 6px 6px 0}
   ol.steps>li{margin:8px 0}
   table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}
   td,th{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
   th{background:#f4f4f2;font-size:13px}
+  kbd{font:12px ui-monospace,Menlo,Consolas,monospace;background:#f4f4f2;border:1px solid var(--line);
+      border-bottom-width:2px;border-radius:4px;padding:1px 5px}
   #modal{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:50;overflow:auto;padding:30px 12px}
   #modal .inner{background:#fff;max-width:800px;margin:0 auto;border-radius:10px;padding:6px 30px 30px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:5px;margin-top:10px}
+  .gcell{position:relative;padding:7px 2px;font-size:12px;border-radius:5px;border:1px solid var(--line);cursor:pointer}
+  .gcell i{position:absolute;top:0;right:3px;font-size:14px;font-style:normal;line-height:1}
+  .gm{background:#eaf5ee;border-color:#a8ceb8;color:#1d5c39}
+  .gx{background:#fbeded;border-color:#e0aeae;color:#8c2b2b}
+  .gu{background:#fff;color:var(--mut)}
+  .gnow{outline:2px solid var(--acc);outline-offset:1px}
+  .key{display:inline-block;width:12px;height:12px;border-radius:3px;border:1px solid var(--line);vertical-align:-1px;margin:0 2px 0 8px}
+  #toast{position:fixed;left:50%;bottom:70px;transform:translateX(-50%);background:#1a1a19;color:#fff;
+         padding:8px 16px;border-radius:6px;font-size:14px;z-index:60;opacity:0;transition:opacity .18s;pointer-events:none}
+  #toast.on{opacity:1}
 </style>
 </head>
 <body>
@@ -53,38 +78,58 @@
 <h1 style="font-size:22px">Annotation guidelines</h1>
 
 <p>You will work through a series of short conversation excerpts. In each one, a
-single <b>target line</b> has been picked out. You will hear five synthetic
-versions of that line. <b>All five say exactly the same words.</b> They differ
-only in <i>how</i> the words are spoken — the tone, the emphasis, the rhythm.</p>
+single <b>target line</b> has been picked out, and you will hear <b>one</b>
+synthetic version of that line. Your job is a single yes/no judgement:</p>
 
-<p><b>Your job:</b> choose the version that is delivered the way the line should
-be delivered at that moment in the conversation.</p>
+<p style="font-size:16px"><b>Does this delivery fit how the line should be said
+at that moment in the conversation?</b></p>
 
-<h3>How to work through a trial</h3>
+<p>Each clip gets its own page and its own answer. Several pages in a row will
+share the same conversation and the same target line, with a different synthetic
+version each time. <b>Judge each one on its own terms.</b> You are not ranking
+them and you are not picking a winner — it is entirely possible for all of them
+to match, or for none of them to.</p>
+
+<h3>How to work through a page</h3>
 <ol class="steps">
   <li>Read the <b>conversation so far</b> so you know what is going on.</li>
   <li>Read the <b>target line</b> and the note describing <b>what it should convey</b>.</li>
   <li>Play the <b>original human recording</b>. This is how a real person actually
       said the line in that moment — your anchor for what the delivery should
-      express. It is a different voice from the synthetic clips, so listen for
+      express. It is a different voice from the synthetic clip, so listen for
       the <i>manner</i>, not the voice.</li>
-  <li>Play <b>all five</b> synthetic clips before deciding. Replay as often as you like.</li>
-  <li>Choose the one whose delivery best fits, then set your confidence.</li>
+  <li>Play the <b>synthetic clip</b>, as many times as you like.</li>
+  <li>Answer <b>Match</b> or <b>Mismatch</b>, then say how confident you are in
+      <i>that</i> answer.</li>
+  <li>Optionally leave a <b>comment</b>. It is saved with that page's answer.</li>
 </ol>
+
+<h3>Comments</h3>
+<p>Every page has a free-text box. It is optional and there is no expected
+length, but it is the only place you can tell us something the two buttons
+cannot. Especially useful when:</p>
+<ul>
+  <li>you answered <b>Mismatch</b> and can say <i>what</i> was wrong — too flat,
+      stress on the wrong word, sounds sarcastic when it should be sincere;</li>
+  <li>you were genuinely torn, and it would help to know between what;</li>
+  <li>you think the <i>item</i> is at fault — the intent note does not match the
+      conversation, or the human reference does not sound like the note says
+      it should.</li>
+</ul>
+<p class="muted">Typing in the box does not trigger the keyboard shortcuts, so
+you can write freely.</p>
 
 <h3>Judge the delivery, and only the delivery</h3>
 <div class="do"><b>Do</b> attend to: tone and attitude, which word is emphasised,
 pacing and pauses, whether the voice rises or falls, how much energy is behind it.</div>
-<div class="dont"><b>Do not</b> pick a clip because it sounds more natural, more
-human, or better quality. Every clip comes from the same synthetic voice, and
-audio quality is not what is being tested. If a clip sounds broken, tick the
-<b>broken</b> box next to it — that is recorded separately and does not affect
-your choice.</div>
-<div class="dont"><b>Do not</b> compare the words. All five clips are the same
-sentence. If one seems to say something different, tick <b>broken</b> for it.</div>
+<div class="dont"><b>Do not</b> answer Mismatch because the clip sounds synthetic,
+robotic, or low quality. Every clip comes from the same synthetic voice, and
+audio quality is not what is being tested. If a clip is actually broken — cut
+off, garbled, silent, or saying different words — tick the <b>broken</b> box;
+that is recorded separately.</div>
 
 <h3>What "the right delivery" means</h3>
-<p>It depends on what the note above the clips says the line should convey:</p>
+<p>It depends on what the note above the clip says the line should convey:</p>
 <table>
   <tr><th>If the note describes…</th><th>Listen for…</th></tr>
   <tr><td>a <b>speech act</b> — e.g. agreement, a check, sarcasm, a correction</td>
@@ -100,32 +145,49 @@ sentence. If one seems to say something different, tick <b>broken</b> for it.</d
 </table>
 
 <h3>Confidence</h3>
+<p>Confidence is about <b>your answer on this page</b> — how sure you are that
+Match (or Mismatch) is the right call for this one clip.</p>
 <table>
-  <tr><td><b>high</b></td><td>One clip is clearly right.</td></tr>
-  <tr><td><b>medium</b></td><td>Fairly sure, but another was close.</td></tr>
-  <tr><td><b>low</b></td><td>Essentially guessing between two or more.</td></tr>
+  <tr><td><b>high</b></td><td>Clear cut. Another careful listener would say the same.</td></tr>
+  <tr><td><b>medium</b></td><td>Fairly sure, but you can see it being argued the other way.</td></tr>
+  <tr><td><b>low</b></td><td>Essentially a coin flip; you had to pick something.</td></tr>
 </table>
 <p class="muted">Please use <b>low</b> honestly when you mean it. A truthful "low"
 is genuinely useful data; it tells us the item is hard, which is something we
 need to know. It is not a failure on your part.</p>
 
 <h3>Common situations</h3>
-<div class="do"><b>None of them sound right.</b> Pick the closest and mark
-confidence <b>low</b>. Do not skip the trial.</div>
-<div class="do"><b>Two sound identical.</b> Pick either and mark <b>low</b>.</div>
-<div class="do"><b>You change your mind.</b> Use <b>Back</b> and re-answer at any
-time; your latest answer is the one kept.</div>
+<div class="do"><b>It's borderline.</b> Pick the side it leans to and mark
+confidence <b>low</b>. Do not skip the page.</div>
+<div class="do"><b>Every clip for this line seems to match.</b> That is a
+permitted outcome. Answer each page honestly; do not force variety.</div>
+<div class="do"><b>You change your mind.</b> Nothing is ever locked. Use
+<b>Back</b>, or open <b>Review</b> in the top bar to see every page at a glance —
+green for match, red for mismatch, blank for unanswered, a dot where you left a
+comment — and click any one to jump straight to it. Change the answer, the
+confidence or the comment; the latest version is the one kept. This holds even
+after you have downloaded the CSV: reopen with the same annotator ID, fix
+whatever you want, and download again.</div>
+
+<h3>Keyboard shortcuts</h3>
+<p>Because there are a lot of short pages, you can answer without the mouse:</p>
+<table>
+  <tr><td><kbd>M</kbd></td><td>Match</td><td><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd></td><td>confidence low / medium / high</td></tr>
+  <tr><td><kbd>X</kbd></td><td>Mismatch</td><td><kbd>Enter</kbd></td><td>next page</td></tr>
+  <tr><td><kbd>Space</kbd></td><td>play / pause the clip</td><td><kbd>←</kbd></td><td>back</td></tr>
+</table>
 
 <h3>Practicalities</h3>
 <ul>
-  <li>There is no feedback and no score. There is no penalty for a wrong answer,
-      so please answer honestly rather than cautiously.</li>
+  <li>There is no feedback and no score. There is no penalty for a "wrong"
+      answer, so please answer honestly rather than cautiously.</li>
   <li>Headphones in a quiet room, please. Laptop speakers hide exactly the
       differences that matter here.</li>
   <li>Your progress saves automatically in this browser. You can close the tab
       and pick up where you left off, using the same annotator ID.</li>
-  <li>It takes roughly 60–90 minutes. Please take breaks — fatigue shows up in
-      this kind of listening task.</li>
+  <li><b>Copy link</b> on any page gives you a URL that opens that exact page.
+      Use it when you want to point someone at a specific clip in Slack.</li>
+  <li>Please take breaks — fatigue shows up in this kind of listening task.</li>
   <li>When you finish, press <b>Download CSV</b> and send us the file. You can
       download at any point, not only at the end.</li>
 </ul>
@@ -137,6 +199,7 @@ time; your latest answer is the one kept.</div>
   <hr style="margin:28px 0;border:none;border-top:1px solid var(--line)">
   <p><label><b>Your annotator ID</b> (initials are fine — use the same one every session):<br>
      <input id="aid" type="text" placeholder="e.g. as"></label></p>
+  <p id="deepnote" class="muted" hidden></p>
   <p><button class="primary" onclick="start()">Begin</button></p>
 </div>
 
@@ -144,8 +207,10 @@ time; your latest answer is the one kept.</div>
   <span class="muted" id="pos"></span>
   <div class="bar"><div id="fill"></div></div>
   <span class="muted" id="who"></span>
-  <button onclick="showGuide()">Guidelines</button>
-  <button onclick="exportCSV()">Download CSV</button>
+  <button class="link" onclick="copyLink()">Copy link</button>
+  <button class="link" onclick="showReview()">Review</button>
+  <button class="link" onclick="showGuide()">Guidelines</button>
+  <button class="link" onclick="exportCSV()">Download CSV</button>
 </header>
 
 <main id="app" hidden></main>
@@ -161,8 +226,13 @@ time; your latest answer is the one kept.</div>
   <p style="text-align:center"><button class="primary" onclick="hideGuide()">Back to the task</button></p>
 </div></div>
 
+<div id="toast"></div>
+
 <script>
-let TRIALS=[], I=0, AID="", R={};
+// PAGES is the unit of work: one (trial, clip) pair per page, so the same
+// conversation and target line recur across several consecutive pages with a
+// different candidate each time. R is keyed by trial_id|clip, not by trial.
+let TRIALS=[], PAGES=[], I=0, AID="", R={}, WANT=null, SHOWN=null;
 
 document.getElementById("guideHost").appendChild(
   document.getElementById("guide").content.cloneNode(true));
@@ -174,21 +244,102 @@ function showGuide(){
 }
 function hideGuide(){document.getElementById("modal").hidden=true}
 
-// ── seeded shuffle: clip order differs per annotator, reproducible from the id ──
+// ── review grid ─────────────────────────────────────────────────────────────
+// Back works and every answer is editable, but at 225 pages "go back and change
+// that one" needs to be a jump, not 40 presses of Back.
+function showReview(){
+  const cells=PAGES.map((p,idx)=>{
+    const r=R[rkey(p)]||{};
+    const cls=r.verdict==="match"?"gm":r.verdict==="mismatch"?"gx":"gu";
+    const note=(r.comment||"").trim()?"<i>&bull;</i>":"";
+    const tip=`${p.trial.trial_id} clip ${p.k}/${p.n}`+
+              (r.verdict?` — ${r.verdict}, ${r.confidence||"no confidence"}`:" — unanswered");
+    return `<button class="gcell ${cls}${idx===I?" gnow":""}" title="${esc(tip)}"
+             onclick="jump(${idx})">${idx+1}${note}</button>`;
+  }).join("");
+  const done=PAGES.filter(q=>(R[rkey(q)]||{}).verdict).length;
+  const firstUn=PAGES.findIndex(q=>!(R[rkey(q)]||{}).verdict);
+  const m=document.getElementById("modalBody");
+  m.innerHTML=`
+    <h1 style="font-size:22px">Review</h1>
+    <p class="muted">${done} of ${PAGES.length} answered. Click any page to jump
+      to it — answers and comments can be changed at any time, and the latest
+      version is the one kept.</p>
+    <p>
+      <button ${firstUn<0?"disabled":""} onclick="jump(${firstUn})">
+        ${firstUn<0?"Nothing unanswered":"Go to first unanswered (page "+(firstUn+1)+")"}</button>
+      <button onclick="hideGuide()">Close</button>
+    </p>
+    <p class="muted"><span class="key gm"></span> match
+       <span class="key gx"></span> mismatch
+       <span class="key gu"></span> unanswered
+       &nbsp;·&nbsp; <b>&bull;</b> has a comment</p>
+    <div class="grid">${cells}</div>`;
+  document.getElementById("modal").hidden=false;
+}
+function jump(idx){
+  if(idx<0)return;
+  I=Math.max(0,Math.min(PAGES.length-1,idx));
+  hideGuide(); save(); render();
+}
+
+function toast(msg){
+  const el=document.getElementById("toast");
+  el.textContent=msg; el.classList.add("on");
+  clearTimeout(toast._t); toast._t=setTimeout(()=>el.classList.remove("on"),1600);
+}
+
+// ── seeded shuffle: order differs per annotator, reproducible from the id ──
 function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
 function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
 function shuffle(arr,seed){const a=arr.slice(),r=rng(seed);for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 
-const KEY=()=>"ctts_"+AID;
+const KEY=()=>"ctts_bin_"+AID;      // namespaced: the 5AFC format is not loadable here
 function save(){localStorage.setItem(KEY(),JSON.stringify({aid:AID,i:I,r:R}))}
 function load(){try{return JSON.parse(localStorage.getItem(KEY()))}catch(e){return null}}
+
+// ── deep links: #<trial_id>/<clip-stem> ─────────────────────────────────────
+function parseHash(){
+  const m=/^#([a-z0-9_]+)\/([A-Za-z0-9_]+)$/.exec(location.hash||"");
+  return m?{trial:m[1],stem:m[2]}:null;
+}
+function pageHash(p){return "#"+p.trial.trial_id+"/"+p.clip.replace(/\.[^.]+$/,"")}
+function syncHash(){
+  if(!PAGES.length)return;
+  history.replaceState(null,"",location.pathname+location.search+pageHash(PAGES[I]));
+}
+function copyLink(){
+  const url=location.origin+location.pathname+location.search+pageHash(PAGES[I]);
+  const done=()=>toast("Link copied — "+PAGES[I].trial.trial_id+" clip "+PAGES[I].k+"/"+PAGES[I].n);
+  if(navigator.clipboard&&window.isSecureContext){
+    navigator.clipboard.writeText(url).then(done,()=>prompt("Copy this link:",url));
+  }else{
+    // http:// or an old browser: clipboard API is unavailable, so fall back to
+    // a selectable prompt rather than silently doing nothing.
+    prompt("Copy this link:",url);
+  }
+}
 
 async function start(){
   AID=document.getElementById("aid").value.trim().toLowerCase();
   if(!AID){alert("Please enter an annotator ID.");return}
   TRIALS=await (await fetch("trials.json")).json();
-  TRIALS=shuffle(TRIALS,hash(AID+"|order"));
+
+  const ord=shuffle(TRIALS,hash(AID+"|order"));
+  PAGES=[];
+  for(const t of ord){
+    const cl=shuffle(t.clips,hash(AID+"|"+t.trial_id));
+    cl.forEach((c,j)=>PAGES.push({trial:t,clip:c,k:j+1,n:cl.length,order:cl}));
+  }
+
   const prev=load(); if(prev&&prev.r){R=prev.r;I=prev.i||0}
+  if(WANT){
+    const j=PAGES.findIndex(p=>p.trial.trial_id===WANT.trial&&p.clip.startsWith(WANT.stem));
+    if(j>=0) I=j; else toast("That link points at a page not in your set.");
+    WANT=null;
+  }
+  I=Math.max(0,Math.min(PAGES.length-1,I));
+
   document.getElementById("gate").hidden=true;
   for(const id of ["hdr","app","ftr"])document.getElementById(id).hidden=false;
   document.getElementById("who").textContent=AID;
@@ -196,11 +347,11 @@ async function start(){
 }
 
 function esc(s){return (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
-function order(t){return shuffle(t.clips,hash(AID+"|"+t.trial_id))}
+const rkey=p=>p.trial.trial_id+"|"+p.clip;
 
 function render(){
-  const t=TRIALS[I], r=R[t.trial_id]||{choice:null,confidence:null,broken:[]};
-  const ord=order(t), L="ABCDE";
+  const p=PAGES[I], t=p.trial;
+  const r=R[rkey(p)]||{verdict:null,confidence:null,broken:false,comment:""};
 
   let ctx=t.context.map(c=>`<div class="turn"><span class="spk">${esc(c.speaker)}:</span> ${esc(c.text)}</div>`).join("");
   if(!ctx)ctx='<div class="muted">(no prior context)</div>';
@@ -210,18 +361,13 @@ function render(){
   if(it.words&&it.words.length) dl+=`<dt>Key words</dt><dd>${it.words.map(w=>`<b>${esc(w.word)}</b> — ${esc(w.label)}`).join(" &nbsp;·&nbsp; ")}</dd>`;
   if(it.why) dl+=`<dt>Why</dt><dd>${esc(it.why)}</dd>`;
   if(it.trigger) dl+=`<dt>Triggered by</dt><dd>${esc(it.trigger)}</dd>`;
-  if(it.why_delivery_matters) dl+=`<dt>Why the delivery matters</dt><dd>${esc(it.why_delivery_matters)}</dd>`;
   if(it.why_context_matters) dl+=`<dt>Why context matters</dt><dd>${esc(it.why_context_matters)}</dd>`;
-  if(it.expected_delivery) dl+=`<dt>Expected delivery</dt><dd>${esc(it.expected_delivery)}</dd>`;
-
-  const clips=ord.map((f,k)=>`
-    <div class="clip ${r.choice===f?"sel":""}" onclick="pick('${f}')">
-      <span class="tag">${L[k]}</span>
-      <audio controls preload="none" src="audio/${f}" onclick="event.stopPropagation()"></audio>
-      <label class="brk" onclick="event.stopPropagation()">
-        <input type="checkbox" ${r.broken.includes(f)?"checked":""} onchange="brk('${f}',this.checked)"> broken
-      </label>
-    </div>`).join("");
+  // Deliberately NOT rendered: intent.why_delivery_matters and
+  // intent.expected_delivery. Both describe the correct acoustics in words
+  // ("a slow, downward pitch", "falling boundary tones"), which lets the
+  // annotator match text to audio and skip the conversation entirely. Under a
+  // per-clip binary question that is a complete answer key for the page.
+  // build_site.py no longer emits them; this is the second line of defence.
 
   document.getElementById("app").innerHTML=`
     <h2>Conversation so far</h2><div class="card">${ctx}</div>
@@ -231,55 +377,133 @@ function render(){
     ${t.reference_clip?`<h2>Original human recording</h2>
       <div class="card"><audio controls preload="none" src="audio/${t.reference_clip}" style="width:100%"></audio>
       <div class="muted" style="margin-top:6px">A different voice — listen for the manner, not the voice.</div></div>`:""}
-    <h2>Which synthetic version delivers it correctly?</h2>
-    ${clips}
-    <h2>How confident are you?</h2>
+
+    <h2>Synthetic version ${p.k} of ${p.n} for this line</h2>
+    <div class="cand">
+      <audio id="cand" controls preload="none" src="audio/${p.clip}"></audio>
+      <label class="brk">
+        <input type="checkbox" ${r.broken?"checked":""} onchange="brk(this.checked)">
+        broken — cut off, garbled, silent, or different words
+      </label>
+    </div>
+
+    <h2>Does this delivery fit the moment?</h2>
+    <div class="verdict">
+      <button class="vbtn ${r.verdict==="match"?"sel":""}" data-v="match" onclick="verdict('match')">
+        Match<small>delivered the way it should be</small></button>
+      <button class="vbtn ${r.verdict==="mismatch"?"sel":""}" data-v="mismatch" onclick="verdict('mismatch')">
+        Mismatch<small>not delivered the way it should be</small></button>
+    </div>
+
+    <h2>How confident are you in that answer?</h2>
     <div class="row">${["low","medium","high"].map(c=>
       `<div class="chip ${r.confidence===c?"sel":""}" onclick="conf('${c}')">${c}</div>`).join("")}</div>
+
+    <h2>Comments <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></h2>
+    <textarea id="cmt" placeholder="Anything worth saying about this clip — what made it fit or not fit, what you were torn between, anything odd about the audio or the item itself."
+      oninput="cmt(this.value)">${esc(r.comment||"")}</textarea>
+
+    <p class="muted" style="margin-top:14px">
+      ${esc(t.trial_id)} · clip ${p.k}/${p.n} ·
+      <button class="link" onclick="copyLink()">Copy link to this page</button>
+    </p>
   `;
-  document.getElementById("pos").textContent=`${I+1} / ${TRIALS.length}`;
-  document.getElementById("fill").style.width=(100*Object.keys(R).filter(k=>R[k].choice).length/TRIALS.length)+"%";
+
+  const done=PAGES.filter(q=>(R[rkey(q)]||{}).verdict).length;
+  document.getElementById("pos").textContent=
+    `${I+1} / ${PAGES.length}  ·  ${done} answered`;
+  document.getElementById("fill").style.width=(100*done/PAGES.length)+"%";
   document.getElementById("prev").disabled=I===0;
-  document.getElementById("next").disabled=!(r.choice&&r.confidence);
-  document.getElementById("next").textContent=I===TRIALS.length-1?"Finish":"Next →";
-  window.scrollTo(0,0);
+  document.getElementById("next").disabled=!(r.verdict&&r.confidence);
+  document.getElementById("next").textContent=I===PAGES.length-1?"Finish":"Next →";
+
+  // Only jump to the top when the PAGE changed. Re-rendering after an answer
+  // used to scroll the window up under the annotator, which is maddening when
+  // the buttons are at the bottom of a long conversation.
+  const kk=rkey(p);
+  if(SHOWN!==kk){window.scrollTo(0,0);SHOWN=kk}
+  syncHash();
 }
 
-function cur(){const t=TRIALS[I];R[t.trial_id]=R[t.trial_id]||{choice:null,confidence:null,broken:[],t0:Date.now()};return R[t.trial_id]}
-function pick(f){const r=cur();r.choice=f;r.ms=Date.now()-(r.t0||Date.now());save();render()}
+function cur(){
+  const p=PAGES[I], k=rkey(p);
+  R[k]=R[k]||{verdict:null,confidence:null,broken:false,comment:"",t0:Date.now()};
+  return R[k];
+}
+function verdict(v){const r=cur();r.verdict=v;r.ms=Date.now()-(r.t0||Date.now());save();render()}
 function conf(c){cur().confidence=c;save();render()}
-function brk(f,on){const r=cur();r.broken=on?[...new Set([...r.broken,f])]:r.broken.filter(x=>x!==f);save()}
+function brk(on){cur().broken=!!on;save()}
+// Deliberately does NOT re-render: rebuilding the page innerHTML on every
+// keystroke would blow away the textarea and the caret with it.
+function cmt(v){cur().comment=v;save()}
 
 function go(d){
-  if(d>0&&I===TRIALS.length-1){
+  if(d>0&&I===PAGES.length-1){
+    const un=PAGES.filter(q=>!(R[rkey(q)]||{}).verdict).length;
+    if(un&&!confirm(un+" page"+(un>1?"s are":" is")+" still unanswered.\n\n"+
+                    "OK to download anyway, or Cancel to go back and finish "+
+                    "them (Review lists them)."))return;
     exportCSV();
-    alert("All done — thank you.\n\nA CSV has been downloaded. Please send it back to us.");
+    alert("Thank you.\n\nA CSV has been downloaded. Please send it back to us.\n\n"+
+          "Nothing is locked — you can reopen this page with the same annotator "+
+          "ID, change any answer, and download again.");
     return;
   }
-  I=Math.max(0,Math.min(TRIALS.length-1,I+d));save();render();
+  I=Math.max(0,Math.min(PAGES.length-1,I+d));save();render();
 }
 
+// ── keyboard: the task is many short pages, so make it mouse-free ───────────
+document.addEventListener("keydown",e=>{
+  if(document.getElementById("app").hidden)return;
+  if(!document.getElementById("modal").hidden)return;
+  if(/^(INPUT|TEXTAREA)$/.test((e.target||{}).tagName||""))return;
+  const k=e.key.toLowerCase();
+  if(k==="m"){verdict("match")}
+  else if(k==="x"){verdict("mismatch")}
+  else if(k==="1"){conf("low")}
+  else if(k==="2"){conf("medium")}
+  else if(k==="3"){conf("high")}
+  else if(e.key==="Enter"){if(!document.getElementById("next").disabled)go(1)}
+  else if(e.key==="ArrowLeft"){if(I>0)go(-1)}
+  else if(e.key===" "){
+    const a=document.getElementById("cand");
+    if(a){a.paused?a.play():a.pause()}
+  }else return;
+  e.preventDefault();
+});
+
 // ── CSV export ──────────────────────────────────────────────────────────────
+// One row per (trial, clip) judgement. The same conversation therefore appears
+// on several rows -- join on trial_id / item_id to get back to the item.
 function csvCell(v){
   const s=(v===null||v===undefined)?"":String(v);
   return /[",\n]/.test(s) ? '"'+s.replace(/"/g,'""')+'"' : s;
 }
 function rows(){
-  return TRIALS.filter(t=>R[t.trial_id]&&R[t.trial_id].choice).map(t=>{
-    const r=R[t.trial_id], ord=order(t);
-    return {
-      annotator:AID, trial_id:t.trial_id, item_id:t.item_id, axis:t.axis,
-      target_text:t.target_text,
-      chosen_clip:r.choice,
-      chosen_position:"ABCDE"[ord.indexOf(r.choice)],
-      presented_order:ord.join("|"),
+  const base=location.origin+location.pathname+location.search;
+  return PAGES.map((p,idx)=>({p,idx,r:R[rkey(p)]}))
+    .filter(x=>x.r&&(x.r.verdict||(x.r.comment||"").trim()))
+    .map(({p,idx,r})=>({
+      annotator:AID,
+      page:idx+1,
+      trial_id:p.trial.trial_id,
+      item_id:p.trial.item_id,
+      axis:p.trial.axis,
+      target_text:p.trial.target_text,
+      target_speaker:p.trial.target_speaker||"",
+      clip:p.clip,
+      clip_index_in_trial:p.k,
+      clips_in_trial:p.n,
+      verdict:r.verdict,
+      is_match:r.verdict==="match"?1:0,
       confidence:r.confidence,
-      broken_clips:(r.broken||[]).join("|"),
-      n_broken:(r.broken||[]).length,
+      broken:r.broken?1:0,
+      comment:r.comment||"",
       response_ms:r.ms||"",
+      presented_order:p.order.join("|"),
+      share_url:base+pageHash(p),
       exported_at:new Date().toISOString()
-    };
-  });
+    }));
 }
 function exportCSV(){
   const rs=rows();
@@ -292,6 +516,16 @@ function dl(blob,name){
   const a=document.createElement("a");
   a.href=URL.createObjectURL(blob); a.download=name; a.click();
   setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+
+// A shared link lands on the start screen first -- we still need the annotator
+// id before the per-annotator ordering exists. Remember where they were headed.
+WANT=parseHash();
+if(WANT){
+  const n=document.getElementById("deepnote");
+  n.hidden=false;
+  n.innerHTML="This link points at a specific clip (<b>"+esc(WANT.trial)+
+              "</b>). Enter your ID and you will be taken straight there.";
 }
 </script>
 </body>

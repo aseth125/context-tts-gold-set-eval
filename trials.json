@@ -43,7 +43,6 @@
     "intent": {
       "what_it_should_be": "reaction — empathy",
       "why": "B is reacting appreciatively and sympathetically to A's nostalgic and slightly painful anecdote about animation cells.",
-      "why_delivery_matters": "A slow, downward pitch conveys a relaxed, sympathetic sigh of appreciation, fitting the nostalgic vibe of the exchange.",
       "why_context_matters": "The interjection 'Man' is highly versatile and can signify frustration, awe, anger, or act as a vocative. Only context locks it into a sympathetic, appreciative reaction."
     },
     "clips": [
@@ -98,7 +97,6 @@
     "intent": {
       "what_it_should_be": "Agreement — strong-agreement",
       "why": "B is responding to a direct verification check by A. The repetition is a definitive confirmation of the dual facts A just laid out.",
-      "why_delivery_matters": "The complete falling boundary tones signal absolute certainty, locking in the facts for A's accounting.",
       "why_context_matters": "Without the preceding explicit check from A, 'That's right' could function as an absent-minded backchannel or a reaction to an opinion."
     },
     "clips": [
@@ -141,7 +139,6 @@
     "intent": {
       "what_it_should_be": "Grounding — check",
       "why": "B is echoing A's question to stall for time and process the topic shift before answering, not genuinely asking A for information about B's own birthplace.",
-      "why_delivery_matters": "Standard wh-questions typically have a falling pitch contour. As an echoing/stalling device, it needs a rising or sustained pitch to indicate holding the conversational floor.",
       "why_context_matters": "In isolation, this text implies existential confusion or amnesia (asking someone else where you yourself were born). Context dictates it as a structural echoing tactic."
     },
     "clips": [
@@ -196,7 +193,6 @@
     "intent": {
       "what_it_should_be": "statement — assertion",
       "why": "B expresses slight doubt or uncertainty ('I don't know, did you get...'). A responds with an emphatic confirmation, stressing the auxiliary verb to definitively answer the yes-no question.",
-      "why_delivery_matters": "The auxiliary 'did' carries verum focus to explicitly confirm the truth of B's question, leaving the object noun phrase as given information.",
       "why_context_matters": "In an isolated declarative, default stress typically falls on the final noun phrase. Context shifts the required focus to the affirmative auxiliary verb."
     },
     "clips": [
@@ -251,7 +247,6 @@
     "intent": {
       "what_it_should_be": "question — wh-query",
       "why": "A is explaining how character traits affect game stats. B is asking how the game mechanics quantify or determine this trait, making it a procedural query rather than a skeptical challenge of A's facts.",
-      "why_delivery_matters": "Emphasizing 'know' with a polite, inquisitive rise signals a genuine request for rule clarification rather than an argumentative stance.",
       "why_context_matters": "In isolation, this phrase easily sounds like an epistemological or skeptical challenge to a factual claim. Context reveals it is a student genuinely asking about a game mechanism."
     },
     "clips": [
@@ -306,7 +301,6 @@
     "intent": {
       "what_it_should_be": "disagreement — hedge",
       "why": "B asks a direct yes/no question about killing Romeo. Because the actual plot involves her fake death leading to his suicide, A cannot give a clean 'yes' or 'no', resulting in a soft disagreement and evasive hedge.",
-      "why_delivery_matters": "The hesitations, slow tempo, and non-committal intonation reflect A's cognitive effort to reconcile B's question with the complex reality of the play's plot.",
       "why_context_matters": "The utterance is a sequence of loose agreements. Without the context of the tricky narrative question, it lacks the semantic weight that forces hesitation."
     },
     "clips": [
@@ -361,7 +355,6 @@
     "intent": {
       "what_it_should_be": "Agreement — weak-agreement",
       "why": "B offers a speculative guess about an unassigned meal. A has no proof but accepts it as a plausible theory, resulting in a non-committal response.",
-      "why_delivery_matters": "The elongation and lack of a definitive downward pitch convey hesitation, reflecting the shared uncertainty about the guess.",
       "why_context_matters": "'Yeah, maybe' can be interpreted in various ways—sarcastic dismissal, defensive yielding, or genuine confidence. Context establishes it as a shared, tentative speculation."
     },
     "clips": [
@@ -370,61 +363,6 @@
       "c_3a555866dded.opus",
       "c_71e587792c3e.opus",
       "c_14958cd2d3c7.opus"
-    ]
-  },
-  {
-    "trial_id": "t008",
-    "item_id": "espresso_ci_0002",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I haven't. I want to see that. I just saw Nope, though."
-      },
-      {
-        "speaker": "B",
-        "text": "in two separate ways. You can laugh, cry, and like, this is so freaking funny. I'm losing my mind. Or you can laugh, cry, and like, I'm so sad, but I'm so happy. It made me do it both times. Both times."
-      },
-      {
-        "speaker": "A",
-        "text": "I did that with Jojo Rabbit."
-      },
-      {
-        "speaker": "B",
-        "text": "Jojo Rabbit is so good."
-      },
-      {
-        "speaker": "B",
-        "text": "It's so good. It's so freaking good. Scarlett Johansson and who is the kid that plays? Oh, the kid's so good too."
-      },
-      {
-        "speaker": "A",
-        "text": "I'm not sure. I love the kid though. It's so good. Taika Waititi is great."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, Taika Waititi is freaking phenomenal. One of my theories, though, is that the best actors nowadays are like 10-year-old kids. You know what I mean? That just might be me, but I think that's where I'm at, all right?"
-      },
-      {
-        "speaker": "A",
-        "text": "I have to ask you, coming back to Nausicaa, have you ever heard of retronauts?"
-      }
-    ],
-    "target_text": "Retronauts, no.",
-    "target_speaker": "B",
-    "reference_clip": "c_ee5c9fcc7f10.opus",
-    "intent": {
-      "what_it_should_be": "grounding — check",
-      "why": "B echoes the unfamiliar word to implicitly check/confirm the topic A introduced, before providing a negative answer.",
-      "why_delivery_matters": "The rising pitch turns 'Retronauts' into an echo-question ('Did you say Retronauts?'), which separates it functionally from the answering 'no'.",
-      "why_context_matters": "In isolation, 'Retronauts, no' is syntactically bizarre and could be interpreted as a declarative command telling 'Retronauts' no."
-    },
-    "clips": [
-      "c_8d1a3226d514.opus",
-      "c_5761f162aa71.opus",
-      "c_44b53210d2d9.opus",
-      "c_28ea3c8966cd.opus",
-      "c_3623e54a2715.opus"
     ]
   },
   {
@@ -447,7 +385,6 @@
     "intent": {
       "what_it_should_be": "statement — evaluation",
       "why": "B is emotionally overwhelmed by the scenery and struggled to find words in the preceding turns. This utterance finally resolves that emotional buildup.",
-      "why_delivery_matters": "The word 'beautiful' carries the emotional weight of the preceding hesitations, requiring an awe-struck, breathy delivery rather than a brisk descriptive one.",
       "why_context_matters": "Isolated, 'It's beautiful' could be a brisk, matter-of-fact assessment. Following the trailing hesitations, it is strictly locked in as resolving an emotionally overwhelmed state."
     },
     "clips": [
@@ -498,7 +435,6 @@
     "intent": {
       "what_it_should_be": "question — confirmation-seeking",
       "why": "B suddenly realizes that A's preceding 'Oh, my God' was a negative physical reaction to the pollen rather than awe. 'Oh, yeah' serves as an epiphany/realization token before asking the question.",
-      "why_delivery_matters": "The 'Oh, yeah' must sound like a sudden change-of-state (realizing A's condition), rather than an enthusiastic agreement to something A said.",
       "why_context_matters": "Without context, 'Oh, yeah' usually functions as casual agreement. Here, it is an epiphany responding to A's distress, changing its pragmatic function entirely."
     },
     "clips": [
@@ -553,7 +489,6 @@
     "intent": {
       "what_it_should_be": "disagreement — correction",
       "why": "B explicitly guesses that 'Blanche and her sister' will be the first ones out on the set. A directly corrects this misconception by introducing the 'chorus'.",
-      "why_delivery_matters": "To correct B's assumption, the vocal emphasis must be placed forcefully on 'chorus' as the contrastive replacement for 'Blanche and her sister'.",
       "why_context_matters": "Because B already introduced the concept of who is 'first' on the set, 'first' is given information. 'Chorus' is the new, contrastive information that requires the stress."
     },
     "clips": [
@@ -608,7 +543,6 @@
     "intent": {
       "what_it_should_be": "reaction — irony/sarcasm",
       "why": "B is asking if it's acceptable for the actor to get physically hurt by her chaotic, unscripted actions. A responds with obvious sarcasm and hyperbole rather than genuine reassurance, knowing B is being ridiculous.",
-      "why_delivery_matters": "A deadpan, flat contour strips away genuine emotional reassurance, signaling to the listener that the statement is not literal but a sarcastic dismissal of an absurd question.",
       "why_context_matters": "In isolation, this could sound like genuine reassurance about a literal medical condition or a description of a cartoon character. Context dictates it as a sarcastic, deadpan response."
     },
     "clips": [
@@ -663,7 +597,6 @@
     "intent": {
       "what_it_should_be": "agreement — strong-agreement",
       "why": "B is directly validating and agreeing with A's exact preceding statement before introducing a contrasting thought about his own enjoyment.",
-      "why_delivery_matters": "Because A just said 'He's making it angry', B's repetition of the phrase requires affirming stress on 'is' to signal agreement, and stress on 'I'm' to establish the contrast.",
       "why_context_matters": "Without A's prior turn, B's utterance would be interpreted as a standard declarative conveying new information. A's exact phrasing acts as a prosodic anchor that forces the stress onto the auxiliary verb 'is'."
     },
     "clips": [
@@ -718,7 +651,6 @@
     "intent": {
       "what_it_should_be": "grounding — acknowledgement",
       "why": "B provides a complex sequence of instructions and appends a question at the end. A uses 'Okay, cool' to cognitively acknowledge the instructions before answering the question in the next breath.",
-      "why_delivery_matters": "The phrase functions as an information receipt, requiring a neutral, concluding contour rather than high-pitched enthusiasm.",
       "why_context_matters": "'Okay, cool' can express excitement, sarcasm, or simple receipt of information. The preceding instructional dump requires it to be a low-energy cognitive receipt token."
     },
     "clips": [
@@ -727,595 +659,6 @@
       "c_a2bd6cde2b75.opus",
       "c_febc39e17d2d.opus",
       "c_d28a57feffe5.opus"
-    ]
-  },
-  {
-    "trial_id": "t015",
-    "item_id": "espresso_ci_0041",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "That's what they told us. And they don't like to live by themselves. They like to live in groups. So they had them in groups of three at the zoo."
-      },
-      {
-        "speaker": "B",
-        "text": "That's crazy. What about, what about my favorite kind of crab is a hermit crab. Did you see any hermit crabs?"
-      },
-      {
-        "speaker": "A",
-        "text": "I didn't see any hermit crabs at the zoo, but my first grade teacher has a pet hermit crab in her class."
-      },
-      {
-        "speaker": "B",
-        "text": "Really? Miss Trot does, huh?"
-      },
-      {
-        "speaker": "A",
-        "text": "Ms. Trotters, yeah, yeah, we got to vote on the name of the hermit crab, and we decided on Sadie."
-      },
-      {
-        "speaker": "B",
-        "text": "Sadie the hermit crab?"
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, I didn't vote for Sadie. I voted for Tom, but everybody else voted for Sadie, so Sadie won."
-      },
-      {
-        "speaker": "B",
-        "text": "Gotcha. Well, you can still call Sadie Tom."
-      }
-    ],
-    "target_text": "I do, even though the teacher doesn't know",
-    "target_speaker": "A",
-    "reference_clip": "c_b352270646d2.opus",
-    "intent": {
-      "what_it_should_be": "statement — assertion",
-      "why": "The parent suggests calling the crab Tom as a hypothetical future possibility. The child responds by asserting that they already perform this action secretly.",
-      "why_delivery_matters": "Emphasizing 'do' highlights the contrast between the parent's hypothetical suggestion ('you can still call') and the child's current, actual reality.",
-      "why_context_matters": "The phrase 'I do' acts as a direct validation of the parent's idea while upgrading it from a suggestion to an existing fact."
-    },
-    "clips": [
-      "c_10fa7c21e39e.opus",
-      "c_3f2a4f29d186.opus",
-      "c_82dd6e046ff9.opus",
-      "c_47aabae3af8f.opus",
-      "c_c4e61b17dea7.opus"
-    ]
-  },
-  {
-    "trial_id": "t016",
-    "item_id": "espresso_ci_0033",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "These guys are so cool."
-      },
-      {
-        "speaker": "A",
-        "text": "I feel like Uncle Johnny."
-      },
-      {
-        "speaker": "B",
-        "text": "I can't believe he gave us them."
-      },
-      {
-        "speaker": "A",
-        "text": "Scoot."
-      }
-    ],
-    "target_text": "I swear this gets easier with practice, right?",
-    "target_speaker": "B",
-    "reference_clip": "c_166e67515302.opus",
-    "intent": {
-      "what_it_should_be": "Question — confirmation-seeking",
-      "why": "B is struggling with a new, physically uncomfortable experience (smoking, as implied by later turns) and is vulnerably asking A for reassurance that the discomfort is temporary.",
-      "why_delivery_matters": "The rising intonation on 'right' is crucial to solicit a reassuring response, while the overall delivery needs to reflect uncertainty and mild physical discomfort.",
-      "why_context_matters": "Depending on context, 'I swear... right?' can be a confident, 'I-told-you-so' rhetorical question. Here, the context of struggling with a harsh new experience locks it into a vulnerable plea for validation."
-    },
-    "clips": [
-      "c_9e4bb42ee70d.opus",
-      "c_84a2d6aee94d.opus",
-      "c_f2aee6a63664.opus",
-      "c_a3e77b6f4277.opus",
-      "c_374bc7d00ff5.opus"
-    ]
-  },
-  {
-    "trial_id": "t017",
-    "item_id": "espresso_ci_0026",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "And then the chemistry between the two leads was, like, it was non-existent. It was just, like, it was like two boards of wood, like, talking to each other. Have you ever seen the show Ed, Edd n Eddy? It's two planks."
-      },
-      {
-        "speaker": "B",
-        "text": "Tell me about it."
-      },
-      {
-        "speaker": "B",
-        "text": "Eh."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, and then the curtain call when they're taking their bows. And the curtain, like, ripped off the ceiling. And what's-her-name got, like, wrapped up in it. And you could just see, like, her arms were flailing inside the curtain. Like, she was, like, trying to, like, tear her way out. That was just hilarious. Yeah."
-      },
-      {
-        "speaker": "A",
-        "text": "It felt like one of those videos like when a cat gets stuck in like a curtain of like a window and you can see it like moving around in there, but it can't find its way out. So you just see like the rustling of the fabric and all that stuff."
-      },
-      {
-        "speaker": "B",
-        "text": "Exactly. Exactly."
-      },
-      {
-        "speaker": "A",
-        "text": "What about when the front right part of the stage collapsed? Do you remember that?"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, I thought I assumed that was the one thing that was on purpose. Are you saying that doesn't actually happen in a little shop of horrors?"
-      }
-    ],
-    "target_text": "No, it's not supposed to happen.",
-    "target_speaker": "A",
-    "reference_clip": "c_695d7ec093b7.opus",
-    "intent": {
-      "what_it_should_be": "disagreement — correction",
-      "why": "B expresses a genuinely naive assumption that a stage collapsing was part of the script. A firmly but gently corrects this comedic misunderstanding.",
-      "why_delivery_matters": "A must sound authoritative to correct the assumption but mildly amused by the absurdity of the question; a harsh, flat, or overly fast delivery would sound angry or robotic.",
-      "why_context_matters": "Out of context, this is a generic negative statement. Context determines its pragmatic function as a direct, slightly amused correction of B's hilarious misconception."
-    },
-    "clips": [
-      "c_85290f7edc65.opus",
-      "c_c00e9d8665c5.opus",
-      "c_701ae912b808.opus",
-      "c_0e2668091d40.opus",
-      "c_fe1fe4889bf5.opus"
-    ]
-  },
-  {
-    "trial_id": "t018",
-    "item_id": "espresso_ci_0014",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Yep. Wardrobe is already going to be ready for you. It's very straightforward. All you're going to be wearing is a white tank top and some pants that come up to your navel. And that's it."
-      },
-      {
-        "speaker": "B",
-        "text": "Well, thank God I've been friggin' acting, huh? Not acting, I've been working out. I've never acted one day in my life. Okay, okay, okay, okay, okay, okay."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, you look great."
-      },
-      {
-        "speaker": "A",
-        "text": "that but when she comes into the house when what that's when you're you got to be sitting there okay"
-      },
-      {
-        "speaker": "B",
-        "text": "The polka music, yeah?"
-      },
-      {
-        "speaker": "B",
-        "text": "I don't know how to pronounce it anyway."
-      },
-      {
-        "speaker": "B",
-        "text": "Is that what my cue is?"
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, didn't mean to clap. Just got really excited about it. Okay, so you're going to be sitting there, you're going to be at the table, and you're already going to have some whiskey in hand. So it's just going to be a bottle. It's not actual alcohol."
-      }
-    ],
-    "target_text": "Oh really? That's unfortunate.",
-    "target_speaker": "B",
-    "reference_clip": "c_ee2a56013417.opus",
-    "intent": {
-      "what_it_should_be": "reaction — irony/sarcasm",
-      "why": "A mentions that the prop whiskey isn't real alcohol. B responds with dry sarcasm, pretending to be genuinely disappointed that he won't be drinking on the job.",
-      "why_delivery_matters": "A genuine question would have a rising pitch on 'really'. Here, the dry humor requires a flatter, falling pitch to convey deadpan disappointment.",
-      "why_context_matters": "Out of context, 'Oh really? That's unfortunate' could be a genuine sympathetic response to genuinely bad news. Here, it is a dry, sarcastic reaction to a harmless staging detail."
-    },
-    "clips": [
-      "c_3615374a21c6.opus",
-      "c_b7ab0ecbe9e8.opus",
-      "c_f6e6266c3270.opus",
-      "c_c8c3cae573f1.opus",
-      "c_02610b62f5e7.opus"
-    ]
-  },
-  {
-    "trial_id": "t019",
-    "item_id": "espresso_ci_0025",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Oh, the moose is, is he pooping? The moose just stopped to poop. Look at that."
-      },
-      {
-        "speaker": "B",
-        "text": "Did he fall onto the poop?"
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, no. Oh, that guy is going to laugh about this later."
-      },
-      {
-        "speaker": "B",
-        "text": "A feces facial."
-      },
-      {
-        "speaker": "A",
-        "text": "Feces facial. That's a perfect way to describe it."
-      },
-      {
-        "speaker": "B",
-        "text": "You know, I have a friend back home named Mark who would absolutely love one of those things."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, well, you know, got first-hand footage from the moose poop salon here."
-      },
-      {
-        "speaker": "B",
-        "text": "We should send that to him right now. Send that to him right now."
-      }
-    ],
-    "target_text": "Yeah.",
-    "target_speaker": "A",
-    "reference_clip": "c_18b907412e11.opus",
-    "intent": {
-      "what_it_should_be": "agreement — strong-agreement",
-      "why": "B makes an urgent, high-energy, and repeated proposal. A's response is an enthusiastic endorsement of that immediate action.",
-      "why_delivery_matters": "To match the urgent, repeated enthusiasm of B's proposal, A's 'Yeah' needs sustained energy and an assertive contour.",
-      "why_context_matters": "'Yeah' is highly ambiguous and often defaults to a low-energy backchannel or weak acknowledgment. Only B's animated repetition locks it into an enthusiastic endorsement."
-    },
-    "clips": [
-      "c_5b23cfaac5d7.opus",
-      "c_3a6b70e2deb6.opus",
-      "c_7e5fd1de096e.opus",
-      "c_c4f0b0be229c.opus",
-      "c_362207c46bbc.opus"
-    ]
-  },
-  {
-    "trial_id": "t020",
-    "item_id": "espresso_ci_0006",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Hey, Caroline, can I get you in here for a second?"
-      },
-      {
-        "speaker": "B",
-        "text": "Absolutely Brad."
-      },
-      {
-        "speaker": "A",
-        "text": "Okay, so I was I can't find my phone and I need to get to Santa Monica Pier in 45 minutes and I need to leave pretty much right about now. Can you help me get there?"
-      },
-      {
-        "speaker": "B",
-        "text": "Okay, yep, absolutely. Okay, so you're just going to write this down really quick. It's not going to take you long."
-      },
-      {
-        "speaker": "A",
-        "text": "I got my pen, I got my paper. Well, uh, yeah. Yep."
-      },
-      {
-        "speaker": "B",
-        "text": "Ready? From Spring, you're going to go on to 4th, and then from 4th, you're going to go straight to the 134 West. Take 134 West all the way over to the 101. You're going to connect to the 101 West. Okay, keep going on the 101 West. Uh-huh, you're going to take the 405 South."
-      },
-      {
-        "speaker": "A",
-        "text": "134 West, okay?"
-      },
-      {
-        "speaker": "A",
-        "text": "Uh huh."
-      }
-    ],
-    "target_text": "134 to the 101.",
-    "target_speaker": "A",
-    "reference_clip": "c_c55545cc117b.opus",
-    "intent": {
-      "what_it_should_be": "grounding — check",
-      "why": "A is repeating the directions aloud to himself as he writes them down, committing them to memory and verifying the sequence.",
-      "why_delivery_matters": "Because A is writing and 'thinking out loud', the volume drops and the tone becomes rhythmic and less outwardly projected.",
-      "why_context_matters": "Without context, this phrase looks like an instruction or factual assertion directed at a listener. Context shows it is a self-directed, note-taking repetition."
-    },
-    "clips": [
-      "c_94d932dbeb32.opus",
-      "c_cc6d1202c25c.opus",
-      "c_cd7166882d2e.opus",
-      "c_b304c45fe409.opus",
-      "c_f64d89f5a074.opus"
-    ]
-  },
-  {
-    "trial_id": "t021",
-    "item_id": "espresso_ci_0046",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "And she was a new student. She was much bigger than all of the other rats and all of the other rodents. She was a capybara, and her name was Camilla."
-      },
-      {
-        "speaker": "A",
-        "text": "Simon got up in front of the whole class and he said,"
-      },
-      {
-        "speaker": "A",
-        "text": "Wadney says,"
-      },
-      {
-        "speaker": "A",
-        "text": "Weed a book."
-      },
-      {
-        "speaker": "A",
-        "text": "So while the other kids sat down to read books, Camila Capybara was found outside in the garden pulling weeds along with reading her book."
-      },
-      {
-        "speaker": "A",
-        "text": "She felt a little silly when she realized the rest of the class was inside the room."
-      },
-      {
-        "speaker": "A",
-        "text": "Then all of the rodents came out and they were ready for Rodney's second assignment."
-      },
-      {
-        "speaker": "A",
-        "text": "Rodney says, go west. And while all of the other little rodents went to go rest and take a little nap, rest their sweet little rodent heads, Camilla Capivara packed her bags and headed west. She found herself in California, away from all of the other rats and rodents, and Rodney had saved the day. The end."
-      }
-    ],
-    "target_text": "That was great. That was fantastic.",
-    "target_speaker": "B",
-    "reference_clip": "c_743961efb787.opus",
-    "intent": {
-      "what_it_should_be": "Statement — evaluation",
-      "why": "B is providing genuine, enthusiastic feedback after A successfully finishes telling an entertaining children's story.",
-      "why_delivery_matters": "To convey genuine enthusiasm and avoid sounding sarcastic or perfunctory, the praise adjectives need significant pitch movement and emphasis.",
-      "why_context_matters": "Without knowing it follows an earnest performance, 'That was great' can easily be interpreted as sarcastic, dry, or dismissive."
-    },
-    "clips": [
-      "c_f21ea339ecaa.opus",
-      "c_ff0aacc7408a.opus",
-      "c_ce3fb78060da.opus",
-      "c_96282ecb46d4.opus",
-      "c_0b1ea5bcf93e.opus"
-    ]
-  },
-  {
-    "trial_id": "t022",
-    "item_id": "espresso_ci_0045",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I had this job interview today, and I wore my shirt backwards the entire time."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, no. Did he notice? Did the interviewer?"
-      },
-      {
-        "speaker": "A",
-        "text": "Of course he noticed. He said, sir, do you realize that your tag is sticking out of your collar in front of your chest? I'm like, no. I said, give me a second. He said, seconds needed. How was your interview?"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, you think yours was bad? Mine! I brought a cup of coffee with me, and when I came into the door, somebody was coming right out, right as I was entering, and they slammed the glass door into me, and the coffee spilled all down me. I know, and I was like, I covered for the interview. Yeah, I know, I have to laugh about it. It was really painful, it really was. But, uh, it's..."
-      },
-      {
-        "speaker": "A",
-        "text": "Laugh away the pain. I must have been scalding too. Well, I had this interview. He asked me if I had any previous workplace experience in this field. And I said, honestly, no."
-      },
-      {
-        "speaker": "A",
-        "text": "He said, why the hell are you applying? And I said, I don't know. I feel like I'd be a good fit. He said, get out of my office. I said, no, no, no. You got to let me finish the interview. I gave you 30 seconds of my time and he liked my chutzpah."
-      },
-      {
-        "speaker": "B",
-        "text": "Maybe a shirt size or something, but..."
-      },
-      {
-        "speaker": "A",
-        "text": "The weirdest question they asked me, man. They asked a lot of weird questions, I can tell you that. They asked me what my favorite smell was."
-      }
-    ],
-    "target_text": "Oh, what did you say?",
-    "target_speaker": "B",
-    "reference_clip": "c_68866c32c977.opus",
-    "intent": {
-      "what_it_should_be": "question — wh-query",
-      "why": "B perfectly heard A; the intent is to eagerly prompt A to continue the story and reveal his answer to the strange interview question.",
-      "why_delivery_matters": "An engaged, curious contour signals that B is asking for the content of A's response, rather than signaling a hearing failure.",
-      "why_context_matters": "In isolation, 'what did you say?' is overwhelmingly interpreted as a repair or clarification request (i.e., 'I didn't hear you'). Context clarifies it is a narrative prompt."
-    },
-    "clips": [
-      "c_e598664ef36a.opus",
-      "c_402c25d54752.opus",
-      "c_6088fd5bcd99.opus",
-      "c_ac727a00b8e6.opus",
-      "c_2a09c601aa4c.opus"
-    ]
-  },
-  {
-    "trial_id": "t023",
-    "item_id": "espresso_ci_0039",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "before the session. But I just wanted to say I didn't want this to go this way and I'm really, really sorry. I'm not trying to take stuff from you. I wasn't ever trying to keep anything from you. I wasn't trying to keep anything that you brought into the house."
-      },
-      {
-        "speaker": "B",
-        "text": "Look, I don't blame you. I just..."
-      },
-      {
-        "speaker": "B",
-        "text": "I know what the boundaries are and I know what's mine. I know what's ours."
-      },
-      {
-        "speaker": "B",
-        "text": "And."
-      },
-      {
-        "speaker": "B",
-        "text": "I just don't... I don't understand..."
-      },
-      {
-        "speaker": "B",
-        "text": "I don't understand why we're in this fight."
-      },
-      {
-        "speaker": "A",
-        "text": "i mean it just felt like it wasn't being resolved um without some kind of mediation and some interjection here and i'm sorry i didn't want it to go this way but it just felt like we couldn't see eye to eye on some of the bigger items and you know we both have assets and you have a lot that you deserve and i want to make sure you get that"
-      },
-      {
-        "speaker": "B",
-        "text": "I just don't understand why we couldn't just work this out civilly."
-      }
-    ],
-    "target_text": "But we tried that and it didn't work.",
-    "target_speaker": "A",
-    "reference_clip": "c_16234317ff1d.opus",
-    "intent": {
-      "what_it_should_be": "disagreement — correction",
-      "why": "B's statement implies that working it out civilly was a viable option that A ignored. A directly contradicts this premise by reminding B that they already attempted it.",
-      "why_delivery_matters": "Highlighting 'tried' contrasts their actual past actions against B's hypothetical scenario, emphasizing the futility of trying again without mediation.",
-      "why_context_matters": "In isolation, this is a simple factual report. Following B's frustrated complaint, it functions as a defensive counter-argument that requires persuasive emphasis."
-    },
-    "clips": [
-      "c_b89f365861ef.opus",
-      "c_8a0f1369d2d4.opus",
-      "c_5b78a9b3cc5e.opus",
-      "c_c156d00639d5.opus",
-      "c_1f6aa125a2e7.opus"
-    ]
-  },
-  {
-    "trial_id": "t024",
-    "item_id": "espresso_ci_0016",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Oh, you have, there's a, there's a, I don't know."
-      },
-      {
-        "speaker": "B",
-        "text": "Now you're just running your mouth. You're messing with me."
-      },
-      {
-        "speaker": "A",
-        "text": "No, I can't tell."
-      },
-      {
-        "speaker": "A",
-        "text": "18? 19? I don't know. I have a concussion. I think this is a medical liability now. If you hit the back of me, my head hit the steering wheel really hard. Look, I think there's even a bruise forming up here."
-      },
-      {
-        "speaker": "B",
-        "text": "Well, technically, you hit the front of me with the back of you because you weren't driving the right speed."
-      },
-      {
-        "speaker": "A",
-        "text": "I hit the front of me with the back of you. It's like it's that's like saying oh shoot my my the picnic table hit my elbow and gave my funny like hurt my funny bone That makes no sense"
-      },
-      {
-        "speaker": "B",
-        "text": "Look."
-      },
-      {
-        "speaker": "B",
-        "text": "While we're while we're arguing here, why don't I just I'll fix it for you. Okay."
-      }
-    ],
-    "target_text": "Oh, you'll fix it for me!",
-    "target_speaker": "A",
-    "reference_clip": "c_7d9251b87686.opus",
-    "intent": {
-      "what_it_should_be": "reaction — irony/sarcasm",
-      "why": "B, who has been aggressively arguing and insulting A, suddenly offers to fix A's car. A's repetition of the offer is heavily mocking and sarcastic, not an expression of genuine relief.",
-      "why_delivery_matters": "Without a sarcastic and exaggerated intonation, it sounds like A is genuinely relieved and excited that B is going to repair the car.",
-      "why_context_matters": "The text alone reads as a positive, relieved exclamation. Only the preceding hostile argument reveals that A is mocking B's absurd and condescending offer."
-    },
-    "clips": [
-      "c_a66fe9ff39d3.opus",
-      "c_05fb4378bf29.opus",
-      "c_701cf6666cab.opus",
-      "c_3547b8119699.opus",
-      "c_380608989f07.opus"
-    ]
-  },
-  {
-    "trial_id": "t025",
-    "item_id": "espresso_ci_0044",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "B",
-        "text": "Are you kidding me? How tall is this dude?"
-      },
-      {
-        "speaker": "A",
-        "text": "the old man he's trying and he just he just the dog takes off and goes and he falls right into the mud right smack dab his face in the mud and like"
-      },
-      {
-        "speaker": "B",
-        "text": "Are they like the same height or something?"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh no. Oh no."
-      },
-      {
-        "speaker": "B",
-        "text": "I swear this is out of some cartoon."
-      },
-      {
-        "speaker": "A",
-        "text": "It gets really excited and it goes after the St. Bernard and the St. Bernard, it gets in between its legs and it drips the St. Bernard. So the St. Bernard face planted in the same mud that its old man owner face planted in."
-      },
-      {
-        "speaker": "B",
-        "text": "How many people were there? How many people saw?"
-      },
-      {
-        "speaker": "B",
-        "text": "You know what they say, like dog, like owner."
-      }
-    ],
-    "target_text": "Like, owner! Yeah!",
-    "target_speaker": "A",
-    "reference_clip": "c_fef35ee3e6cc.opus",
-    "intent": {
-      "what_it_should_be": "agreement — strong-agreement",
-      "why": "B makes a situational pun on the idiom 'like father, like son'. A recognizes the joke, repeats the punchline playfully, and strongly agrees.",
-      "why_delivery_matters": "The prosody must convey a burst of sudden amusement and enthusiastic agreement with B's clever remark.",
-      "why_context_matters": "Without knowing this is a reaction to a pun, the text seems like a nonsensical or disjointed fragment. The context sets up the enthusiastic realization of the joke."
-    },
-    "clips": [
-      "c_3da84cbdfce2.opus",
-      "c_63890ebd61d7.opus",
-      "c_a3c31ebf39e9.opus",
-      "c_79e036e96a9e.opus",
-      "c_c5c4fd82abfb.opus"
     ]
   },
   {
@@ -1362,7 +705,6 @@
     "intent": {
       "what_it_should_be": "grounding — acceptance of info",
       "why": "A is hurriedly writing down the final step and price. The rapid repetitions signal cognitive processing and closure of the topic under time pressure.",
-      "why_delivery_matters": "The descending, rapid repetition conveys urgent task-completion and readiness to move to the next thought.",
       "why_context_matters": "Repeated 'okays' can often indicate annoyance ('stop talking') or attempts to calm someone down. Here, the prior rapid-fire directions establish it as frantic but agreeable note-taking."
     },
     "clips": [
@@ -1397,7 +739,6 @@
     "intent": {
       "what_it_should_be": "Statement — narrative",
       "why": "The speaker is quoting a character with a speech impediment who is intending to say 'read a book' but pronounces it with a 'w'.",
-      "why_delivery_matters": "The prosody must signal that this is a direct quote of a character mispronouncing a word, establishing the pun that drives the confusion in the next sentence.",
       "why_context_matters": "In isolation, this is a bizarre, literal command about gardening. Only the surrounding narrative context explains it as a phonological error (rhotacism) by the character."
     },
     "clips": [
@@ -1406,159 +747,6 @@
       "c_12e6cf32ee4b.opus",
       "c_c7295903666c.opus",
       "c_54cc47dc025f.opus"
-    ]
-  },
-  {
-    "trial_id": "t028",
-    "item_id": "espresso_ci_0052",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I'm going to tell you about the magical land of Kansas City, Missouri. Have you ever heard of Kansas City, Missouri?"
-      },
-      {
-        "speaker": "B",
-        "text": "No, I haven't."
-      },
-      {
-        "speaker": "A",
-        "text": "that gates barbecue is the hot spot because when you walk into gates it's an exciting time people start yelling at you immediately they say welcome to gates what do you want and they're pretty rude but it's the tastiest beef you will ever eat and the tastiest"
-      },
-      {
-        "speaker": "B",
-        "text": "What's the best thing to get at Gates?"
-      },
-      {
-        "speaker": "A",
-        "text": "Ooh, the best thing to get at Gates is probably a Kansas City, Missouri specialty, burnt ends. Do you know what a burnt end is?"
-      }
-    ],
-    "target_text": "What's a burnt end?",
-    "target_speaker": "B",
-    "reference_clip": "c_1c3a61313521.opus",
-    "intent": {
-      "what_it_should_be": "Question — wh-query",
-      "why": "B is directly answering A's prompt by admitting ignorance and asking for the definition of the specific term A just introduced.",
-      "why_delivery_matters": "Because the phrase 'burnt end' was just spoken by A, it is 'given' information in the discourse and must be de-accented. The interrogative 'What's' carries the new pragmatic weight.",
-      "why_context_matters": "Without prior context, 'burnt end' appears as entirely new information and would naturally receive default sentence-final nuclear stress."
-    },
-    "clips": [
-      "c_291101ddbfa9.opus",
-      "c_456b0a69954c.opus",
-      "c_7a4dc5648562.opus",
-      "c_f5f56dd9f30d.opus",
-      "c_462aede9e3d5.opus"
-    ]
-  },
-  {
-    "trial_id": "t029",
-    "item_id": "espresso_ci_0043",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "B",
-        "text": "You know what they say, like dog, like owner."
-      },
-      {
-        "speaker": "A",
-        "text": "Like, owner! Yeah!"
-      },
-      {
-        "speaker": "B",
-        "text": "Father like son, the apple doesn't fall far from the tree."
-      },
-      {
-        "speaker": "A",
-        "text": "It's true. Thank goodness that little chihuahua was okay though. I was worried that it might have gotten a little freaked out getting all tangled up in the legs, but..."
-      },
-      {
-        "speaker": "B",
-        "text": "Chihuahuas just always kind of look a little freaked out, right?"
-      },
-      {
-        "speaker": "A",
-        "text": "It's true, they always kind of... I think that's just kind of the nature of Chihuahuas. But I was really hopeful that this, like, old man and old woman with the tiny dogs and the big dogs would be like a coming together where they could..."
-      },
-      {
-        "speaker": "B",
-        "text": "It's like a meat cute, right? Like a little meat cute."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, maybe they fall in love and start their lives as two people in love with two separately sized dogs."
-      }
-    ],
-    "target_text": "Very differently sized dogs.",
-    "target_speaker": "B",
-    "reference_clip": "c_15dacce62bb6.opus",
-    "intent": {
-      "what_it_should_be": "disagreement — correction",
-      "why": "A uses the unconventional and slightly awkward phrasing 'separately sized dogs'. B explicitly corrects this lexical choice to 'differently sized', emphasizing the magnitude with 'Very'.",
-      "why_delivery_matters": "The stress must fall heavily on the corrective adverbs to highlight the change from A's word 'separately'. Placing stress on 'dogs' ruins the pragmatic meaning.",
-      "why_context_matters": "As an isolated phrase, this is merely a descriptive noun phrase. The preceding turn reveals it as a direct contrastive correction of A's specific lexical choice."
-    },
-    "clips": [
-      "c_d30507420531.opus",
-      "c_a1fd01254cd4.opus",
-      "c_dc03cd04477f.opus",
-      "c_6dad152640cd.opus",
-      "c_581b5704321f.opus"
-    ]
-  },
-  {
-    "trial_id": "t030",
-    "item_id": "espresso_ci_0027",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "B",
-        "text": "Oh, and then the curtain call when they're taking their bows. And the curtain, like, ripped off the ceiling. And what's-her-name got, like, wrapped up in it. And you could just see, like, her arms were flailing inside the curtain. Like, she was, like, trying to, like, tear her way out. That was just hilarious. Yeah."
-      },
-      {
-        "speaker": "A",
-        "text": "It felt like one of those videos like when a cat gets stuck in like a curtain of like a window and you can see it like moving around in there, but it can't find its way out. So you just see like the rustling of the fabric and all that stuff."
-      },
-      {
-        "speaker": "B",
-        "text": "Exactly. Exactly."
-      },
-      {
-        "speaker": "A",
-        "text": "What about when the front right part of the stage collapsed? Do you remember that?"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, I thought I assumed that was the one thing that was on purpose. Are you saying that doesn't actually happen in a little shop of horrors?"
-      },
-      {
-        "speaker": "A",
-        "text": "No, it's not supposed to happen."
-      },
-      {
-        "speaker": "B",
-        "text": "I wouldn't have known that. I mean, you know, it's kind of hard to distinguish the, you know, mishaps on stage from the actual story. I mean, the story was pretty wonky in itself, right?"
-      },
-      {
-        "speaker": "A",
-        "text": "That's what you know is a really good story is if you can't distinguish the mishaps, am I right?"
-      }
-    ],
-    "target_text": "That's true. That's definitely true.",
-    "target_speaker": "B",
-    "reference_clip": "c_861876f55b63.opus",
-    "intent": {
-      "what_it_should_be": "reaction — irony/sarcasm",
-      "why": "A makes a highly sarcastic premise that a good story is defined by indistinguishable stage mishaps. B plays along, agreeing with the sarcasm rather than endorsing it as literal truth.",
-      "why_delivery_matters": "To convey that B is 'in on the joke', the delivery must reflect amusement and irony rather than earnest, robotic agreement.",
-      "why_context_matters": "The literal text is a straightforward affirmation of fact. Only context reveals that the 'fact' being affirmed is an ironic joke about a terrible play."
-    },
-    "clips": [
-      "c_dbae8e67d713.opus",
-      "c_a42d31eae1d5.opus",
-      "c_a3f5c5887310.opus",
-      "c_e6ed42518af8.opus",
-      "c_d913b38338db.opus"
     ]
   },
   {
@@ -1606,7 +794,6 @@
       "what_it_should_be": "Laughing",
       "why": "A has just told a humorous, slightly absurd anecdote about the reality of animation production (receiving a drawing of just an arm outline). B's response is an amused, laughing reaction to the comedic punchline of A's story.",
       "trigger": "A recounting the funny anecdote of Bart Simpson spending $300 on an animation cel only to receive a drawing of a single arm outline.",
-      "why_delivery_matters": "The delivery must capture spontaneous amusement in response to a joke, with audible laughter actively coloring the articulation of the words rather than just being spoken cleanly.",
       "why_context_matters": "In isolation, 'It's so fun' is a generic, mild endorsement of an activity (like playing a game). Only the prior joke grounds it as a direct, reactionary expression of laughter and amusement."
     },
     "clips": [
@@ -1662,7 +849,6 @@
       "what_it_should_be": "Disgusted",
       "why": "B's question is not one of genuine scientific curiosity. Because A has just described the mold as 'rancid' and growing a 'whole new terrain of fuzz', B's observation about the color 'aqua' is an expression of morbid revulsion at something grotesque.",
       "trigger": "A's visceral description of the rancid burger growing new fuzzy terrains, establishing the object as extremely putrid.",
-      "why_delivery_matters": "To convey disgust, the voice must sound physically pinched, as if reacting to a bad smell. The emphasis on 'aqua' highlights the unnatural, gross nature of the mold.",
       "why_context_matters": "Without knowing the object being discussed is a putrid, rotting hamburger, this question could easily be interpreted as genuine, neutral curiosity about biology."
     },
     "clips": [
@@ -1718,7 +904,6 @@
       "what_it_should_be": "Surprised",
       "why": "B has just casually dropped a shocking statistic—that they have suffered eight concussions. A's 'Really?' is a reaction of genuine shock and disbelief to this abnormally high number, immediately followed by a need to understand how it happened.",
       "trigger": "B's casual disclosure of having had eight concussions.",
-      "why_delivery_matters": "The stretched out, high-pitched 'Really' signals disbelief and astonishment, while the energetic follow-up shows an urgent need to make sense of the shocking information.",
       "why_context_matters": "The word 'Really?' is highly context-dependent; it can be used for mild backchanneling, sarcasm, or profound shock. Only the preceding revelation of eight concussions dictates that this must be delivered with strong, genuine surprise."
     },
     "clips": [
@@ -1774,7 +959,6 @@
       "what_it_should_be": "Happy",
       "why": "B has just suggested a food truck called 'La Guardia' with an airplane food theme, which A finds delightful and amusing. The response is one of genuine excitement and appreciation.",
       "trigger": "B's specific recommendation of a quirky, airplane-themed food truck.",
-      "why_delivery_matters": "The enthusiasm for the quirky food truck must be conveyed through an energetic and bright prosody. If read neutrally, it loses the spontaneous feeling of delight.",
       "why_context_matters": "Without context, 'I love that' could be interpreted as sarcastic (if the preceding idea was terrible) or as merely polite, mild agreement. The context of a fun, quirky recommendation locks it to genuine, bubbly happiness."
     },
     "clips": [
@@ -1830,7 +1014,6 @@
       "what_it_should_be": "Angry",
       "why": "B just insulted A by calling them 'impaired' for allegedly driving below the speed limit. A repeats the insult with seething, defensive anger, signaling that a line has been crossed.",
       "trigger": "B's direct insult: 'you clearly are impaired if you think you were going the speed limit.'",
-      "why_delivery_matters": "The tense, controlled delivery conveys simmering rage and offense. A casual or breezy delivery would fail to capture A's defensive hostility.",
       "why_context_matters": "Out of context, 'Oh, you think I'm impaired. Okay' could be a neutral acknowledgment of a medical opinion, or mild, unbothered confusion. The context of a heated insult makes it seethingly angry."
     },
     "clips": [
@@ -1866,7 +1049,6 @@
       "what_it_should_be": "Projected",
       "why": "The context establishes that Speaker A is delivering a lecture to a large classroom of freshmen. To interrupt the professor from a seat in the audience, Speaker B must project their voice across the room.",
       "trigger": "Speaker A's opening monologue establishing a formal lecture setting addressed to a large group ('Hello, everybody!', 'Most of you guys are freshmen').",
-      "why_delivery_matters": "The words must be delivered with enough acoustic power and projection to be heard over the space of a lecture hall, rather than spoken softly.",
       "why_context_matters": "Without the context of a large lecture hall, this question could be asked at a normal or quiet conversational volume (e.g., walking up to a desk). The prior context dictates it must be projected."
     },
     "clips": [
@@ -1922,7 +1104,6 @@
       "what_it_should_be": "Awe",
       "why": "B is acting as the engaged listener to A's vivid storytelling. Having just heard an immersive description of finding hidden amphibians under rocks and in ponds, B's response is one of genuine wonder and fascination, not just polite conversational acknowledgment.",
       "trigger": "A's detailed, picturesque description of turning over rocks and looking in waters to find toads, frogs, salamanders, and newts.",
-      "why_delivery_matters": "To convey genuine amazement rather than casual agreement, the delivery needs to be drawn out and infused with a breathy, captivated quality that reflects being immersed in the story.",
       "why_context_matters": "Out of context, 'That's so cool' is heavily ambiguous and frequently functions as a low-energy conversational filler or even a dismissive remark. The prior captivating description of nature locks it to genuine awe."
     },
     "clips": [
@@ -1978,7 +1159,6 @@
       "what_it_should_be": "Desire",
       "why": "A and B are bonding over deeply nostalgic, visceral smells. B's response is a profound, sensory sigh of agreement and craving for the smell of heated leather, rather than a generic expression of upbeat happiness.",
       "trigger": "A's indulgent description of how incredible leather smells when it heats up.",
-      "why_delivery_matters": "To convey sensory craving and deep nostalgic appreciation, the delivery must be slow and breathy. High pitch or fast tempo would sound like energetic excitement, which is wrong for this sensory context.",
       "why_context_matters": "Out of context, 'I love it' is typically associated with high-energy joy or upbeat enthusiasm. Only the prior discussion of intimate, nostalgic smells grounds it as a deep, sensual craving."
     },
     "clips": [
@@ -2034,7 +1214,6 @@
       "what_it_should_be": "Calm",
       "why": "A is actively de-escalating B's sudden, fearful panic about a bee. After a mild initial startle, A realizes it is just pollen and uses a relaxed, reassuring tone to counter B's alarm and signal that they are safe.",
       "trigger": "B's sudden, urgent warning that a bee is circling right around A's head.",
-      "why_delivery_matters": "The prosodic shift from the mild startle of 'Whoa' to the low, relaxed 'Okay' is the exact mechanism by which A signals that everything is fine and de-escalates the tension.",
       "why_context_matters": "Without B's panicked warning, this text could be interpreted as an annoyed complaint about getting pollen on oneself or a neutral observation. The context of a false alarm requires the delivery to be actively reassuring."
     },
     "clips": [
@@ -2062,7 +1241,6 @@
       "what_it_should_be": "Sleepy",
       "why": "Based on the taxonomy, 'Sleepy' is the closest fit for extreme physical fatigue. B has just finished a grueling event, resulting in heavy panting and muscle exhaustion rather than literal sleepiness.",
       "trigger": "A's opening statement 'Oh, we made it', which establishes they have just crossed the finish line of a major physical challenge.",
-      "why_delivery_matters": "The physical toll must be conveyed through breathiness and a dragged-out delivery. 'Whew' should sound like a nonverbal exhalation of exhaustion, not a crisply articulated word.",
       "why_context_matters": "Without the context of having just finished a race, 'legs turning to Jell-O' is often a metaphor for fear or stage fright. The context explicitly locks the emotion to severe post-workout physical fatigue."
     },
     "clips": [
@@ -2098,7 +1276,6 @@
       "what_it_should_be": "narration",
       "why": "The conversation is explicitly framed as telling a children's story. B's 'Uh oh' builds anticipation for a conflict. A's statement is the dramatic reveal of that conflict, which must be delivered with theatrical storytelling flair rather than as a dry fact.",
       "trigger": "Speaker A's setup of a Frog and Toad adventure and the suspenseful detail that Toad noticed something different about the coat, prompting B's anticipatory 'Uh oh'.",
-      "why_delivery_matters": "In a storytelling context, revealing the central problem requires an engaging, performative delivery to capture the audience's attention and emphasize the gravity of the situation for the characters.",
       "why_context_matters": "Out of context, 'Frog was missing a button' is a simple, mundane observation. The preceding storytelling setup and the suspenseful 'Uh oh' uniquely position it as the inciting incident of a narrative."
     },
     "clips": [
@@ -2134,7 +1311,6 @@
       "what_it_should_be": "Sympathetic / Sympathetic-Sad",
       "why": "Speaker A has just vulnerably admitted a 'silly' mistake—leaving their phone at home—and is asking for manual directions. B responds with a reassuring, comforting idiom to alleviate A's embarrassment and stress.",
       "trigger": "A's anxious admission of feeling silly for leaving their phone on the charger and needing to write down physical directions.",
-      "why_delivery_matters": "To convey genuine reassurance, the delivery must be warm and comforting. A fast or flat delivery would sound dismissive rather than empathetic.",
       "why_context_matters": "Without the context of A's embarrassment, this common idiom could easily be delivered as a dismissive, rushed, or even sarcastic platitude. The specific situational context demands sincere sympathy."
     },
     "clips": [
@@ -2190,7 +1366,6 @@
       "what_it_should_be": "bored",
       "why": "The number 81 indicates A is further back in the queue than B (who is 72), meaning an even longer wait. The 'Ugh' must be a weary sigh of under-stimulation and resignation, not sharp disgust.",
       "trigger": "B revealing they are number 72 and asking A for their queue number while both are trapped in a slow-moving DMV line.",
-      "why_delivery_matters": "To convey boredom, the interjection must be a deflated sigh rather than a sharp grunt, and the number must sound weary rather than like an objective fact.",
       "why_context_matters": "Without knowing they are comparing queue numbers in a slow waiting room, 'Ugh, 81' could be disgust at a price, a high temperature, or a bad grade. The specific context of the DMV line locks it into bored resignation."
     },
     "clips": [
@@ -2246,7 +1421,6 @@
       "what_it_should_be": "fast",
       "why": "The passenger is rapidly firing off alternate street names to bypass a construction delay. B's confirmation must be spoken with the same rapid, tense clip to maintain the frantic momentum of the urgent detour.",
       "trigger": "The realization that La Brea has construction, prompting A to frantically map out an improvised detour via Washburn.",
-      "why_delivery_matters": "A casual, slow delivery would completely undermine the stressful, time-sensitive nature of navigating a detour while rushing to a hospital for a birth. The rapid clip signals alert urgency.",
       "why_context_matters": "Without context, this is a mundane navigation confirmation. Context demands high speed and tension because every second counts for the passenger."
     },
     "clips": [
@@ -2255,202 +1429,6 @@
       "c_7dc7eb84a76a.opus",
       "c_fd779caf6f8c.opus",
       "c_e043db6bf2db.opus"
-    ]
-  },
-  {
-    "trial_id": "t045",
-    "item_id": "espresso_em_0016",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Oh, I swear, we were just about rolling on the floor after he left."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh my goodness. Oh my goodness."
-      },
-      {
-        "speaker": "A",
-        "text": "He was so professional. He had his tie perfectly buttoned. He was so just on it. He answered every question just on the ball."
-      },
-      {
-        "speaker": "B",
-        "text": "Every question."
-      },
-      {
-        "speaker": "A",
-        "text": "It was just like so put together, like his internal monologue was like, I nailed this. I nailed this. I'm going to get hired. And then and then he's like, pleasure to meet you. Pleasure to meet you, gentlemen. And then and then he's so confident. He walks to the door, opens it is like right in the closet. Oh, it was rich."
-      }
-    ],
-    "target_text": "I don't think I've seen that many clothes fall down.",
-    "target_speaker": "B",
-    "reference_clip": "c_721b1582711b.opus",
-    "intent": {
-      "what_it_should_be": "Laughing",
-      "why": "Speaker A has just reached the hilarious climax of their story about a professional job candidate mistakenly walking into a closet. B's response is an amused reaction to the mental image of the clothes falling on the candidate, which requires a laughing delivery consistent with the conversation's style.",
-      "trigger": "A's detailed description of the highly confident candidate opening the wrong door and walking directly into a closet.",
-      "why_delivery_matters": "To convey shared amusement, the utterance needs to sound like the speaker is actively suppressing or expressing laughter. A dry delivery would kill the comedic momentum established by A's story.",
-      "why_context_matters": "Without the context of the workplace mishap, this statement could simply be a neutral, factual observation (e.g., at a laundromat or about a messy room). The preceding story transforms it into a humorous reaction."
-    },
-    "clips": [
-      "c_bcb5fb1d9a23.opus",
-      "c_b5883a8d0361.opus",
-      "c_2bacd51287d6.opus",
-      "c_db04da32315b.opus",
-      "c_e74b5f3edf43.opus"
-    ]
-  },
-  {
-    "trial_id": "t046",
-    "item_id": "espresso_em_0065",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Uhhh..."
-      },
-      {
-        "speaker": "A",
-        "text": "Marie, I'm so sorry for the smell. I found the source. It's my fault. I'm so sorry. I used the Instapot the other day, and by the other day, I mean three to four days ago, and forgot to clean it. Forgot to clean it. There's chicken water in the bottom here."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, are you sure that was three to four days ago? Cause, oh, I'm pretty sure it was like five to six because that is, that is rancid."
-      },
-      {
-        "speaker": "A",
-        "text": "It's been sitting in the sun. It's been sitting in the sun. Yeah, yeah."
-      }
-    ],
-    "target_text": "Ugh, what did you cook in there?",
-    "target_speaker": "B",
-    "reference_clip": "c_c2315433148f.opus",
-    "intent": {
-      "what_it_should_be": "Disgusted",
-      "why": "A has just confirmed the rotting, foul-smelling chicken water has been sitting in the sun. B's question is not out of culinary curiosity, but morbid disgust at the resulting rancid smell.",
-      "trigger": "A's disclosure that the uncleaned Instapot with old chicken water has been 'sitting in the sun'.",
-      "why_delivery_matters": "The 'Ugh' must sound viscerally repulsed. The nasal or pinched tone physically reflects someone trying not to smell something terrible.",
-      "why_context_matters": "Without the context of the rotting food, 'what did you cook in there?' is a standard, neutral culinary question."
-    },
-    "clips": [
-      "c_93d9bb56b7db.opus",
-      "c_6a68f0d53944.opus",
-      "c_73e24d8f3f53.opus",
-      "c_b062f0a4bf74.opus",
-      "c_6ebea3f25bd2.opus"
-    ]
-  },
-  {
-    "trial_id": "t047",
-    "item_id": "espresso_em_0033",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Oh, I remember. They said that they'd taken off all the stingers off the stingrays, so it was okay that we would pet them. That makes sense now."
-      },
-      {
-        "speaker": "B",
-        "text": "Mmm."
-      },
-      {
-        "speaker": "B",
-        "text": "Did you see any like colorful like sea urchins while you were in the tide pools?"
-      },
-      {
-        "speaker": "A",
-        "text": "we couldn't reach the sea urchins they were in the middle but we could also pick up starfish like you were saying the starfish could move it didn't really look like the starfish the starfish could move while we were there because they were pretty much just sitting on the bottom of the tide pool but but but i could pick one up and put it in my hand and i could put it in a new place and it was like it moved to that place if i moved it for it for it"
-      },
-      {
-        "speaker": "B",
-        "text": "Wonderful! Did you see any crabs?"
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, they had them behind some glass near the tide pool. They had all different kinds of crabs, and my favorite was the spider crab, and I want to see it again today because it has really long legs, and it looks like a spider, but it's also a crab, and it lives at the bottom of a dark, deep ocean where it's"
-      },
-      {
-        "speaker": "B",
-        "text": "Isn't the spider crab really big?"
-      },
-      {
-        "speaker": "A",
-        "text": "It's really big. It's bigger than all the other crabs."
-      }
-    ],
-    "target_text": "Holy cow! I didn't know that!",
-    "target_speaker": "B",
-    "reference_clip": "c_d08772d0dc2f.opus",
-    "intent": {
-      "what_it_should_be": "Surprised",
-      "why": "B is reacting with enthusiastic, supportive amazement to a fun fact shared by the child, validating their knowledge.",
-      "trigger": "A's proud statement that the spider crab is \"bigger than all the other crabs.\"",
-      "why_delivery_matters": "The delivery must convey performative, delighted wonder rather than genuine alarm or flat acknowledgment, which requires an exaggerated and warm pitch contour.",
-      "why_context_matters": "Without context, 'Holy cow!' could express fear, anger, or actual shock at bad news. In this parent-child context, it is explicitly a performative, delighted surprise meant to encourage the child."
-    },
-    "clips": [
-      "c_5d024e590da1.opus",
-      "c_5266cb4b8d0c.opus",
-      "c_18831366ab70.opus",
-      "c_ec7a5bd6903b.opus",
-      "c_192927715802.opus"
-    ]
-  },
-  {
-    "trial_id": "t048",
-    "item_id": "espresso_em_0077",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I got the job. I got the job. I did. I did. They called me at my other job and I got to quit today. I got to give them my two weeks notice."
-      },
-      {
-        "speaker": "B",
-        "text": "No way!"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh my gosh. Oh my gosh. What do you want to do? What's the first thing you want to do? You're home. Now you're safe. So we could do anything you want. We can literally change. We could do anything."
-      },
-      {
-        "speaker": "A",
-        "text": "Let's go to the ice cream shop, yeah, on the corner of Kenneth. And we'll also, I really, really want to just go to Firefly. Have you been there yet? It's that cute little restaurant. It's so nice. It's so expensive, but it's so fancy."
-      },
-      {
-        "speaker": "B",
-        "text": "It doesn't matter. Everything's on me tonight. I'm so excited."
-      },
-      {
-        "speaker": "A",
-        "text": "No, everything gets to be on me because I'm going to make a lot more money now."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh my god, tell me all about it, please. I need to know everything."
-      },
-      {
-        "speaker": "A",
-        "text": "okay six-figure salary right like yeah i know i know like not even just a hundred though like in the 200k region i'm not gonna say specifics but it's like life-changing money okay"
-      }
-    ],
-    "target_text": "So from Brooklyn to Manhattan, here we come!",
-    "target_speaker": "B",
-    "reference_clip": "c_e3c2d5e95bb9.opus",
-    "intent": {
-      "what_it_should_be": "Happy",
-      "why": "B is reacting to the revelation of A's 200k+ salary. The mention of moving from Brooklyn to Manhattan is not a simple logistical plan, but an elated, triumphant cheer recognizing their new financial freedom.",
-      "trigger": "A's disclosure of making a six-figure salary in the '200k region' which they describe as 'life-changing money'.",
-      "why_delivery_matters": "The utterance must sound like a victory cry. Emphasizing 'Manhattan' highlights the lifestyle upgrade, and a cheering rhythm conveys the shared elation.",
-      "why_context_matters": "Without context, this could simply be a mundane statement about a commute or a neutral moving announcement. The context of suddenly acquiring 'life-changing money' makes it an exuberant celebration."
-    },
-    "clips": [
-      "c_a2680b3d23aa.opus",
-      "c_4af25523a3a1.opus",
-      "c_6f1def90b6da.opus",
-      "c_1f2082adedf9.opus",
-      "c_e19d8cb7c2f7.opus"
     ]
   },
   {
@@ -2498,7 +1476,6 @@
       "what_it_should_be": "Angry",
       "why": "B, in a hostile tone, mockingly offers to 'fix' A's car right there to avoid dealing with insurance. A's response is an explosive, sarcastic repetition driven by furious disbelief at B's audacity.",
       "trigger": "B's unrealistic and condescending offer to just 'fix it for you' right in the middle of their bitter argument over a car crash.",
-      "why_delivery_matters": "The delivery must reflect aggressive mockery. If spoken with warm or positive prosody, the meaning of the utterance flips entirely to genuine gratitude.",
       "why_context_matters": "Read in isolation, 'Oh, you'll fix it for me!' is a textbook expression of happy relief or gratitude. Only the context of a bitter, hostile argument twists it into angry, sarcastic disbelief."
     },
     "clips": [
@@ -2507,566 +1484,6 @@
       "c_b79c7a1cab41.opus",
       "c_82d2addb95a8.opus",
       "c_30eb3a22b1f1.opus"
-    ]
-  },
-  {
-    "trial_id": "t050",
-    "item_id": "espresso_em_0117",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "B",
-        "text": "7.05!"
-      },
-      {
-        "speaker": "A",
-        "text": "7.05. We got a 7.05. Anybody want a 7.10? 7.10. Anywhere I see it, 7.10. I see a 7.10. Man in the back, you got an up? You want to up it?"
-      },
-      {
-        "speaker": "B",
-        "text": "7.30."
-      },
-      {
-        "speaker": "A",
-        "text": "7.30, 7.30, we got a 7.30. And sold to the man in the back for 7.30."
-      },
-      {
-        "speaker": "B",
-        "text": "Woo! Yeah!"
-      },
-      {
-        "speaker": "A",
-        "text": "Amazing. Any questions about this item in particular, sir, that you've just purchased?"
-      },
-      {
-        "speaker": "B",
-        "text": "Uh, I'm good."
-      },
-      {
-        "speaker": "A",
-        "text": "You're good, you won it, perfect. All right, next in the queue, we've got a bunch of kitten toys, primarily, it's yarn made from the wool of sheep in Peru, so it's very expensive wool, that's why we're starting the bidding at $100. Now, $100 for this kitten yarn, where can I see? Anybody wanna start the bidding at $100?"
-      }
-    ],
-    "target_text": "$100 right here.",
-    "target_speaker": "B",
-    "reference_clip": "c_fd99e20f779b.opus",
-    "intent": {
-      "what_it_should_be": "projected",
-      "why": "B is the bidder situated at the back of the room. He must shout his opening bid to be heard and recognized by the auctioneer at the front. The delivery must be loud and thrown across the space.",
-      "trigger": "A's prompt to the room asking, 'Anybody wanna start the bidding at $100?'",
-      "why_delivery_matters": "Because B is physically distant from A, the utterance requires the acoustic markers of shouting—specifically increased volume and elongated syllables to ensure the bid is registered.",
-      "why_context_matters": "Out of context, '$100 right here' is commonly spoken quietly (e.g., pointing to an item in a store, or handing over cash to a cashier). Only the established context of being a bidder 'in the back' makes a loud projection essential."
-    },
-    "clips": [
-      "c_0e10f81ac2ac.opus",
-      "c_f743b55d0e27.opus",
-      "c_72aa44118200.opus",
-      "c_e8e3154d846a.opus",
-      "c_f254f7afb5f2.opus"
-    ]
-  },
-  {
-    "trial_id": "t051",
-    "item_id": "espresso_em_0052",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Annie, look! It's... Is that..."
-      },
-      {
-        "speaker": "A",
-        "text": "Are you kidding me? Is that..."
-      },
-      {
-        "speaker": "A",
-        "text": "Aunt Sheila?"
-      },
-      {
-        "speaker": "B",
-        "text": "Wow, Aunt Sheila, you look incredible."
-      },
-      {
-        "speaker": "B",
-        "text": "I love what you've done with your hair. It really suits you. That red really looks nice with your skin tone, yeah."
-      },
-      {
-        "speaker": "A",
-        "text": "It looks like they did a perfect color match for your skin tone too, because sometimes reds can be too brassy, and they can have too much brown in them, so then they become mousy, but this is just phenomenal."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, it looks like it's almost natural. Super authentic and beautiful with all of your skin tone. And did you do your makeup differently? It looks so nice on you. I love what you've done. You look so confident and happy."
-      }
-    ],
-    "target_text": "Oh my gosh. Annie, she has eyelash extensions.",
-    "target_speaker": "A",
-    "reference_clip": "c_c4b8d79c62fa.opus",
-    "intent": {
-      "what_it_should_be": "Awe",
-      "why": "A is discovering another layer to Aunt Sheila's dramatic transformation. In a different context, noticing eyelash extensions could be a casual observation, catty gossip, or a neutral fact. Here, grounded in the continuous marveling at her glow-up, it is an exclamation of pure awe and wonder.",
-      "trigger": "The ongoing realization of how much Aunt Sheila has transformed her appearance, specifically following B's observation about her new makeup and confident aura.",
-      "why_delivery_matters": "The delivery needs to convey the shock of visual discovery. A breathless, wide-pitch delivery separates it from a dry, factual statement of someone's cosmetic choices.",
-      "why_context_matters": "Text alone is just a factual observation about cosmetics. The prior conversational build-up locks this utterance into a breathless revelation of awe."
-    },
-    "clips": [
-      "c_4d6597b27b83.opus",
-      "c_fbd1ef38facc.opus",
-      "c_2ae538255764.opus",
-      "c_8218e6c40feb.opus",
-      "c_f89a9894a425.opus"
-    ]
-  },
-  {
-    "trial_id": "t052",
-    "item_id": "espresso_em_0064",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "So I was just about to ask you the same thing. Did you ride Western or English?"
-      },
-      {
-        "speaker": "B",
-        "text": "I did dressage for many years. So yeah, I did like super competitive, eventually dressage. I miss it so much."
-      },
-      {
-        "speaker": "A",
-        "text": "Wow, that's so disciplined."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, how about you?"
-      },
-      {
-        "speaker": "A",
-        "text": "Mostly. So I did equestrian, so I mostly did English saddle because that's how I was raised. So I wrote English and I would do jumping. Yeah."
-      },
-      {
-        "speaker": "B",
-        "text": "I was always a little too scared to jump. I always really wanted to not be scared, but I was always a little too intimidated by the really high ones after we'd get to a certain level."
-      },
-      {
-        "speaker": "A",
-        "text": "I have to ask you this too, just because if I don't, I'll be remiss if I don't. Have you ever been thrown?"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, more times than I can count. Yeah. I think I've lost track after like the fifth one. And then, yeah. But I've gotten to the place."
-      }
-    ],
-    "target_text": "Tell me your worst.",
-    "target_speaker": "A",
-    "reference_clip": "c_aaf675c28774.opus",
-    "intent": {
-      "what_it_should_be": "Desire",
-      "why": "A is expressing an eager craving to hear B's most dramatic story about falling off a horse. In the context of the 'desire' style, this is an intense anticipation of a highly engaging and thrilling story.",
-      "trigger": "B's disclosure that they have been thrown off a horse 'more times than I can count' and lost track after the fifth time.",
-      "why_delivery_matters": "The prosody must reflect enthusiastic anticipation. A hushed, excited delivery signals that the speaker is eagerly craving a juicy story, not making a hostile demand.",
-      "why_context_matters": "Without the storytelling context, 'Tell me your worst' closely resembles a hostile, defiant challenge (like 'do your worst') or a grave request for bad news. Only the shared, friendly exchange about riding accidents makes it an expression of eager desire for a story."
-    },
-    "clips": [
-      "c_42f55104ad40.opus",
-      "c_4bbd7b201da8.opus",
-      "c_774f3caf3796.opus",
-      "c_6e38f9c66095.opus",
-      "c_f1f4da66e5ce.opus"
-    ]
-  },
-  {
-    "trial_id": "t053",
-    "item_id": "espresso_em_0058",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Wow, being by the ocean like this makes me feel really small and tiny and unimportant."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, well, you're very important, so..."
-      },
-      {
-        "speaker": "A",
-        "text": "It's a good unimportant, you know?"
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah. Well, like we fit into everything."
-      }
-    ],
-    "target_text": "Yeah, like we were part of all of it, yeah.",
-    "target_speaker": "A",
-    "reference_clip": "c_abf74cc70dc1.opus",
-    "intent": {
-      "what_it_should_be": "Calm",
-      "why": "B has just noted that feeling small by the ocean means 'we fit into everything.' A agrees, reflecting on their deep connection to the universe. This requires a serene, philosophical, and meditative delivery, matching the tranquil realization of being connected to nature.",
-      "trigger": "B's philosophical realization that their smallness means they 'fit into everything' in the context of the vast ocean.",
-      "why_delivery_matters": "The delivery needs to sound expansive yet quiet, reflecting the peaceful awe and surrender of feeling connected to the vast ocean.",
-      "why_context_matters": "Out of context, being 'part of all of it' is vague and could just be a casual confirmation of being involved in a group project or event. The oceanic context gives it profound philosophical weight."
-    },
-    "clips": [
-      "c_cc9dd9e33f63.opus",
-      "c_a0ec07b65178.opus",
-      "c_cd6d6b136682.opus",
-      "c_f85cd1f1f7ee.opus",
-      "c_eb230cab1cdb.opus"
-    ]
-  },
-  {
-    "trial_id": "t054",
-    "item_id": "espresso_em_0097",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Last night was a lot of fun, but my voice is shot today."
-      },
-      {
-        "speaker": "B",
-        "text": "Hmm. Hmm."
-      },
-      {
-        "speaker": "B",
-        "text": "Tell me about it."
-      },
-      {
-        "speaker": "B",
-        "text": "I don't really smoke cigars too often, but so much alcohol makes you make choices."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, I'd never smoked a cigar before. I didn't know you were supposed to not inhale fully."
-      },
-      {
-        "speaker": "B",
-        "text": "Hmm. Hmm."
-      }
-    ],
-    "target_text": "I mean, neither. Today's gonna be brutal.",
-    "target_speaker": "B",
-    "reference_clip": "c_f421f0aebedb.opus",
-    "intent": {
-      "what_it_should_be": "Sleepy",
-      "why": "The conversation establishes that both speakers are suffering the physical aftermath of heavy drinking and improperly smoking cigars. B's realization that the day will be 'brutal' stems from profound physical exhaustion and a hangover, demanding a highly fatigued, low-energy delivery.",
-      "trigger": "A's admission of fully inhaling cigar smoke and B's shared realization of their mutual hangover and vocal damage from the night before.",
-      "why_delivery_matters": "The delivery must convey the physical grogginess and depletion of a hangover. A sharp or energetic delivery of 'brutal' would contradict the physically drained state the speakers are in.",
-      "why_context_matters": "Without the prior context establishing a severe hangover from alcohol and cigars, 'Today's gonna be brutal' could easily be interpreted as high-energy anxiety or frustrated dread about a busy schedule. The context uniquely restricts it to lethargic fatigue."
-    },
-    "clips": [
-      "c_c91614ce0d2f.opus",
-      "c_148b64945634.opus",
-      "c_85d7361f5ae3.opus",
-      "c_e02b9f04bd12.opus",
-      "c_94c998066e47.opus"
-    ]
-  },
-  {
-    "trial_id": "t055",
-    "item_id": "espresso_em_0047",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I'm going to be telling you the story of Santa Claus."
-      },
-      {
-        "speaker": "A",
-        "text": "Have you heard of Santa Claus before?"
-      },
-      {
-        "speaker": "B",
-        "text": "Uh huh."
-      },
-      {
-        "speaker": "A",
-        "text": "Great, what do you know about Santa?"
-      },
-      {
-        "speaker": "B",
-        "text": "Well, he brings me presents at Christmas time."
-      },
-      {
-        "speaker": "A",
-        "text": "This is very true. Do you know how he brings you presence?"
-      },
-      {
-        "speaker": "B",
-        "text": "Um, does he use... does he use a sleigh?"
-      }
-    ],
-    "target_text": "He uses a sleigh and eight reindeer, led by Rudolph.",
-    "target_speaker": "A",
-    "reference_clip": "c_4c84f685f37d.opus",
-    "intent": {
-      "what_it_should_be": "narration",
-      "why": "A is confirming B's tentative guess and expanding on it with classic lore. The tone needs to be validating, encouraging, and illustrative, leading the listener deeper into the story.",
-      "trigger": "B's hesitant guess asking 'does he use a sleigh?'",
-      "why_delivery_matters": "The prosody must reward the listener's correct guess while smoothly introducing new magical elements, requiring the warmth and deliberate pacing of a seasoned narrator.",
-      "why_context_matters": "In isolation, this is a simple statement of fact. In context, it functions as an interactive, validating beat in a storytelling session, requiring the speaker to sound encouraging and captivating."
-    },
-    "clips": [
-      "c_7039a12ba8c1.opus",
-      "c_28258e633af1.opus",
-      "c_adb622c36fdb.opus",
-      "c_196648ee40c8.opus",
-      "c_a9137f9fca16.opus"
-    ]
-  },
-  {
-    "trial_id": "t056",
-    "item_id": "espresso_em_0017",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "B",
-        "text": "That was crazy. I've never seen anything like it."
-      },
-      {
-        "speaker": "A",
-        "text": "I mean, first off, to turn an elementary school stage into the interior of an airplane, like, that was just the sheer ambition of that. And the way they created those little windows, oh my goodness."
-      },
-      {
-        "speaker": "B",
-        "text": "Ambition is a word for it."
-      },
-      {
-        "speaker": "A",
-        "text": "And then they took that set off, and then they replicated the airfield, and they had those explosions. It was like, remember those little orange curtains? They reenacted the explosions."
-      },
-      {
-        "speaker": "B",
-        "text": "It was the way the kids grabbed the curtains and just tried to throw them up, but they couldn't do it."
-      },
-      {
-        "speaker": "A",
-        "text": "I just can't. Oh, and then the kid, the kid who played Danny Trejo's character. You know, I mean, obviously they, you know, they couldn't, you know, they couldn't get into the fact that he was a rapist because it's, you know, children. But but the way the way they. Oh, my God. The way he played that. Oh, my God. Oh, my God."
-      },
-      {
-        "speaker": "B",
-        "text": "I thought that kid studied hard, I can tell you that."
-      },
-      {
-        "speaker": "A",
-        "text": "The way they modified the dialogue. They call me Johnny 23. I got 23 apples on my arm for the 23 candy bars I stole. Someday these kids, they're going to be old enough to watch the movie and then they're going to put it together what they were parodying and they're going to be like, whoa."
-      }
-    ],
-    "target_text": "Whose decision was it to put on Con Air Kindergarten Edition?",
-    "target_speaker": "B",
-    "reference_clip": "c_83d23113952c.opus",
-    "intent": {
-      "what_it_should_be": "Laughing",
-      "why": "The conversation consists of A and B cracking up over the absurdity of a kindergarten class performing an R-rated action film with childish modifications. B's question is an expression of humorous disbelief and amusement, not a genuine administrative inquiry.",
-      "trigger": "A's description of the absurdly modified script where the hardened criminal 'Johnny 23' is instead in prison for stealing 23 candy bars.",
-      "why_delivery_matters": "To convey the hilarity of the situation, the delivery must sound like the speaker is struggling to contain their laughter at the sheer absurdity of the concept.",
-      "why_context_matters": "Without knowing the preceding humorous context of the bizarre play, the text sounds like a serious, potentially angry or confused question about a poor administrative choice."
-    },
-    "clips": [
-      "c_2cd11b29676e.opus",
-      "c_2518decec492.opus",
-      "c_a182caa807fc.opus",
-      "c_224b56518159.opus",
-      "c_e8e65a57ad0f.opus"
-    ]
-  },
-  {
-    "trial_id": "t057",
-    "item_id": "espresso_em_0067",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "oh lord have mercy on my soul she just uh she just threw a uh out a bedpan uh we almost got covered in the the bedpan contents there's there's there's actual there's actual feces in there"
-      },
-      {
-        "speaker": "B",
-        "text": "Uh..."
-      },
-      {
-        "speaker": "A",
-        "text": "And it's, uh, it's liquid. It's liquidy."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, Jess, I'm so sorry to tell you, but it's all down your back."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh my god. Ew. Ew. Ew. Ew. It's in your hair. Ew. Ew. Ew."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh my god, you smell... It smells like... It smells like..."
-      },
-      {
-        "speaker": "A",
-        "text": "It smells like that's been sitting there for a really long, long time."
-      }
-    ],
-    "target_text": "Oh, it's squishing in my shoes. Oh, is it in yours?",
-    "target_speaker": "B",
-    "reference_clip": "c_15bc38c0396e.opus",
-    "intent": {
-      "what_it_should_be": "Disgusted",
-      "why": "The conversation has established that the speakers are covered in old, liquid feces. The physical sensation of 'squishing' refers specifically to stepping in this fecal matter, necessitating an expression of extreme physical revulsion.",
-      "trigger": "The ongoing realization that the foul-smelling, liquid feces from the bedpan is thoroughly covering them and their clothing.",
-      "why_delivery_matters": "The word 'squishing' needs to carry the tactile horror of the feces. A pinched, recoiling voice reflects the speaker's physical aversion to the sensation.",
-      "why_context_matters": "Without the feces context, 'squishing in my shoes' could simply mean the speaker stepped in a rain puddle or mud. Only the prior context makes it an event of profound, sickening disgust."
-    },
-    "clips": [
-      "c_fe6bdcf9c96f.opus",
-      "c_9082fdc747f5.opus",
-      "c_f2aee1a9bdd3.opus",
-      "c_4474bdd202f4.opus",
-      "c_4614aae0ec53.opus"
-    ]
-  },
-  {
-    "trial_id": "t058",
-    "item_id": "espresso_em_0108",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I have to say watching the Olympics, my personal favorite sport is the equestrian sports where it's yeah, because it's it's open gender. So you have both men and women competing against each other and you get a horse involved. So it's like two athletes in one. And it's wild. They jump over crazy stuff."
-      },
-      {
-        "speaker": "B",
-        "text": "Really?"
-      },
-      {
-        "speaker": "B",
-        "text": "Okay. I mean, not to be a downer in this conversation. Um, no, I'm not, I'm not, I'm not an expert on this, but I, I've, I've, I've heard, I've heard there, you know, complaints that a lot of horses are abused in that sport. And there's, you know, there's like, there's petitions to, you know, remove that from the Olympics. I, I, again, I, I, I wasn't there. I don't know anything about it, but I'd, I'd be a little bit wary of that. So..."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, there was the controversy of that one rider, like, hitting her horse at the triathlon or whatever, the three event. Yeah, yeah, yeah. I remember that."
-      },
-      {
-        "speaker": "B",
-        "text": "It sounds familiar, yeah."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, I think that was just one example of many, but again, that's not my area of expertise. But, I mean, if you're talking about what sport is the most engaging to watch, wrestling. There's nothing more edge of your seat than two people who want it more badly than anything in the world going at it, trying to get the other guy on his back. Like, that's just... There's nothing more..."
-      },
-      {
-        "speaker": "A",
-        "text": "I agree with you. I totally agree with you. And I'm going to actually one-up it. And I'm going to say that sumo wrestling might be the most interesting sport to watch out of all the different ones. Sumo wrestling. It's like wrestling..."
-      }
-    ],
-    "target_text": "Sumo wrestling?",
-    "target_speaker": "B",
-    "reference_clip": "c_7dcad2ac008b.opus",
-    "intent": {
-      "what_it_should_be": "Surprised",
-      "why": "A claims that out of all sports, sumo wrestling is the most interesting to watch. B's repetition of the sport is an expression of genuine surprised disbelief at this unconventional choice.",
-      "trigger": "A unexpectedly declaring sumo wrestling as the most interesting sport, attempting to one-up regular wrestling.",
-      "why_delivery_matters": "The sharp rising intonation and wide pitch range signal surprise and disbelief. A flat delivery would sound like a mundane, neutral confirmation.",
-      "why_context_matters": "Without the context of A boldly claiming it is the 'most interesting sport', 'Sumo wrestling?' could simply be a neutral clarification of what was just said. The context turns it into a surprised reaction."
-    },
-    "clips": [
-      "c_ace285089e61.opus",
-      "c_d34f2766c133.opus",
-      "c_4bcbbfcad17f.opus",
-      "c_dc2527d20280.opus",
-      "c_2064cda04d79.opus"
-    ]
-  },
-  {
-    "trial_id": "t059",
-    "item_id": "espresso_em_0083",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Did you see that?"
-      },
-      {
-        "speaker": "A",
-        "text": "Is Benedict Cumberbatch gonna be in this? Oh my god!"
-      },
-      {
-        "speaker": "B",
-        "text": "They're adding him to the cast! They're adding him to the cast! Along with all the other actors who've played Doctor Whos!"
-      },
-      {
-        "speaker": "A",
-        "text": "And Keira Knightley! Oh my god, you were right! She is gonna be in it!"
-      },
-      {
-        "speaker": "B",
-        "text": "I love her. I've loved her since Bend It Like Beckham and then ever since she's just had an upward trajectory in her career and it's just been amazing. Oh my gosh."
-      },
-      {
-        "speaker": "A",
-        "text": "No wonder you knew that she was going to be on the docket because of this."
-      },
-      {
-        "speaker": "B",
-        "text": "She had to be. It was the best show. It's the only show that she could be on that's a leg up in her career because, like, oh my gosh, it's the best show in the world. Look who else. Look who else. It's... I can't believe it. Don Knotts? I thought he died."
-      },
-      {
-        "speaker": "A",
-        "text": "It looks like they're doing a hologram version of Don Knotts!"
-      }
-    ],
-    "target_text": "What? That's amazing! I had no idea they could do that!",
-    "target_speaker": "B",
-    "reference_clip": "c_06cd36c67682.opus",
-    "intent": {
-      "what_it_should_be": "Happy",
-      "why": "Speaker A has just revealed that the creators are doing a hologram version of a deceased actor (Don Knotts). B's reaction is one of euphoric amazement, continuing the high-energy hype established in prior turns.",
-      "trigger": "A's disclosure that a hologram version of Don Knotts is being used in the production.",
-      "why_delivery_matters": "A high-energy, elevated pitch delivery is required to convey joyful astonishment. A flat delivery would sound unimpressed, skeptical, or merely mildly surprised, missing the celebratory tone.",
-      "why_context_matters": "Without the context of the shared excited discovery of the hologram tech, this could be a polite or neutral expression of mild surprise. The established hype context demands an ecstatic, thrilled delivery."
-    },
-    "clips": [
-      "c_b48fd2d13e22.opus",
-      "c_c1dd23479cb8.opus",
-      "c_9bb6a63e3c62.opus",
-      "c_2e9592e53861.opus",
-      "c_8f0113dd5950.opus"
-    ]
-  },
-  {
-    "trial_id": "t060",
-    "item_id": "espresso_em_0095",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Mm-hmm."
-      },
-      {
-        "speaker": "B",
-        "text": "I'm so... mad!"
-      },
-      {
-        "speaker": "A",
-        "text": "Yes. Anchor."
-      },
-      {
-        "speaker": "B",
-        "text": ". . ."
-      }
-    ],
-    "target_text": "Get back at him.",
-    "target_speaker": "B",
-    "reference_clip": "c_b8a40e0db5da.opus",
-    "intent": {
-      "what_it_should_be": "Angry",
-      "why": "B has explicitly stated they are 'so... mad!'. The statement 'Get back at him.' is a direct, vindictive continuation of that established anger, not a casual suggestion.",
-      "trigger": "B's explicit declaration of intense anger ('I'm so... mad!') in the preceding turn.",
-      "why_delivery_matters": "The delivery must convey genuine resentment and tension. Forceful articulation and a tense voice reflect the visceral anger B has just declared.",
-      "why_context_matters": "Out of context, 'Get back at him' could be delivered playfully, conspiratorially, or neutrally. The prior declaration of being mad strictly requires an angry, resentful delivery."
-    },
-    "clips": [
-      "c_4ffa3d54aef2.opus",
-      "c_c545574921f2.opus",
-      "c_41837e8e4de3.opus",
-      "c_952449132f83.opus",
-      "c_b7e4a6b4a915.opus"
     ]
   },
   {
@@ -3123,7 +1540,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "Echoing a previously introduced noun phrase requires post-nuclear deaccenting to show it is already grounded in the immediate discourse.",
       "why_context_matters": "If isolated, 'low bar' would be the natural locus for nuclear stress as the sentence-final noun phrase."
     },
     "clips": [
@@ -3184,7 +1600,6 @@
           "label": "NEW"
         }
       ],
-      "why_delivery_matters": "The prosody must reflect the conversational 'ping-pong' effect of trading horror stories (my back vs. your hair).",
       "why_context_matters": "Without the context of B pointing out the mess on A's back, 'hair' would just be a generic new entity rather than an emphatic contrastive counter-point."
     },
     "clips": [
@@ -3245,7 +1660,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "Because these specific cheeses were just offered as options, they are given information. The new/exciting information is the fact that A already possesses them ('have') and the evaluation ('perfect').",
       "why_context_matters": "Without the prior turn, a TTS system would assume 'manchego' and 'cheddar' are new entities being introduced and place prominent H* accents on both."
     },
     "clips": [
@@ -3310,7 +1724,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "Because 'sport' is already active in the discourse, the prosodic prominence shifts to the adjective 'rough'. Equal stress would sound unnatural.",
       "why_context_matters": "Without the context of B talking about his sport, 'sport' would normally receive an accent as the phrase-final noun."
     },
     "clips": [
@@ -3367,7 +1780,6 @@
           "label": "NEW"
         }
       ],
-      "why_delivery_matters": "The prosodic prominence on 'Me' acknowledges A's preceding statement, while 'bottle' acts as the new focal point of the request.",
       "why_context_matters": "The emphasis on 'Me' is strictly dependent on A's immediately prior claim of needing water."
     },
     "clips": [
@@ -3432,7 +1844,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "Because both content nouns are given, they should lack pitch accents, transferring the intonational focus to the affirmation.",
       "why_context_matters": "Without B's specific question about fireflies in the summer, a TTS would natively accent these content nouns."
     },
     "clips": [
@@ -3497,7 +1908,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "The information structure pivot entirely shifts prominence away from the noun to the auxiliary verb to confirm the action.",
       "why_context_matters": "Out of context, 'honey smoked ham' is the obvious candidate for neutral broad-focus nuclear stress."
     },
     "clips": [
@@ -3506,71 +1916,6 @@
       "c_dcb101d82ea3.opus",
       "c_6f2e285dd53c.opus",
       "c_483226890d41.opus"
-    ]
-  },
-  {
-    "trial_id": "t068",
-    "item_id": "espresso_is_0071",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "B",
-        "text": "It's true, but if we're going to talk about evolution, we can't just ignore Bowie's evolution as an artist. He's got the span of all these different characters and these personas that he puts on it. And Jim Morrison, he's great, but he's got the one persona, you know? It's the Who versus Ziggy Pop versus so many different kinds of styles of music, too."
-      },
-      {
-        "speaker": "A",
-        "text": "Fair enough, you got a point there, but let me just say this. Perhaps one of the most important quotes in all of pop music, meet the new boss, same as the old boss. Now, has anyone ever uttered a more profound statement than that, that has so much relevance? Meet the new boss, same as the old boss."
-      },
-      {
-        "speaker": "A",
-        "text": "Dammit!"
-      },
-      {
-        "speaker": "A",
-        "text": "Ow."
-      },
-      {
-        "speaker": "B",
-        "text": "You make a fair point. You make a fair point. It's a good, great song. Great, great band. But man, Bowie, Bowie just, he nails it. He's got, he's got all the different songs. He's got a, each album has such a unique perspective to it that I feel like The Who, you can sometimes, you don't know which album each song came from, right? Like sometimes you hear a song and you're not sure."
-      },
-      {
-        "speaker": "A",
-        "text": "Well, look, I mean, Pete Townsend, what he did on guitar, like that's just unparalleled. And Roger Daltrey's vocals like made history. You know, that one, what was it, that one moment where there's like a minute of like, you know, instrumental kind of trancing out. And then he comes on, he's like, yeah! Yeah!"
-      },
-      {
-        "speaker": "B",
-        "text": "It's true. When you said the lead singer's name, I realized I had gotten the Doors and the Who mixed up. So that's me owning up to my own, yeah, my own misunderstanding there."
-      },
-      {
-        "speaker": "A",
-        "text": "Well, you're forgiven. If you're not a Who fan, you didn't get that joke there. It's a song. You are forgiven. You are forgiven. You are forgiven. Forgiven, forgiven. Anyway, I'm getting carried away there. Well, I'll tell you what. I'll listen to some David Bowie. We'll both inform each other's musical tastes. How's that?"
-      }
-    ],
-    "target_text": "I'm gonna listen to The Who on my way home.",
-    "target_speaker": "B",
-    "reference_clip": "c_b881816ec6bc.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — contrastive-new cooccurrence",
-      "why": "'The Who' is contrasted directly against A's statement that they will listen to David Bowie. 'home' is a newly introduced destination.",
-      "words": [
-        {
-          "word": "The Who",
-          "label": "CONTRASTIVE"
-        },
-        {
-          "word": "home",
-          "label": "NEW"
-        }
-      ],
-      "why_delivery_matters": "In parallel contrast (A listens to Bowie, B listens to The Who), the contrasting entity requires the dominant prosodic prominence.",
-      "why_context_matters": "The contrastive focus on 'The Who' is entirely dependent on A's preceding statement about listening to David Bowie."
-    },
-    "clips": [
-      "c_462e1ee4896d.opus",
-      "c_d56ff49f81f0.opus",
-      "c_4ecbeca17873.opus",
-      "c_54a64eaf0ff8.opus",
-      "c_216b918999ae.opus"
     ]
   },
   {
@@ -3627,7 +1972,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "The contrastive focus on 'chorus' combined with the deaccentuation of 'first' signals a direct correction of B's sequence.",
       "why_context_matters": "Without B's setup, 'first' would likely be accented as new information."
     },
     "clips": [
@@ -3692,7 +2036,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "Because 'concussion' is the topic just raised by A, the prosodic weight must shift entirely to B's rejection of it.",
       "why_context_matters": "Out of context, 'concussion' is the key content noun and would normally receive sentence-final nuclear stress."
     },
     "clips": [
@@ -3757,7 +2100,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "Because 'font' is already salient in the discourse, the prosodic prominence must shift leftward to the new descriptive adjective 'favorite'.",
       "why_context_matters": "Without B's prior mention of the font, a neutral reading would place the nuclear stress on the final noun, 'font'."
     },
     "clips": [
@@ -3766,47 +2108,6 @@
       "c_124692c57111.opus",
       "c_fd4583eead27.opus",
       "c_029962f7e96d.opus"
-    ]
-  },
-  {
-    "trial_id": "t072",
-    "item_id": "espresso_is_0015",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Oh, we made it."
-      },
-      {
-        "speaker": "B",
-        "text": "I feel like my legs are turning to Jell-O. Whew!"
-      }
-    ],
-    "target_text": "I could eat a tank of Jell-O right now.",
-    "target_speaker": "A",
-    "reference_clip": "c_5dad087e704a.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "B introduces 'Jell-O' in the preceding turn. A reiterates 'Jell-O', making it GIVEN, while introducing 'tank' as NEW to indicate a large quantity.",
-      "words": [
-        {
-          "word": "tank",
-          "label": "NEW"
-        },
-        {
-          "word": "Jell-O",
-          "label": "GIVEN"
-        }
-      ],
-      "why_delivery_matters": "Because 'Jell-O' is already active in the discourse, the primary stress must shift leftward onto the new entity ('tank').",
-      "why_context_matters": "Without B's prior mention, 'Jell-O' would naturally receive the primary phrase stress as the final concrete noun in the sentence."
-    },
-    "clips": [
-      "c_5e804ee534c1.opus",
-      "c_8bbe46a37dba.opus",
-      "c_70ce765f054d.opus",
-      "c_7b662bb98aab.opus",
-      "c_c5065e195363.opus"
     ]
   },
   {
@@ -3863,7 +2164,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "Because the utterance's sole function is to correct a specific modifier, all prosodic prominence must fall on 'differently', leaving the naturally stressed head noun 'dogs' flat.",
       "why_context_matters": "Without A's prior phrase 'separately sized dogs', 'dogs' would normally carry the nuclear pitch accent at the end of the phrase."
     },
     "clips": [
@@ -3872,173 +2172,6 @@
       "c_1edc875587b9.opus",
       "c_f6afc3a9c4f8.opus",
       "c_55b98c53c711.opus"
-    ]
-  },
-  {
-    "trial_id": "t074",
-    "item_id": "espresso_is_0020",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "There once was a cat named Toonsis."
-      }
-    ],
-    "target_text": "And he was a very happy cat.",
-    "target_speaker": "A",
-    "reference_clip": "c_5a60463a69a2.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "'Cat' was explicitly introduced in the immediately preceding utterance, making it GIVEN. 'Happy' is NEW information describing the cat.",
-      "words": [
-        {
-          "word": "happy",
-          "label": "NEW"
-        },
-        {
-          "word": "cat",
-          "label": "GIVEN"
-        }
-      ],
-      "why_delivery_matters": "Because 'cat' is GIVEN, it loses the default sentence-final prominence it would otherwise receive.",
-      "why_context_matters": "Without the prior sentence introducing the cat, an isolated reading would naturally place a nuclear accent on the final noun, 'cat'."
-    },
-    "clips": [
-      "c_129e4b83e8c8.opus",
-      "c_276f0d850fd9.opus",
-      "c_4262754cbef7.opus",
-      "c_3711fedad0a2.opus",
-      "c_9446f92b68d8.opus"
-    ]
-  },
-  {
-    "trial_id": "t075",
-    "item_id": "espresso_is_0021",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "He uses a sleigh and eight reindeer, led by Rudolph."
-      },
-      {
-        "speaker": "B",
-        "text": "Rudolph? Who's Rudolph?"
-      },
-      {
-        "speaker": "A",
-        "text": "Santa lives in the North Pole. Did you know that?"
-      },
-      {
-        "speaker": "B",
-        "text": "I didn't know that. Where is that?"
-      },
-      {
-        "speaker": "A",
-        "text": "the cold water."
-      },
-      {
-        "speaker": "B",
-        "text": "Is Santa friends with any of the animals?"
-      },
-      {
-        "speaker": "A",
-        "text": "Santa's friends with the animals, but Santa's also friends with the elves that live up there. See, Santa has a giant complex where he employs thousands upon thousands of elves to keep track of toy production, to keep track of who's being good, the naughty and nice list, to make sure everyone's well fed and well taken care of. Santa's kind of the, I guess, overseer of the entirety of Christmas production, if you will."
-      },
-      {
-        "speaker": "B",
-        "text": "How does he pay the elves? Does he pay the elves?"
-      }
-    ],
-    "target_text": "He pays the elves in candy, specifically candy canes.",
-    "target_speaker": "A",
-    "reference_clip": "c_28c85bf9825e.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "B just asked how he pays the 'elves', making them GIVEN. 'Candy' is the core answer to the question, making it NEW.",
-      "words": [
-        {
-          "word": "elves",
-          "label": "GIVEN"
-        },
-        {
-          "word": "candy",
-          "label": "NEW"
-        }
-      ],
-      "why_delivery_matters": "Because 'he pays the elves' is entirely given by the context, the prosodic weight shifts entirely to the end of the phrase on 'candy'.",
-      "why_context_matters": "The entire phrase 'He pays the elves' is old information, serving only as syntactic scaffolding for the new element 'candy'."
-    },
-    "clips": [
-      "c_55133606c463.opus",
-      "c_e9b6803853aa.opus",
-      "c_b06f1e9e8260.opus",
-      "c_7315baf15ee8.opus",
-      "c_38814b29ce44.opus"
-    ]
-  },
-  {
-    "trial_id": "t076",
-    "item_id": "espresso_is_0024",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Ooh, the best thing to get at Gates is probably a Kansas City, Missouri specialty, burnt ends. Do you know what a burnt end is?"
-      },
-      {
-        "speaker": "B",
-        "text": "What's a burnt end?"
-      },
-      {
-        "speaker": "A",
-        "text": "It's the end of a brisket that they chop off after they're done cooking it. It makes it a little crispier and burnt, but it's very tasty and tender on the inside. It's a Missouri specialty and a delicacy that people travel all over for just to eat Missouri's burnt ends. Yeah."
-      },
-      {
-        "speaker": "B",
-        "text": "What? I was walking outside of the Nelson-Atkins and I saw a giant statue of something out there. Do you know what that is?"
-      },
-      {
-        "speaker": "A",
-        "text": "Just a little ways, maybe 15 minutes, you're going to find yourself in nice, vast farmland where there are cows and chickens and hogs, all sorts of animals that you could have fun and raise and take to the market if you want."
-      },
-      {
-        "speaker": "B",
-        "text": "In the summer is, are there fireflies?"
-      },
-      {
-        "speaker": "A",
-        "text": "Yes, there are fireflies in the summer. They litter the sky and they light it all up and it's beautiful when they all come together and create a nice buzz. You never know where the next light is going to come from. You have to watch and wait and see."
-      },
-      {
-        "speaker": "B",
-        "text": "Are there frogs too?"
-      }
-    ],
-    "target_text": "There are lots of frogs.",
-    "target_speaker": "A",
-    "reference_clip": "c_be7323b10b82.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "B just asked about frogs, making the entity GIVEN. 'lots' is the new information regarding their quantity.",
-      "words": [
-        {
-          "word": "lots",
-          "label": "NEW"
-        },
-        {
-          "word": "frogs",
-          "label": "GIVEN"
-        }
-      ],
-      "why_delivery_matters": "The prosodic focus shifts from the entity (frogs) to its quantity/existence (lots) because the entity is already in the common ground.",
-      "why_context_matters": "Without B's question, 'frogs' would naturally receive the main sentence stress at the end of the utterance."
-    },
-    "clips": [
-      "c_1c0967474b21.opus",
-      "c_a973b7af3e1d.opus",
-      "c_94de009df608.opus",
-      "c_6f543c3726e5.opus",
-      "c_fe584a969dd5.opus"
     ]
   },
   {
@@ -4095,7 +2228,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "This is a classic contrastive focus pattern where a modifier steals all the prosodic prominence from the given head noun.",
       "why_context_matters": "Without B's question, 'every day' would be processed as new information and receive significant phrase-final stress."
     },
     "clips": [
@@ -4104,132 +2236,6 @@
       "c_6380b7e19094.opus",
       "c_2144727ddc87.opus",
       "c_7405e0fc6163.opus"
-    ]
-  },
-  {
-    "trial_id": "t078",
-    "item_id": "espresso_is_0044",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "B",
-        "text": "Oh, Jess, I'm so sorry to tell you, but it's all down your back."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh my god. Ew. Ew. Ew. Ew. It's in your hair. Ew. Ew. Ew."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh my god, you smell... It smells like... It smells like..."
-      },
-      {
-        "speaker": "A",
-        "text": "It smells like that's been sitting there for a really long, long time."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, it's squishing in my shoes. Oh, is it in yours?"
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, yep, it certainly is."
-      },
-      {
-        "speaker": "A",
-        "text": "Okay. Oh, don't touch my back. Please don't touch my back. Oh, please don't touch my back. I don't want it against my neck. Ew. I need to know. Is there, is there, is there, um, I'm gonna, I'm gonna swear. Is there shit in my, on my back?"
-      }
-    ],
-    "target_text": "There's a lot on your back. I'm so sorry. Ugh.",
-    "target_speaker": "B",
-    "reference_clip": "c_3015b7818a06.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "A explicitly asks if there is feces on her 'back', making 'back' firmly GIVEN. B replies by introducing the quantity ('a lot') as NEW information.",
-      "words": [
-        {
-          "word": "lot",
-          "label": "NEW"
-        },
-        {
-          "word": "back",
-          "label": "GIVEN"
-        }
-      ],
-      "why_delivery_matters": "The location ('back') is already established by A. The new and critical piece of information confirming her worst fears is the amount ('lot').",
-      "why_context_matters": "Without A's question establishing 'back' as the topic, a neutral reading would place default sentence-final prominence on the noun 'back'."
-    },
-    "clips": [
-      "c_7adab5af8684.opus",
-      "c_5020e4dc112d.opus",
-      "c_42c9999801fb.opus",
-      "c_57016d1bc05c.opus",
-      "c_b6db9778c3e9.opus"
-    ]
-  },
-  {
-    "trial_id": "t079",
-    "item_id": "espresso_is_0047",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "And look it, its intestines are hanging out the entrails."
-      },
-      {
-        "speaker": "A",
-        "text": "The entrails."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, he..."
-      },
-      {
-        "speaker": "B",
-        "text": "You can see what he ate at lunch. It's like leaves in his belly."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh my god. Oh, look at all the maggots. All the maggots."
-      },
-      {
-        "speaker": "B",
-        "text": "Ugh."
-      },
-      {
-        "speaker": "A",
-        "text": "That's been dead for a while."
-      },
-      {
-        "speaker": "B",
-        "text": "Why would Buster want to eat that? That's so gross."
-      }
-    ],
-    "target_text": "You picked this dog out of the litter.",
-    "target_speaker": "A",
-    "reference_clip": "c_81987da74c44.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "B just brought up the pet by name ('Buster'). A refers back to the pet using the synonymous noun 'dog', making it GIVEN, while introducing 'litter' as NEW information.",
-      "words": [
-        {
-          "word": "dog",
-          "label": "GIVEN"
-        },
-        {
-          "word": "litter",
-          "label": "NEW"
-        }
-      ],
-      "why_delivery_matters": "Because 'dog' represents an already-active discourse entity (Buster), it behaves prosodically like a pronoun and must be deaccented to sound natural.",
-      "why_context_matters": "Only B's prior mention of Buster makes 'this dog' a given entity rather than a new introduction."
-    },
-    "clips": [
-      "c_6d2ba7a48254.opus",
-      "c_e57caac12066.opus",
-      "c_e7446a74c8cf.opus",
-      "c_347f3af67cda.opus",
-      "c_5322fa968ca0.opus"
     ]
   },
   {
@@ -4286,7 +2292,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "The entire action is discourse-old. The only salient piece of information is the noun introducing the new agent.",
       "why_context_matters": "The pronoun 'that' relies entirely on A's preceding complaint for its referent and its given status."
     },
     "clips": [
@@ -4295,263 +2300,6 @@
       "c_69c39d41a50b.opus",
       "c_105851e46b5e.opus",
       "c_89d1c7bf67c5.opus"
-    ]
-  },
-  {
-    "trial_id": "t081",
-    "item_id": "espresso_is_0055",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Oh, my gosh. Oh, and it didn't help that when he went to get off the stage, the little Jimmy from kindergarten class chased him down, screaming about his pet that fell off his shoulder."
-      },
-      {
-        "speaker": "B",
-        "text": "He probably was so embarrassed. I feel kind of bad for laughing about it, but he should have used some toupee glue."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah."
-      },
-      {
-        "speaker": "A",
-        "text": "I mean, I feel bad, but sometimes I don't, because that coupled with an all-wool suit all year round, I don't know how he does it. He's always sweating."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, you're bound to be sweaty when you dress like that. He's so weird."
-      },
-      {
-        "speaker": "A",
-        "text": "And have you ever watched him in the teacher's lounge? He eats soup for lunch. And a full..."
-      },
-      {
-        "speaker": "A",
-        "text": "suit with that toupee on his head? How does he do that?"
-      },
-      {
-        "speaker": "B",
-        "text": "Even during summer school?"
-      }
-    ],
-    "target_text": "Always, always he has a thermos full of soup.",
-    "target_speaker": "A",
-    "reference_clip": "c_033d25b17d7d.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "'soup' was introduced by A a few turns prior and is the ongoing topic, while 'thermos' is new information.",
-      "words": [
-        {
-          "word": "thermos",
-          "label": "NEW"
-        },
-        {
-          "word": "soup",
-          "label": "GIVEN"
-        }
-      ],
-      "why_delivery_matters": "In an out-of-context reading, 'soup' would likely receive default sentence-final stress. Given the context, the stress must land on 'thermos'.",
-      "why_context_matters": "The prior mention of soup makes it GIVEN, shifting the nuclear pitch accent leftward to 'thermos'."
-    },
-    "clips": [
-      "c_5d676ba10956.opus",
-      "c_10f43dcb3030.opus",
-      "c_c978a2a91a5d.opus",
-      "c_7138aa3e5ca7.opus",
-      "c_09dcf90514a8.opus"
-    ]
-  },
-  {
-    "trial_id": "t082",
-    "item_id": "espresso_is_0060",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Huh, huh, huh, bird. Ha ha."
-      }
-    ],
-    "target_text": "Oh, food, food, bird food.",
-    "target_speaker": "B",
-    "reference_clip": "c_ff3fef775b54.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "A introduces 'bird' in the prior turn, making it GIVEN. B introduces 'food' as NEW information.",
-      "words": [
-        {
-          "word": "bird",
-          "label": "GIVEN"
-        },
-        {
-          "word": "food",
-          "label": "NEW"
-        }
-      ],
-      "why_delivery_matters": "Standard compound nouns in isolation often stress the first element (BIRD food), but the immediate prior mention of 'bird' shifts prominence entirely to the new information ('food').",
-      "why_context_matters": "Without A's prior mention, 'bird' would likely receive default compound noun stress."
-    },
-    "clips": [
-      "c_b51535a20439.opus",
-      "c_f61fafae38f8.opus",
-      "c_b1c7792cac0b.opus",
-      "c_45777700a3da.opus",
-      "c_dfed9504ec4b.opus"
-    ]
-  },
-  {
-    "trial_id": "t083",
-    "item_id": "espresso_is_0061",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Huh, huh, huh, bird. Ha ha."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, food, food, bird food."
-      },
-      {
-        "speaker": "A",
-        "text": "Ha ha ha, rock! Ha ha ha, ha!"
-      }
-    ],
-    "target_text": "Oh, rock, hard rock. Oh, big rock. Big cat?",
-    "target_speaker": "B",
-    "reference_clip": "c_cc438d4eb441.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "'rock' is echoed from A's previous turn, making it GIVEN. 'cat' is introduced as a completely NEW entity.",
-      "words": [
-        {
-          "word": "rock",
-          "label": "GIVEN"
-        },
-        {
-          "word": "cat",
-          "label": "NEW"
-        }
-      ],
-      "why_delivery_matters": "The contrasting realization of the deeply GIVEN 'rock' and the abruptly NEW 'cat' highlights the information structure shift and anchors the context.",
-      "why_context_matters": "The strong reduction of 'rock' is entirely dependent on A having just yelled it to establish it as the topic."
-    },
-    "clips": [
-      "c_cf6b5ed55c7d.opus",
-      "c_bbf7e6fa544a.opus",
-      "c_13604bb262e1.opus",
-      "c_15142d0c4926.opus",
-      "c_fdbe2738242e.opus"
-    ]
-  },
-  {
-    "trial_id": "t084",
-    "item_id": "espresso_is_0065",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "B",
-        "text": "per sec."
-      },
-      {
-        "speaker": "B",
-        "text": "Mmm. Burger. Guys."
-      },
-      {
-        "speaker": "B",
-        "text": "Is the."
-      },
-      {
-        "speaker": "B",
-        "text": "best."
-      },
-      {
-        "speaker": "A",
-        "text": "Mmm."
-      },
-      {
-        "speaker": "A",
-        "text": "Chili cheese fries. They're so good. I think it's got to be real cheese."
-      },
-      {
-        "speaker": "B",
-        "text": "Try."
-      },
-      {
-        "speaker": "B",
-        "text": "Mmm."
-      }
-    ],
-    "target_text": "The garlic fries.",
-    "target_speaker": "B",
-    "reference_clip": "c_e38f30a079de.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "'Fries' is GIVEN from A's preceding turn. 'Garlic' is NEW and serves as an alternative to 'Chili cheese'.",
-      "words": [
-        {
-          "word": "garlic",
-          "label": "NEW"
-        },
-        {
-          "word": "fries",
-          "label": "GIVEN"
-        }
-      ],
-      "why_delivery_matters": "Since fries are already the active topic of discussion, the new modifier 'garlic' requires the primary prosodic prominence to distinguish the new recommendation.",
-      "why_context_matters": "A standalone, context-unaware reading of 'The garlic fries' would typically place the falling nuclear accent on the final noun, 'fries'."
-    },
-    "clips": [
-      "c_2ec469efcaec.opus",
-      "c_e05f8fefaf3e.opus",
-      "c_1d75eec53c19.opus",
-      "c_a78e369a36c9.opus",
-      "c_1e1cc7d99519.opus"
-    ]
-  },
-  {
-    "trial_id": "t085",
-    "item_id": "espresso_is_0066",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Hey, so what kind of weather do you think we'll be having this weekend?"
-      },
-      {
-        "speaker": "B",
-        "text": "Well, Chet, that's a very good question. I will refer to the board over here. We can see that on Saturday we have highs of 72 and lows in the 50s. But on Sunday, we're going to experience a little bit of drizzle right in the morning. But by the end of the day, things should clear up."
-      },
-      {
-        "speaker": "A",
-        "text": "It sounds pretty moderate. Is there going to be some humidity involved?"
-      }
-    ],
-    "target_text": "Oh boy, there will be a lot of humidity.",
-    "target_speaker": "B",
-    "reference_clip": "c_33fa03a0a9b2.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-contrastive cooccurrence",
-      "why": "'Humidity' was just introduced in the preceding question by A, making it GIVEN. 'Lot' directly contrasts with A's suggestion of 'some', making it CONTRASTIVE.",
-      "words": [
-        {
-          "word": "lot",
-          "label": "CONTRASTIVE"
-        },
-        {
-          "word": "humidity",
-          "label": "GIVEN"
-        }
-      ],
-      "why_delivery_matters": "Because 'humidity' is the sentence-final noun, a default reading would place the main stress there. Context dictates shifting the stress entirely to 'lot' to address the scale of the weather.",
-      "why_context_matters": "Without A's question providing 'some humidity' as context, 'humidity' would be treated as new information and receive a default H* accent."
-    },
-    "clips": [
-      "c_a9bf3c2cead6.opus",
-      "c_d8d8d1db6060.opus",
-      "c_ddddea94dd59.opus",
-      "c_280f1b36db7f.opus",
-      "c_db157183da1e.opus"
     ]
   },
   {
@@ -4596,7 +2344,6 @@
           "label": "GIVEN"
         }
       ],
-      "why_delivery_matters": "If 'Little Mermaid' is accented, it implies B is surprised by *which* movie A prefers, rather than confirming A's preference itself.",
       "why_context_matters": "Without context, questions ending in proper nouns universally place the nuclear accent on the noun."
     },
     "clips": [
@@ -4605,51 +2352,6 @@
       "c_7fc50a04f8d7.opus",
       "c_8317443d5f1f.opus",
       "c_9ea5f4dd2b49.opus"
-    ]
-  },
-  {
-    "trial_id": "t087",
-    "item_id": "espresso_is_0073",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Hey, just got off the bus. I'm on Glen Oaks in San Fernando."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, that makes sense. Perfect. You're just going to go north. You're going to face towards the mountain. Look up. Yep, you're going to just walk towards the mountain, walk uphill. You're going to walk up Glen Oaks. Once you get, it'll be maybe about half a mile before you're going to get to Kenneth Village."
-      },
-      {
-        "speaker": "A",
-        "text": "Okay, okay, I got it."
-      }
-    ],
-    "target_text": "Half mile uphill, I didn't bring enough water for this.",
-    "target_speaker": "A",
-    "reference_clip": "c_f7e6fc581bd5.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-new cooccurrence",
-      "why": "B just told A to walk 'about half a mile' and 'walk uphill', making 'mile' (and 'uphill') GIVEN. A then introduces 'water' as NEW information.",
-      "words": [
-        {
-          "word": "mile",
-          "label": "GIVEN"
-        },
-        {
-          "word": "water",
-          "label": "NEW"
-        }
-      ],
-      "why_delivery_matters": "The GIVEN/NEW contrast highlights A's new problem (water) while backgrounding the repeated distance instruction.",
-      "why_context_matters": "Without B's prior instruction, 'Half mile uphill' would be completely new information and require strong pitch accents."
-    },
-    "clips": [
-      "c_ddb85717a3da.opus",
-      "c_24c26af1b712.opus",
-      "c_3805be73536d.opus",
-      "c_bedc3baf63bf.opus",
-      "c_35c4779f6368.opus"
     ]
   },
   {
@@ -4706,7 +2408,6 @@
           "label": "CONTRASTIVE"
         }
       ],
-      "why_delivery_matters": "Without a strong prosodic asymmetry between the negated noun and its replacement, the utterance loses its corrective force.",
       "why_context_matters": "The word 'temple' is already active in the discourse; without this knowledge, a TTS might incorrectly place primary stress on 'temple' due to the negation."
     },
     "clips": [
@@ -4715,71 +2416,6 @@
       "c_b97265c7871c.opus",
       "c_94eaf9567221.opus",
       "c_9fa8243566f8.opus"
-    ]
-  },
-  {
-    "trial_id": "t089",
-    "item_id": "espresso_is_0076",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Awesome. Thank you so much. I'm a little nervous for her."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh man, my phone just died. I'm so sorry. I'm still going to get you there. I'm going to get you there."
-      },
-      {
-        "speaker": "A",
-        "text": "Okay, I know the way enough, so I think I can get us there. If you just keep going straight down this road, it's going to turn into Figueroa after like a mile and a half. Okay, cool. You know that. You know that. Okay, okay, okay. So you're going to go down Fig and then... You know what? I think it's going to be faster. Just turn left here. Just turn left here. Up here. Left here. Yeah, on Wilshire. Just turn left right now. Yeah, yeah, yeah. We're going to go up Wilshire and we're just going to... Yeah, we're going to take the back roads because I think this is going to be easier."
-      },
-      {
-        "speaker": "B",
-        "text": "Okay. Yeah, I know. I know the figure. Yeah."
-      },
-      {
-        "speaker": "B",
-        "text": "Yep. Yep. Good call. Okay."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, that one. Yeah."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, yeah, yeah, we're gonna, when we get there, I'm gonna, just turn right, okay?"
-      },
-      {
-        "speaker": "B",
-        "text": "Yep, no problem. Wait, you mean right before the tree or after the tree?"
-      }
-    ],
-    "target_text": "Right before the tree.",
-    "target_speaker": "A",
-    "reference_clip": "c_adb480a9a3db.opus",
-    "intent": {
-      "what_it_should_be": "MIXED — given-contrastive cooccurrence",
-      "why": "Tree is GIVEN as the landmark from B's alternative question. Before is CONTRASTIVE, selecting one of the two explicitly offered spatial alternatives.",
-      "words": [
-        {
-          "word": "before",
-          "label": "CONTRASTIVE"
-        },
-        {
-          "word": "tree",
-          "label": "GIVEN"
-        }
-      ],
-      "why_delivery_matters": "The contrastive focus falls entirely on the spatial preposition to answer the explicit choice, rendering the noun completely unaccented.",
-      "why_context_matters": "Without the explicit 'before or after' choice in the context, 'tree' (as the noun phrase head) would normally take the nuclear pitch accent."
-    },
-    "clips": [
-      "c_f0a87d4e9442.opus",
-      "c_513cbbd80f86.opus",
-      "c_1f6d3e5e12a4.opus",
-      "c_5da2fbd493e7.opus",
-      "c_9c67d5a98fd9.opus"
     ]
   }
 ]
