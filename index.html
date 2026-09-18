@@ -81,18 +81,40 @@
 single <b>target line</b> has been picked out, and you will hear <b>one</b>
 synthetic version of that line. Your job is a single yes/no judgement:</p>
 
-<p style="font-size:16px"><b>Does this delivery fit how the line should be said
-at that moment in the conversation?</b></p>
+<p style="font-size:16px"><b>Does the delivery feel appropriate at this moment
+in this conversation?</b></p>
 
-<p>Each clip gets its own page and its own answer. Several pages in a row will
-share the same conversation and the same target line, with a different synthetic
-version each time. <b>Judge each one on its own terms.</b> You are not ranking
-them and you are not picking a winner — it is entirely possible for all of them
-to match, or for none of them to.</p>
+<h3>How the pages are laid out</h3>
+
+<p>The set is organised in <b>blocks of five consecutive pages</b>. All five
+share one conversation and one target line; what changes is the synthetic clip,
+a different attempt at the same line each time. Then the next block starts a new
+conversation.</p>
+
+<p>This is deliberate. You read the conversation and hear the human recording
+<b>once</b>, at the start of a block, and that context then carries you through
+all five judgements — so most of the work on pages two to five is just
+listening. Only one clip is ever on screen at a time.</p>
+
+<p>Two consequences worth understanding before you start:</p>
+<ul>
+  <li><b>You are not comparing the five against each other.</b> You cannot see
+      them side by side, and once you move on you have already committed. Each
+      page is an independent yes/no about that one clip.</li>
+  <li><b>There is no winner and no quota.</b> Within a block every clip may fit,
+      or none may. Do not force variety because five pages went by and they all
+      felt the same way.</li>
+</ul>
+<p class="muted">The order of the blocks, and of the clips inside a block, is
+different for every annotator.</p>
 
 <h3>How to work through a page</h3>
 <ol class="steps">
-  <li>Read the <b>conversation so far</b> so you know what is going on.</li>
+  <li>Read the <b>conversation so far</b>, then <b>play it</b>. The transcript
+      tells you what was said; the recording tells you the mood it was said in,
+      which is what you are about to judge against. On pages two to five of a
+      block this is the same conversation you already heard, so you can go
+      straight on.</li>
   <li>Read the <b>target line</b> and the note describing <b>what it should convey</b>.</li>
   <li>Play the <b>original human recording</b>. This is how a real person actually
       said the line in that moment — your anchor for what the delivery should
@@ -186,7 +208,7 @@ whatever you want, and download again.</div>
   <li>Your progress saves automatically in this browser. You can close the tab
       and pick up where you left off, using the same annotator ID.</li>
   <li><b>Copy link</b> on any page gives you a URL that opens that exact page.
-      Use it when you want to point someone at a specific clip in Slack.</li>
+      Use it when you want to share and ask a question about this specific clip.</li>
   <li>Please take breaks — fatigue shows up in this kind of listening task.</li>
   <li>When you finish, press <b>Download CSV</b> and send us the file. You can
       download at any point, not only at the end.</li>
@@ -370,7 +392,10 @@ function render(){
   // build_site.py no longer emits them; this is the second line of defence.
 
   document.getElementById("app").innerHTML=`
-    <h2>Conversation so far</h2><div class="card">${ctx}</div>
+    <h2>Conversation so far</h2><div class="card">${ctx}
+      ${t.context_clip?`<audio controls preload="none" src="audio/${t.context_clip}" style="width:100%;margin-top:12px"></audio>
+      <div class="muted" style="margin-top:6px">The real recording of the turns above, ending just before the target line. Worth hearing at least once per conversation — the mood of a moment rarely survives being written down.</div>`:""}
+    </div>
     <h2>Target line — spoken by ${esc(t.target_speaker||"?")}</h2>
     <div class="target">${esc(t.target_text)}</div>
     <h2>What this line should convey</h2><div class="card intent"><dl style="margin:0">${dl}</dl></div>
@@ -387,7 +412,7 @@ function render(){
       </label>
     </div>
 
-    <h2>Does this delivery fit the moment?</h2>
+    <h2>Does the delivery feel appropriate at this moment in this conversation?</h2>
     <div class="verdict">
       <button class="vbtn ${r.verdict==="match"?"sel":""}" data-v="match" onclick="verdict('match')">
         Match<small>delivered the way it should be</small></button>
