@@ -1,0 +1,578 @@
+[
+  {
+    "trial_id": "b001",
+    "item_id": "espressoX_is_0386",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Uh, I'm so grateful for-"
+      },
+      {
+        "speaker": "A",
+        "text": "Uncle Sean, but, oh, I wish he had told us not to inhale."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I feel like I didn't know the rules for smoking cigars. And I can't stop coughing now. But it's really nice of Uncle Sean to give us cigars."
+      },
+      {
+        "speaker": "A",
+        "text": "It's like he knew that we were bored of this wedding."
+      }
+    ],
+    "context_clip": "e6e9e7912c1a.opus",
+    "target_text": "Yeah, we've all known Rebecca and Jerry were gonna get married for a while.",
+    "target_speaker": "B",
+    "reference_clip": "0e7caf7a7aa4.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence (semantic givenness)",
+      "why": "The concept of marriage is lexically accessible (GIVEN) because A just mentioned 'this wedding'. The specific couple, 'Rebecca and Jerry', is NEW information.",
+      "words": [],
+      "why_context_matters": "The status of 'married' as a GIVEN concept depends entirely on A's prior mention of the 'wedding'."
+    },
+    "pairs": [
+      {
+        "pair_id": "espressoX_is_0386::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "be0286fb2a4a.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "5f1162be6103.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espressoX_is_0386::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "e82ef5a8e020.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "9173353ffca4.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espressoX_is_0386::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "7a09af8b2cde.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "3586b9b5471a.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espressoX_is_0386::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "0f5e98c020ac.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "e401a6bb2cb6.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espressoX_is_0386::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "820456293150.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "581adf9452c0.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b002",
+    "item_id": "espresso_is_0045",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh my god. Ew. Ew. Ew. Ew. It's in your hair. Ew. Ew. Ew."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god, you smell... It smells like... It smells like..."
+      },
+      {
+        "speaker": "A",
+        "text": "It smells like that's been sitting there for a really long, long time."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, it's squishing in my shoes. Oh, is it in yours?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, yep, it certainly is."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. Oh, don't touch my back. Please don't touch my back. Oh, please don't touch my back. I don't want it against my neck. Ew. I need to know. Is there, is there, is there, um, I'm gonna, I'm gonna swear. Is there shit in my, on my back?"
+      },
+      {
+        "speaker": "B",
+        "text": "There's a lot on your back. I'm so sorry. Ugh."
+      }
+    ],
+    "context_clip": "bfe6b7b4ed34.opus",
+    "target_text": "Yeah, it's in your hair. It's like pieces of it. Ew.",
+    "target_speaker": "A",
+    "reference_clip": "3d9567f325c7.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — contrastive-new cooccurrence",
+      "why": "A contrasts B's focus on A's 'back' by aggressively shifting the topic back to B's 'hair', while introducing 'pieces' as NEW visual information.",
+      "words": [
+        {
+          "word": "hair",
+          "label": "CONTRASTIVE"
+        },
+        {
+          "word": "pieces",
+          "label": "NEW"
+        }
+      ],
+      "why_context_matters": "Without the context of B pointing out the mess on A's back, 'hair' would just be a generic new entity rather than an emphatic contrastive counter-point."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_is_0045::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "8ba32ec7ab62.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "b9a00c48706e.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0045::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "0753afe1eb48.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "c66f811d1fa3.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0045::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "4be2ead2bc52.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "a3283e68fcfd.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0045::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "5f183e9263c1.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "cec0a90b5944.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0045::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "9666322ccd9c.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "65079fe823fc.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b003",
+    "item_id": "espresso_is_0048",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "Ugh, yeah? What is that smell?"
+      },
+      {
+        "speaker": "A",
+        "text": "The neighbors were using their disposal again and it backed up in the sink while we were on vacation a lot. So it's been hot in here and it's caked to all of the... It's in the sink. It's caked to the sink with bones everywhere."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, oh, do they have, like, barbecue or something?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, it looks like chicken. Ugh."
+      },
+      {
+        "speaker": "B",
+        "text": "I've never smelled anything so bad."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I don't, I don't know where to begin. They keep saying that these pipes don't connect, but they clearly connect."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, they definitely connect because we did not eat mac and cheese."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I don't want to scoop it out with my hand again because remember the last time when I had to take it out so it stopped clogging the drain? Ugh."
+      }
+    ],
+    "context_clip": "faa2f935823b.opus",
+    "target_text": "Yeah, we're just gonna make the landlord do that.",
+    "target_speaker": "B",
+    "reference_clip": "a37f05c3f30b.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — new-given cooccurrence",
+      "why": "The action of scooping out the drain is GIVEN from A's turn, referred to by 'that'. 'Landlord' is the NEW agent proposed to do the action.",
+      "words": [
+        {
+          "word": "landlord",
+          "label": "NEW"
+        },
+        {
+          "word": "that",
+          "label": "GIVEN"
+        }
+      ],
+      "why_context_matters": "The pronoun 'that' relies entirely on A's preceding complaint for its referent and its given status."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_is_0048::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "aca4daf5099b.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "360afa469d03.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0048::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "dbd8dbb21d02.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "fb184211c274.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0048::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "acc5e45ea611.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "03dd42e88aae.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0048::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "dd4366718b5a.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "a58131371447.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0048::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "5b87252b9019.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "a824cfb42e9c.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b004",
+    "item_id": "espresso_is_0073",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey, just got off the bus. I'm on Glen Oaks in San Fernando."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, that makes sense. Perfect. You're just going to go north. You're going to face towards the mountain. Look up. Yep, you're going to just walk towards the mountain, walk uphill. You're going to walk up Glen Oaks. Once you get, it'll be maybe about half a mile before you're going to get to Kenneth Village."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, okay, I got it."
+      }
+    ],
+    "context_clip": "143861a65214.opus",
+    "target_text": "Half mile uphill, I didn't bring enough water for this.",
+    "target_speaker": "A",
+    "reference_clip": "eb0b0f7229a1.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "B just told A to walk 'about half a mile' and 'walk uphill', making 'mile' (and 'uphill') GIVEN. A then introduces 'water' as NEW information.",
+      "words": [
+        {
+          "word": "mile",
+          "label": "GIVEN"
+        },
+        {
+          "word": "water",
+          "label": "NEW"
+        }
+      ],
+      "why_context_matters": "Without B's prior instruction, 'Half mile uphill' would be completely new information and require strong pitch accents."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_is_0073::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "d80bc356c1fb.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "c1da0e97ef59.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0073::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "9fc019eb08b4.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "89d960859576.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0073::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "dd8e6554c62f.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "f5e88e519b9e.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0073::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "45e7810abeb0.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "0e2eb5972473.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0073::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "dfc1dd3e5b79.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "e64918ba9877.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b005",
+    "item_id": "espresso_is_0076",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Awesome. Thank you so much. I'm a little nervous for her."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh man, my phone just died. I'm so sorry. I'm still going to get you there. I'm going to get you there."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, I know the way enough, so I think I can get us there. If you just keep going straight down this road, it's going to turn into Figueroa after like a mile and a half. Okay, cool. You know that. You know that. Okay, okay, okay. So you're going to go down Fig and then... You know what? I think it's going to be faster. Just turn left here. Just turn left here. Up here. Left here. Yeah, on Wilshire. Just turn left right now. Yeah, yeah, yeah. We're going to go up Wilshire and we're just going to... Yeah, we're going to take the back roads because I think this is going to be easier."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay. Yeah, I know. I know the figure. Yeah."
+      },
+      {
+        "speaker": "B",
+        "text": "Yep. Yep. Good call. Okay."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, that one. Yeah."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, yeah, yeah, we're gonna, when we get there, I'm gonna, just turn right, okay?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yep, no problem. Wait, you mean right before the tree or after the tree?"
+      }
+    ],
+    "context_clip": "42e6d842bc77.opus",
+    "target_text": "Right before the tree.",
+    "target_speaker": "A",
+    "reference_clip": "03363622d370.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-contrastive cooccurrence",
+      "why": "Tree is GIVEN as the landmark from B's alternative question. Before is CONTRASTIVE, selecting one of the two explicitly offered spatial alternatives.",
+      "words": [
+        {
+          "word": "before",
+          "label": "CONTRASTIVE"
+        },
+        {
+          "word": "tree",
+          "label": "GIVEN"
+        }
+      ],
+      "why_context_matters": "Without the explicit 'before or after' choice in the context, 'tree' (as the noun phrase head) would normally take the nuclear pitch accent."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_is_0076::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "7878a9bf1116.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "d518207c5568.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0076::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "8e19245a042c.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "36d5e3d3e217.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0076::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "dca173c0b0ce.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "7ab16d448b6c.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0076::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "f7e39229746c.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "9cc07803b237.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_is_0076::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "179814efa314.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "0a05ed81b218.opus"
+          }
+        ]
+      }
+    ]
+  }
+]

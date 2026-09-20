@@ -1,0 +1,541 @@
+[
+  {
+    "trial_id": "b001",
+    "item_id": "espresso_ci_0006",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey, Caroline, can I get you in here for a second?"
+      },
+      {
+        "speaker": "B",
+        "text": "Absolutely Brad."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, so I was I can't find my phone and I need to get to Santa Monica Pier in 45 minutes and I need to leave pretty much right about now. Can you help me get there?"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, yep, absolutely. Okay, so you're just going to write this down really quick. It's not going to take you long."
+      },
+      {
+        "speaker": "A",
+        "text": "I got my pen, I got my paper. Well, uh, yeah. Yep."
+      },
+      {
+        "speaker": "B",
+        "text": "Ready? From Spring, you're going to go on to 4th, and then from 4th, you're going to go straight to the 134 West. Take 134 West all the way over to the 101. You're going to connect to the 101 West. Okay, keep going on the 101 West. Uh-huh, you're going to take the 405 South."
+      },
+      {
+        "speaker": "A",
+        "text": "134 West, okay?"
+      },
+      {
+        "speaker": "A",
+        "text": "Uh huh."
+      }
+    ],
+    "context_clip": "56684a3f56e1.opus",
+    "target_text": "134 to the 101.",
+    "target_speaker": "A",
+    "reference_clip": "a65e4c7b63d3.opus",
+    "intent": {
+      "what_it_should_be": "grounding — check",
+      "why": "A is repeating the directions aloud to himself as he writes them down, committing them to memory and verifying the sequence.",
+      "why_context_matters": "Without context, this phrase looks like an instruction or factual assertion directed at a listener. Context shows it is a self-directed, note-taking repetition."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_ci_0006::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "0fcffc294a1d.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "95a7e6788662.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0006::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "18741943c5d9.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "934c8080bf9b.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0006::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "2577a3c0a723.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "a8a11e6d3afb.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0006::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "2b09eb150bd4.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "98dc35b256b2.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0006::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "293723453c8d.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "2916e63cece7.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b002",
+    "item_id": "espresso_ci_0057",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Wow. This might be my favorite painting in the entire Met. I've never seen anything quite like this before."
+      },
+      {
+        "speaker": "B",
+        "text": "It reminds me of, do you remember the original Romeo and Juliet movie? The colors that they used to lay her down when she died and everything. It's almost like she's in a bed of, in a veil of that. They're in a veil of it together. Wow. Wow."
+      },
+      {
+        "speaker": "A",
+        "text": "It's so flat, but there's so much depth at the same time to it. It's so beautiful with the colors and the flowers and the textures."
+      },
+      {
+        "speaker": "B",
+        "text": "I almost feel what I love about it is that she's wrapped in the vines of the flowers like she's been there for the whole time waiting for him to come to her."
+      },
+      {
+        "speaker": "A",
+        "text": "That's beautiful. It's so intimate, their exchange, too. It feels like she's both wrapped up in him and the blanket and the flowers, and all three in one."
+      }
+    ],
+    "context_clip": "32226bef96e0.opus",
+    "target_text": "Stunning.",
+    "target_speaker": "B",
+    "reference_clip": "6f6b8908543c.opus",
+    "intent": {
+      "what_it_should_be": "statement — evaluation",
+      "why": "B is providing a profound aesthetic evaluation of the painting, serving as an emphatic, shared endorsement of A's poetic description.",
+      "why_context_matters": "In isolation, 'Stunning' could be interpreted as a high-energy, bright exclamation. Context dictates a quiet, emotionally resonant realization of beauty."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_ci_0057::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "dea95695b8f9.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "8bad6f9256ca.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0057::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "b2cda2f53eec.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "558bdf8df42c.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0057::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "27e5bcf8bc70.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "0232579cdfce.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0057::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "5bca4c2d5718.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "6ff60daecdbf.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0057::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "d4f10b9531a6.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "a3c37e0a9835.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b003",
+    "item_id": "espresso_ci_0058",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Wow. This might be my favorite painting in the entire Met. I've never seen anything quite like this before."
+      },
+      {
+        "speaker": "B",
+        "text": "It reminds me of, do you remember the original Romeo and Juliet movie? The colors that they used to lay her down when she died and everything. It's almost like she's in a bed of, in a veil of that. They're in a veil of it together. Wow. Wow."
+      },
+      {
+        "speaker": "A",
+        "text": "It's so flat, but there's so much depth at the same time to it. It's so beautiful with the colors and the flowers and the textures."
+      },
+      {
+        "speaker": "B",
+        "text": "I almost feel what I love about it is that she's wrapped in the vines of the flowers like she's been there for the whole time waiting for him to come to her."
+      },
+      {
+        "speaker": "A",
+        "text": "That's beautiful. It's so intimate, their exchange, too. It feels like she's both wrapped up in him and the blanket and the flowers, and all three in one."
+      },
+      {
+        "speaker": "B",
+        "text": "Stunning."
+      }
+    ],
+    "context_clip": "57f2306b5fe7.opus",
+    "target_text": "Yeah.",
+    "target_speaker": "A",
+    "reference_clip": "e9a3bd210cf7.opus",
+    "intent": {
+      "what_it_should_be": "agreement — strong-agreement",
+      "why": "A is fully sharing in B's profound awe. It functions as a deep agreement with the shared emotional state, rather than a simple affirmative or filler.",
+      "why_context_matters": "'Yeah' is highly ambiguous and typically defaults to a brief backchannel. Here it carries significant emotional weight and mutual appreciation."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_ci_0058::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "688b7acfe091.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "877a6ad3a034.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0058::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "17616a9a2952.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "154c2f5ca7ce.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0058::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "ec5611eb1a22.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "238635b9dbdb.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0058::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "8e0846c0dfdb.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "7d07c321c4d9.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0058::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "92f60b4d2426.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "5f19fffe392f.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b004",
+    "item_id": "espresso_ci_0070",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Well, I'm going to come back to that. But I want to ask you first, because I have, I really do want to know, growing up in the Midwest."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. You told me that you, you, you know, kind of fall between either loving fall or spring the most, obviously just allergy dependent, but you love the bloom and then you love the, the, obviously both seasons are about change, right? So tell me one thing."
+      },
+      {
+        "speaker": "B",
+        "text": "Uh huh."
+      },
+      {
+        "speaker": "A",
+        "text": "What's your fondest memory?"
+      }
+    ],
+    "context_clip": "86d3f296d18f.opus",
+    "target_text": "My fondest memory.",
+    "target_speaker": "B",
+    "reference_clip": "76754a95ceec.opus",
+    "intent": {
+      "what_it_should_be": "grounding — check",
+      "why": "B is echoing the core of A's question to stall for time and confirm the topic before answering (which prompts A to add more detail to the question).",
+      "why_context_matters": "As an isolated text fragment, it appears to be a declarative noun phrase. Context reveals it is a reflective conversational echo of the preceding question."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_ci_0070::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "452aec0a61c4.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "621b53b998b8.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0070::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "de3a3181c214.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "76e5e827cfdd.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0070::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "2744a2b66660.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "3aa8fc932cca.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0070::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "2ebeffe9aefc.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "d499642f1118.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0070::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "1009cdb44254.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "3ee700e50c53.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b005",
+    "item_id": "espresso_ci_0093",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "the entire play. Just singing and playing with the set."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, he seemed like he wouldn't even know where he was. And then the other kid that was so afraid of the fake dagger."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god. He just broke down crying. His parents had to come out on stage and get him."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my gosh. I'm surprised they chose Macbeth. It was so cute though, watching them do the three witches. It was adorable, but they were like, like trying to mix everything and all the potions and everything."
+      },
+      {
+        "speaker": "A",
+        "text": "Just everything, like water all over the stage and the kids that were like slipping all over it."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, they had so much fun putting things into that pot that they didn't notice it was going to bubble over."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, man."
+      },
+      {
+        "speaker": "B",
+        "text": "Did you see the kid playing Macduff?"
+      }
+    ],
+    "context_clip": "acffb55104b4.opus",
+    "target_text": "Oh, my God.",
+    "target_speaker": "A",
+    "reference_clip": "846fc38698e0.opus",
+    "intent": {
+      "what_it_should_be": "reaction — amusement",
+      "why": "B simply prompts A to recall a specific child in the play. A's response acts as an immediate, visceral expression of amusement recalling how funny the child looked.",
+      "why_context_matters": "'Oh, my God' is highly polysemous and can convey horror, tragic news, surprise, or joy. Only the shared comedic context of the disastrous play specifies amused exasperation."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_ci_0093::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "6e56935c6956.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "ce499da47fcc.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0093::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "87d0dfd55105.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "b0dc3f6c2986.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0093::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "34aa7bcd0ea1.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "2019ede95534.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0093::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "7340356e595c.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "6dc1932a598c.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_ci_0093::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "f23b4fc80dc0.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "10c5bbb00a70.opus"
+          }
+        ]
+      }
+    ]
+  }
+]

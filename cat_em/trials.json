@@ -1,0 +1,554 @@
+[
+  {
+    "trial_id": "b001",
+    "item_id": "espresso_em_0020",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh, now he's trying to hide himself in the leaves? What, he thinks he's gonna, like, camouflage or something?"
+      },
+      {
+        "speaker": "B",
+        "text": "Be a little guy in a bunch of bushes, huh?"
+      },
+      {
+        "speaker": "A",
+        "text": "I hope this becomes viral on TikTok. Someone's got to be getting this on video to show his future grandkids."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh shoot, he's falling out of the tree."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh no!"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, the moose is, is he pooping? The moose just stopped to poop. Look at that."
+      },
+      {
+        "speaker": "B",
+        "text": "Did he fall onto the poop?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, no. Oh, that guy is going to laugh about this later."
+      }
+    ],
+    "context_clip": "f884b535a96a.opus",
+    "target_text": "A feces facial.",
+    "target_speaker": "B",
+    "reference_clip": "a0e3ccf1e3f1.opus",
+    "intent": {
+      "what_it_should_be": "Laughing",
+      "why": "This is a direct comedic punchline summarizing the absurd sequence of events where a man potentially falls into moose droppings. It is a moment of shared physical comedy that must be delivered with amusement.",
+      "trigger": "A observing that the moose stopped to poop, combined with B's speculation that the man fell out of the tree directly onto it.",
+      "why_context_matters": "Without context, 'A feces facial' is just a random, potentially gross phrase. The prior turns establishing the physical comedy of the situation make it a hilarious punchline."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_em_0020::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "f5f0f3a2e7df.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "b80e372ae31d.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0020::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "11e62cf07bbe.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "aff7cd37cf28.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0020::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "2264ce069e6e.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "8674ad10ff14.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0020::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "7e3929d2e329.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "86489d6dbf83.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0020::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "d22f0ef21e89.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "4cbb74d455ff.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b002",
+    "item_id": "espresso_em_0039",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "So we're going to start off today with one of the many adventures of Frog and Toad. So Frog and Toad were a couple of frogs that lived in a swamp and they were the best of buds, best friends. And they oftentimes went on hikes together. And on one of these hikes, Frog and Toad went along and they came back and"
+      },
+      {
+        "speaker": "A",
+        "text": "Toad noticed something was different about the coat that Frog was wearing."
+      },
+      {
+        "speaker": "B",
+        "text": "Uh oh."
+      }
+    ],
+    "context_clip": "a25c4f9ef196.opus",
+    "target_text": "Frog was missing a button.",
+    "target_speaker": "A",
+    "reference_clip": "2878c8407744.opus",
+    "intent": {
+      "what_it_should_be": "narration",
+      "why": "The conversation is explicitly framed as telling a children's story. B's 'Uh oh' builds anticipation for a conflict. A's statement is the dramatic reveal of that conflict, which must be delivered with theatrical storytelling flair rather than as a dry fact.",
+      "trigger": "Speaker A's setup of a Frog and Toad adventure and the suspenseful detail that Toad noticed something different about the coat, prompting B's anticipatory 'Uh oh'.",
+      "why_context_matters": "Out of context, 'Frog was missing a button' is a simple, mundane observation. The preceding storytelling setup and the suspenseful 'Uh oh' uniquely position it as the inciting incident of a narrative."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_em_0039::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "75c719eb32f8.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "ae8a4a29a954.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0039::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "aa0a5a1d178d.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "7a8c9c136ef5.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0039::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "7dbd5c852a12.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "2482f102d41e.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0039::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "ed5156b0639b.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "32055fbdf93a.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0039::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "9e247f842c8b.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "cea8c9b0b8fb.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b003",
+    "item_id": "espresso_em_0074",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Well, Sophia, I'm really sorry. Um..."
+      },
+      {
+        "speaker": "A",
+        "text": "You don't have to eat the scones if you don't want to. I'm so sorry. I baked them and I did it wrong."
+      },
+      {
+        "speaker": "B",
+        "text": "It's okay, Vanessa. Like, they're really bad, but I appreciate the love that went into these. Ugh."
+      },
+      {
+        "speaker": "A",
+        "text": "I'm sorry. No, if you keep biting into it, the more you bite, it bubbles more."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, oh, it tastes, yeah, yeah, the more you bite, the worse it gets."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, it's like bubbling into my throat."
+      }
+    ],
+    "context_clip": "6214e3008af9.opus",
+    "target_text": "Ugh, what did you do to these? Ugh.",
+    "target_speaker": "B",
+    "reference_clip": "0f5c5a08068c.opus",
+    "intent": {
+      "what_it_should_be": "Disgusted",
+      "why": "A has just described the chewed scone as 'bubbling into my throat'. B's response is a visceral reaction to this gross sensation, using 'Ugh' to express physical revulsion at the food they are currently chewing.",
+      "trigger": "A and B collaboratively realizing the ruined scones are actively bubbling in their throats as they eat them.",
+      "why_context_matters": "Without the context of eating something physically repulsive, 'what did you do to these?' could just be a neutral or mildly annoyed question about a broken item or a bad mix-up."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_em_0074::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "441423f5df2a.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "cac12be1fb4a.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0074::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "04d9a169040a.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "6226ebacfef8.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0074::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "8bf82a98062e.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "6d5fb9f2c131.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0074::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "ec0f5a210e8c.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "ab03ec874cdb.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0074::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "d719f83fb3b9.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "8bcafd65526e.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b004",
+    "item_id": "espresso_em_0091",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "And the kids dressed up as trees who were the ensemble."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, and they were swaying and they knocked each other over. I don't know why they put them in those hard cardboard outfits."
+      },
+      {
+        "speaker": "B",
+        "text": "Kind of cruel to do that to little seven-year-olds."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I love watching Mrs. Proxy, though, because at the very end of the play, you could tell like her hair was disheveled. She was like a mess and she had tears in the corner of her eyes. You could see she was trying not to cry like she had been like praying for this to go well the whole year. And it was just a disaster."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I saw her mouthing the words backstage off to the side in the wings. Especially when kids would forget their lines, she'd just whisper."
+      },
+      {
+        "speaker": "A",
+        "text": "But it was like not a stage. It was like a stage whisper. Like you could hear her through the mics on the stage. It was insane. Do you remember near the end when like something lit on fire and you could see the smoke off to the right side of the stage? And she was just like panicking like you could hear her backstage going, no, no, no, no, no."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, she didn't let anybody pull the fire alarm because she didn't want to ruin the show."
+      }
+    ],
+    "context_clip": "235f8ec5336d.opus",
+    "target_text": "Oh, it was ruined. It was ruined.",
+    "target_speaker": "A",
+    "reference_clip": "266ea065e0b0.opus",
+    "intent": {
+      "what_it_should_be": "Laughing",
+      "why": "B mentions the teacher didn't pull the fire alarm because she didn't want to 'ruin the show'. A's response is an amused, ironic observation that the show was already an unmitigated disaster, so there was nothing left to ruin.",
+      "trigger": "B's statement that the teacher refused to pull the fire alarm because 'she didn't want to ruin the show', despite everything already going wrong.",
+      "why_context_matters": "The text 'it was ruined' usually implies disappointment or anger. Here, because the speakers are thoroughly enjoying recounting the disastrous play, it is a punchline delivered through laughter."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_em_0091::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "d134f641fef8.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "d81f8de36451.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0091::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "e03e577637eb.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "f9b691842869.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0091::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "b255b56b823c.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "2fe2f512ef13.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0091::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "6bc1ac672726.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "ae6a016df0d7.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0091::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "26ac17a09e49.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "188a87b2da0f.opus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "trial_id": "b005",
+    "item_id": "espresso_em_0094",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Yeah, well, we are starting. It looks like, I think we started to move. Nope."
+      },
+      {
+        "speaker": "A",
+        "text": "Nope. Nope, just shaking. Oh, hold on a second. They're calling back. Yeah, hi."
+      },
+      {
+        "speaker": "B",
+        "text": "No, I'm just shaking."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, it's going to take about an hour for you to fix this? Oh, yeah, not surprising. Okay, no worries. Oh, yeah. We're supposed to be in what room? 808. We're supposed to be in room 808."
+      },
+      {
+        "speaker": "B",
+        "text": "808."
+      },
+      {
+        "speaker": "A",
+        "text": "So can you plan for that room service to be there in like an hour? Is that cool?"
+      },
+      {
+        "speaker": "A",
+        "text": "Please, because we're starving. But please make sure that it's not frozen or cold by the time we get there."
+      },
+      {
+        "speaker": "A",
+        "text": "You're working on it. Okay, thanks. Great. Well, I guess it's time to sit pretty, girl, because this is where we're going to be for a while."
+      }
+    ],
+    "context_clip": "4f3d297f261c.opus",
+    "target_text": "You should call him back and ask him to include cocktails.",
+    "target_speaker": "B",
+    "reference_clip": "865beb9964e6.opus",
+    "intent": {
+      "what_it_should_be": "Laughing",
+      "why": "A has just finished negotiating a ridiculous arrangement to have room service waiting for them in an hour after the elevator is fixed. B jokingly suggests pushing their luck even further by calling the emergency operator back for alcohol.",
+      "trigger": "A's successful negotiation with the emergency worker to have food delivered to room 808 in an hour, followed by A's resignation that 'this is where we're going to be for a while'.",
+      "why_context_matters": "Without context, this is a standard request to add drinks to an order. Knowing the 'him' is an emergency elevator technician makes the request hilarious and highly inappropriate in a fun way."
+    },
+    "pairs": [
+      {
+        "pair_id": "espresso_em_0094::2",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "2719aaf93f05.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "c4b22702dbc9.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0094::0",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "4662ea3d82db.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "03f6c7776cf8.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0094::4",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "324a72b45b84.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "894336727b64.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0094::1",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "645b7bca4d24.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "eb2821f5d4d8.opus"
+          }
+        ]
+      },
+      {
+        "pair_id": "espresso_em_0094::3",
+        "clips": [
+          {
+            "label": "Model 1",
+            "clip": "acb3051c5e8a.opus"
+          },
+          {
+            "label": "Model 2",
+            "clip": "f29072c0232e.opus"
+          }
+        ]
+      }
+    ]
+  }
+]
