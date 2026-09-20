@@ -1,0 +1,1499 @@
+[
+  {
+    "trial_id": "t001",
+    "item_id": "espresso_ci_0058",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Wow. This might be my favorite painting in the entire Met. I've never seen anything quite like this before."
+      },
+      {
+        "speaker": "B",
+        "text": "It reminds me of, do you remember the original Romeo and Juliet movie? The colors that they used to lay her down when she died and everything. It's almost like she's in a bed of, in a veil of that. They're in a veil of it together. Wow. Wow."
+      },
+      {
+        "speaker": "A",
+        "text": "It's so flat, but there's so much depth at the same time to it. It's so beautiful with the colors and the flowers and the textures."
+      },
+      {
+        "speaker": "B",
+        "text": "I almost feel what I love about it is that she's wrapped in the vines of the flowers like she's been there for the whole time waiting for him to come to her."
+      },
+      {
+        "speaker": "A",
+        "text": "That's beautiful. It's so intimate, their exchange, too. It feels like she's both wrapped up in him and the blanket and the flowers, and all three in one."
+      },
+      {
+        "speaker": "B",
+        "text": "Stunning."
+      }
+    ],
+    "context_clip": "c_d7b38d9e8efa.opus",
+    "target_text": "Yeah.",
+    "target_speaker": "A",
+    "reference_clip": "c_08a450307c7d.opus",
+    "intent": {
+      "what_it_should_be": "agreement — strong-agreement",
+      "why": "A is fully sharing in B's profound awe. It functions as a deep agreement with the shared emotional state, rather than a simple affirmative or filler.",
+      "why_context_matters": "'Yeah' is highly ambiguous and typically defaults to a brief backchannel. Here it carries significant emotional weight and mutual appreciation."
+    },
+    "clips": [
+      "c_6c12322ddbdc.opus",
+      "c_54eb0e23f113.opus",
+      "c_7631f190a0dc.opus",
+      "c_f42256565158.opus",
+      "c_e82c390b1d83.opus"
+    ]
+  },
+  {
+    "trial_id": "t002",
+    "item_id": "espresso_ci_0078",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "Oh no..."
+      },
+      {
+        "speaker": "A",
+        "text": "We should check the bathroom to make sure that the bathroom isn't clogged too. But no, it looks like something came up from the bathtub as well. And it is brown. I don't know. I don't know what that is."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, it's in the toilet too and the sink. I think all the pipes here are messed up."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, my God. It's like on the ground. You could tell that it overflowed in the bathroom."
+      },
+      {
+        "speaker": "A",
+        "text": "On to the math mats. Sorry."
+      },
+      {
+        "speaker": "B",
+        "text": "It's okay. Nobody noticed. Oh, while we were gone, this might be happening. Oh."
+      },
+      {
+        "speaker": "A",
+        "text": "No. Oh my god, I'm gonna be sick. We need to call the landlord."
+      },
+      {
+        "speaker": "B",
+        "text": "I don't think I can do it. I think I'm gonna throw up."
+      }
+    ],
+    "context_clip": "c_36b8b3faa10a.opus",
+    "target_text": "Yeah.",
+    "target_speaker": "A",
+    "reference_clip": "c_35c1b104e868.opus",
+    "intent": {
+      "what_it_should_be": "Reaction — empathy",
+      "why": "Both speakers are overwhelmed by the nauseating smell. A's 'Yeah' acts as a commiseration of their shared physical misery and impending vomiting.",
+      "why_context_matters": "As a standalone token, 'Yeah' is a maximally ambiguous affirmative. Only the immediate preceding statements about throwing up lock it into a weak, nauseous commiseration."
+    },
+    "clips": [
+      "c_c8b7f577af3e.opus",
+      "c_0fa591afd36a.opus",
+      "c_920c033a4c8c.opus",
+      "c_78189b5a7152.opus",
+      "c_a8642a04e670.opus"
+    ]
+  },
+  {
+    "trial_id": "t003",
+    "item_id": "espresso_ci_0049",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "She lives in this house, and we have to respect her and her collection that she accumulated over her hundred year of life."
+      },
+      {
+        "speaker": "B",
+        "text": "How do you know she's here? Her presence, how do you sense it?"
+      },
+      {
+        "speaker": "A",
+        "text": "Well, if I reach out and I touch this, you hear that?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes."
+      },
+      {
+        "speaker": "A",
+        "text": "Exactly, that's Miss Anne letting us know that she does not want any of her artifacts to be touched."
+      }
+    ],
+    "context_clip": "c_fe34b1e30155.opus",
+    "target_text": "Oh, wow.",
+    "target_speaker": "B",
+    "reference_clip": "c_8148321c5c10.opus",
+    "intent": {
+      "what_it_should_be": "reaction — surprise",
+      "why": "A has just revealed a supernatural explanation for a physical noise, positioning it as a ghost's warning. B's reaction is one of astonishment or being spooked.",
+      "why_context_matters": "'Oh, wow' can function as a sarcastic remark, a dismissive filler, or genuine surprise. The context of a ghost tour revelation locks it into an engaged, amazed reading."
+    },
+    "clips": [
+      "c_79d84933cab7.opus",
+      "c_8e69b58a36aa.opus",
+      "c_e9d4ee6519ed.opus",
+      "c_197c2044cf84.opus",
+      "c_19e6c587f6fb.opus"
+    ]
+  },
+  {
+    "trial_id": "t004",
+    "item_id": "espresso_ci_0057",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Wow. This might be my favorite painting in the entire Met. I've never seen anything quite like this before."
+      },
+      {
+        "speaker": "B",
+        "text": "It reminds me of, do you remember the original Romeo and Juliet movie? The colors that they used to lay her down when she died and everything. It's almost like she's in a bed of, in a veil of that. They're in a veil of it together. Wow. Wow."
+      },
+      {
+        "speaker": "A",
+        "text": "It's so flat, but there's so much depth at the same time to it. It's so beautiful with the colors and the flowers and the textures."
+      },
+      {
+        "speaker": "B",
+        "text": "I almost feel what I love about it is that she's wrapped in the vines of the flowers like she's been there for the whole time waiting for him to come to her."
+      },
+      {
+        "speaker": "A",
+        "text": "That's beautiful. It's so intimate, their exchange, too. It feels like she's both wrapped up in him and the blanket and the flowers, and all three in one."
+      }
+    ],
+    "context_clip": "c_3106054caa41.opus",
+    "target_text": "Stunning.",
+    "target_speaker": "B",
+    "reference_clip": "c_24049237cda2.opus",
+    "intent": {
+      "what_it_should_be": "statement — evaluation",
+      "why": "B is providing a profound aesthetic evaluation of the painting, serving as an emphatic, shared endorsement of A's poetic description.",
+      "why_context_matters": "In isolation, 'Stunning' could be interpreted as a high-energy, bright exclamation. Context dictates a quiet, emotionally resonant realization of beauty."
+    },
+    "clips": [
+      "c_7ff8e8033da5.opus",
+      "c_cf7942a5e9dd.opus",
+      "c_2d721ef31603.opus",
+      "c_60619c58fdc1.opus",
+      "c_111b53d11a7e.opus"
+    ]
+  },
+  {
+    "trial_id": "t005",
+    "item_id": "espresso_ci_0093",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "the entire play. Just singing and playing with the set."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, he seemed like he wouldn't even know where he was. And then the other kid that was so afraid of the fake dagger."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god. He just broke down crying. His parents had to come out on stage and get him."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my gosh. I'm surprised they chose Macbeth. It was so cute though, watching them do the three witches. It was adorable, but they were like, like trying to mix everything and all the potions and everything."
+      },
+      {
+        "speaker": "A",
+        "text": "Just everything, like water all over the stage and the kids that were like slipping all over it."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, they had so much fun putting things into that pot that they didn't notice it was going to bubble over."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, man."
+      },
+      {
+        "speaker": "B",
+        "text": "Did you see the kid playing Macduff?"
+      }
+    ],
+    "context_clip": "c_614534c96530.opus",
+    "target_text": "Oh, my God.",
+    "target_speaker": "A",
+    "reference_clip": "c_84c7e7452622.opus",
+    "intent": {
+      "what_it_should_be": "reaction — amusement",
+      "why": "B simply prompts A to recall a specific child in the play. A's response acts as an immediate, visceral expression of amusement recalling how funny the child looked.",
+      "why_context_matters": "'Oh, my God' is highly polysemous and can convey horror, tragic news, surprise, or joy. Only the shared comedic context of the disastrous play specifies amused exasperation."
+    },
+    "clips": [
+      "c_ddb25229466f.opus",
+      "c_88342acc125c.opus",
+      "c_46e3f88540c8.opus",
+      "c_4299d5272321.opus",
+      "c_762da5fc4bc8.opus"
+    ]
+  },
+  {
+    "trial_id": "t006",
+    "item_id": "espresso_ci_0020",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "Gosh, I don't know that I remember. Well, let me think. I remember Jason and I, we ordered at the same time and I had the side salad and he had the clam chowder with it."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, so Jason had the clam chowder and you had the side salad?"
+      },
+      {
+        "speaker": "B",
+        "text": "That's right. That's right."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, so if that does that, then, oh yeah, see, we have one extra lasagna with the chicken tortilla soup as a side."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay."
+      },
+      {
+        "speaker": "A",
+        "text": "Do we? Okay."
+      },
+      {
+        "speaker": "A",
+        "text": "Jeffrey can do this."
+      },
+      {
+        "speaker": "B",
+        "text": "It might have been Monique. Maybe she had to leave early to pick up her kids."
+      }
+    ],
+    "context_clip": "c_f0a6d5f4bb89.opus",
+    "target_text": "Yeah, maybe.",
+    "target_speaker": "A",
+    "reference_clip": "c_9fe255519b5c.opus",
+    "intent": {
+      "what_it_should_be": "Agreement — weak-agreement",
+      "why": "B offers a speculative guess about an unassigned meal. A has no proof but accepts it as a plausible theory, resulting in a non-committal response.",
+      "why_context_matters": "'Yeah, maybe' can be interpreted in various ways—sarcastic dismissal, defensive yielding, or genuine confidence. Context establishes it as a shared, tentative speculation."
+    },
+    "clips": [
+      "c_8b3ff386934d.opus",
+      "c_1ba42d8c9a4b.opus",
+      "c_fb4bd96d1517.opus",
+      "c_cd43620ec9db.opus",
+      "c_3da99abc55c2.opus"
+    ]
+  },
+  {
+    "trial_id": "t007",
+    "item_id": "espresso_ci_0022",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "That is putrid."
+      },
+      {
+        "speaker": "A",
+        "text": "That used to be a hamburger bun, but now it's growing fuzz. There are hairs that are growing off that and wiggling around."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, my God."
+      },
+      {
+        "speaker": "A",
+        "text": "Ugh."
+      },
+      {
+        "speaker": "A",
+        "text": "that was a half-eaten burger someone's left under the couch, and now it's like, yeah, it's like oozing, it's like, oh, I just took a close look, it's like bubbling up, and"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, that smell is so just overpowering."
+      },
+      {
+        "speaker": "B",
+        "text": "What does it smell like? I can't even describe it."
+      },
+      {
+        "speaker": "A",
+        "text": "It's like pus, but like if an entire room was full of pus."
+      }
+    ],
+    "context_clip": "c_bc1310658d1b.opus",
+    "target_text": "That's gross.",
+    "target_speaker": "B",
+    "reference_clip": "c_1f961596e28b.opus",
+    "intent": {
+      "what_it_should_be": "reaction — disgust",
+      "why": "B asks for a description and receives a hyper-exaggerated, revolting analogy. B's reaction must match the extreme, visceral nature of A's description.",
+      "why_context_matters": "The phrase 'That's gross' can be said playfully, mildly, or with intense revulsion. A's extreme analogy necessitates an intense, visceral delivery."
+    },
+    "clips": [
+      "c_828e50ff41bd.opus",
+      "c_b5ad8eea68c4.opus",
+      "c_d642fb21b027.opus",
+      "c_7fe06fea3eb7.opus",
+      "c_e324e67ec0a6.opus"
+    ]
+  },
+  {
+    "trial_id": "t008",
+    "item_id": "espresso_ci_0006",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey, Caroline, can I get you in here for a second?"
+      },
+      {
+        "speaker": "B",
+        "text": "Absolutely Brad."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, so I was I can't find my phone and I need to get to Santa Monica Pier in 45 minutes and I need to leave pretty much right about now. Can you help me get there?"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, yep, absolutely. Okay, so you're just going to write this down really quick. It's not going to take you long."
+      },
+      {
+        "speaker": "A",
+        "text": "I got my pen, I got my paper. Well, uh, yeah. Yep."
+      },
+      {
+        "speaker": "B",
+        "text": "Ready? From Spring, you're going to go on to 4th, and then from 4th, you're going to go straight to the 134 West. Take 134 West all the way over to the 101. You're going to connect to the 101 West. Okay, keep going on the 101 West. Uh-huh, you're going to take the 405 South."
+      },
+      {
+        "speaker": "A",
+        "text": "134 West, okay?"
+      },
+      {
+        "speaker": "A",
+        "text": "Uh huh."
+      }
+    ],
+    "context_clip": "c_66fe1ec9ea12.opus",
+    "target_text": "134 to the 101.",
+    "target_speaker": "A",
+    "reference_clip": "c_4dff2379afab.opus",
+    "intent": {
+      "what_it_should_be": "grounding — check",
+      "why": "A is repeating the directions aloud to himself as he writes them down, committing them to memory and verifying the sequence.",
+      "why_context_matters": "Without context, this phrase looks like an instruction or factual assertion directed at a listener. Context shows it is a self-directed, note-taking repetition."
+    },
+    "clips": [
+      "c_1e53a90bdb2b.opus",
+      "c_b9efd41520f7.opus",
+      "c_74a9a86b8ead.opus",
+      "c_80e20bfd5761.opus",
+      "c_3a470b1be6dc.opus"
+    ]
+  },
+  {
+    "trial_id": "t009",
+    "item_id": "espresso_ci_0098",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "best."
+      },
+      {
+        "speaker": "A",
+        "text": "Mmm."
+      },
+      {
+        "speaker": "A",
+        "text": "Chili cheese fries. They're so good. I think it's got to be real cheese."
+      },
+      {
+        "speaker": "B",
+        "text": "Try."
+      },
+      {
+        "speaker": "B",
+        "text": "Mmm."
+      },
+      {
+        "speaker": "B",
+        "text": "The garlic fries."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. Mmm."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, mmm."
+      }
+    ],
+    "context_clip": "c_a29b79676b2d.opus",
+    "target_text": "Those are great.",
+    "target_speaker": "A",
+    "reference_clip": "c_a240a22a302a.opus",
+    "intent": {
+      "what_it_should_be": "Statement — evaluation",
+      "why": "A has just followed B's suggestion to try the garlic fries. Following sounds of savoring ('Mmm'), this is an immediate, highly positive spontaneous evaluation of the food.",
+      "why_context_matters": "The preceding non-lexical sounds ('Mmm') establish a context of real-time culinary enjoyment. The spoken evaluation must match this immediate sensory pleasure."
+    },
+    "clips": [
+      "c_cd6133af3c8b.opus",
+      "c_68ba9580ecf0.opus",
+      "c_e172bbb44a4f.opus",
+      "c_1d1584a2a7e4.opus",
+      "c_1627d3c39a88.opus"
+    ]
+  },
+  {
+    "trial_id": "t010",
+    "item_id": "espresso_ci_0070",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Well, I'm going to come back to that. But I want to ask you first, because I have, I really do want to know, growing up in the Midwest."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. You told me that you, you, you know, kind of fall between either loving fall or spring the most, obviously just allergy dependent, but you love the bloom and then you love the, the, obviously both seasons are about change, right? So tell me one thing."
+      },
+      {
+        "speaker": "B",
+        "text": "Uh huh."
+      },
+      {
+        "speaker": "A",
+        "text": "What's your fondest memory?"
+      }
+    ],
+    "context_clip": "c_b0d4135cee32.opus",
+    "target_text": "My fondest memory.",
+    "target_speaker": "B",
+    "reference_clip": "c_4f4ebcf7186e.opus",
+    "intent": {
+      "what_it_should_be": "grounding — check",
+      "why": "B is echoing the core of A's question to stall for time and confirm the topic before answering (which prompts A to add more detail to the question).",
+      "why_context_matters": "As an isolated text fragment, it appears to be a declarative noun phrase. Context reveals it is a reflective conversational echo of the preceding question."
+    },
+    "clips": [
+      "c_9e3b7e097e39.opus",
+      "c_1d8f6bafa8bb.opus",
+      "c_57b510de7e45.opus",
+      "c_410934b25b09.opus",
+      "c_94dde67bf9be.opus"
+    ]
+  },
+  {
+    "trial_id": "t011",
+    "item_id": "espresso_is_0076",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Awesome. Thank you so much. I'm a little nervous for her."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh man, my phone just died. I'm so sorry. I'm still going to get you there. I'm going to get you there."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, I know the way enough, so I think I can get us there. If you just keep going straight down this road, it's going to turn into Figueroa after like a mile and a half. Okay, cool. You know that. You know that. Okay, okay, okay. So you're going to go down Fig and then... You know what? I think it's going to be faster. Just turn left here. Just turn left here. Up here. Left here. Yeah, on Wilshire. Just turn left right now. Yeah, yeah, yeah. We're going to go up Wilshire and we're just going to... Yeah, we're going to take the back roads because I think this is going to be easier."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay. Yeah, I know. I know the figure. Yeah."
+      },
+      {
+        "speaker": "B",
+        "text": "Yep. Yep. Good call. Okay."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, that one. Yeah."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, yeah, yeah, we're gonna, when we get there, I'm gonna, just turn right, okay?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yep, no problem. Wait, you mean right before the tree or after the tree?"
+      }
+    ],
+    "context_clip": "c_60aeb46460ff.opus",
+    "target_text": "Right before the tree.",
+    "target_speaker": "A",
+    "reference_clip": "c_76eb4987b819.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-contrastive cooccurrence",
+      "why": "Tree is GIVEN as the landmark from B's alternative question. Before is CONTRASTIVE, selecting one of the two explicitly offered spatial alternatives.",
+      "words": [
+        {
+          "word": "before",
+          "label": "CONTRASTIVE"
+        },
+        {
+          "word": "tree",
+          "label": "GIVEN"
+        }
+      ],
+      "why_context_matters": "Without the explicit 'before or after' choice in the context, 'tree' (as the noun phrase head) would normally take the nuclear pitch accent."
+    },
+    "clips": [
+      "c_a0498c5bd663.opus",
+      "c_c160fa73b118.opus",
+      "c_eb0ef7f98690.opus",
+      "c_bfaed987546d.opus",
+      "c_8fe6880e6aa1.opus"
+    ]
+  },
+  {
+    "trial_id": "t012",
+    "item_id": "espresso_is_0048",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "Ugh, yeah? What is that smell?"
+      },
+      {
+        "speaker": "A",
+        "text": "The neighbors were using their disposal again and it backed up in the sink while we were on vacation a lot. So it's been hot in here and it's caked to all of the... It's in the sink. It's caked to the sink with bones everywhere."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, oh, do they have, like, barbecue or something?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, it looks like chicken. Ugh."
+      },
+      {
+        "speaker": "B",
+        "text": "I've never smelled anything so bad."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I don't, I don't know where to begin. They keep saying that these pipes don't connect, but they clearly connect."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, they definitely connect because we did not eat mac and cheese."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I don't want to scoop it out with my hand again because remember the last time when I had to take it out so it stopped clogging the drain? Ugh."
+      }
+    ],
+    "context_clip": "c_31f344a5b1da.opus",
+    "target_text": "Yeah, we're just gonna make the landlord do that.",
+    "target_speaker": "B",
+    "reference_clip": "c_c30c4733303d.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — new-given cooccurrence",
+      "why": "The action of scooping out the drain is GIVEN from A's turn, referred to by 'that'. 'Landlord' is the NEW agent proposed to do the action.",
+      "words": [
+        {
+          "word": "landlord",
+          "label": "NEW"
+        },
+        {
+          "word": "that",
+          "label": "GIVEN"
+        }
+      ],
+      "why_context_matters": "The pronoun 'that' relies entirely on A's preceding complaint for its referent and its given status."
+    },
+    "clips": [
+      "c_5b3a10b86173.opus",
+      "c_af41fcc266c3.opus",
+      "c_fba42da673e7.opus",
+      "c_ef831a20cab8.opus",
+      "c_87b1d5ba3fdb.opus"
+    ]
+  },
+  {
+    "trial_id": "t013",
+    "item_id": "espresso_is_0045",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh my god. Ew. Ew. Ew. Ew. It's in your hair. Ew. Ew. Ew."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god, you smell... It smells like... It smells like..."
+      },
+      {
+        "speaker": "A",
+        "text": "It smells like that's been sitting there for a really long, long time."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, it's squishing in my shoes. Oh, is it in yours?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, yep, it certainly is."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. Oh, don't touch my back. Please don't touch my back. Oh, please don't touch my back. I don't want it against my neck. Ew. I need to know. Is there, is there, is there, um, I'm gonna, I'm gonna swear. Is there shit in my, on my back?"
+      },
+      {
+        "speaker": "B",
+        "text": "There's a lot on your back. I'm so sorry. Ugh."
+      }
+    ],
+    "context_clip": "c_97e18cb7260a.opus",
+    "target_text": "Yeah, it's in your hair. It's like pieces of it. Ew.",
+    "target_speaker": "A",
+    "reference_clip": "c_d21a59fd9fcb.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — contrastive-new cooccurrence",
+      "why": "A contrasts B's focus on A's 'back' by aggressively shifting the topic back to B's 'hair', while introducing 'pieces' as NEW visual information.",
+      "words": [
+        {
+          "word": "hair",
+          "label": "CONTRASTIVE"
+        },
+        {
+          "word": "pieces",
+          "label": "NEW"
+        }
+      ],
+      "why_context_matters": "Without the context of B pointing out the mess on A's back, 'hair' would just be a generic new entity rather than an emphatic contrastive counter-point."
+    },
+    "clips": [
+      "c_de47c263abc8.opus",
+      "c_8e65232d3ea8.opus",
+      "c_bfe5ad0781cd.opus",
+      "c_4335d4fcc415.opus",
+      "c_14285e71189c.opus"
+    ]
+  },
+  {
+    "trial_id": "t014",
+    "item_id": "espresso_is_0073",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey, just got off the bus. I'm on Glen Oaks in San Fernando."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, that makes sense. Perfect. You're just going to go north. You're going to face towards the mountain. Look up. Yep, you're going to just walk towards the mountain, walk uphill. You're going to walk up Glen Oaks. Once you get, it'll be maybe about half a mile before you're going to get to Kenneth Village."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, okay, I got it."
+      }
+    ],
+    "context_clip": "c_5cdcc871843e.opus",
+    "target_text": "Half mile uphill, I didn't bring enough water for this.",
+    "target_speaker": "A",
+    "reference_clip": "c_0a0acbd62e1a.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "B just told A to walk 'about half a mile' and 'walk uphill', making 'mile' (and 'uphill') GIVEN. A then introduces 'water' as NEW information.",
+      "words": [
+        {
+          "word": "mile",
+          "label": "GIVEN"
+        },
+        {
+          "word": "water",
+          "label": "NEW"
+        }
+      ],
+      "why_context_matters": "Without B's prior instruction, 'Half mile uphill' would be completely new information and require strong pitch accents."
+    },
+    "clips": [
+      "c_c415457b0090.opus",
+      "c_9dbb1db9ade5.opus",
+      "c_b3a08a0bf851.opus",
+      "c_6c39111ce10c.opus",
+      "c_7a804a17148a.opus"
+    ]
+  },
+  {
+    "trial_id": "t015",
+    "item_id": "espresso_is_0038",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "Uh huh."
+      },
+      {
+        "speaker": "A",
+        "text": "What's your fondest memory?"
+      },
+      {
+        "speaker": "B",
+        "text": "My fondest memory."
+      },
+      {
+        "speaker": "A",
+        "text": "of growing up in the Midwest."
+      },
+      {
+        "speaker": "B",
+        "text": "the green beans and that was every day in the summer when I would stay with them and be around them and it was probably my fondest memories are just enjoying the Missouri weather and the front porch and the grandparents and the fresh green beans once we were done snapping them too. They taste so good when they're fresh out of the garden like that."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah. Tell me when you say Missouri weather, tell me about the Missouri weather. What is that like?"
+      },
+      {
+        "speaker": "B",
+        "text": "step outside of your house and when you live on a coast you don't get those those things so much so i think um yeah i think my that would be what i my answer how about you"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, yeah."
+      }
+    ],
+    "context_clip": "c_77d5b3afd192.opus",
+    "target_text": "So what do I miss or what would what's my fondest memory or?",
+    "target_speaker": "A",
+    "reference_clip": "c_44f98531d81d.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "'fondest memory' is the heavily grounded discourse topic. A contrasts it with a new alternative, 'miss', to clarify B's vague prompt.",
+      "words": [
+        {
+          "word": "miss",
+          "label": "NEW"
+        },
+        {
+          "word": "fondest memory",
+          "label": "GIVEN"
+        }
+      ],
+      "why_context_matters": "Only the prior discourse reveals that 'fondest memory' is mutually understood and currently active."
+    },
+    "clips": [
+      "c_1e28498a950a.opus",
+      "c_9546d5d35308.opus",
+      "c_124f42a30753.opus",
+      "c_b296710760fd.opus",
+      "c_cb541161b485.opus"
+    ]
+  },
+  {
+    "trial_id": "t016",
+    "item_id": "espressoX_is_0249",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "just by the shot it's so well set up that that he is as they say in the movie of the samurai meaning like you know he's like a he's a bounty hunter basically and it's just this incredible shot so I recommend it highly recommend it what about you though"
+      },
+      {
+        "speaker": "B",
+        "text": "Well, thank you for describing that. I can imagine it. I can imagine the smoke piling up from the cigarette, the kind of of it all, you know what I mean? So French. The true raw grittiness. For me, I consume a lot of animated media. So if I were to go for my favorite film in animation..."
+      },
+      {
+        "speaker": "B",
+        "text": "It's not necessarily the most well-known Ghibli film, but Nausicaa of the Valley of the Wind."
+      },
+      {
+        "speaker": "B",
+        "text": "It's so good. It's so good. I remember watching that when I was a kid. And it was the first animated movie that I distinctly remember. You know when you're like a kid consciousness? Where you're like, I know I... People..."
+      },
+      {
+        "speaker": "B",
+        "text": "But if we're talking about favorite movie that's on camera or right now, have you seen Everything Everywhere all at once?"
+      },
+      {
+        "speaker": "A",
+        "text": "I haven't. I want to see that. I just saw Nope, though."
+      },
+      {
+        "speaker": "B",
+        "text": "in two separate ways. You can laugh, cry, and like, this is so freaking funny. I'm losing my mind. Or you can laugh, cry, and like, I'm so sad, but I'm so happy. It made me do it both times. Both times."
+      },
+      {
+        "speaker": "A",
+        "text": "I did that with Jojo Rabbit."
+      }
+    ],
+    "context_clip": "c_7cb35870084a.opus",
+    "target_text": "Jojo Rabbit is so good.",
+    "target_speaker": "B",
+    "reference_clip": "c_718063d1780d.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "A explicitly mentions 'Jojo Rabbit' in the immediately preceding turn. B adopts it as a GIVEN topic and provides a NEW evaluative comment ('good').",
+      "words": [],
+      "why_context_matters": "Without knowing Jojo Rabbit was just mentioned, a TTS system would default to placing a strong primary accent on the subject noun phrase."
+    },
+    "clips": [
+      "c_0076d3870114.opus",
+      "c_1c521eb16419.opus",
+      "c_993b84a3870e.opus",
+      "c_2e92e9aa5420.opus",
+      "c_e818786d6ce7.opus"
+    ]
+  },
+  {
+    "trial_id": "t017",
+    "item_id": "espressoX_is_0313",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I'm going to be telling you the story of Santa Claus."
+      },
+      {
+        "speaker": "A",
+        "text": "Have you heard of Santa Claus before?"
+      },
+      {
+        "speaker": "B",
+        "text": "Uh huh."
+      },
+      {
+        "speaker": "A",
+        "text": "Great, what do you know about Santa?"
+      },
+      {
+        "speaker": "B",
+        "text": "Well, he brings me presents at Christmas time."
+      },
+      {
+        "speaker": "A",
+        "text": "This is very true. Do you know how he brings you presence?"
+      },
+      {
+        "speaker": "B",
+        "text": "Um, does he use... does he use a sleigh?"
+      }
+    ],
+    "context_clip": "c_134a0dc69c26.opus",
+    "target_text": "He uses a sleigh and eight reindeer, led by Rudolph.",
+    "target_speaker": "A",
+    "reference_clip": "c_f8f158b5679f.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "The concept of a 'sleigh' was just questioned by B, making it GIVEN. 'Reindeer' and 'Rudolph' are introduced by A as NEW information.",
+      "words": [],
+      "why_context_matters": "Without B's question about the sleigh, A's statement would feature an accent on 'sleigh' as new information."
+    },
+    "clips": [
+      "c_52f1df8be9a3.opus",
+      "c_e5c4f399bcd9.opus",
+      "c_793e34fcff3e.opus",
+      "c_d489b4ea8064.opus",
+      "c_9f82645a0526.opus"
+    ]
+  },
+  {
+    "trial_id": "t018",
+    "item_id": "espressoX_is_0311",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "She lives in this house, and we have to respect her and her collection that she accumulated over her hundred year of life."
+      },
+      {
+        "speaker": "B",
+        "text": "How do you know she's here? Her presence, how do you sense it?"
+      },
+      {
+        "speaker": "A",
+        "text": "Well, if I reach out and I touch this, you hear that?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes."
+      },
+      {
+        "speaker": "A",
+        "text": "Exactly, that's Miss Anne letting us know that she does not want any of her artifacts to be touched."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, wow."
+      },
+      {
+        "speaker": "A",
+        "text": "rare artifacts, trading rare artifacts, all that stuff. She became obsessed with her work, never marrying, never having kids, basically solely focusing on the collection that you see before you."
+      }
+    ],
+    "context_clip": "c_8393968d8894.opus",
+    "target_text": "Did she have a prized object in the collection or a favorite one?",
+    "target_speaker": "B",
+    "reference_clip": "c_26a6a508984a.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "The 'collection' was just mentioned by A, making it GIVEN for B. The concept of a 'prized object' is NEW.",
+      "words": [],
+      "why_context_matters": "Without A's prior turn, 'collection' would be treated as new information and receive a default pitch accent."
+    },
+    "clips": [
+      "c_5780ea15ef1d.opus",
+      "c_f8a852ccd232.opus",
+      "c_1b131efa795c.opus",
+      "c_05900ba77194.opus",
+      "c_c105cb12d935.opus"
+    ]
+  },
+  {
+    "trial_id": "t019",
+    "item_id": "espressoX_is_0253",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "No, I just wanted to make sure because it's in cash, right?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, that's why I'm asking. Do you want cash?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, no worries. You can pay me back tomorrow. Just buy me a coffee."
+      }
+    ],
+    "context_clip": "c_b18dedf9559f.opus",
+    "target_text": "Okay, I'll buy you a coffee and I'll give you a raise. Thank you so much.",
+    "target_speaker": "A",
+    "reference_clip": "c_1e82023ea4b3.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "B just requested that A buy them a coffee, making 'coffee' GIVEN. A agrees and introduces 'raise' as NEW information.",
+      "words": [],
+      "why_context_matters": "Without B's prior turn, both 'coffee' and 'raise' would be treated as equally new coordinate nouns."
+    },
+    "clips": [
+      "c_9fe8960a50e8.opus",
+      "c_6eb2c7caaf32.opus",
+      "c_69c9201f52b2.opus",
+      "c_1ce9b25782fb.opus",
+      "c_ca582fd874c7.opus"
+    ]
+  },
+  {
+    "trial_id": "t020",
+    "item_id": "espressoX_is_0386",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Uh, I'm so grateful for-"
+      },
+      {
+        "speaker": "A",
+        "text": "Uncle Sean, but, oh, I wish he had told us not to inhale."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I feel like I didn't know the rules for smoking cigars. And I can't stop coughing now. But it's really nice of Uncle Sean to give us cigars."
+      },
+      {
+        "speaker": "A",
+        "text": "It's like he knew that we were bored of this wedding."
+      }
+    ],
+    "context_clip": "c_c6878249d45e.opus",
+    "target_text": "Yeah, we've all known Rebecca and Jerry were gonna get married for a while.",
+    "target_speaker": "B",
+    "reference_clip": "c_63eba8a99a39.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence (semantic givenness)",
+      "why": "The concept of marriage is lexically accessible (GIVEN) because A just mentioned 'this wedding'. The specific couple, 'Rebecca and Jerry', is NEW information.",
+      "words": [],
+      "why_context_matters": "The status of 'married' as a GIVEN concept depends entirely on A's prior mention of the 'wedding'."
+    },
+    "clips": [
+      "c_9c34ae6e3cee.opus",
+      "c_cbc7e1a1cb89.opus",
+      "c_88ba630bc0b2.opus",
+      "c_a4b4040bab58.opus",
+      "c_99a0d4c63174.opus"
+    ]
+  },
+  {
+    "trial_id": "t021",
+    "item_id": "espresso_em_0020",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh, now he's trying to hide himself in the leaves? What, he thinks he's gonna, like, camouflage or something?"
+      },
+      {
+        "speaker": "B",
+        "text": "Be a little guy in a bunch of bushes, huh?"
+      },
+      {
+        "speaker": "A",
+        "text": "I hope this becomes viral on TikTok. Someone's got to be getting this on video to show his future grandkids."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh shoot, he's falling out of the tree."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh no!"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, the moose is, is he pooping? The moose just stopped to poop. Look at that."
+      },
+      {
+        "speaker": "B",
+        "text": "Did he fall onto the poop?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, no. Oh, that guy is going to laugh about this later."
+      }
+    ],
+    "context_clip": "c_9634dea1f157.opus",
+    "target_text": "A feces facial.",
+    "target_speaker": "B",
+    "reference_clip": "c_6df312bcf4d3.opus",
+    "intent": {
+      "what_it_should_be": "Laughing",
+      "why": "This is a direct comedic punchline summarizing the absurd sequence of events where a man potentially falls into moose droppings. It is a moment of shared physical comedy that must be delivered with amusement.",
+      "trigger": "A observing that the moose stopped to poop, combined with B's speculation that the man fell out of the tree directly onto it.",
+      "why_context_matters": "Without context, 'A feces facial' is just a random, potentially gross phrase. The prior turns establishing the physical comedy of the situation make it a hilarious punchline."
+    },
+    "clips": [
+      "c_9b732ebad8aa.opus",
+      "c_024c00ad11e4.opus",
+      "c_ce3464c6988c.opus",
+      "c_04a8798ecc15.opus",
+      "c_9cd361ecdd7a.opus"
+    ]
+  },
+  {
+    "trial_id": "t022",
+    "item_id": "easycom_00105",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": 5,
+        "text": "No."
+      },
+      {
+        "speaker": 5,
+        "text": "But I'll give you guys a clue. Maybe like focusing on the perimeters, like the- the bounds of this room."
+      },
+      {
+        "speaker": 3,
+        "text": "Oh! Is it the chain?"
+      }
+    ],
+    "context_clip": "c_fa737d1ec894.opus",
+    "target_text": "Yes. Good job, Victoria.",
+    "target_speaker": 5,
+    "reference_clip": "c_6d9ce78ae14e.opus",
+    "intent": {
+      "what_it_should_be": "Happy",
+      "why": "The speaker confirms Victoria's guess with an enthusiastic, laughing tone and warm pitch, expressing delight and approval.",
+      "trigger": "Victoria correctly guessed 'Is it the chain?' after receiving clues."
+    },
+    "clips": [
+      "c_fe73d9f8f09c.opus",
+      "c_1726332c42c8.opus",
+      "c_af114344901d.opus",
+      "c_0c32d3a9b132.opus",
+      "c_216dcaab31b4.opus"
+    ]
+  },
+  {
+    "trial_id": "t023",
+    "item_id": "espresso_em_0039",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "So we're going to start off today with one of the many adventures of Frog and Toad. So Frog and Toad were a couple of frogs that lived in a swamp and they were the best of buds, best friends. And they oftentimes went on hikes together. And on one of these hikes, Frog and Toad went along and they came back and"
+      },
+      {
+        "speaker": "A",
+        "text": "Toad noticed something was different about the coat that Frog was wearing."
+      },
+      {
+        "speaker": "B",
+        "text": "Uh oh."
+      }
+    ],
+    "context_clip": "c_21a549ca1e13.opus",
+    "target_text": "Frog was missing a button.",
+    "target_speaker": "A",
+    "reference_clip": "c_a9a2986178f0.opus",
+    "intent": {
+      "what_it_should_be": "narration",
+      "why": "The conversation is explicitly framed as telling a children's story. B's 'Uh oh' builds anticipation for a conflict. A's statement is the dramatic reveal of that conflict, which must be delivered with theatrical storytelling flair rather than as a dry fact.",
+      "trigger": "Speaker A's setup of a Frog and Toad adventure and the suspenseful detail that Toad noticed something different about the coat, prompting B's anticipatory 'Uh oh'.",
+      "why_context_matters": "Out of context, 'Frog was missing a button' is a simple, mundane observation. The preceding storytelling setup and the suspenseful 'Uh oh' uniquely position it as the inciting incident of a narrative."
+    },
+    "clips": [
+      "c_922acf5aed1c.opus",
+      "c_527dc6147e05.opus",
+      "c_70e200757372.opus",
+      "c_6c3aa3b14e99.opus",
+      "c_71d7ad699008.opus"
+    ]
+  },
+  {
+    "trial_id": "t024",
+    "item_id": "espresso_em_0065",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Uhhh..."
+      },
+      {
+        "speaker": "A",
+        "text": "Marie, I'm so sorry for the smell. I found the source. It's my fault. I'm so sorry. I used the Instapot the other day, and by the other day, I mean three to four days ago, and forgot to clean it. Forgot to clean it. There's chicken water in the bottom here."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, are you sure that was three to four days ago? Cause, oh, I'm pretty sure it was like five to six because that is, that is rancid."
+      },
+      {
+        "speaker": "A",
+        "text": "It's been sitting in the sun. It's been sitting in the sun. Yeah, yeah."
+      }
+    ],
+    "context_clip": "c_8c5cbef3ba1d.opus",
+    "target_text": "Ugh, what did you cook in there?",
+    "target_speaker": "B",
+    "reference_clip": "c_e79d6e3b2e73.opus",
+    "intent": {
+      "what_it_should_be": "Disgusted",
+      "why": "A has just confirmed the rotting, foul-smelling chicken water has been sitting in the sun. B's question is not out of culinary curiosity, but morbid disgust at the resulting rancid smell.",
+      "trigger": "A's disclosure that the uncleaned Instapot with old chicken water has been 'sitting in the sun'.",
+      "why_context_matters": "Without the context of the rotting food, 'what did you cook in there?' is a standard, neutral culinary question."
+    },
+    "clips": [
+      "c_76edff628bf0.opus",
+      "c_4a1e749fac1b.opus",
+      "c_fe5e0151c0ff.opus",
+      "c_b35667e5e11f.opus",
+      "c_79f4cb066cf8.opus"
+    ]
+  },
+  {
+    "trial_id": "t025",
+    "item_id": "espresso_em_0091",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "And the kids dressed up as trees who were the ensemble."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, and they were swaying and they knocked each other over. I don't know why they put them in those hard cardboard outfits."
+      },
+      {
+        "speaker": "B",
+        "text": "Kind of cruel to do that to little seven-year-olds."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I love watching Mrs. Proxy, though, because at the very end of the play, you could tell like her hair was disheveled. She was like a mess and she had tears in the corner of her eyes. You could see she was trying not to cry like she had been like praying for this to go well the whole year. And it was just a disaster."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I saw her mouthing the words backstage off to the side in the wings. Especially when kids would forget their lines, she'd just whisper."
+      },
+      {
+        "speaker": "A",
+        "text": "But it was like not a stage. It was like a stage whisper. Like you could hear her through the mics on the stage. It was insane. Do you remember near the end when like something lit on fire and you could see the smoke off to the right side of the stage? And she was just like panicking like you could hear her backstage going, no, no, no, no, no."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, she didn't let anybody pull the fire alarm because she didn't want to ruin the show."
+      }
+    ],
+    "context_clip": "c_a88ce7b992fb.opus",
+    "target_text": "Oh, it was ruined. It was ruined.",
+    "target_speaker": "A",
+    "reference_clip": "c_bd63a8bbba25.opus",
+    "intent": {
+      "what_it_should_be": "Laughing",
+      "why": "B mentions the teacher didn't pull the fire alarm because she didn't want to 'ruin the show'. A's response is an amused, ironic observation that the show was already an unmitigated disaster, so there was nothing left to ruin.",
+      "trigger": "B's statement that the teacher refused to pull the fire alarm because 'she didn't want to ruin the show', despite everything already going wrong.",
+      "why_context_matters": "The text 'it was ruined' usually implies disappointment or anger. Here, because the speakers are thoroughly enjoying recounting the disastrous play, it is a punchline delivered through laughter."
+    },
+    "clips": [
+      "c_1254e588a03f.opus",
+      "c_4ffc5d1364df.opus",
+      "c_c38fee687777.opus",
+      "c_280b8ed287a8.opus",
+      "c_3043a0c15699.opus"
+    ]
+  },
+  {
+    "trial_id": "t026",
+    "item_id": "espresso_em_0074",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Well, Sophia, I'm really sorry. Um..."
+      },
+      {
+        "speaker": "A",
+        "text": "You don't have to eat the scones if you don't want to. I'm so sorry. I baked them and I did it wrong."
+      },
+      {
+        "speaker": "B",
+        "text": "It's okay, Vanessa. Like, they're really bad, but I appreciate the love that went into these. Ugh."
+      },
+      {
+        "speaker": "A",
+        "text": "I'm sorry. No, if you keep biting into it, the more you bite, it bubbles more."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, oh, it tastes, yeah, yeah, the more you bite, the worse it gets."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, it's like bubbling into my throat."
+      }
+    ],
+    "context_clip": "c_8c78b8e614d4.opus",
+    "target_text": "Ugh, what did you do to these? Ugh.",
+    "target_speaker": "B",
+    "reference_clip": "c_cb3ff39e90b7.opus",
+    "intent": {
+      "what_it_should_be": "Disgusted",
+      "why": "A has just described the chewed scone as 'bubbling into my throat'. B's response is a visceral reaction to this gross sensation, using 'Ugh' to express physical revulsion at the food they are currently chewing.",
+      "trigger": "A and B collaboratively realizing the ruined scones are actively bubbling in their throats as they eat them.",
+      "why_context_matters": "Without the context of eating something physically repulsive, 'what did you do to these?' could just be a neutral or mildly annoyed question about a broken item or a bad mix-up."
+    },
+    "clips": [
+      "c_b2f96482064c.opus",
+      "c_d52445c399b3.opus",
+      "c_62e37ebff18c.opus",
+      "c_0140494e7bdc.opus",
+      "c_5eacee230943.opus"
+    ]
+  },
+  {
+    "trial_id": "t027",
+    "item_id": "easycom_00420",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": 7,
+        "text": "What?"
+      },
+      {
+        "speaker": 5,
+        "text": "Something"
+      },
+      {
+        "speaker": 5,
+        "text": "Green."
+      }
+    ],
+    "context_clip": "c_8450bd643ee2.opus",
+    "target_text": "The tape on that thing saying something. Okay.",
+    "target_speaker": 7,
+    "reference_clip": "c_3e6ac73cd62e.opus",
+    "intent": {
+      "what_it_should_be": "Laughing",
+      "why": "The speaker chuckles and giggles through the phrase, especially while saying 'saying something' and 'Okay', showing amusement.",
+      "trigger": "Noticing the tape on the object they are discussing."
+    },
+    "clips": [
+      "c_9200bde556d4.opus",
+      "c_51a9166806e6.opus",
+      "c_ac19fe3e87eb.opus",
+      "c_4067bf0e112a.opus",
+      "c_6e24ef9514b7.opus"
+    ]
+  },
+  {
+    "trial_id": "t028",
+    "item_id": "espresso_em_0047",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I'm going to be telling you the story of Santa Claus."
+      },
+      {
+        "speaker": "A",
+        "text": "Have you heard of Santa Claus before?"
+      },
+      {
+        "speaker": "B",
+        "text": "Uh huh."
+      },
+      {
+        "speaker": "A",
+        "text": "Great, what do you know about Santa?"
+      },
+      {
+        "speaker": "B",
+        "text": "Well, he brings me presents at Christmas time."
+      },
+      {
+        "speaker": "A",
+        "text": "This is very true. Do you know how he brings you presence?"
+      },
+      {
+        "speaker": "B",
+        "text": "Um, does he use... does he use a sleigh?"
+      }
+    ],
+    "context_clip": "c_c5f5b7f638d8.opus",
+    "target_text": "He uses a sleigh and eight reindeer, led by Rudolph.",
+    "target_speaker": "A",
+    "reference_clip": "c_5519b8a6ee4c.opus",
+    "intent": {
+      "what_it_should_be": "narration",
+      "why": "A is confirming B's tentative guess and expanding on it with classic lore. The tone needs to be validating, encouraging, and illustrative, leading the listener deeper into the story.",
+      "trigger": "B's hesitant guess asking 'does he use a sleigh?'",
+      "why_context_matters": "In isolation, this is a simple statement of fact. In context, it functions as an interactive, validating beat in a storytelling session, requiring the speaker to sound encouraging and captivating."
+    },
+    "clips": [
+      "c_a272712ff591.opus",
+      "c_4f504eaae57b.opus",
+      "c_e7e642b13856.opus",
+      "c_262576a26178.opus",
+      "c_b4768dcd1e0e.opus"
+    ]
+  },
+  {
+    "trial_id": "t029",
+    "item_id": "espresso_em_0087",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "the middle of peeing and he goes hey he starts screaming turning around from the like the urinal and like chasing after us and when he came out how furious he was with us do you remember"
+      },
+      {
+        "speaker": "B",
+        "text": "I totally remembered that. I'd never seen Dad so mad, but I'd also never laughed so hard. He just whipped around from the urinal. How old were we?"
+      },
+      {
+        "speaker": "A",
+        "text": "oh my god oh we were about like 10 and i can't believe it like we just like ran through not expecting it both of us went that's just like furious just like flipping out turning around obviously like dropped some pee on the ground as he's turning"
+      },
+      {
+        "speaker": "B",
+        "text": "Did he get it all over his pants? I remember mom being mad that she had to do the laundry that night."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah. Yeah. And he's like trying to look professional because he's like, oh, look how successful I've been in my life going back to my elementary school to like reminisce. And now he looks like he's got like pee that he's brought into the classrooms and stuff with him."
+      }
+    ],
+    "context_clip": "c_cc00d2550527.opus",
+    "target_text": "It's never not funny when people get pee on themselves.",
+    "target_speaker": "B",
+    "reference_clip": "c_8aedbbc4267c.opus",
+    "intent": {
+      "what_it_should_be": "Laughing",
+      "why": "A has just set a hilarious scene of their dad trying to look professional while walking around his old elementary school with pee on his pants. B's conclusion is a comedic reaction to this absurd imagery, requiring an amused, laughing delivery rather than a serious statement.",
+      "trigger": "A's detailed description of their dad's ruined attempt at looking successful because he walked into classrooms with pee on his pants.",
+      "why_context_matters": "Without the preceding hilarious story about their father, this sentence could be delivered deadpan or as a factual claim. The situational buildup and the speakers' shared amusement require a laughing reaction."
+    },
+    "clips": [
+      "c_4ea8c5cc2836.opus",
+      "c_cc630302dcd0.opus",
+      "c_6db4b301ba6b.opus",
+      "c_855577936db4.opus",
+      "c_9e095537e885.opus"
+    ]
+  },
+  {
+    "trial_id": "t030",
+    "item_id": "espresso_em_0094",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Yeah, well, we are starting. It looks like, I think we started to move. Nope."
+      },
+      {
+        "speaker": "A",
+        "text": "Nope. Nope, just shaking. Oh, hold on a second. They're calling back. Yeah, hi."
+      },
+      {
+        "speaker": "B",
+        "text": "No, I'm just shaking."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, it's going to take about an hour for you to fix this? Oh, yeah, not surprising. Okay, no worries. Oh, yeah. We're supposed to be in what room? 808. We're supposed to be in room 808."
+      },
+      {
+        "speaker": "B",
+        "text": "808."
+      },
+      {
+        "speaker": "A",
+        "text": "So can you plan for that room service to be there in like an hour? Is that cool?"
+      },
+      {
+        "speaker": "A",
+        "text": "Please, because we're starving. But please make sure that it's not frozen or cold by the time we get there."
+      },
+      {
+        "speaker": "A",
+        "text": "You're working on it. Okay, thanks. Great. Well, I guess it's time to sit pretty, girl, because this is where we're going to be for a while."
+      }
+    ],
+    "context_clip": "c_86a6244a5471.opus",
+    "target_text": "You should call him back and ask him to include cocktails.",
+    "target_speaker": "B",
+    "reference_clip": "c_be9439000abd.opus",
+    "intent": {
+      "what_it_should_be": "Laughing",
+      "why": "A has just finished negotiating a ridiculous arrangement to have room service waiting for them in an hour after the elevator is fixed. B jokingly suggests pushing their luck even further by calling the emergency operator back for alcohol.",
+      "trigger": "A's successful negotiation with the emergency worker to have food delivered to room 808 in an hour, followed by A's resignation that 'this is where we're going to be for a while'.",
+      "why_context_matters": "Without context, this is a standard request to add drinks to an order. Knowing the 'him' is an emergency elevator technician makes the request hilarious and highly inappropriate in a fun way."
+    },
+    "clips": [
+      "c_8f5717db4bfb.opus",
+      "c_a2d1c50c32c4.opus",
+      "c_3f7b3214978f.opus",
+      "c_450298dc8d02.opus",
+      "c_a156392035a0.opus"
+    ]
+  }
+]
