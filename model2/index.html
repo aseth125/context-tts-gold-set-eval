@@ -475,15 +475,15 @@ function render(){
 
     <h2>Does the delivery feel appropriate at this moment in this conversation?</h2>
     <div class="verdict">
-      <button class="vbtn ${r.verdict==="match"?"sel":""}" data-v="match" onclick="verdict('match')">
+      <button id="v0-match" class="vbtn ${r.verdict==="match"?"sel":""}" data-v="match" onclick="verdict('match')">
         Match<small>delivered the way it should be</small></button>
-      <button class="vbtn ${r.verdict==="mismatch"?"sel":""}" data-v="mismatch" onclick="verdict('mismatch')">
+      <button id="v0-mismatch" class="vbtn ${r.verdict==="mismatch"?"sel":""}" data-v="mismatch" onclick="verdict('mismatch')">
         Mismatch<small>not delivered the way it should be</small></button>
     </div>
 
     <h2>How confident are you in that answer?</h2>
     <div class="row">${["low","medium","high"].map(c=>
-      `<div class="chip ${r.confidence===c?"sel":""}" onclick="conf('${c}')">${c}</div>`).join("")}</div>
+      `<div id="c0-${c}" class="chip ${r.confidence===c?"sel":""}" onclick="conf('${c}')">${c}</div>`).join("")}</div>
 
     <h2>Comments <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></h2>
     <textarea id="cmt" placeholder="Anything worth saying about this clip — what made it fit or not fit, what you were torn between, anything odd about the audio or the item itself."
@@ -495,13 +495,7 @@ function render(){
     </p>
   `;
 
-  const done=PAGES.filter(q=>(R[rkey(q)]||{}).verdict).length;
-  document.getElementById("pos").textContent=
-    `${I+1} / ${PAGES.length}  ·  ${done} answered`;
-  document.getElementById("fill").style.width=(100*done/PAGES.length)+"%";
-  document.getElementById("prev").disabled=I===0;
-  document.getElementById("next").disabled=!(r.verdict&&r.confidence);
-  document.getElementById("next").textContent=I===PAGES.length-1?"Finish":"Next →";
+  footer();
 
   // Only jump to the top when the PAGE changed. Re-rendering after an answer
   // used to scroll the window up under the annotator, which is maddening when
@@ -516,8 +510,36 @@ function cur(){
   R[k]=R[k]||{verdict:null,confidence:null,broken:false,comment:"",t0:Date.now()};
   return R[k];
 }
-function verdict(v){const r=cur();r.verdict=v;r.ms=Date.now()-(r.t0||Date.now());save();render()}
-function conf(c){cur().confidence=c;save();render()}
+// Answering repaints only what changed. The handler used to call render(),
+// which rebuilds the answer area with innerHTML: that recreates every <audio>
+// element (stopping playback) and briefly collapses the page height, at which
+// point the browser clamps the scroll offset and the annotator is thrown back
+// to the top of a long conversation. The answer registered; it just scrolled
+// out of sight. render() is still used for page changes, where the rebuild is
+// the whole point.
+function footer(){
+  const p=PAGES[I], r=R[rkey(p)]||{};
+  const done=PAGES.filter(q=>(R[rkey(q)]||{}).verdict).length;
+  document.getElementById("pos").textContent=
+    `${I+1} / ${PAGES.length}  ·  ${done} answered`;
+  document.getElementById("fill").style.width=(100*done/PAGES.length)+"%";
+  document.getElementById("prev").disabled=I===0;
+  document.getElementById("next").disabled=!(r.verdict&&r.confidence);
+  document.getElementById("next").textContent=I===PAGES.length-1?"Finish":"Next →";
+}
+function paint(){
+  const p=PAGES[I], r=R[rkey(p)]||{};
+  for(const v of ["match","mismatch"]){
+    const el=document.getElementById("v0-"+v);
+    if(el) el.classList.toggle("sel", r.verdict===v);
+  }
+  for(const c of ["low","medium","high"]){
+    const el=document.getElementById("c0-"+c);
+    if(el) el.classList.toggle("sel", r.confidence===c);
+  }
+}
+function verdict(v){const r=cur();r.verdict=v;r.ms=Date.now()-(r.t0||Date.now());save();paint();footer()}
+function conf(c){cur().confidence=c;save();paint();footer()}
 function brk(on){cur().broken=!!on;save()}
 // Deliberately does NOT re-render: rebuilding the page innerHTML on every
 // keystroke would blow away the textarea and the caret with it.
