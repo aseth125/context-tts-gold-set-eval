@@ -426,7 +426,7 @@ async function start(){
   render();
 }
 
-function esc(s){return (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
 const rkey=p=>p.trial.trial_id+"|"+p.clip;
 
 function render(){
