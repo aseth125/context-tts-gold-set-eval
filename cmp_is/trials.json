@@ -1,0 +1,549 @@
+[
+  {
+    "trial_id": "cis001",
+    "item_id": "espressoX_is_0249",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "just by the shot it's so well set up that that he is as they say in the movie of the samurai meaning like you know he's like a he's a bounty hunter basically and it's just this incredible shot so I recommend it highly recommend it what about you though"
+      },
+      {
+        "speaker": "B",
+        "text": "Well, thank you for describing that. I can imagine it. I can imagine the smoke piling up from the cigarette, the kind of of it all, you know what I mean? So French. The true raw grittiness. For me, I consume a lot of animated media. So if I were to go for my favorite film in animation..."
+      },
+      {
+        "speaker": "B",
+        "text": "It's not necessarily the most well-known Ghibli film, but Nausicaa of the Valley of the Wind."
+      },
+      {
+        "speaker": "B",
+        "text": "It's so good. It's so good. I remember watching that when I was a kid. And it was the first animated movie that I distinctly remember. You know when you're like a kid consciousness? Where you're like, I know I... People..."
+      },
+      {
+        "speaker": "B",
+        "text": "But if we're talking about favorite movie that's on camera or right now, have you seen Everything Everywhere all at once?"
+      },
+      {
+        "speaker": "A",
+        "text": "I haven't. I want to see that. I just saw Nope, though."
+      },
+      {
+        "speaker": "B",
+        "text": "in two separate ways. You can laugh, cry, and like, this is so freaking funny. I'm losing my mind. Or you can laugh, cry, and like, I'm so sad, but I'm so happy. It made me do it both times. Both times."
+      },
+      {
+        "speaker": "A",
+        "text": "I did that with Jojo Rabbit."
+      }
+    ],
+    "context_clip": "8d7d36c7e09d.opus",
+    "target_text": "Jojo Rabbit is so good.",
+    "target_speaker": "B",
+    "reference_clip": "30ed1d7e802b.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "A explicitly mentions 'Jojo Rabbit' in the immediately preceding turn. B adopts it as a GIVEN topic and provides a NEW evaluative comment ('good').",
+      "words": [],
+      "why_context_matters": "Without knowing Jojo Rabbit was just mentioned, a TTS system would default to placing a strong primary accent on the subject noun phrase."
+    },
+    "clips": [
+      {
+        "clip": "9a30138623df.opus"
+      },
+      {
+        "clip": "ddd3349d9bff.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cis002",
+    "item_id": "espressoX_is_0253",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "No, I just wanted to make sure because it's in cash, right?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, that's why I'm asking. Do you want cash?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, no worries. You can pay me back tomorrow. Just buy me a coffee."
+      }
+    ],
+    "context_clip": "4bf0ce4485ec.opus",
+    "target_text": "Okay, I'll buy you a coffee and I'll give you a raise. Thank you so much.",
+    "target_speaker": "A",
+    "reference_clip": "edd3ad7b13f1.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "B just requested that A buy them a coffee, making 'coffee' GIVEN. A agrees and introduces 'raise' as NEW information.",
+      "words": [],
+      "why_context_matters": "Without B's prior turn, both 'coffee' and 'raise' would be treated as equally new coordinate nouns."
+    },
+    "clips": [
+      {
+        "clip": "5bf4fa42722d.opus"
+      },
+      {
+        "clip": "fec889707989.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cis003",
+    "item_id": "espressoX_is_0311",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "She lives in this house, and we have to respect her and her collection that she accumulated over her hundred year of life."
+      },
+      {
+        "speaker": "B",
+        "text": "How do you know she's here? Her presence, how do you sense it?"
+      },
+      {
+        "speaker": "A",
+        "text": "Well, if I reach out and I touch this, you hear that?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes."
+      },
+      {
+        "speaker": "A",
+        "text": "Exactly, that's Miss Anne letting us know that she does not want any of her artifacts to be touched."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, wow."
+      },
+      {
+        "speaker": "A",
+        "text": "rare artifacts, trading rare artifacts, all that stuff. She became obsessed with her work, never marrying, never having kids, basically solely focusing on the collection that you see before you."
+      }
+    ],
+    "context_clip": "8be8f3b3e154.opus",
+    "target_text": "Did she have a prized object in the collection or a favorite one?",
+    "target_speaker": "B",
+    "reference_clip": "78c057107082.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "The 'collection' was just mentioned by A, making it GIVEN for B. The concept of a 'prized object' is NEW.",
+      "words": [],
+      "why_context_matters": "Without A's prior turn, 'collection' would be treated as new information and receive a default pitch accent."
+    },
+    "clips": [
+      {
+        "clip": "e089a7729e39.opus"
+      },
+      {
+        "clip": "6ec22769c945.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cis004",
+    "item_id": "espressoX_is_0313",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I'm going to be telling you the story of Santa Claus."
+      },
+      {
+        "speaker": "A",
+        "text": "Have you heard of Santa Claus before?"
+      },
+      {
+        "speaker": "B",
+        "text": "Uh huh."
+      },
+      {
+        "speaker": "A",
+        "text": "Great, what do you know about Santa?"
+      },
+      {
+        "speaker": "B",
+        "text": "Well, he brings me presents at Christmas time."
+      },
+      {
+        "speaker": "A",
+        "text": "This is very true. Do you know how he brings you presence?"
+      },
+      {
+        "speaker": "B",
+        "text": "Um, does he use... does he use a sleigh?"
+      }
+    ],
+    "context_clip": "0097b251da15.opus",
+    "target_text": "He uses a sleigh and eight reindeer, led by Rudolph.",
+    "target_speaker": "A",
+    "reference_clip": "807723872e11.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "The concept of a 'sleigh' was just questioned by B, making it GIVEN. 'Reindeer' and 'Rudolph' are introduced by A as NEW information.",
+      "words": [],
+      "why_context_matters": "Without B's question about the sleigh, A's statement would feature an accent on 'sleigh' as new information."
+    },
+    "clips": [
+      {
+        "clip": "4b09a7a9f204.opus"
+      },
+      {
+        "clip": "6c13e23b0219.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cis005",
+    "item_id": "espressoX_is_0386",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Uh, I'm so grateful for-"
+      },
+      {
+        "speaker": "A",
+        "text": "Uncle Sean, but, oh, I wish he had told us not to inhale."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I feel like I didn't know the rules for smoking cigars. And I can't stop coughing now. But it's really nice of Uncle Sean to give us cigars."
+      },
+      {
+        "speaker": "A",
+        "text": "It's like he knew that we were bored of this wedding."
+      }
+    ],
+    "context_clip": "ac36e342020f.opus",
+    "target_text": "Yeah, we've all known Rebecca and Jerry were gonna get married for a while.",
+    "target_speaker": "B",
+    "reference_clip": "b0544e10dc30.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence (semantic givenness)",
+      "why": "The concept of marriage is lexically accessible (GIVEN) because A just mentioned 'this wedding'. The specific couple, 'Rebecca and Jerry', is NEW information.",
+      "words": [],
+      "why_context_matters": "The status of 'married' as a GIVEN concept depends entirely on A's prior mention of the 'wedding'."
+    },
+    "clips": [
+      {
+        "clip": "ee61576c6b0a.opus"
+      },
+      {
+        "clip": "48db92741d42.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cis006",
+    "item_id": "espresso_is_0038",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "Uh huh."
+      },
+      {
+        "speaker": "A",
+        "text": "What's your fondest memory?"
+      },
+      {
+        "speaker": "B",
+        "text": "My fondest memory."
+      },
+      {
+        "speaker": "A",
+        "text": "of growing up in the Midwest."
+      },
+      {
+        "speaker": "B",
+        "text": "the green beans and that was every day in the summer when I would stay with them and be around them and it was probably my fondest memories are just enjoying the Missouri weather and the front porch and the grandparents and the fresh green beans once we were done snapping them too. They taste so good when they're fresh out of the garden like that."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah. Tell me when you say Missouri weather, tell me about the Missouri weather. What is that like?"
+      },
+      {
+        "speaker": "B",
+        "text": "step outside of your house and when you live on a coast you don't get those those things so much so i think um yeah i think my that would be what i my answer how about you"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, yeah."
+      }
+    ],
+    "context_clip": "d03d9e28d868.opus",
+    "target_text": "So what do I miss or what would what's my fondest memory or?",
+    "target_speaker": "A",
+    "reference_clip": "1bd08a1b42f1.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "'fondest memory' is the heavily grounded discourse topic. A contrasts it with a new alternative, 'miss', to clarify B's vague prompt.",
+      "words": [
+        {
+          "word": "miss",
+          "label": "NEW"
+        },
+        {
+          "word": "fondest memory",
+          "label": "GIVEN"
+        }
+      ],
+      "why_context_matters": "Only the prior discourse reveals that 'fondest memory' is mutually understood and currently active."
+    },
+    "clips": [
+      {
+        "clip": "0d97cf895653.opus"
+      },
+      {
+        "clip": "3581cb6717da.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cis007",
+    "item_id": "espresso_is_0045",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh my god. Ew. Ew. Ew. Ew. It's in your hair. Ew. Ew. Ew."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god, you smell... It smells like... It smells like..."
+      },
+      {
+        "speaker": "A",
+        "text": "It smells like that's been sitting there for a really long, long time."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, it's squishing in my shoes. Oh, is it in yours?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, yep, it certainly is."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. Oh, don't touch my back. Please don't touch my back. Oh, please don't touch my back. I don't want it against my neck. Ew. I need to know. Is there, is there, is there, um, I'm gonna, I'm gonna swear. Is there shit in my, on my back?"
+      },
+      {
+        "speaker": "B",
+        "text": "There's a lot on your back. I'm so sorry. Ugh."
+      }
+    ],
+    "context_clip": "ecf3645224e8.opus",
+    "target_text": "Yeah, it's in your hair. It's like pieces of it. Ew.",
+    "target_speaker": "A",
+    "reference_clip": "4cad3bf9ca2b.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — contrastive-new cooccurrence",
+      "why": "A contrasts B's focus on A's 'back' by aggressively shifting the topic back to B's 'hair', while introducing 'pieces' as NEW visual information.",
+      "words": [
+        {
+          "word": "hair",
+          "label": "CONTRASTIVE"
+        },
+        {
+          "word": "pieces",
+          "label": "NEW"
+        }
+      ],
+      "why_context_matters": "Without the context of B pointing out the mess on A's back, 'hair' would just be a generic new entity rather than an emphatic contrastive counter-point."
+    },
+    "clips": [
+      {
+        "clip": "e32255f18279.opus"
+      },
+      {
+        "clip": "68dc4d15fa51.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cis008",
+    "item_id": "espresso_is_0048",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "Ugh, yeah? What is that smell?"
+      },
+      {
+        "speaker": "A",
+        "text": "The neighbors were using their disposal again and it backed up in the sink while we were on vacation a lot. So it's been hot in here and it's caked to all of the... It's in the sink. It's caked to the sink with bones everywhere."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, oh, do they have, like, barbecue or something?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, it looks like chicken. Ugh."
+      },
+      {
+        "speaker": "B",
+        "text": "I've never smelled anything so bad."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I don't, I don't know where to begin. They keep saying that these pipes don't connect, but they clearly connect."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, they definitely connect because we did not eat mac and cheese."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I don't want to scoop it out with my hand again because remember the last time when I had to take it out so it stopped clogging the drain? Ugh."
+      }
+    ],
+    "context_clip": "e95ab0dc8d12.opus",
+    "target_text": "Yeah, we're just gonna make the landlord do that.",
+    "target_speaker": "B",
+    "reference_clip": "a1351adb8bf6.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — new-given cooccurrence",
+      "why": "The action of scooping out the drain is GIVEN from A's turn, referred to by 'that'. 'Landlord' is the NEW agent proposed to do the action.",
+      "words": [
+        {
+          "word": "landlord",
+          "label": "NEW"
+        },
+        {
+          "word": "that",
+          "label": "GIVEN"
+        }
+      ],
+      "why_context_matters": "The pronoun 'that' relies entirely on A's preceding complaint for its referent and its given status."
+    },
+    "clips": [
+      {
+        "clip": "d055f94bc873.opus"
+      },
+      {
+        "clip": "45ee9b3b6bfd.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cis009",
+    "item_id": "espresso_is_0073",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey, just got off the bus. I'm on Glen Oaks in San Fernando."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, that makes sense. Perfect. You're just going to go north. You're going to face towards the mountain. Look up. Yep, you're going to just walk towards the mountain, walk uphill. You're going to walk up Glen Oaks. Once you get, it'll be maybe about half a mile before you're going to get to Kenneth Village."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, okay, I got it."
+      }
+    ],
+    "context_clip": "1442f078c18b.opus",
+    "target_text": "Half mile uphill, I didn't bring enough water for this.",
+    "target_speaker": "A",
+    "reference_clip": "8f1852c27cac.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-new cooccurrence",
+      "why": "B just told A to walk 'about half a mile' and 'walk uphill', making 'mile' (and 'uphill') GIVEN. A then introduces 'water' as NEW information.",
+      "words": [
+        {
+          "word": "mile",
+          "label": "GIVEN"
+        },
+        {
+          "word": "water",
+          "label": "NEW"
+        }
+      ],
+      "why_context_matters": "Without B's prior instruction, 'Half mile uphill' would be completely new information and require strong pitch accents."
+    },
+    "clips": [
+      {
+        "clip": "5741c3b1ffb3.opus"
+      },
+      {
+        "clip": "9d5004995ce6.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cis010",
+    "item_id": "espresso_is_0076",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Awesome. Thank you so much. I'm a little nervous for her."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh man, my phone just died. I'm so sorry. I'm still going to get you there. I'm going to get you there."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, I know the way enough, so I think I can get us there. If you just keep going straight down this road, it's going to turn into Figueroa after like a mile and a half. Okay, cool. You know that. You know that. Okay, okay, okay. So you're going to go down Fig and then... You know what? I think it's going to be faster. Just turn left here. Just turn left here. Up here. Left here. Yeah, on Wilshire. Just turn left right now. Yeah, yeah, yeah. We're going to go up Wilshire and we're just going to... Yeah, we're going to take the back roads because I think this is going to be easier."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay. Yeah, I know. I know the figure. Yeah."
+      },
+      {
+        "speaker": "B",
+        "text": "Yep. Yep. Good call. Okay."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, that one. Yeah."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, yeah, yeah, we're gonna, when we get there, I'm gonna, just turn right, okay?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yep, no problem. Wait, you mean right before the tree or after the tree?"
+      }
+    ],
+    "context_clip": "d5a3b554faa3.opus",
+    "target_text": "Right before the tree.",
+    "target_speaker": "A",
+    "reference_clip": "fec92e32d157.opus",
+    "intent": {
+      "what_it_should_be": "MIXED — given-contrastive cooccurrence",
+      "why": "Tree is GIVEN as the landmark from B's alternative question. Before is CONTRASTIVE, selecting one of the two explicitly offered spatial alternatives.",
+      "words": [
+        {
+          "word": "before",
+          "label": "CONTRASTIVE"
+        },
+        {
+          "word": "tree",
+          "label": "GIVEN"
+        }
+      ],
+      "why_context_matters": "Without the explicit 'before or after' choice in the context, 'tree' (as the noun phrase head) would normally take the nuclear pitch accent."
+    },
+    "clips": [
+      {
+        "clip": "98fdc67b277d.opus"
+      },
+      {
+        "clip": "073727b28921.opus"
+      }
+    ]
+  }
+]

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emotion &mdash; ContextTTS — Model comparison</title>
+<style>
+  :root{--bg:#fbfbfa;--fg:#1a1a19;--mut:#6b6b68;--line:#e3e3e0;--acc:#2b6cb0;--warn:#c05621;
+        --yes:#2f855a;--no:#c53030}
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+  header{position:sticky;top:34px;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;gap:14px;align-items:center;z-index:20}
+  .bar{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+  .bar>div{height:100%;background:var(--acc);width:0;transition:width .2s}
+  main{max-width:860px;margin:0 auto;padding:16px 20px 96px}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);margin:20px 0 8px;font-weight:600}
+  h3{font-size:15px;margin:20px 0 6px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px}
+  .turn{margin:3px 0}
+  .spk{display:inline-block;min-width:22px;font-weight:700;color:var(--mut)}
+  .target{background:#fffbe8;border:1px solid #f0e2a8;border-radius:8px;padding:12px 14px;font-size:17px}
+  .intent dt{font-weight:600;margin-top:8px;font-size:13px;color:var(--mut)}
+  .intent dd{margin:2px 0 0}
+  .muted{color:var(--mut);font-size:13px}
+  .link{background:none;border:none;color:var(--acc);cursor:pointer;font:inherit;padding:0;text-decoration:underline}
+  textarea{width:100%;min-height:54px;border:1px solid var(--line);border-radius:8px;padding:9px 11px;font:inherit;resize:vertical}
+  .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+  .chip{border:1px solid var(--line);border-radius:20px;padding:6px 14px;cursor:pointer;background:#fff;font-size:14px}
+  .chip.sel{border-color:var(--acc);background:var(--acc);color:#fff}
+
+  /* ── the pinned input ──────────────────────────────────────────────────
+     The conversation, the line and the intent are the SAME for both cards,
+     so they are fixed: they do not scroll away and they are not re-rendered
+     when the card changes. Capped and independently scrollable, because a
+     long conversation would otherwise leave no room for the card itself. */
+  #fixed{position:sticky;top:83px;z-index:15;background:var(--bg);
+         padding-bottom:10px;border-bottom:1px solid var(--line)}
+  #fixed .scroller{max-height:42vh;overflow:auto;padding-right:4px}
+  #fixed.small .scroller{max-height:24vh}
+  .fx-head{display:flex;align-items:center;gap:10px;margin:4px 0 6px}
+  .fx-head b{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut)}
+
+  /* ── the card ─────────────────────────────────────────────────────────
+     One at a time. Both stay in the DOM and are toggled, never rebuilt, so
+     flipping A/B is instant and does not re-fetch the audio. */
+  .tabs{display:flex;gap:8px;margin:14px 0 8px}
+  .tab{flex:1;border:1px solid var(--line);background:#fff;border-radius:8px 8px 0 0;
+       padding:9px 12px;cursor:pointer;font:inherit;text-align:center;color:var(--mut)}
+  .tab.on{border-color:var(--acc);border-bottom-color:#fff;color:var(--fg);font-weight:700;
+          box-shadow:inset 0 3px 0 var(--acc)}
+  .tab .tick{color:var(--yes);font-weight:700}
+  .tab .tick.bad{color:var(--no)}
+  .slot{border:2px solid var(--acc);border-radius:0 0 10px 10px;background:#fff;padding:18px 20px}
+  .slot h4{margin:0 0 10px;font-size:17px}
+  .slot audio{width:100%;height:40px}
+  .gb{display:flex;gap:10px;margin-top:14px}
+  .gb button{flex:1;border:2px solid var(--line);background:#fff;border-radius:8px;
+             padding:12px;cursor:pointer;font:inherit;font-size:15px}
+  .gb button small{display:block;color:var(--mut);font-size:12px;font-weight:400;margin-top:2px}
+  .gb .good.sel{border-color:var(--yes);background:#eef7f1;color:var(--yes);font-weight:700}
+  .gb .bad.sel{border-color:var(--no);background:#fdeeee;color:var(--no);font-weight:700}
+  .brk{font-size:12px;color:var(--mut);display:inline-flex;align-items:center;gap:5px;margin-top:12px}
+  .cardnav{display:flex;justify-content:space-between;margin-top:10px}
+
+  .verdict{margin-top:18px;border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:#fff}
+  .verdict.on{border-color:var(--acc);background:#eef4fb}
+  .verdict .big{font-size:18px;font-weight:700}
+
+  footer{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);
+         padding:10px 20px;display:flex;gap:12px;align-items:center;justify-content:center;z-index:30}
+  button.nav{border:1px solid var(--line);background:#fff;border-radius:7px;padding:8px 18px;cursor:pointer;font:inherit}
+  button.nav:disabled{opacity:.4;cursor:not-allowed}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}
+  td,th{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+  th{background:#f4f4f2;font-size:13px}
+  kbd{font:12px ui-monospace,Menlo,Consolas,monospace;background:#f4f4f2;border:1px solid var(--line);
+      border-bottom-width:2px;border-radius:4px;padding:1px 5px}
+  #modal{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:50;overflow:auto;padding:30px 12px}
+  #modal .inner{background:#fff;max-width:800px;margin:0 auto;border-radius:10px;padding:6px 30px 30px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:5px;margin-top:10px}
+  .gcell{position:relative;padding:7px 2px;font-size:12px;border-radius:5px;border:1px solid var(--line);cursor:pointer}
+  .gcell i{position:absolute;top:0;right:3px;font-size:14px;font-style:normal;line-height:1}
+  .ga{background:#eef4fb;border-color:#a9c6e3;color:#24567f}
+  .gh{background:#fffbe8;border-color:#f0e2a8;color:#8a6d1f}
+  .gu{background:#fff;color:var(--mut)}
+  .gnow{outline:2px solid var(--acc);outline-offset:1px}
+  .key{display:inline-block;width:12px;height:12px;border-radius:3px;border:1px solid var(--line);vertical-align:-1px;margin:0 2px 0 8px}
+  #toast{position:fixed;left:50%;bottom:70px;transform:translateX(-50%);background:#1a1a19;color:#fff;
+         padding:8px 16px;border-radius:6px;font-size:14px;z-index:60;opacity:0;transition:opacity .18s;pointer-events:none}
+  #toast.on{opacity:1}
+</style>
+</head>
+<body>
+<!-- ══════════════════ SET SWITCHER ══════════════════ -->
+<div style="position:fixed;top:0;left:0;right:0;height:34px;background:#1b1b1f;
+     color:#bbb;font:13px/34px system-ui,sans-serif;z-index:80;padding:0 14px;white-space:nowrap;overflow-x:auto;scrollbar-width:none;
+     box-sizing:border-box;border-bottom:1px solid #333">
+  <span style="opacity:.6">Set:</span>
+  <a href="../index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Full set</a>
+  <a href="../small/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Smaller annotation &mdash; Model 1</a>
+  <a href="../model2/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Smaller annotation &mdash; Model 2</a>
+  <a href="../both/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Side by side &mdash; 30</a>
+  <a href="../pilot15/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Side by side &mdash; 15</a>
+  <a href="../cat_ci/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Intent</a>
+  <a href="../cat_em/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Emotion</a>
+  <a href="../cat_is/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Info structure</a>
+  <a href="../cmp_ci/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Compare &mdash; Intent</a>
+  <a href="../cmp_em/index.html" style="color:#fff;text-decoration:none;margin:0 10px;
+     font-weight:600">Compare &mdash; Emotion</a>
+  <a href="../cmp_is/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Compare &mdash; Info structure</a>
+</div>
+<div style="height:34px"></div>
+
+
+<!-- ══════════════════ GUIDELINES ══════════════════ -->
+<template id="guide">
+<h1 style="font-size:22px">Annotation guidelines</h1>
+
+<p>You will work through a series of short conversation excerpts. In each one, a
+single <b>target line</b> has been picked out, and two different speech systems
+were each asked to say that line, having been given the same description of what
+it should convey.</p>
+
+<p style="font-size:16px"><b>For each of the two, decide whether it is a good
+delivery of that line at that point in the conversation.</b></p>
+
+<h3>How a page works</h3>
+
+<p>The conversation, the target line and the intent stay <b>pinned at the top of
+the page</b> and do not change. Underneath them is a <b>card</b>: one system's
+attempt at the line. There are two cards per conversation, <b>Version A</b> and
+<b>Version B</b>, and you switch between them with the tabs. Only the card
+changes &mdash; the conversation it is being judged against stays put.</p>
+
+<p>Judge each card <b>on its own terms</b>: not "is this one better than the
+other", but "would this be a believable way to say this line, here". Then the
+page works out what that means for the pair:</p>
+
+<table>
+  <tr><th>Version A</th><th>Version B</th><th>Reads as</th></tr>
+  <tr><td>good</td><td>bad</td><td>Version A is better</td></tr>
+  <tr><td>bad</td><td>good</td><td>Version B is better</td></tr>
+  <tr><td>good</td><td>good</td><td>Both are good</td></tr>
+  <tr><td>bad</td><td>bad</td><td>Both are bad</td></tr>
+</table>
+
+<p>So "both good" and "both bad" are ordinary outcomes here, not ways of dodging
+the question. Nothing on these pages is a deliberately wrong reading &mdash;
+unlike the other tabs, both cards are each system's genuine attempt &mdash; so
+they may well both succeed, or both fail.</p>
+
+<h3>What is in this set</h3>
+
+<p>The <b>emotion</b> set: <b>10 conversations</b>, two cards each.</p>
+
+<h3>How to answer</h3>
+
+<ol>
+  <li><b>Read the conversation</b> and play the recording of it. The target line
+      comes immediately after the last turn shown.</li>
+  <li><b>Read what the line should convey.</b> Both systems were given this.</li>
+  <li><b>Play card A, mark it good or bad. Switch to card B, do the same.</b>
+      Go back and forth as often as you like; the audio does not reload, so
+      <kbd>Q</kbd> and <kbd>W</kbd> will flip between them instantly.</li>
+  <li><b>Say how confident you are</b> in the result at the bottom.</li>
+</ol>
+
+<h3>Judge the delivery, not the voice</h3>
+
+<p>The two systems have different voices, and one may simply sound cleaner or
+more expensive to you. That is not the question. Ask instead: <b>if a real
+person said the line that way at this point in this conversation, would it make
+sense?</b> A clean voice saying it wrong is a bad card; a rougher voice saying it
+right is a good one.</p>
+
+<p>Which system is A and which is B is <b>randomised</b>, and differs from
+annotator to annotator. Do not read anything into the order.</p>
+
+<h3>Broken audio</h3>
+
+<p>Tick <b>broken</b> on a card if it is cut off, garbled, silent, or says
+different words from the target line. Still mark it good or bad &mdash; broken
+audio is normally a bad card &mdash; the box just lets us find these afterwards.</p>
+
+<h3>Saving and finishing</h3>
+
+<div class="card" style="background:#fffbe8;border-color:#f0e2a8">Your answers
+are saved in this browser as you go, under the annotator ID you entered. Closing
+the tab is safe; reopening with the <b>same ID</b> puts you back where you were.
+When you are done, press <b>Download CSV</b> and send us that file &mdash; there
+is nothing to carry over, and nothing is submitted automatically.</div>
+
+<div class="card" style="margin-top:10px">Nothing is locked. You may go back at
+any time and change a card, the confidence or a comment; the latest version is
+the one kept. This holds even after you have downloaded the CSV: reopen with the
+same annotator ID, fix whatever you want, and download again.</div>
+
+<h3>Keyboard</h3>
+<table>
+  <tr><th>Key</th><th></th><th>Key</th><th></th></tr>
+  <tr><td><kbd>Q</kbd> / <kbd>W</kbd></td><td>show card A / card B</td>
+      <td><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd></td><td>confidence low / medium / high</td></tr>
+  <tr><td><kbd>G</kbd></td><td>this card is good</td>
+      <td><kbd>Space</kbd></td><td>play / pause this card</td></tr>
+  <tr><td><kbd>X</kbd></td><td>this card is bad</td>
+      <td><kbd>Enter</kbd></td><td>next conversation</td></tr>
+  <tr><td><kbd>&larr;</kbd> <kbd>&rarr;</kbd></td><td>previous / next card</td>
+      <td><kbd>Backspace</kbd></td><td>previous conversation</td></tr>
+</table>
+</template>
+
+
+<!-- ══════════════════ START GATE ══════════════════ -->
+<main id="gate">
+  <h1 style="font-size:22px">Emotion &mdash; model comparison</h1>
+  <p>Two speech systems, the same line, the same description of how it should be
+     said. The conversation stays pinned at the top of the page; you mark each
+     system's attempt good or bad on its own card.</p>
+  <ol>
+    <li>Enter an annotator ID below (your name is fine; it only groups your
+        answers).</li>
+    <li>Work through the conversations. Progress is saved in this browser as you
+        go.</li>
+    <li>When you finish, press <b>Download CSV</b> and send us the file. You can
+        download at any point, not only at the end.</li>
+  </ol>
+  <div id="deepnote" class="card" style="background:#fffbe8;border-color:#f0e2a8;margin:14px 0" hidden></div>
+  <p><input id="aid" placeholder="annotator id" style="padding:9px 12px;border:1px solid var(--line);border-radius:7px;font:inherit">
+     <button class="nav" onclick="start()">Start</button>
+     <button class="link" onclick="showGuide()" style="margin-left:10px">Read the guidelines first</button></p>
+</main>
+
+<header id="hdr" hidden>
+  <b style="font-size:14px">Emotion</b>
+  <div class="bar"><div id="fill"></div></div>
+  <span id="pos" class="muted"></span>
+  <button class="link" onclick="showReview()">Review</button>
+  <button class="link" onclick="showGuide()">Guidelines</button>
+  <span class="muted">·</span><span id="who" class="muted"></span>
+</header>
+
+<main id="app" hidden>
+  <div id="fixed"></div>
+  <div id="cards"></div>
+</main>
+
+<footer id="ftr" hidden>
+  <button class="nav" id="prev" onclick="go(-1)">&larr; Back</button>
+  <button class="nav" id="next" onclick="go(1)">Next &rarr;</button>
+  <button class="link" onclick="exportCSV()">Download CSV</button>
+</footer>
+
+<div id="modal" hidden><div class="inner">
+  <p style="text-align:right;margin:10px 0 0"><button class="link" onclick="hideGuide()">Close</button></p>
+  <div id="modalbody"></div>
+  <p style="text-align:right"><button class="nav" onclick="hideGuide()">Close</button></p>
+</div></div>
+
+<div id="toast"></div>
+
+<script>
+let AID="", TRIALS=[], PAGES=[], I=0, C=0, R={}, SHOWN=null, WANT=null;
+
+const SIDE=["a","b"];               // slot -> key in the response record
+const SIDENAME=["Version A","Version B"];
+const OUTCOME={
+  a:"Version A is better", b:"Version B is better",
+  both:"Both are good", neither:"Both are bad"
+};
+
+function showGuide(){
+  document.getElementById("modalbody").innerHTML="";
+  document.getElementById("modalbody").appendChild(
+    document.getElementById("guide").content.cloneNode(true));
+  document.getElementById("modal").hidden=false;
+}
+function hideGuide(){document.getElementById("modal").hidden=true}
+
+function showReview(){
+  const cells=PAGES.map((p,i)=>{
+    const o=outcome(p);
+    // Three states, not two: a page with one card rated is half-done, and
+    // that is exactly the state worth being able to find again.
+    const cls=pageDone(p)?"ga":(o||rated(p)?"gh":"gu");
+    const lab={a:"A",b:"B",both:"=",neither:"∅"}[o]||"";
+    const note=hasComment(p)?"<i>·</i>":"";
+    return `<div class="gcell ${cls} ${i===I?"gnow":""}" onclick="jump(${i})">`+
+           `${i+1}${lab?" "+lab:""}${note}</div>`;
+  }).join("");
+  const n=PAGES.filter(pageDone).length;
+  document.getElementById("modalbody").innerHTML=
+    `<h1 style="font-size:20px">Review</h1>
+     <p class="muted">${n} of ${PAGES.length} conversations finished.
+     <span class="key ga"></span> done (A / B / = both good / &empty; both bad)
+     <span class="key gh"></span> started
+     <span class="key gu"></span> not yet · a dot marks a comment.
+     Click any cell to jump.</p>
+     <div class="grid">${cells}</div>`;
+  document.getElementById("modal").hidden=false;
+}
+function jump(idx){I=idx;C=0;hideGuide();save();render()}
+
+function toast(msg){
+  const t=document.getElementById("toast");
+  t.textContent=msg;t.classList.add("on");
+  clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1600);
+}
+
+function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function shuffle(arr,seed){const a=arr.slice(),r=rng(seed);for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+const SET=()=>(location.pathname.replace(/\/index\.html$/,"").replace(/\/$/,"").split("/").pop()||"cmp");
+const KEY=()=>"ctts_cmp_"+SET()+"_"+AID;
+function save(){localStorage.setItem(KEY(),JSON.stringify({aid:AID,i:I,r:R}))}
+function load(){try{return JSON.parse(localStorage.getItem(KEY()))}catch(e){return null}}
+
+// ── deep links: #<trial_id> or #<trial_id>/a ───────────────────────────────
+function parseHash(){
+  const m=/^#([a-z0-9_]+)(?:\/([ab]))?$/.exec(location.hash||"");
+  return m?{trial:m[1],card:m[2]==="b"?1:0}:null;
+}
+function pageHash(p){return "#"+p.trial.trial_id+"/"+SIDE[C]}
+function syncHash(){
+  if(!PAGES.length)return;
+  history.replaceState(null,"",location.pathname+location.search+pageHash(PAGES[I]));
+}
+function copyLink(){
+  const url=location.origin+location.pathname+location.search+pageHash(PAGES[I]);
+  const done=()=>toast("Link copied — "+PAGES[I].trial.trial_id);
+  if(navigator.clipboard&&window.isSecureContext){
+    navigator.clipboard.writeText(url).then(done,()=>prompt("Copy this link:",url));
+  }else{prompt("Copy this link:",url)}
+}
+
+async function start(){
+  AID=document.getElementById("aid").value.trim().toLowerCase();
+  if(!AID){alert("Please enter an annotator ID.");return}
+  TRIALS=await (await fetch("trials.json")).json();
+
+  const ord=shuffle(TRIALS,hash(AID+"|order"));
+  PAGES=ord.map(t=>({
+    trial:t,
+    // Which system is card A is decided per annotator. The build already
+    // varies it per item; this stops two annotators from sharing a layout, so
+    // a preference for whatever is looked at first cannot masquerade as a
+    // preference for a system.
+    clips:shuffle(t.clips,hash(AID+"|side|"+t.trial_id))
+  }));
+
+  const prev=load(); if(prev&&prev.r){R=prev.r;I=prev.i||0}
+  const valid=new Set(PAGES.map(rkey));
+  for(const k of Object.keys(R)) if(!valid.has(k)) delete R[k];
+  C=0;
+  if(WANT){
+    const j=PAGES.findIndex(p=>p.trial.trial_id===WANT.trial);
+    if(j>=0){I=j;C=WANT.card} else toast("That link points at a page not in your set.");
+    WANT=null;
+  }
+  I=Math.max(0,Math.min(PAGES.length-1,I));
+
+  document.getElementById("gate").hidden=true;
+  for(const id of ["hdr","app","ftr"])document.getElementById(id).hidden=false;
+  document.getElementById("who").textContent=AID;
+  render();
+}
+
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+const rkey=p=>p.trial.trial_id;
+
+function cur(){
+  const k=rkey(PAGES[I]);
+  R[k]=R[k]||{a:{},b:{},confidence:null,t0:Date.now()};
+  for(const s of SIDE) R[k][s]=R[k][s]||{};
+  return R[k];
+}
+function rec(p){return R[rkey(p)]||{a:{},b:{},confidence:null}}
+const rated=p=>SIDE.some(s=>(rec(p)[s]||{}).verdict);
+const hasComment=p=>SIDE.some(s=>((rec(p)[s]||{}).comment||"").trim());
+function outcome(p){
+  const r=rec(p), a=(r.a||{}).verdict, b=(r.b||{}).verdict;
+  if(!a||!b)return null;
+  if(a==="good"&&b==="good")return "both";
+  if(a==="bad"&&b==="bad")return "neither";
+  return a==="good"?"a":"b";
+}
+// Finished = both cards judged AND a confidence. Same bar as the rest of the
+// site: "answered" means the same thing on every tab.
+const pageDone=p=>!!(outcome(p)&&rec(p).confidence);
+
+// ── the pinned half: rebuilt only when the conversation changes ────────────
+function renderFixed(){
+  const t=PAGES[I].trial;
+  let ctx=t.context.map(c=>`<div class="turn"><span class="spk">${esc(c.speaker)}:</span> ${esc(c.text)}</div>`).join("");
+  if(!ctx)ctx='<div class="muted">(no prior context)</div>';
+
+  const it=t.intent||{}; let dl="";
+  if(it.what_it_should_be) dl+=`<dt>Intended</dt><dd>${esc(it.what_it_should_be)}</dd>`;
+  if(it.words&&it.words.length) dl+=`<dt>Key words</dt><dd>${it.words.map(w=>`<b>${esc(w.word)}</b> — ${esc(w.label)}`).join(" &nbsp;·&nbsp; ")}</dd>`;
+  if(it.why) dl+=`<dt>Why</dt><dd>${esc(it.why)}</dd>`;
+  if(it.trigger) dl+=`<dt>Triggered by</dt><dd>${esc(it.trigger)}</dd>`;
+  if(it.why_context_matters) dl+=`<dt>Why context matters</dt><dd>${esc(it.why_context_matters)}</dd>`;
+  // Deliberately NOT rendered: intent.expected_delivery / why_delivery_matters.
+  // They describe the correct acoustics in words, which would let an annotator
+  // grade the audio against a text description instead of against the moment.
+
+  document.getElementById("fixed").innerHTML=`
+    <div class="fx-head">
+      <b>The conversation &mdash; stays fixed for both cards</b>
+      <button class="link" onclick="squash()" id="sq">shrink</button>
+    </div>
+    <div class="scroller">
+      <div class="card">${ctx}
+        ${t.context_clip?`<audio controls preload="none" src="audio/${t.context_clip}" style="width:100%;margin-top:12px"></audio>
+        <div class="muted" style="margin-top:6px">The real recording of the turns above, ending just before the target line. Worth hearing at least once per conversation — the mood of a moment rarely survives being written down.</div>`:""}
+      </div>
+      <h2>Target line — spoken by ${esc(t.target_speaker||"?")}</h2>
+      <div class="target">${esc(t.target_text)}</div>
+      <h2>What this line should convey</h2><div class="card intent"><dl style="margin:0">${dl}</dl></div>
+      ${t.reference_clip?`<h2>Original human recording</h2>
+        <div class="card"><audio controls preload="none" src="audio/${t.reference_clip}" style="width:100%"></audio>
+        <div class="muted" style="margin-top:6px">A different voice — listen for the manner, not the voice.</div></div>`:""}
+    </div>`;
+}
+function squash(){
+  const f=document.getElementById("fixed");
+  f.classList.toggle("small");
+  document.getElementById("sq").textContent=
+    f.classList.contains("small")?"expand":"shrink";
+}
+
+// ── the cards: both built once, then toggled ───────────────────────────────
+function renderCards(){
+  const p=PAGES[I], r=rec(p);
+  const slots=p.clips.map((c,j)=>{
+    const rr=r[SIDE[j]]||{};
+    return `<div class="slot" id="slot${j}">
+      <h4>${SIDENAME[j]}</h4>
+      <audio id="aud${j}" controls preload="none" src="audio/${c.clip}"></audio>
+      <div class="gb">
+        <button class="good ${rr.verdict==="good"?"sel":""}" id="g${j}" onclick="mark(${j},'good')">
+          Good<small>believable here</small></button>
+        <button class="bad ${rr.verdict==="bad"?"sel":""}" id="b${j}" onclick="mark(${j},'bad')">
+          Bad<small>does not fit this moment</small></button>
+      </div>
+      <label class="brk"><input type="checkbox" id="k${j}" ${rr.broken?"checked":""}
+        onchange="brk(${j},this.checked)">
+        broken — cut off, garbled, silent, or different words</label>
+      <textarea id="t${j}" placeholder="Optional — what is right or wrong about this one."
+        oninput="cmt(${j},this.value)">${esc(rr.comment||"")}</textarea>
+    </div>`;
+  }).join("");
+
+  document.getElementById("cards").innerHTML=`
+    <div class="tabs">${p.clips.map((c,j)=>
+      `<button class="tab" id="tab${j}" onclick="card(${j})">${SIDENAME[j]}
+         <span class="tick" id="tick${j}"></span></button>`).join("")}</div>
+    ${slots}
+    <div class="cardnav">
+      <button class="link" id="cardprev" onclick="card(C-1)">&larr; ${SIDENAME[0]}</button>
+      <button class="link" id="cardnext" onclick="card(C+1)">${SIDENAME[1]} &rarr;</button>
+    </div>
+
+    <div class="verdict" id="verdict"></div>
+
+    <p class="muted" style="margin-top:14px">
+      ${esc(p.trial.trial_id)} · conversation ${I+1}/${PAGES.length} ·
+      <button class="link" onclick="copyLink()">Copy link to this card</button>
+    </p>`;
+}
+
+function render(){
+  const p=PAGES[I];
+  if(SHOWN!==p.trial.trial_id){
+    renderFixed();
+    SHOWN=p.trial.trial_id;
+    window.scrollTo(0,0);
+  }
+  renderCards();
+  paint();
+  footer();
+  syncHash();
+}
+
+// Repaint in place. Never rebuild the cards on an answer: that would restart
+// both <audio> elements and lose the play position mid-comparison.
+function paint(){
+  const p=PAGES[I], r=rec(p);
+  p.clips.forEach((c,j)=>{
+    const v=(r[SIDE[j]]||{}).verdict;
+    document.getElementById("slot"+j).hidden = (j!==C);
+    document.getElementById("tab"+j).classList.toggle("on", j===C);
+    const tk=document.getElementById("tick"+j);
+    tk.textContent = v==="good"?"✓":(v==="bad"?"✗":"");
+    tk.classList.toggle("bad", v==="bad");
+    const g=document.getElementById("g"+j), b=document.getElementById("b"+j);
+    g.classList.toggle("sel", v==="good");
+    b.classList.toggle("sel", v==="bad");
+  });
+  document.getElementById("cardprev").hidden = C===0;
+  document.getElementById("cardnext").hidden = C===p.clips.length-1;
+
+  const o=outcome(p), vd=document.getElementById("verdict");
+  vd.classList.toggle("on", !!o);
+  if(!o){
+    const left=SIDE.filter((s,j)=>!(r[s]||{}).verdict)
+                   .map((s,i)=>SIDENAME[SIDE.indexOf(s)]);
+    vd.innerHTML=`<div class="muted">Mark both cards good or bad and the result
+      appears here. Still to do: <b>${left.join(" and ")}</b>.</div>`;
+  }else{
+    vd.innerHTML=`<div class="big">→ ${OUTCOME[o]}</div>
+      <div class="muted" style="margin-top:2px">
+        ${SIDENAME[0]} ${(r.a||{}).verdict} · ${SIDENAME[1]} ${(r.b||{}).verdict}
+        — change either card above if that is not what you meant.</div>
+      <h2 style="margin-bottom:4px">How confident are you in that?</h2>
+      <div class="row">${["low","medium","high"].map(cc=>
+        `<div class="chip ${r.confidence===cc?"sel":""}" onclick="conf('${cc}')">${cc}</div>`).join("")}</div>`;
+  }
+}
+
+function footer(){
+  const done=PAGES.filter(pageDone).length;
+  document.getElementById("pos").textContent=
+    `${I+1} / ${PAGES.length}  ·  card ${C+1} of 2  ·  ${done} complete`;
+  document.getElementById("fill").style.width=(100*done/PAGES.length)+"%";
+  document.getElementById("prev").disabled=I===0;
+  document.getElementById("next").disabled=!pageDone(PAGES[I]);
+  document.getElementById("next").textContent=I===PAGES.length-1?"Finish":"Next →";
+}
+
+function card(j){
+  const p=PAGES[I];
+  if(j<0||j>=p.clips.length)return;
+  for(const a of document.querySelectorAll("#cards audio")) a.pause();
+  C=j; paint(); footer(); syncHash();
+}
+function mark(j,v){
+  const r=cur();
+  r[SIDE[j]].verdict=v;
+  r.ms=Date.now()-(r.t0||Date.now());
+  save(); paint(); footer();
+  // Marking the first card moves you to the second: the natural next action,
+  // and it saves a click on every page. Marking the second does not move on --
+  // the confidence question is still waiting underneath.
+  if(j===0 && !(r.b||{}).verdict) card(1);
+}
+function conf(c){cur().confidence=c;save();paint();footer()}
+function brk(j,on){cur()[SIDE[j]].broken=!!on;save()}
+function cmt(j,v){cur()[SIDE[j]].comment=v;save()}
+
+function go(d){
+  if(d>0&&I===PAGES.length-1){
+    const un=PAGES.filter(q=>!pageDone(q)).length;
+    if(un&&!confirm(un+" conversation"+(un>1?"s are":" is")+" unfinished.\n\n"+
+                    "OK to download anyway, or Cancel to go back and finish "+
+                    "them (Review lists them)."))return;
+    exportCSV();
+    alert("Thank you.\n\nA CSV has been downloaded. Please send it back to us.\n\n"+
+          "Nothing is locked — you can reopen this page with the same annotator "+
+          "ID, change any answer, and download again.");
+    return;
+  }
+  I=Math.max(0,Math.min(PAGES.length-1,I+d));C=0;save();render();
+}
+
+document.addEventListener("keydown",e=>{
+  if(document.getElementById("app").hidden)return;
+  if(!document.getElementById("modal").hidden)return;
+  if(/^(INPUT|TEXTAREA)$/.test((e.target||{}).tagName||""))return;
+  const k=e.key.toLowerCase();
+  if(k==="g"){mark(C,"good")}
+  else if(k==="x"){mark(C,"bad")}
+  else if(k==="1"){conf("low")}
+  else if(k==="2"){conf("medium")}
+  else if(k==="3"){conf("high")}
+  else if(k==="q"||k==="w"){
+    const j=k==="q"?0:1;
+    if(j!==C)card(j);
+    const a=document.getElementById("aud"+j); if(a)a.play();
+  }
+  else if(e.key==="ArrowRight"){card(C+1)}
+  else if(e.key==="ArrowLeft"){card(C-1)}
+  else if(e.key===" "){
+    const a=document.getElementById("aud"+C);
+    if(a){a.paused?a.play():a.pause()}
+  }
+  else if(e.key==="Enter"){if(!document.getElementById("next").disabled)go(1)}
+  else if(e.key==="Backspace"){if(I>0)go(-1)}
+  else return;
+  e.preventDefault();
+});
+
+// ── CSV export ──────────────────────────────────────────────────────────────
+// One row per CARD, two per conversation, because the per-card good/bad is now
+// the thing actually collected; the pair-level outcome is carried on both rows
+// so a preference count needs no reshaping. `clip` is what this annotator
+// heard in that slot -- the clip -> system mapping is held privately.
+function csvCell(v){
+  const s=(v===null||v===undefined)?"":String(v);
+  return /[",\n]/.test(s) ? '"'+s.replace(/"/g,'""')+'"' : s;
+}
+function rows(){
+  const base=location.origin+location.pathname+location.search;
+  const out=[];
+  PAGES.forEach((p,idx)=>{
+    const r=R[rkey(p)];
+    if(!r||!(rated(p)||hasComment(p)))return;
+    const o=outcome(p);
+    p.clips.forEach((c,j)=>{
+      const rr=r[SIDE[j]]||{};
+      out.push({
+        annotator:AID,
+        page:idx+1,
+        trial_id:p.trial.trial_id,
+        item_id:p.trial.item_id,
+        axis:p.trial.axis,
+        target_text:p.trial.target_text,
+        target_speaker:p.trial.target_speaker||"",
+        card:SIDE[j],
+        card_index:j+1,
+        clip:c.clip,
+        verdict:rr.verdict||"",
+        is_good:rr.verdict==="good"?1:(rr.verdict==="bad"?0:""),
+        broken:rr.broken?1:0,
+        comment:rr.comment||"",
+        outcome:o||"",
+        won:o==="a"||o==="b"?(SIDE[j]===o?1:0):"",
+        both_good:o==="both"?1:0,
+        both_bad:o==="neither"?1:0,
+        confidence:r.confidence||"",
+        other_clip:p.clips[1-j].clip,
+        response_ms:r.ms??"",
+        share_url:base+"#"+p.trial.trial_id+"/"+SIDE[j],
+        exported_at:new Date().toISOString()
+      });
+    });
+  });
+  return out;
+}
+function exportCSV(){
+  const rs=rows();
+  if(!rs.length){alert("Nothing answered yet.");return}
+  const cols=Object.keys(rs[0]);
+  const csv=[cols.join(",")].concat(rs.map(r=>cols.map(c=>csvCell(r[c])).join(","))).join("\n");
+  dl(new Blob([ "﻿"+csv ],{type:"text/csv;charset=utf-8"}),`ctts_compare_${SET()}_${AID}.csv`);
+}
+function dl(blob,name){
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob); a.download=name; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+
+WANT=parseHash();
+if(WANT){
+  const n=document.getElementById("deepnote");
+  n.hidden=false;
+  n.innerHTML="This link points at a specific card (<b>"+esc(WANT.trial)+
+              "</b>, "+SIDENAME[WANT.card]+"). Enter your ID and you will be "+
+              "taken straight there.";
+}
+</script>
+</body>
+</html>
