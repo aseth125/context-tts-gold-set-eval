@@ -1,0 +1,246 @@
+[
+  {
+    "trial_id": "cci001",
+    "item_id": "espresso_ci_0006",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey, Caroline, can I get you in here for a second?"
+      },
+      {
+        "speaker": "B",
+        "text": "Absolutely Brad."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, so I was I can't find my phone and I need to get to Santa Monica Pier in 45 minutes and I need to leave pretty much right about now. Can you help me get there?"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, yep, absolutely. Okay, so you're just going to write this down really quick. It's not going to take you long."
+      },
+      {
+        "speaker": "A",
+        "text": "I got my pen, I got my paper. Well, uh, yeah. Yep."
+      },
+      {
+        "speaker": "B",
+        "text": "Ready? From Spring, you're going to go on to 4th, and then from 4th, you're going to go straight to the 134 West. Take 134 West all the way over to the 101. You're going to connect to the 101 West. Okay, keep going on the 101 West. Uh-huh, you're going to take the 405 South."
+      },
+      {
+        "speaker": "A",
+        "text": "134 West, okay?"
+      },
+      {
+        "speaker": "A",
+        "text": "Uh huh."
+      }
+    ],
+    "context_clip": "b5d2a694b4ae.opus",
+    "target_text": "134 to the 101.",
+    "target_speaker": "A",
+    "reference_clip": "6cf00b0c6a3d.opus",
+    "intent": {
+      "what_it_should_be": "grounding — check",
+      "why": "A is repeating the directions aloud to himself as he writes them down, committing them to memory and verifying the sequence.",
+      "why_context_matters": "Without context, this phrase looks like an instruction or factual assertion directed at a listener. Context shows it is a self-directed, note-taking repetition."
+    },
+    "clips": [
+      {
+        "clip": "e6dbd367299d.opus"
+      },
+      {
+        "clip": "a3bea593b823.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cci002",
+    "item_id": "espresso_ci_0057",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Wow. This might be my favorite painting in the entire Met. I've never seen anything quite like this before."
+      },
+      {
+        "speaker": "B",
+        "text": "It reminds me of, do you remember the original Romeo and Juliet movie? The colors that they used to lay her down when she died and everything. It's almost like she's in a bed of, in a veil of that. They're in a veil of it together. Wow. Wow."
+      },
+      {
+        "speaker": "A",
+        "text": "It's so flat, but there's so much depth at the same time to it. It's so beautiful with the colors and the flowers and the textures."
+      },
+      {
+        "speaker": "B",
+        "text": "I almost feel what I love about it is that she's wrapped in the vines of the flowers like she's been there for the whole time waiting for him to come to her."
+      },
+      {
+        "speaker": "A",
+        "text": "That's beautiful. It's so intimate, their exchange, too. It feels like she's both wrapped up in him and the blanket and the flowers, and all three in one."
+      }
+    ],
+    "context_clip": "59566d88a470.opus",
+    "target_text": "Stunning.",
+    "target_speaker": "B",
+    "reference_clip": "1af9bec2ff28.opus",
+    "intent": {
+      "what_it_should_be": "statement — evaluation",
+      "why": "B is providing a profound aesthetic evaluation of the painting, serving as an emphatic, shared endorsement of A's poetic description.",
+      "why_context_matters": "In isolation, 'Stunning' could be interpreted as a high-energy, bright exclamation. Context dictates a quiet, emotionally resonant realization of beauty."
+    },
+    "clips": [
+      {
+        "clip": "331c52f21a7f.opus"
+      },
+      {
+        "clip": "027cc4aa50a6.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cci003",
+    "item_id": "espresso_ci_0058",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Wow. This might be my favorite painting in the entire Met. I've never seen anything quite like this before."
+      },
+      {
+        "speaker": "B",
+        "text": "It reminds me of, do you remember the original Romeo and Juliet movie? The colors that they used to lay her down when she died and everything. It's almost like she's in a bed of, in a veil of that. They're in a veil of it together. Wow. Wow."
+      },
+      {
+        "speaker": "A",
+        "text": "It's so flat, but there's so much depth at the same time to it. It's so beautiful with the colors and the flowers and the textures."
+      },
+      {
+        "speaker": "B",
+        "text": "I almost feel what I love about it is that she's wrapped in the vines of the flowers like she's been there for the whole time waiting for him to come to her."
+      },
+      {
+        "speaker": "A",
+        "text": "That's beautiful. It's so intimate, their exchange, too. It feels like she's both wrapped up in him and the blanket and the flowers, and all three in one."
+      },
+      {
+        "speaker": "B",
+        "text": "Stunning."
+      }
+    ],
+    "context_clip": "8c5765370c88.opus",
+    "target_text": "Yeah.",
+    "target_speaker": "A",
+    "reference_clip": "60b4254c56d2.opus",
+    "intent": {
+      "what_it_should_be": "agreement — strong-agreement",
+      "why": "A is fully sharing in B's profound awe. It functions as a deep agreement with the shared emotional state, rather than a simple affirmative or filler.",
+      "why_context_matters": "'Yeah' is highly ambiguous and typically defaults to a brief backchannel. Here it carries significant emotional weight and mutual appreciation."
+    },
+    "clips": [
+      {
+        "clip": "51dc8014a95d.opus"
+      },
+      {
+        "clip": "b6a27e92e7f2.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cci004",
+    "item_id": "espresso_ci_0070",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Well, I'm going to come back to that. But I want to ask you first, because I have, I really do want to know, growing up in the Midwest."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. You told me that you, you, you know, kind of fall between either loving fall or spring the most, obviously just allergy dependent, but you love the bloom and then you love the, the, obviously both seasons are about change, right? So tell me one thing."
+      },
+      {
+        "speaker": "B",
+        "text": "Uh huh."
+      },
+      {
+        "speaker": "A",
+        "text": "What's your fondest memory?"
+      }
+    ],
+    "context_clip": "af1a5134be2a.opus",
+    "target_text": "My fondest memory.",
+    "target_speaker": "B",
+    "reference_clip": "5bf171a3df2b.opus",
+    "intent": {
+      "what_it_should_be": "grounding — check",
+      "why": "B is echoing the core of A's question to stall for time and confirm the topic before answering (which prompts A to add more detail to the question).",
+      "why_context_matters": "As an isolated text fragment, it appears to be a declarative noun phrase. Context reveals it is a reflective conversational echo of the preceding question."
+    },
+    "clips": [
+      {
+        "clip": "ceb0c9d2cd02.opus"
+      },
+      {
+        "clip": "70bbd1758d89.opus"
+      }
+    ]
+  },
+  {
+    "trial_id": "cci005",
+    "item_id": "espresso_ci_0093",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "the entire play. Just singing and playing with the set."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, he seemed like he wouldn't even know where he was. And then the other kid that was so afraid of the fake dagger."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god. He just broke down crying. His parents had to come out on stage and get him."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my gosh. I'm surprised they chose Macbeth. It was so cute though, watching them do the three witches. It was adorable, but they were like, like trying to mix everything and all the potions and everything."
+      },
+      {
+        "speaker": "A",
+        "text": "Just everything, like water all over the stage and the kids that were like slipping all over it."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, they had so much fun putting things into that pot that they didn't notice it was going to bubble over."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, man."
+      },
+      {
+        "speaker": "B",
+        "text": "Did you see the kid playing Macduff?"
+      }
+    ],
+    "context_clip": "c8a9619d96e1.opus",
+    "target_text": "Oh, my God.",
+    "target_speaker": "A",
+    "reference_clip": "e07e90a6ad73.opus",
+    "intent": {
+      "what_it_should_be": "reaction — amusement",
+      "why": "B simply prompts A to recall a specific child in the play. A's response acts as an immediate, visceral expression of amusement recalling how funny the child looked.",
+      "why_context_matters": "'Oh, my God' is highly polysemous and can convey horror, tragic news, surprise, or joy. Only the shared comedic context of the disastrous play specifies amused exasperation."
+    },
+    "clips": [
+      {
+        "clip": "24091e869c7c.opus"
+      },
+      {
+        "clip": "d40fa9630bed.opus"
+      }
+    ]
+  }
+]
