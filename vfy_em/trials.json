@@ -181,124 +181,6 @@
     "context": [
       {
         "speaker": "A",
-        "text": "Good. Good."
-      },
-      {
-        "speaker": "B",
-        "text": "I love you."
-      },
-      {
-        "speaker": "A",
-        "text": "Ha ha ha."
-      },
-      {
-        "speaker": "A",
-        "text": "they're like"
-      },
-      {
-        "speaker": "B",
-        "text": "Ha ha ha ha!"
-      },
-      {
-        "speaker": "A",
-        "text": "Thank you."
-      }
-    ],
-    "context_clip": "08d7266edee1.opus",
-    "target_clip": "d1a1c373caa1.opus",
-    "target_text": "Oh, my God.",
-    "target_speaker": "B"
-  },
-  {
-    "trial_id": "vem006",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Sure was fun last night."
-      },
-      {
-        "speaker": "B",
-        "text": "Mm-hmm."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, I was real... Sorry, there was something in my throat. Give me a sec. I..."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, me too."
-      },
-      {
-        "speaker": "B",
-        "text": "Did you see when Tommy had the crazy, like, he just chugged all that alcohol?"
-      },
-      {
-        "speaker": "A",
-        "text": "Well, Tommy probably does it every night. Then Tina had to drag him away."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, it was crazy. I had no idea Tina was that strong."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, Tina used to be a, she used to be a gymnast in high school."
-      }
-    ],
-    "context_clip": "1ae81dcadf4a.opus",
-    "target_clip": "03fee56f1508.opus",
-    "target_text": "Impressive! I can't even, I can't even stand on my own two legs.",
-    "target_speaker": "B"
-  },
-  {
-    "trial_id": "vem007",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "B",
-        "text": "Gotta make sure. Grab my laptop. Don't forget the laptop."
-      },
-      {
-        "speaker": "A",
-        "text": "Did you leave the cat thing on the radiator?"
-      },
-      {
-        "speaker": "B",
-        "text": "Look, we got to get our stuff out of here. Let's not point fingers at each other, okay? It's not the time to play the blame game right now."
-      },
-      {
-        "speaker": "A",
-        "text": "You got your laptop? I've got to grab my... Did you get the passports and the social security cards?"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, my God, it's rough."
-      },
-      {
-        "speaker": "A",
-        "text": "I've got to get back out of here. I'll catch you later. See you outside."
-      },
-      {
-        "speaker": "B",
-        "text": "Make sure you grab my laptop, please."
-      },
-      {
-        "speaker": "B",
-        "text": "Look, I got the green backpack. It's got your wallet in it."
-      }
-    ],
-    "context_clip": "e2cd4c1561d3.opus",
-    "target_clip": "27a1f51c4fba.opus",
-    "target_text": "I'm sorry. It's my fault. I put the cat tree over there and I didn't know the radiator was. Oh, God. OK.",
-    "target_speaker": "B"
-  },
-  {
-    "trial_id": "vem008",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
         "text": "I'm going to tell you about the magical land of Kansas City, Missouri. Have you ever heard of Kansas City, Missouri?"
       },
       {
@@ -320,7 +202,7 @@
     "target_speaker": "A"
   },
   {
-    "trial_id": "vem009",
+    "trial_id": "vem006",
     "axis": "em",
     "context": [
       {
@@ -378,7 +260,7 @@
     "target_speaker": "A"
   },
   {
-    "trial_id": "vem010",
+    "trial_id": "vem007",
     "axis": "em",
     "context": [
       {
@@ -441,6 +323,144 @@
     "context_clip": "389d2f700d2f.opus",
     "target_clip": "a0ecb6888a1b.opus",
     "target_text": "Ugh, I mean, it's not my fault that you left three-day chicken water, but I guess... Ugh, if you're really that sick, but... Ugh.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vem008",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "J.B.?"
+      },
+      {
+        "speaker": "B",
+        "text": "Ugh, yeah? What is that smell?"
+      },
+      {
+        "speaker": "A",
+        "text": "The neighbors were using their disposal again and it backed up in the sink while we were on vacation a lot. So it's been hot in here and it's caked to all of the... It's in the sink. It's caked to the sink with bones everywhere."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, oh, do they have, like, barbecue or something?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, it looks like chicken. Ugh."
+      },
+      {
+        "speaker": "B",
+        "text": "I've never smelled anything so bad."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I don't, I don't know where to begin. They keep saying that these pipes don't connect, but they clearly connect."
+      }
+    ],
+    "context_clip": "278309abb06b.opus",
+    "target_clip": "cc4ed35de13c.opus",
+    "target_text": "Yeah, they definitely connect because we did not eat mac and cheese.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vem009",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "oh my god oh my god there's more we need to call them right now we need to call them right now"
+      },
+      {
+        "speaker": "B",
+        "text": "You, you, you, you, oh, yeah, you, you call them."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh. Oh my god. Oh my god, there's a baby diaper in the bathroom and in the sink in the kitchen. There's..."
+      },
+      {
+        "speaker": "A",
+        "text": "It looks like there's something black that's coming up out of the sink from here. I don't even know what that is."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, clearly they are misusing their pipes next door. That is gross. There should not be a diaper in here."
+      },
+      {
+        "speaker": "A",
+        "text": "No, this, we need an emergency plumber."
+      },
+      {
+        "speaker": "B",
+        "text": "Why don't you call them and see how fast they can get here?"
+      }
+    ],
+    "context_clip": "a895601709ab.opus",
+    "target_clip": "4b8cb3dd610a.opus",
+    "target_text": "Yeah, okay. Just try to air out the house, I guess.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vem010",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Well, Sophia, I'm really sorry. Um..."
+      },
+      {
+        "speaker": "A",
+        "text": "You don't have to eat the scones if you don't want to. I'm so sorry. I baked them and I did it wrong."
+      },
+      {
+        "speaker": "B",
+        "text": "It's okay, Vanessa. Like, they're really bad, but I appreciate the love that went into these. Ugh."
+      },
+      {
+        "speaker": "A",
+        "text": "I'm sorry. No, if you keep biting into it, the more you bite, it bubbles more."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, oh, it tastes, yeah, yeah, the more you bite, the worse it gets."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, it's like bubbling into my throat."
+      },
+      {
+        "speaker": "B",
+        "text": "Ugh, what did you do to these? Ugh."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, too much baking soda."
+      },
+      {
+        "speaker": "B",
+        "text": "Baking soda?"
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, it bubbles up. It's like a science experiment."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh."
+      },
+      {
+        "speaker": "B",
+        "text": "It's nasty. I wouldn't ever put baking soda in anything again."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, well, you need it just a little bit to rise and for leavening. But this is this is unpalatable. Please just throw them out, please. Let's just throw them out. I'll make a new batch. Please just throw it out. I know that I know that you're hungry, but I'll I'll buy us dinner. I don't care."
+      }
+    ],
+    "context_clip": "896305d72063.opus",
+    "target_clip": "9ce1485c7336.opus",
+    "target_text": "I don't know, I'm starving, and they're like, they're pretty salty. Oh, okay, yeah, no, I can't do it.",
     "target_speaker": "B"
   }
 ]

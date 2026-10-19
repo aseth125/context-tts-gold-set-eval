@@ -59,228 +59,6 @@
     "context": [
       {
         "speaker": "A",
-        "text": "Good. Good."
-      },
-      {
-        "speaker": "B",
-        "text": "I love you."
-      },
-      {
-        "speaker": "A",
-        "text": "Ha ha ha."
-      },
-      {
-        "speaker": "A",
-        "text": "they're like"
-      },
-      {
-        "speaker": "B",
-        "text": "Ha ha ha ha!"
-      },
-      {
-        "speaker": "A",
-        "text": "Thank you."
-      }
-    ],
-    "context_clip": "5bd28501fc40.opus",
-    "target_clip": "62b1eb751f88.opus",
-    "target_text": "Oh, my God.",
-    "target_speaker": "B"
-  },
-  {
-    "trial_id": "vci003",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "B",
-        "text": "Gotta make sure. Grab my laptop. Don't forget the laptop."
-      },
-      {
-        "speaker": "A",
-        "text": "Did you leave the cat thing on the radiator?"
-      },
-      {
-        "speaker": "B",
-        "text": "Look, we got to get our stuff out of here. Let's not point fingers at each other, okay? It's not the time to play the blame game right now."
-      },
-      {
-        "speaker": "A",
-        "text": "You got your laptop? I've got to grab my... Did you get the passports and the social security cards?"
-      }
-    ],
-    "context_clip": "1f2f8a0b96e9.opus",
-    "target_clip": "c0e8b66848ec.opus",
-    "target_text": "Oh, my God, it's rough.",
-    "target_speaker": "B"
-  },
-  {
-    "trial_id": "vci004",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "These guys are so cool."
-      },
-      {
-        "speaker": "A",
-        "text": "I feel like Uncle Johnny."
-      },
-      {
-        "speaker": "B",
-        "text": "I can't believe he gave us them."
-      },
-      {
-        "speaker": "A",
-        "text": "Scoot."
-      },
-      {
-        "speaker": "B",
-        "text": "I swear this gets easier with practice, right?"
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, it does. Your eyes are really watery, dude."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, my God. I feel like we're going to pass out."
-      }
-    ],
-    "context_clip": "b5600f2f6494.opus",
-    "target_clip": "456bb3846a17.opus",
-    "target_text": "Yeah, take a big puff.",
-    "target_speaker": "A"
-  },
-  {
-    "trial_id": "vci005",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Um, oh, hey over there, little guy. I have been to this marsh a million times. Look at you."
-      },
-      {
-        "speaker": "B",
-        "text": "Alright."
-      },
-      {
-        "speaker": "B",
-        "text": "We'll be right back."
-      },
-      {
-        "speaker": "A",
-        "text": "Wow, you're... Whoa, um, hello. Uh, I didn't realize you could talk."
-      },
-      {
-        "speaker": "B",
-        "text": "I've seen you here before."
-      },
-      {
-        "speaker": "B",
-        "text": "Well, I'm very observant of my surroundings. You've been here about four or five times, and I've come to recognize your face. A little bit. A little bit. A little bit."
-      }
-    ],
-    "context_clip": "de0f17f17d1d.opus",
-    "target_clip": "9bcfaef4cc6d.opus",
-    "target_text": "So you've been watching me my entire summer trip. Okay.",
-    "target_speaker": "A"
-  },
-  {
-    "trial_id": "vci006",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "You're running low on water. Well, I guess we all are on a day like today. Let me refill that for you."
-      },
-      {
-        "speaker": "A",
-        "text": "How we doing there, Einstein?"
-      },
-      {
-        "speaker": "B",
-        "text": "Trying to stay in the shade."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, well, I wish I could do that. I've been shoveling compost all day."
-      },
-      {
-        "speaker": "B",
-        "text": "They smell like when I roll around in the mud."
-      },
-      {
-        "speaker": "A",
-        "text": "Well, I guess our lives aren't all that different, are they, Einstein?"
-      },
-      {
-        "speaker": "B",
-        "text": "I guess not."
-      },
-      {
-        "speaker": "A",
-        "text": "You know, you're my favorite. You're my favorite pig. You know that, right?"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, do thanks. I love spending time with you when you come over and you feed me the hay."
-      },
-      {
-        "speaker": "A",
-        "text": "Well, got a good batch for you today."
-      },
-      {
-        "speaker": "B",
-        "text": "Hmm. Hmm. Hmm. Hmm."
-      },
-      {
-        "speaker": "A",
-        "text": "Here, let me grab it for you. As all for you."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, oh, ah, mm, mm, mm, mm, whee!"
-      },
-      {
-        "speaker": "B",
-        "text": "Do you think you could get behind my ear? I didn't get the mud to cover the back of me, and now I'm feeling a little bit naked there."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, sure thing. All right, let's see here. How's that? How's that?"
-      },
-      {
-        "speaker": "B",
-        "text": "Thank you."
-      },
-      {
-        "speaker": "B",
-        "text": "That's my favorite spot."
-      },
-      {
-        "speaker": "A",
-        "text": "All right. I'll tell you what. I got to go tend to the chickens. But I'll be back later."
-      },
-      {
-        "speaker": "B",
-        "text": "Okay, I'll be here, and I'll be making sure that all these apples and the hay is gone before you get back."
-      },
-      {
-        "speaker": "A",
-        "text": "All right. Well, I know you're going to be here because I just spent 200 bucks repairing the fence the other day. So you better be here."
-      }
-    ],
-    "context_clip": "a65932c43092.opus",
-    "target_clip": "5c3cc174ca2a.opus",
-    "target_text": "Sorry about that.",
-    "target_speaker": "B"
-  },
-  {
-    "trial_id": "vci007",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
         "text": "Brian, I know we're not really supposed to talk to each other,"
       },
       {
@@ -322,7 +100,7 @@
     "target_speaker": "A"
   },
   {
-    "trial_id": "vci008",
+    "trial_id": "vci003",
     "axis": "ci",
     "context": [
       {
@@ -344,7 +122,7 @@
     "target_speaker": "A"
   },
   {
-    "trial_id": "vci009",
+    "trial_id": "vci004",
     "axis": "ci",
     "context": [
       {
@@ -374,7 +152,7 @@
     "target_speaker": "B"
   },
   {
-    "trial_id": "vci010",
+    "trial_id": "vci005",
     "axis": "ci",
     "context": [
       {
@@ -421,6 +199,218 @@
     "context_clip": "2a2fc47b76e7.opus",
     "target_clip": "f8ed23242ec7.opus",
     "target_text": "You picked this dog out of the litter.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vci006",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I got the job. I got the job. I did. I did. They called me at my other job and I got to quit today. I got to give them my two weeks notice."
+      },
+      {
+        "speaker": "B",
+        "text": "No way!"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh my gosh. Oh my gosh. What do you want to do? What's the first thing you want to do? You're home. Now you're safe. So we could do anything you want. We can literally change. We could do anything."
+      },
+      {
+        "speaker": "A",
+        "text": "Let's go to the ice cream shop, yeah, on the corner of Kenneth. And we'll also, I really, really want to just go to Firefly. Have you been there yet? It's that cute little restaurant. It's so nice. It's so expensive, but it's so fancy."
+      },
+      {
+        "speaker": "B",
+        "text": "It doesn't matter. Everything's on me tonight. I'm so excited."
+      }
+    ],
+    "context_clip": "8d9a0956ef87.opus",
+    "target_clip": "9b7939a8f10d.opus",
+    "target_text": "No, everything gets to be on me because I'm going to make a lot more money now.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vci007",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Did you see that?"
+      },
+      {
+        "speaker": "A",
+        "text": "Is Benedict Cumberbatch gonna be in this? Oh my god!"
+      },
+      {
+        "speaker": "B",
+        "text": "They're adding him to the cast! They're adding him to the cast! Along with all the other actors who've played Doctor Whos!"
+      },
+      {
+        "speaker": "A",
+        "text": "And Keira Knightley! Oh my god, you were right! She is gonna be in it!"
+      },
+      {
+        "speaker": "B",
+        "text": "I love her. I've loved her since Bend It Like Beckham and then ever since she's just had an upward trajectory in her career and it's just been amazing. Oh my gosh."
+      },
+      {
+        "speaker": "A",
+        "text": "No wonder you knew that she was going to be on the docket because of this."
+      },
+      {
+        "speaker": "B",
+        "text": "She had to be. It was the best show. It's the only show that she could be on that's a leg up in her career because, like, oh my gosh, it's the best show in the world. Look who else. Look who else. It's... I can't believe it. Don Knotts? I thought he died."
+      },
+      {
+        "speaker": "A",
+        "text": "It looks like they're doing a hologram version of Don Knotts!"
+      },
+      {
+        "speaker": "B",
+        "text": "What? That's amazing! I had no idea they could do that!"
+      },
+      {
+        "speaker": "A",
+        "text": "That's so cool. Yeah, they have this like holographic like this new technology that they do with like holograms and stuff like that. And they're like putting them in all of these different things. And they're like putting them all over the world. Yeah, it's insane."
+      },
+      {
+        "speaker": "B",
+        "text": "It kind of fits with the themes, though, too, because it's so medieval, but then it's also so modern. It's like a mix-up of two worlds, so it makes sense that they would pull a classic actor and just put him in the middle of it. I love that. It's going to be... Oh!"
+      },
+      {
+        "speaker": "A",
+        "text": "And Alan Rickman. Surprise, surprise."
+      },
+      {
+        "speaker": "B",
+        "text": "Aww, that's amazing! I thought I would never see him act again! This is amazing!"
+      },
+      {
+        "speaker": "A",
+        "text": "I know. I can't believe that they've done that, but he absolutely fits in this world."
+      },
+      {
+        "speaker": "B",
+        "text": "It's totally perfect. I mean, I couldn't think of a better. I always was like, oh, what a shame he's not here to be a part of it, right? Yeah. Oh, how amazing that we could just like keep old actors from the past and put them back into new things. This is so cool."
+      },
+      {
+        "speaker": "A",
+        "text": "It's so amazing."
+      },
+      {
+        "speaker": "B",
+        "text": "I hope we get more TV shows like this."
+      }
+    ],
+    "context_clip": "5300e4e75914.opus",
+    "target_clip": "ab9f63b5dc97.opus",
+    "target_text": "I know. Wait, it's starting.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vci008",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "So we're talking about making burgers at home. Where is the best burger that you've ever purchased at a restaurant or a fast food place?"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, that's a good question. Well, this answer might surprise you, but I was in Silver Lake the other day, and this is a place called Monty's Good Burger. It's all plant-based, and they had this massive, massive double burger that was out of this world."
+      },
+      {
+        "speaker": "A",
+        "text": "That sounds amazing. I've driven by there before."
+      },
+      {
+        "speaker": "B",
+        "text": "I didn't expect it, but"
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah. What was on it?"
+      },
+      {
+        "speaker": "B",
+        "text": "Um, they have, like, their own signature sauce. It's, um, it's kind of like Thousand Island, but it's like their own, you know, their own flavor. And, um, you know, all the usual stuff, pickles, onions, lettuce, tomato, all the, you know, all the usual suspects."
+      },
+      {
+        "speaker": "A",
+        "text": "Are their pickles thick cut or thin cut? That's an important distinction for me."
+      }
+    ],
+    "context_clip": "5abfd97274e2.opus",
+    "target_clip": "17dc20933410.opus",
+    "target_text": "Ah, they're pretty, they're relatively thick.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vci009",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "So any word on the weather this weekend?"
+      },
+      {
+        "speaker": "B",
+        "text": "That's a really good question. The weather this weekend looks like it's going to be in the high of the 90s, and it's going to be in the lows maybe in the 60s, but mostly it's going to stay in the 70s all weekend."
+      },
+      {
+        "speaker": "A",
+        "text": "That's a pretty wide range there, 90s to 60s, so maybe like a sweatshirt and some shorts."
+      },
+      {
+        "speaker": "B",
+        "text": "Sweatshirt but a tank top underneath, yes. Maybe some shorts."
+      },
+      {
+        "speaker": "A",
+        "text": "And did I hear you say drizzle?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, there will be a drizzle late in the day on Sunday. I think that's what it's calling for."
+      },
+      {
+        "speaker": "A",
+        "text": "Well, that's good to know. I'll bring a windbreaker just in case."
+      },
+      {
+        "speaker": "B",
+        "text": "I think you're wise. Yes, a windbreaker is always a good call."
+      },
+      {
+        "speaker": "A",
+        "text": "So is it going to be cloudy? I mean, should I even bother bringing sunglasses, do you think?"
+      },
+      {
+        "speaker": "B",
+        "text": "Well, I think sunglasses always are nice, even if the clouds are there. Protect your eyes from the UVs. But, uh..."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, and they're very stylish, too. Have you seen those metal rim sunglasses that I wear?"
+      },
+      {
+        "speaker": "B",
+        "text": "Ooh, I love those metal red sunglasses that you wear. They're pretty impressive."
+      },
+      {
+        "speaker": "A",
+        "text": "Whenever I get pulled over by a state trooper, they're like, I think I'm looking in a mirror here."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, they're like one of us. They don't give you a ticket."
+      }
+    ],
+    "context_clip": "028972befd94.opus",
+    "target_clip": "0736e2eb81e6.opus",
+    "target_text": "That's right. You know it.",
     "target_speaker": "A"
   }
 ]

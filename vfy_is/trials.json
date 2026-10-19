@@ -51,44 +51,6 @@
     "context": [
       {
         "speaker": "A",
-        "text": "You're running low on water. Well, I guess we all are on a day like today. Let me refill that for you."
-      },
-      {
-        "speaker": "A",
-        "text": "How we doing there, Einstein?"
-      },
-      {
-        "speaker": "B",
-        "text": "Trying to stay in the shade."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, well, I wish I could do that. I've been shoveling compost all day."
-      },
-      {
-        "speaker": "B",
-        "text": "They smell like when I roll around in the mud."
-      },
-      {
-        "speaker": "A",
-        "text": "Well, I guess our lives aren't all that different, are they, Einstein?"
-      },
-      {
-        "speaker": "B",
-        "text": "I guess not."
-      }
-    ],
-    "context_clip": "2657845c079c.opus",
-    "target_clip": "56780e5d1f8d.opus",
-    "target_text": "You know, you're my favorite. You're my favorite pig. You know that, right?",
-    "target_speaker": "A"
-  },
-  {
-    "trial_id": "vis003",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
         "text": "Wow, being by the ocean like this makes me feel really small and tiny and unimportant."
       },
       {
@@ -118,7 +80,7 @@
     "target_speaker": "A"
   },
   {
-    "trial_id": "vis004",
+    "trial_id": "vis003",
     "axis": "is",
     "context": [
       {
@@ -152,7 +114,7 @@
     "target_speaker": "B"
   },
   {
-    "trial_id": "vis005",
+    "trial_id": "vis004",
     "axis": "is",
     "context": [
       {
@@ -210,7 +172,7 @@
     "target_speaker": "B"
   },
   {
-    "trial_id": "vis006",
+    "trial_id": "vis005",
     "axis": "is",
     "context": [
       {
@@ -260,7 +222,7 @@
     "target_speaker": "A"
   },
   {
-    "trial_id": "vis007",
+    "trial_id": "vis006",
     "axis": "is",
     "context": [
       {
@@ -290,7 +252,7 @@
     "target_speaker": "A"
   },
   {
-    "trial_id": "vis008",
+    "trial_id": "vis007",
     "axis": "is",
     "context": [
       {
@@ -316,7 +278,7 @@
     "target_speaker": "A"
   },
   {
-    "trial_id": "vis009",
+    "trial_id": "vis008",
     "axis": "is",
     "context": [
       {
@@ -382,29 +344,59 @@
     "target_speaker": "B"
   },
   {
+    "trial_id": "vis009",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey, so what kind of weather do you think we'll be having this weekend?"
+      },
+      {
+        "speaker": "B",
+        "text": "Well, Chet, that's a very good question. I will refer to the board over here. We can see that on Saturday we have highs of 72 and lows in the 50s. But on Sunday, we're going to experience a little bit of drizzle right in the morning. But by the end of the day, things should clear up."
+      },
+      {
+        "speaker": "A",
+        "text": "It sounds pretty moderate. Is there going to be some humidity involved?"
+      }
+    ],
+    "context_clip": "c75eaa5f3182.opus",
+    "target_clip": "303d8db8c5a8.opus",
+    "target_text": "Oh boy, there will be a lot of humidity.",
+    "target_speaker": "B"
+  },
+  {
     "trial_id": "vis010",
     "axis": "is",
     "context": [
       {
         "speaker": "A",
-        "text": "oh it's so smoky in here is there i think the cat tree is on fire we gotta get we gotta get stuff out of here maybe the cats where are the cats"
+        "text": "So this buddy of mine, he's got some free time next month and he just wants to just get out of town and just take some time for himself and see something exotic."
       },
       {
         "speaker": "B",
-        "text": "Um... Jinx and... Mittens are..."
+        "text": "Oh man, I'm so jealous. I wish I had some time off to go see something exotic."
+      },
+      {
+        "speaker": "A",
+        "text": "You and me both. But he was asking me for advice and he can't he can't go overseas because he's got a bit of a legal situation. And I was trying to think like where where I should suggest in New Orleans popped into my mind at a had a few wild nights there back in 2019."
       },
       {
         "speaker": "B",
-        "text": "In your room. Why don't you go get them? And I'll grab your purse."
+        "text": "Ooh, you know, that's what I was going to say."
       },
       {
         "speaker": "B",
-        "text": "And the box of our important documents?"
+        "text": "Yeah. I was going to say, that's where I had my bachelorette party. And oh, yeah, man, best place I've ever been. I think it was definitely my favorite city I visited in the U.S."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh no way."
       }
     ],
-    "context_clip": "b2ad7c73f40f.opus",
-    "target_clip": "7526934ed323.opus",
-    "target_text": "Okay, I'll get the cat carrier from the closet and put them both in it, but can you get the photo album too?",
+    "context_clip": "f06e54867bd4.opus",
+    "target_clip": "2f1de6c51e85.opus",
+    "target_text": "Wow. Strong, strong. Best place you've ever been. That's strong words to endorse the city.",
     "target_speaker": "A"
   }
 ]
