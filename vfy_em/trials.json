@@ -1,0 +1,446 @@
+[
+  {
+    "trial_id": "vem001",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey, yo, what's your fucking problem?"
+      },
+      {
+        "speaker": "B",
+        "text": "my problem apparently is you because you'd be just slamming on your brakes out of nowhere without any warning and"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I'm slamming on my brakes. At least I have eyes. What did you have? Do you have like sunglasses on that are tinted 50 hundred million percent? What's your fucking deal, dude? You hit the back of my car."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, well, my sunglasses don't, uh, correct for the fact that you were driving, like, like, 20 miles an hour in the 30-mile zone, so..."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, so you sped up into me. Is that the story? Is that the story?"
+      },
+      {
+        "speaker": "B",
+        "text": "If you would drive like a reasonable person, then maybe I wouldn't have to be on your ass trying to nudge you to speed up so I can get where I'm going because other people, not everyone in the world runs on your schedule, asshole. Sometimes people need to get to work."
+      },
+      {
+        "speaker": "A",
+        "text": "Well, maybe, maybe..."
+      },
+      {
+        "speaker": "A",
+        "text": "Maybe you like the smell of my ass because you were just up there. Just like your nose was in the exhaust pipe of my fucking car, dude. I was going the speed limit and you just ran right into me. It's not like I'm trying to get like $5,000 in damage to my rear bumper. That's not my fucking priority. My fucking priority is getting to work on time and making the money so I can live, which you are currently a boulder in the way of my life."
+      },
+      {
+        "speaker": "B",
+        "text": "Hey, look."
+      },
+      {
+        "speaker": "B",
+        "text": "Maybe your first priority should be call AAA and get your speedometer fixed because you clearly are impaired if you think you were going the speed limit."
+      }
+    ],
+    "context_clip": "01e251917314.opus",
+    "target_clip": "32c73fe157e9.opus",
+    "target_text": "Oh, you think I'm impaired. Okay.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vem002",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh, this, this is a lot longer than I was expecting. Um, okay, we'll just go down the list. Do you have, do you, um, know who got the, um, uh, like the, the, the bottle of wine? Was that, uh, Sarah or was that Jeffrey?"
+      },
+      {
+        "speaker": "B",
+        "text": "Well, easy way to determine that. If it says red wine, then that would definitely be Sarah, right? Yeah."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. So red wine is Sarah. What is, what did Jeffrey get? Cause I think I remember him saying like he got some kind of alcohol. Was it the, did he get the, um, the, the, the, the, the beer or did he get the, uh, the white wine?"
+      },
+      {
+        "speaker": "B",
+        "text": "Uh, I think, I think he, I'm pretty sure he had like at least three beers. There was, um, it was a Sam Adams on draft. I think that that was him."
+      },
+      {
+        "speaker": "A",
+        "text": "I see that here, okay."
+      },
+      {
+        "speaker": "A",
+        "text": "Um, okay. Okay. Okay. So he got the beer and, uh, Sarah got the wine. Um, but Sarah got the red wine. That means who got the white wine? I don't remember."
+      },
+      {
+        "speaker": "B",
+        "text": "I can't keep track of all these people. But okay, we'll start with what I know. I know that I have a lasagna."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, you had the lasagna. It looks like we had like, uh, it looks like two people ordered lasagna. Do you know who else ordered the lasagna?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I'm pretty sure that was..."
+      },
+      {
+        "speaker": "B",
+        "text": "Pretty sure that was Jason. Cause I remember he and I, yeah, he and I like, we laughed about the fact that we both ordered the same thing."
+      }
+    ],
+    "context_clip": "78b9ae178643.opus",
+    "target_clip": "82a3c7ececfa.opus",
+    "target_text": "Gotcha. So Jason and you ordered the lasagna. Wait, actually, no, I see a third lasagna here. Did someone else order lasagna?",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vem003",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh, I swear, we were just about rolling on the floor after he left."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh my goodness. Oh my goodness."
+      },
+      {
+        "speaker": "A",
+        "text": "He was so professional. He had his tie perfectly buttoned. He was so just on it. He answered every question just on the ball."
+      },
+      {
+        "speaker": "B",
+        "text": "Every question."
+      },
+      {
+        "speaker": "A",
+        "text": "It was just like so put together, like his internal monologue was like, I nailed this. I nailed this. I'm going to get hired. And then and then he's like, pleasure to meet you. Pleasure to meet you, gentlemen. And then and then he's so confident. He walks to the door, opens it is like right in the closet. Oh, it was rich."
+      }
+    ],
+    "context_clip": "2085563cfa07.opus",
+    "target_clip": "3de8ff99fe5a.opus",
+    "target_text": "I don't think I've seen that many clothes fall down.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vem004",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "That was off the charts."
+      },
+      {
+        "speaker": "B",
+        "text": "That was crazy. I've never seen anything like it."
+      },
+      {
+        "speaker": "A",
+        "text": "I mean, first off, to turn an elementary school stage into the interior of an airplane, like, that was just the sheer ambition of that. And the way they created those little windows, oh my goodness."
+      },
+      {
+        "speaker": "B",
+        "text": "Ambition is a word for it."
+      },
+      {
+        "speaker": "A",
+        "text": "And then they took that set off, and then they replicated the airfield, and they had those explosions. It was like, remember those little orange curtains? They reenacted the explosions."
+      },
+      {
+        "speaker": "B",
+        "text": "It was the way the kids grabbed the curtains and just tried to throw them up, but they couldn't do it."
+      },
+      {
+        "speaker": "A",
+        "text": "I just can't. Oh, and then the kid, the kid who played Danny Trejo's character. You know, I mean, obviously they, you know, they couldn't, you know, they couldn't get into the fact that he was a rapist because it's, you know, children. But but the way the way they. Oh, my God. The way he played that. Oh, my God. Oh, my God."
+      },
+      {
+        "speaker": "B",
+        "text": "I thought that kid studied hard, I can tell you that."
+      },
+      {
+        "speaker": "A",
+        "text": "The way they modified the dialogue. They call me Johnny 23. I got 23 apples on my arm for the 23 candy bars I stole. Someday these kids, they're going to be old enough to watch the movie and then they're going to put it together what they were parodying and they're going to be like, whoa."
+      }
+    ],
+    "context_clip": "8df942a811a9.opus",
+    "target_clip": "42a891dfa9e7.opus",
+    "target_text": "Whose decision was it to put on Con Air Kindergarten Edition?",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vem005",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Good. Good."
+      },
+      {
+        "speaker": "B",
+        "text": "I love you."
+      },
+      {
+        "speaker": "A",
+        "text": "Ha ha ha."
+      },
+      {
+        "speaker": "A",
+        "text": "they're like"
+      },
+      {
+        "speaker": "B",
+        "text": "Ha ha ha ha!"
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you."
+      }
+    ],
+    "context_clip": "08d7266edee1.opus",
+    "target_clip": "d1a1c373caa1.opus",
+    "target_text": "Oh, my God.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vem006",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Sure was fun last night."
+      },
+      {
+        "speaker": "B",
+        "text": "Mm-hmm."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I was real... Sorry, there was something in my throat. Give me a sec. I..."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, me too."
+      },
+      {
+        "speaker": "B",
+        "text": "Did you see when Tommy had the crazy, like, he just chugged all that alcohol?"
+      },
+      {
+        "speaker": "A",
+        "text": "Well, Tommy probably does it every night. Then Tina had to drag him away."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, it was crazy. I had no idea Tina was that strong."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, Tina used to be a, she used to be a gymnast in high school."
+      }
+    ],
+    "context_clip": "1ae81dcadf4a.opus",
+    "target_clip": "03fee56f1508.opus",
+    "target_text": "Impressive! I can't even, I can't even stand on my own two legs.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vem007",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "Gotta make sure. Grab my laptop. Don't forget the laptop."
+      },
+      {
+        "speaker": "A",
+        "text": "Did you leave the cat thing on the radiator?"
+      },
+      {
+        "speaker": "B",
+        "text": "Look, we got to get our stuff out of here. Let's not point fingers at each other, okay? It's not the time to play the blame game right now."
+      },
+      {
+        "speaker": "A",
+        "text": "You got your laptop? I've got to grab my... Did you get the passports and the social security cards?"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, my God, it's rough."
+      },
+      {
+        "speaker": "A",
+        "text": "I've got to get back out of here. I'll catch you later. See you outside."
+      },
+      {
+        "speaker": "B",
+        "text": "Make sure you grab my laptop, please."
+      },
+      {
+        "speaker": "B",
+        "text": "Look, I got the green backpack. It's got your wallet in it."
+      }
+    ],
+    "context_clip": "e2cd4c1561d3.opus",
+    "target_clip": "27a1f51c4fba.opus",
+    "target_text": "I'm sorry. It's my fault. I put the cat tree over there and I didn't know the radiator was. Oh, God. OK.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vem008",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I'm going to tell you about the magical land of Kansas City, Missouri. Have you ever heard of Kansas City, Missouri?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I haven't."
+      },
+      {
+        "speaker": "A",
+        "text": "that gates barbecue is the hot spot because when you walk into gates it's an exciting time people start yelling at you immediately they say welcome to gates what do you want and they're pretty rude but it's the tastiest beef you will ever eat and the tastiest"
+      },
+      {
+        "speaker": "B",
+        "text": "What's the best thing to get at Gates?"
+      }
+    ],
+    "context_clip": "6b2b9edd62b9.opus",
+    "target_clip": "cbf32f0193a6.opus",
+    "target_text": "Ooh, the best thing to get at Gates is probably a Kansas City, Missouri specialty, burnt ends. Do you know what a burnt end is?",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vem009",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Did you ride?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I did. I worked for many years in a horse barn. That was my job in school. Yeah. So."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, I did summer like summers where I would just board with horses and and tack them and groom them and take care of them all day every day as well. And I did this like for years as well. So like I spent time with horses all the time."
+      },
+      {
+        "speaker": "B",
+        "text": "What kind of discipline?"
+      },
+      {
+        "speaker": "A",
+        "text": "So I was just about to ask you the same thing. Did you ride Western or English?"
+      },
+      {
+        "speaker": "B",
+        "text": "I did dressage for many years. So yeah, I did like super competitive, eventually dressage. I miss it so much."
+      },
+      {
+        "speaker": "A",
+        "text": "Wow, that's so disciplined."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, how about you?"
+      },
+      {
+        "speaker": "A",
+        "text": "Mostly. So I did equestrian, so I mostly did English saddle because that's how I was raised. So I wrote English and I would do jumping. Yeah."
+      },
+      {
+        "speaker": "B",
+        "text": "I was always a little too scared to jump. I always really wanted to not be scared, but I was always a little too intimidated by the really high ones after we'd get to a certain level."
+      },
+      {
+        "speaker": "A",
+        "text": "I have to ask you this too, just because if I don't, I'll be remiss if I don't. Have you ever been thrown?"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, more times than I can count. Yeah. I think I've lost track after like the fifth one. And then, yeah. But I've gotten to the place."
+      }
+    ],
+    "context_clip": "ce32acf910c1.opus",
+    "target_clip": "d770bc540497.opus",
+    "target_text": "Tell me your worst.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vem010",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Uhhh..."
+      },
+      {
+        "speaker": "A",
+        "text": "Marie, I'm so sorry for the smell. I found the source. It's my fault. I'm so sorry. I used the Instapot the other day, and by the other day, I mean three to four days ago, and forgot to clean it. Forgot to clean it. There's chicken water in the bottom here."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, are you sure that was three to four days ago? Cause, oh, I'm pretty sure it was like five to six because that is, that is rancid."
+      },
+      {
+        "speaker": "A",
+        "text": "It's been sitting in the sun. It's been sitting in the sun. Yeah, yeah."
+      },
+      {
+        "speaker": "B",
+        "text": "Ugh, what did you cook in there?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, chicken. Some chicken. That's chicken water."
+      },
+      {
+        "speaker": "B",
+        "text": "Did you put any other spices or anything on there? Because it smells horrible."
+      },
+      {
+        "speaker": "A",
+        "text": "Nope. No, no, no. That was just boiled chicken, baby. That was... Sorry."
+      },
+      {
+        "speaker": "A",
+        "text": "That's just boiled chicken. That's boiled chicken. I was boiling it down plain because I wasn't feeling well with some rice and now I regret it."
+      },
+      {
+        "speaker": "B",
+        "text": "How could you forget it for that many days?"
+      },
+      {
+        "speaker": "A",
+        "text": "I was sick."
+      },
+      {
+        "speaker": "A",
+        "text": "And I can see why."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, are you feeling better now?"
+      },
+      {
+        "speaker": "A",
+        "text": "Uh, a little, um, but, uh, I'm really trying not to throw up again and, uh, this, this chicken water is going to make me do it. So do you want to clean it for me, please?"
+      }
+    ],
+    "context_clip": "389d2f700d2f.opus",
+    "target_clip": "a0ecb6888a1b.opus",
+    "target_text": "Ugh, I mean, it's not my fault that you left three-day chicken water, but I guess... Ugh, if you're really that sick, but... Ugh.",
+    "target_speaker": "B"
+  }
+]

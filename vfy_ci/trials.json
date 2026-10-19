@@ -1,0 +1,426 @@
+[
+  {
+    "trial_id": "vci001",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I mean, don't get me wrong. I'd be kind of freaking out, too, if I was being chased by a moose. But, oh, just the way he was running."
+      },
+      {
+        "speaker": "B",
+        "text": "It was so great. I don't think... He looked like a human-embodied Muppet. With his arms flailing around him. All that stuff."
+      },
+      {
+        "speaker": "A",
+        "text": "And then he was, like, going in circles. Like, he was so confused. And then the moose was just kind of, like, just casually just kind of lumbering along."
+      },
+      {
+        "speaker": "B",
+        "text": "Did you see the part where they... What was it? What was the part? What was the part?"
+      },
+      {
+        "speaker": "A",
+        "text": "Whoa! That's something you don't see every day. A moose chase. Oh, that guy is terrified."
+      },
+      {
+        "speaker": "B",
+        "text": "Running for his life. I..."
+      },
+      {
+        "speaker": "A",
+        "text": "It's like you'd think that the guy had an affair with a moose's husband."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, look, there he goes. He's climbing up the tree. The moose is..."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, no! And the moose is just, like, sniffing him out, sniffing one leaf at a time. That moose, like, is so relaxed, it doesn't even care."
+      },
+      {
+        "speaker": "B",
+        "text": "And then, well, wait, how..."
+      },
+      {
+        "speaker": "A",
+        "text": "What is he doing? He's throwing acorns at the moose? What is he thinking? That is so not the right thing to do. He's making it angry."
+      }
+    ],
+    "context_clip": "34680a1e28ce.opus",
+    "target_clip": "d08e65562ce2.opus",
+    "target_text": "He is making it angry, but I'm having a good time.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vci002",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Good. Good."
+      },
+      {
+        "speaker": "B",
+        "text": "I love you."
+      },
+      {
+        "speaker": "A",
+        "text": "Ha ha ha."
+      },
+      {
+        "speaker": "A",
+        "text": "they're like"
+      },
+      {
+        "speaker": "B",
+        "text": "Ha ha ha ha!"
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you."
+      }
+    ],
+    "context_clip": "5bd28501fc40.opus",
+    "target_clip": "62b1eb751f88.opus",
+    "target_text": "Oh, my God.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vci003",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "B",
+        "text": "Gotta make sure. Grab my laptop. Don't forget the laptop."
+      },
+      {
+        "speaker": "A",
+        "text": "Did you leave the cat thing on the radiator?"
+      },
+      {
+        "speaker": "B",
+        "text": "Look, we got to get our stuff out of here. Let's not point fingers at each other, okay? It's not the time to play the blame game right now."
+      },
+      {
+        "speaker": "A",
+        "text": "You got your laptop? I've got to grab my... Did you get the passports and the social security cards?"
+      }
+    ],
+    "context_clip": "1f2f8a0b96e9.opus",
+    "target_clip": "c0e8b66848ec.opus",
+    "target_text": "Oh, my God, it's rough.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vci004",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "These guys are so cool."
+      },
+      {
+        "speaker": "A",
+        "text": "I feel like Uncle Johnny."
+      },
+      {
+        "speaker": "B",
+        "text": "I can't believe he gave us them."
+      },
+      {
+        "speaker": "A",
+        "text": "Scoot."
+      },
+      {
+        "speaker": "B",
+        "text": "I swear this gets easier with practice, right?"
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, it does. Your eyes are really watery, dude."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, my God. I feel like we're going to pass out."
+      }
+    ],
+    "context_clip": "b5600f2f6494.opus",
+    "target_clip": "456bb3846a17.opus",
+    "target_text": "Yeah, take a big puff.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vci005",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Um, oh, hey over there, little guy. I have been to this marsh a million times. Look at you."
+      },
+      {
+        "speaker": "B",
+        "text": "Alright."
+      },
+      {
+        "speaker": "B",
+        "text": "We'll be right back."
+      },
+      {
+        "speaker": "A",
+        "text": "Wow, you're... Whoa, um, hello. Uh, I didn't realize you could talk."
+      },
+      {
+        "speaker": "B",
+        "text": "I've seen you here before."
+      },
+      {
+        "speaker": "B",
+        "text": "Well, I'm very observant of my surroundings. You've been here about four or five times, and I've come to recognize your face. A little bit. A little bit. A little bit."
+      }
+    ],
+    "context_clip": "de0f17f17d1d.opus",
+    "target_clip": "9bcfaef4cc6d.opus",
+    "target_text": "So you've been watching me my entire summer trip. Okay.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vci006",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "You're running low on water. Well, I guess we all are on a day like today. Let me refill that for you."
+      },
+      {
+        "speaker": "A",
+        "text": "How we doing there, Einstein?"
+      },
+      {
+        "speaker": "B",
+        "text": "Trying to stay in the shade."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, well, I wish I could do that. I've been shoveling compost all day."
+      },
+      {
+        "speaker": "B",
+        "text": "They smell like when I roll around in the mud."
+      },
+      {
+        "speaker": "A",
+        "text": "Well, I guess our lives aren't all that different, are they, Einstein?"
+      },
+      {
+        "speaker": "B",
+        "text": "I guess not."
+      },
+      {
+        "speaker": "A",
+        "text": "You know, you're my favorite. You're my favorite pig. You know that, right?"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, do thanks. I love spending time with you when you come over and you feed me the hay."
+      },
+      {
+        "speaker": "A",
+        "text": "Well, got a good batch for you today."
+      },
+      {
+        "speaker": "B",
+        "text": "Hmm. Hmm. Hmm. Hmm."
+      },
+      {
+        "speaker": "A",
+        "text": "Here, let me grab it for you. As all for you."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, oh, ah, mm, mm, mm, mm, whee!"
+      },
+      {
+        "speaker": "B",
+        "text": "Do you think you could get behind my ear? I didn't get the mud to cover the back of me, and now I'm feeling a little bit naked there."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, sure thing. All right, let's see here. How's that? How's that?"
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you."
+      },
+      {
+        "speaker": "B",
+        "text": "That's my favorite spot."
+      },
+      {
+        "speaker": "A",
+        "text": "All right. I'll tell you what. I got to go tend to the chickens. But I'll be back later."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'll be here, and I'll be making sure that all these apples and the hay is gone before you get back."
+      },
+      {
+        "speaker": "A",
+        "text": "All right. Well, I know you're going to be here because I just spent 200 bucks repairing the fence the other day. So you better be here."
+      }
+    ],
+    "context_clip": "a65932c43092.opus",
+    "target_clip": "5c3cc174ca2a.opus",
+    "target_text": "Sorry about that.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vci007",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Brian, I know we're not really supposed to talk to each other,"
+      },
+      {
+        "speaker": "A",
+        "text": "before the session. But I just wanted to say I didn't want this to go this way and I'm really, really sorry. I'm not trying to take stuff from you. I wasn't ever trying to keep anything from you. I wasn't trying to keep anything that you brought into the house."
+      },
+      {
+        "speaker": "B",
+        "text": "Look, I don't blame you. I just..."
+      },
+      {
+        "speaker": "B",
+        "text": "I know what the boundaries are and I know what's mine. I know what's ours."
+      },
+      {
+        "speaker": "B",
+        "text": "And."
+      },
+      {
+        "speaker": "B",
+        "text": "I just don't... I don't understand..."
+      },
+      {
+        "speaker": "B",
+        "text": "I don't understand why we're in this fight."
+      },
+      {
+        "speaker": "A",
+        "text": "i mean it just felt like it wasn't being resolved um without some kind of mediation and some interjection here and i'm sorry i didn't want it to go this way but it just felt like we couldn't see eye to eye on some of the bigger items and you know we both have assets and you have a lot that you deserve and i want to make sure you get that"
+      },
+      {
+        "speaker": "B",
+        "text": "I just don't understand why we couldn't just work this out civilly."
+      }
+    ],
+    "context_clip": "fd0ca4360055.opus",
+    "target_clip": "3aad7cdc3832.opus",
+    "target_text": "But we tried that and it didn't work.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vci008",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "And she was a new student. She was much bigger than all of the other rats and all of the other rodents. She was a capybara, and her name was Camilla."
+      },
+      {
+        "speaker": "A",
+        "text": "Simon got up in front of the whole class and he said,"
+      },
+      {
+        "speaker": "A",
+        "text": "Wadney says,"
+      }
+    ],
+    "context_clip": "ada0aa56b033.opus",
+    "target_clip": "3ac1a9fd6825.opus",
+    "target_text": "Weed a book.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vci009",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I'm going to tell you about the magical land of Kansas City, Missouri. Have you ever heard of Kansas City, Missouri?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I haven't."
+      },
+      {
+        "speaker": "A",
+        "text": "that gates barbecue is the hot spot because when you walk into gates it's an exciting time people start yelling at you immediately they say welcome to gates what do you want and they're pretty rude but it's the tastiest beef you will ever eat and the tastiest"
+      },
+      {
+        "speaker": "B",
+        "text": "What's the best thing to get at Gates?"
+      },
+      {
+        "speaker": "A",
+        "text": "Ooh, the best thing to get at Gates is probably a Kansas City, Missouri specialty, burnt ends. Do you know what a burnt end is?"
+      }
+    ],
+    "context_clip": "67d7468579c6.opus",
+    "target_clip": "4252d6e34e96.opus",
+    "target_text": "What's a burnt end?",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vci010",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh my god. That deer is full grown and half of its body is missing."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, yeah, where is its eye? It's like, like half of its face is missing."
+      },
+      {
+        "speaker": "A",
+        "text": "And look it, its intestines are hanging out the entrails."
+      },
+      {
+        "speaker": "A",
+        "text": "The entrails."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, he..."
+      },
+      {
+        "speaker": "B",
+        "text": "You can see what he ate at lunch. It's like leaves in his belly."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god. Oh, look at all the maggots. All the maggots."
+      },
+      {
+        "speaker": "B",
+        "text": "Ugh."
+      },
+      {
+        "speaker": "A",
+        "text": "That's been dead for a while."
+      },
+      {
+        "speaker": "B",
+        "text": "Why would Buster want to eat that? That's so gross."
+      }
+    ],
+    "context_clip": "2a2fc47b76e7.opus",
+    "target_clip": "f8ed23242ec7.opus",
+    "target_text": "You picked this dog out of the litter.",
+    "target_speaker": "A"
+  }
+]

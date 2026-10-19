@@ -37,6 +37,11 @@
          padding-bottom:10px;border-bottom:1px solid var(--line)}
   #fixed .scroller{max-height:42vh;overflow:auto;padding-right:4px}
   #fixed.small .scroller{max-height:24vh}
+  .scrollwrap{position:relative}
+  .scrollwrap::after{content:"";position:absolute;left:0;right:4px;bottom:0;height:44px;
+    background:linear-gradient(rgba(251,251,250,0),var(--bg));pointer-events:none;
+    opacity:0;transition:opacity .15s}
+  .scrollwrap.more::after{opacity:1}
   .fx-head{display:flex;align-items:center;gap:10px;margin:4px 0 6px}
   .fx-head b{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut)}
 
@@ -59,6 +64,8 @@
   .gb button small{display:block;color:var(--mut);font-size:12px;font-weight:400;margin-top:2px}
   .gb .good.sel{border-color:var(--yes);background:#eef7f1;color:var(--yes);font-weight:700}
   .gb .bad.sel{border-color:var(--no);background:#fdeeee;color:var(--no);font-weight:700}
+  .cf{display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+  .cf .row{margin-top:0}
   .brk{font-size:12px;color:var(--mut);display:inline-flex;align-items:center;gap:5px;margin-top:12px}
   .cardnav{display:flex;justify-content:space-between;margin-top:10px}
 
@@ -124,6 +131,12 @@
      font-weight:400">Compare 2 &mdash; Emotion</a>
   <a href="../ctx_is/index.html" style="color:#fff;text-decoration:none;margin:0 10px;
      font-weight:600">Compare 2 &mdash; Info structure</a>
+  <a href="../vfy_ci/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Needs context? &mdash; Intent</a>
+  <a href="../vfy_em/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Needs context? &mdash; Emotion</a>
+  <a href="../vfy_is/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Needs context? &mdash; Info structure</a>
 </div>
 <div style="height:34px"></div>
 
@@ -178,7 +191,9 @@ they may well both succeed, or both fail.</p>
   <li><b>Play card A, mark it good or bad. Switch to card B, do the same.</b>
       Go back and forth as often as you like; the audio does not reload, so
       <kbd>Q</kbd> and <kbd>W</kbd> will flip between them instantly.</li>
-  <li><b>Say how confident you are</b> in the result at the bottom.</li>
+  <li><b>Say how confident you are</b> in each card, right under its Good / Bad
+      buttons. Nothing moves on by itself: change a card as often as you like
+      while it plays, and switch cards when you are ready.</li>
 </ol>
 
 <h3>Judge the delivery, not the voice</h3>
@@ -215,7 +230,7 @@ same annotator ID, fix whatever you want, and download again.</div>
 <table>
   <tr><th>Key</th><th></th><th>Key</th><th></th></tr>
   <tr><td><kbd>Q</kbd> / <kbd>W</kbd></td><td>show card A / card B</td>
-      <td><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd></td><td>confidence low / medium / high</td></tr>
+      <td><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd></td><td>this card's confidence low / medium / high</td></tr>
   <tr><td><kbd>G</kbd></td><td>this card is good</td>
       <td><kbd>Space</kbd></td><td>play / pause this card</td></tr>
   <tr><td><kbd>X</kbd></td><td>this card is bad</td>
@@ -328,8 +343,20 @@ function shuffle(arr,seed){const a=arr.slice(),r=rng(seed);for(let i=a.length-1;
 
 const SET=()=>(location.pathname.replace(/\/index\.html$/,"").replace(/\/$/,"").split("/").pop()||"cmp");
 const KEY=()=>"ctts_cmp_"+SET()+"_"+AID;
-function save(){localStorage.setItem(KEY(),JSON.stringify({aid:AID,i:I,r:R}))}
 function load(){try{return JSON.parse(localStorage.getItem(KEY()))}catch(e){return null}}
+// The same page open in two tabs used to overwrite the other tab's answers on
+// every save. Merge per conversation instead, newest edit wins.
+function mergeStored(){
+  const prev=load();
+  if(!prev||!prev.r)return;
+  for(const [k,v] of Object.entries(prev.r))
+    if(!R[k]||(v.u||0)>(R[k].u||0))R[k]=v;
+}
+function save(){mergeStored();localStorage.setItem(KEY(),JSON.stringify({aid:AID,i:I,r:R}))}
+window.addEventListener("storage",e=>{
+  if(e.key!==KEY()||!PAGES.length)return;
+  mergeStored();paint();footer();
+});
 
 // ── deep links: #<trial_id> or #<trial_id>/a ───────────────────────────────
 function parseHash(){
@@ -367,6 +394,13 @@ async function start(){
   const prev=load(); if(prev&&prev.r){R=prev.r;I=prev.i||0}
   const valid=new Set(PAGES.map(rkey));
   for(const k of Object.keys(R)) if(!valid.has(k)) delete R[k];
+  // Answers saved before confidence moved onto the cards carry one pair-level
+  // value; give it to each card that was rated so nothing already done reopens.
+  for(const r of Object.values(R)){
+    if(!r.confidence)continue;
+    for(const s of SIDE) if(r[s]&&r[s].verdict&&!r[s].confidence) r[s].confidence=r.confidence;
+    delete r.confidence;
+  }
   C=0;
   if(WANT){
     const j=PAGES.findIndex(p=>p.trial.trial_id===WANT.trial);
@@ -386,11 +420,12 @@ const rkey=p=>p.trial.trial_id;
 
 function cur(){
   const k=rkey(PAGES[I]);
-  R[k]=R[k]||{a:{},b:{},confidence:null,t0:Date.now()};
+  R[k]=R[k]||{a:{},b:{},t0:Date.now()};
   for(const s of SIDE) R[k][s]=R[k][s]||{};
+  R[k].u=Date.now();
   return R[k];
 }
-function rec(p){return R[rkey(p)]||{a:{},b:{},confidence:null}}
+function rec(p){return R[rkey(p)]||{a:{},b:{}}}
 const rated=p=>SIDE.some(s=>(rec(p)[s]||{}).verdict);
 const hasComment=p=>SIDE.some(s=>((rec(p)[s]||{}).comment||"").trim());
 function outcome(p){
@@ -400,9 +435,9 @@ function outcome(p){
   if(a==="bad"&&b==="bad")return "neither";
   return a==="good"?"a":"b";
 }
-// Finished = both cards judged AND a confidence. Same bar as the rest of the
-// site: "answered" means the same thing on every tab.
-const pageDone=p=>!!(outcome(p)&&rec(p).confidence);
+const cardDone=(p,s)=>{const x=rec(p)[s]||{};return !!(x.verdict&&x.confidence)};
+// Finished = every card judged AND given a confidence.
+const pageDone=p=>SIDE.every(s=>cardDone(p,s));
 
 // ── the pinned half: rebuilt only when the conversation changes ────────────
 function renderFixed(){
@@ -425,7 +460,7 @@ function renderFixed(){
       <b>The conversation &mdash; stays fixed for both cards</b>
       <button class="link" onclick="squash()" id="sq">shrink</button>
     </div>
-    <div class="scroller">
+    <div class="scrollwrap" id="scrollwrap"><div class="scroller" id="scroller" onscroll="fade()">
       <div class="card">${ctx}
         ${t.context_clip?`<audio controls preload="none" src="audio/${t.context_clip}" style="width:100%;margin-top:12px"></audio>
         <div class="muted" style="margin-top:6px">The real recording of the turns above, ending just before the target line. Worth hearing at least once per conversation — the mood of a moment rarely survives being written down.</div>`:""}
@@ -436,13 +471,21 @@ function renderFixed(){
       ${t.reference_clip?`<h2>Original human recording</h2>
         <div class="card"><audio controls preload="none" src="audio/${t.reference_clip}" style="width:100%"></audio>
         <div class="muted" style="margin-top:6px">A different voice — listen for the manner, not the voice.</div></div>`:""}
-    </div>`;
+    </div></div>`;
+  fade();
 }
+// Fade the bottom edge of the pinned panel while more of it is hidden below.
+function fade(){
+  const s=document.getElementById("scroller"), w=document.getElementById("scrollwrap");
+  if(s&&w)w.classList.toggle("more", s.scrollHeight-s.scrollTop-s.clientHeight>2);
+}
+window.addEventListener("resize",fade);
 function squash(){
   const f=document.getElementById("fixed");
   f.classList.toggle("small");
   document.getElementById("sq").textContent=
     f.classList.contains("small")?"expand":"shrink";
+  fade();
 }
 
 // ── the cards: both built once, then toggled ───────────────────────────────
@@ -459,6 +502,9 @@ function renderCards(){
         <button class="bad ${rr.verdict==="bad"?"sel":""}" id="b${j}" onclick="mark(${j},'bad')">
           Bad<small>does not fit this moment</small></button>
       </div>
+      <div class="cf"><span class="muted">How confident are you in this card?</span>
+        <div class="row">${["low","medium","high"].map(cc=>
+          `<div class="chip" id="cf${j}_${cc}" onclick="conf(${j},'${cc}')">${cc}</div>`).join("")}</div></div>
       <label class="brk"><input type="checkbox" id="k${j}" ${rr.broken?"checked":""}
         onchange="brk(${j},this.checked)">
         broken — cut off, garbled, silent, or different words</label>
@@ -512,33 +558,41 @@ function paint(){
     const g=document.getElementById("g"+j), b=document.getElementById("b"+j);
     g.classList.toggle("sel", v==="good");
     b.classList.toggle("sel", v==="bad");
+    const cf=(r[SIDE[j]]||{}).confidence;
+    for(const cc of ["low","medium","high"])
+      document.getElementById("cf"+j+"_"+cc).classList.toggle("sel", cf===cc);
   });
   document.getElementById("cardprev").hidden = C===0;
   document.getElementById("cardnext").hidden = C===p.clips.length-1;
 
   const o=outcome(p), vd=document.getElementById("verdict");
+  const todo=[];
+  SIDE.forEach((s,j)=>{
+    const x=r[s]||{};
+    if(!x.verdict)todo.push(`good / bad on ${SIDENAME[j]}`);
+    if(!x.confidence)todo.push(`confidence on ${SIDENAME[j]}`);
+  });
   vd.classList.toggle("on", !!o);
+  const left=todo.length?`<div class="muted" style="margin-top:4px">Still to do: <b>${todo.join(", ")}</b>.</div>`:"";
   if(!o){
-    const left=SIDE.filter((s,j)=>!(r[s]||{}).verdict)
-                   .map((s,i)=>SIDENAME[SIDE.indexOf(s)]);
     vd.innerHTML=`<div class="muted">Mark both cards good or bad and the result
-      appears here. Still to do: <b>${left.join(" and ")}</b>.</div>`;
+      appears here.</div>${left}`;
   }else{
     vd.innerHTML=`<div class="big">→ ${OUTCOME[o]}</div>
       <div class="muted" style="margin-top:2px">
         ${SIDENAME[0]} ${(r.a||{}).verdict} · ${SIDENAME[1]} ${(r.b||{}).verdict}
-        — change either card above if that is not what you meant.</div>
-      <h2 style="margin-bottom:4px">How confident are you in that?</h2>
-      <div class="row">${["low","medium","high"].map(cc=>
-        `<div class="chip ${r.confidence===cc?"sel":""}" onclick="conf('${cc}')">${cc}</div>`).join("")}</div>`;
+        — change either card above if that is not what you meant.</div>${left}`;
   }
 }
 
 function footer(){
   const done=PAGES.filter(pageDone).length;
+  // The bar counts finished cards, so it moves with every card rather than
+  // sitting still until a whole conversation is complete.
+  const cards=PAGES.reduce((n,q)=>n+SIDE.filter(s=>cardDone(q,s)).length,0);
   document.getElementById("pos").textContent=
-    `${I+1} / ${PAGES.length}  ·  card ${C+1} of 2  ·  ${done} complete`;
-  document.getElementById("fill").style.width=(100*done/PAGES.length)+"%";
+    `conversation ${I+1} / ${PAGES.length}  ·  card ${C+1} of 2  ·  ${done} of ${PAGES.length} finished`;
+  document.getElementById("fill").style.width=(100*cards/(SIDE.length*PAGES.length))+"%";
   document.getElementById("prev").disabled=I===0;
   document.getElementById("next").disabled=!pageDone(PAGES[I]);
   document.getElementById("next").textContent=I===PAGES.length-1?"Finish":"Next →";
@@ -555,12 +609,8 @@ function mark(j,v){
   r[SIDE[j]].verdict=v;
   r.ms=Date.now()-(r.t0||Date.now());
   save(); paint(); footer();
-  // Marking the first card moves you to the second: the natural next action,
-  // and it saves a click on every page. Marking the second does not move on --
-  // the confidence question is still waiting underneath.
-  if(j===0 && !(r.b||{}).verdict) card(1);
 }
-function conf(c){cur().confidence=c;save();paint();footer()}
+function conf(j,c){cur()[SIDE[j]].confidence=c;save();paint();footer()}
 function brk(j,on){cur()[SIDE[j]].broken=!!on;save()}
 function cmt(j,v){cur()[SIDE[j]].comment=v;save()}
 
@@ -586,9 +636,9 @@ document.addEventListener("keydown",e=>{
   const k=e.key.toLowerCase();
   if(k==="g"){mark(C,"good")}
   else if(k==="x"){mark(C,"bad")}
-  else if(k==="1"){conf("low")}
-  else if(k==="2"){conf("medium")}
-  else if(k==="3"){conf("high")}
+  else if(k==="1"){conf(C,"low")}
+  else if(k==="2"){conf(C,"medium")}
+  else if(k==="3"){conf(C,"high")}
   else if(k==="q"||k==="w"){
     const j=k==="q"?0:1;
     if(j!==C)card(j);
@@ -643,7 +693,7 @@ function rows(){
         won:o==="a"||o==="b"?(SIDE[j]===o?1:0):"",
         both_good:o==="both"?1:0,
         both_bad:o==="neither"?1:0,
-        confidence:r.confidence||"",
+        confidence:rr.confidence||"",
         other_clip:p.clips[1-j].clip,
         response_ms:r.ms??"",
         share_url:base+"#"+p.trial.trial_id+"/"+SIDE[j],

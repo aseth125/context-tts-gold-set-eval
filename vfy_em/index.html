@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emotion &mdash; ContextTTS — Does it need the conversation?</title>
+<style>
+  :root{--bg:#fbfbfa;--fg:#1a1a19;--mut:#6b6b68;--line:#e3e3e0;--acc:#2b6cb0;--warn:#c05621;
+        --yes:#2f855a;--no:#c53030}
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+  header{position:sticky;top:34px;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;gap:14px;align-items:center;z-index:20}
+  .bar{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+  .bar>div{height:100%;background:var(--acc);width:0;transition:width .2s}
+  main{max-width:860px;margin:0 auto;padding:16px 20px 96px}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);margin:20px 0 8px;font-weight:600}
+  h3{font-size:15px;margin:20px 0 6px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px}
+  .turn{margin:3px 0}
+  .spk{display:inline-block;min-width:22px;font-weight:700;color:var(--mut)}
+  .target{background:#fffbe8;border:1px solid #f0e2a8;border-radius:8px;padding:12px 14px;font-size:17px}
+  .muted{color:var(--mut);font-size:13px}
+  .link{background:none;border:none;color:var(--acc);cursor:pointer;font:inherit;padding:0;text-decoration:underline}
+  textarea{width:100%;min-height:54px;border:1px solid var(--line);border-radius:8px;padding:9px 11px;font:inherit;resize:vertical}
+  .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+  .chip{border:1px solid var(--line);border-radius:20px;padding:6px 14px;cursor:pointer;background:#fff;font-size:14px}
+  .chip.sel{border-color:var(--acc);background:var(--acc);color:#fff}
+  audio{width:100%;height:40px}
+
+  /* ── the two stages ───────────────────────────────────────────────────
+     Stage 1 is answered with the line and nothing else. Stage 2 is not in
+     the DOM until it is, because the whole question is what you thought
+     BEFORE you heard the conversation, and a transcript visible in the
+     corner of the eye has already answered it for you. */
+  .stage{border:1px solid var(--line);border-radius:10px;background:#fff;padding:18px 20px;margin-top:14px}
+  .stage.active{border-color:var(--acc);border-width:2px;padding:17px 19px}
+  .stage.locked{background:#f7f7f5;color:var(--mut)}
+  .stage h4{margin:0 0 4px;font-size:16px}
+  .stage .num{display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--acc);
+    color:#fff;font-size:13px;font-weight:700;text-align:center;line-height:22px;margin-right:7px}
+  .stage.locked .num{background:var(--mut)}
+  .ask{font-size:16px;margin:14px 0 2px}
+  .opts{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+  .opts button{border:2px solid var(--line);background:#fff;border-radius:8px;padding:11px 14px;
+    cursor:pointer;font:inherit;font-size:15px;text-align:left}
+  .opts button small{display:block;color:var(--mut);font-size:12.5px;font-weight:400;margin-top:2px}
+  .opts button.sel{border-color:var(--acc);background:#eef4fb;font-weight:700}
+  .opts button.sel small{color:#3a6a9c}
+  .opts button:disabled{cursor:default;opacity:.75}
+  .locknote{font-size:12.5px;color:var(--mut);margin-top:10px}
+  .scroller{max-height:34vh;overflow:auto;padding-right:4px}
+  .scrollwrap{position:relative}
+  .scrollwrap::after{content:"";position:absolute;left:0;right:4px;bottom:0;height:40px;
+    background:linear-gradient(rgba(255,255,255,0),#fff);pointer-events:none;
+    opacity:0;transition:opacity .15s}
+  .scrollwrap.more::after{opacity:1}
+
+  .verdict{margin-top:18px;border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:#fff}
+  .verdict.on{border-color:var(--acc);background:#eef4fb}
+  .verdict .big{font-size:18px;font-weight:700}
+
+  footer{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);
+         padding:10px 20px;display:flex;gap:12px;align-items:center;justify-content:center;z-index:30}
+  button.nav{border:1px solid var(--line);background:#fff;border-radius:7px;padding:8px 18px;cursor:pointer;font:inherit}
+  button.nav:disabled{opacity:.4;cursor:not-allowed}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}
+  td,th{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+  th{background:#f4f4f2;font-size:13px}
+  kbd{font:12px ui-monospace,Menlo,Consolas,monospace;background:#f4f4f2;border:1px solid var(--line);
+      border-bottom-width:2px;border-radius:4px;padding:1px 5px}
+  #modal{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:50;overflow:auto;padding:30px 12px}
+  #modal .inner{background:#fff;max-width:800px;margin:0 auto;border-radius:10px;padding:6px 30px 30px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:5px;margin-top:10px}
+  .gcell{position:relative;padding:7px 2px;font-size:12px;border-radius:5px;border:1px solid var(--line);cursor:pointer}
+  .gcell i{position:absolute;top:0;right:3px;font-size:14px;font-style:normal;line-height:1}
+  .ga{background:#eef4fb;border-color:#a9c6e3;color:#24567f}
+  .gh{background:#fffbe8;border-color:#f0e2a8;color:#8a6d1f}
+  .gu{background:#fff;color:var(--mut)}
+  .gnow{outline:2px solid var(--acc);outline-offset:1px}
+  .key{display:inline-block;width:12px;height:12px;border-radius:3px;border:1px solid var(--line);vertical-align:-1px;margin:0 2px 0 8px}
+  #toast{position:fixed;left:50%;bottom:70px;transform:translateX(-50%);background:#1a1a19;color:#fff;
+         padding:8px 16px;border-radius:6px;font-size:14px;z-index:60;opacity:0;transition:opacity .18s;pointer-events:none}
+  #toast.on{opacity:1}
+</style>
+</head>
+<body>
+<!-- ══════════════════ SET SWITCHER ══════════════════ -->
+<div style="position:fixed;top:0;left:0;right:0;height:34px;background:#1b1b1f;
+     color:#bbb;font:13px/34px system-ui,sans-serif;z-index:80;padding:0 14px;white-space:nowrap;overflow-x:auto;scrollbar-width:none;
+     box-sizing:border-box;border-bottom:1px solid #333">
+  <span style="opacity:.6">Set:</span>
+  <a href="../index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Full set</a>
+  <a href="../small/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Smaller annotation &mdash; Model 1</a>
+  <a href="../model2/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Smaller annotation &mdash; Model 2</a>
+  <a href="../both/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Side by side &mdash; 30</a>
+  <a href="../pilot15/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Side by side &mdash; 15</a>
+  <a href="../cat_ci/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Intent</a>
+  <a href="../cat_em/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Emotion</a>
+  <a href="../cat_is/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Info structure</a>
+  <a href="../cmp_ci/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Compare &mdash; Intent</a>
+  <a href="../cmp_em/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Compare &mdash; Emotion</a>
+  <a href="../cmp_is/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Compare &mdash; Info structure</a>
+  <a href="../ctx_ci/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Compare 2 &mdash; Intent</a>
+  <a href="../ctx_em/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Compare 2 &mdash; Emotion</a>
+  <a href="../ctx_is/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Compare 2 &mdash; Info structure</a>
+  <a href="../vfy_ci/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Needs context? &mdash; Intent</a>
+  <a href="../vfy_em/index.html" style="color:#fff;text-decoration:none;margin:0 10px;
+     font-weight:600">Needs context? &mdash; Emotion</a>
+  <a href="../vfy_is/index.html" style="color:#888;text-decoration:none;margin:0 10px;
+     font-weight:400">Needs context? &mdash; Info structure</a>
+</div>
+<div style="height:34px"></div>
+
+
+<!-- ══════════════════ GUIDELINES ══════════════════ -->
+<template id="guide">
+<h1 style="font-size:22px">What you are checking</h1>
+
+<p>Everything in this set is a <b>real recording of a real person</b>. Nothing
+here is synthetic, and nothing here is being scored for quality. You are not
+judging whether a delivery is good.</p>
+
+<p style="font-size:16px"><b>You are checking one thing: does this line need the
+conversation around it in order to be said the way it is said?</b></p>
+
+<p>Some lines carry their delivery in their own words &mdash; anyone reading them
+cold would land on roughly the same reading. Others only make sense as a reply:
+the stress, the timing, the flatness or the lift come from what was just said,
+and a speaker handed the bare sentence would have no way to guess them. The
+second kind is what this benchmark is built on, and this set checks how often we
+actually have it.</p>
+
+<h3>Why it comes in two steps</h3>
+
+<p>Each page is in two stages, and <b>the first one locks before the second
+appears</b>. That is deliberate, and it is the whole method.</p>
+
+<p>In <b>stage 1</b> you get the line and the recording of it, and nothing else
+&mdash; no conversation, no transcript, no situation. You answer as someone who
+has never heard the rest. In <b>stage 2</b> the conversation appears and you
+answer again, knowing everything.</p>
+
+<p>If you saw the conversation first, you could not un-see it. Every delivery
+sounds inevitable once you know what prompted it, and you would say "yes, it
+needs the context" to almost everything &mdash; not because it is true, but
+because you can no longer imagine the line any other way. Locking stage 1 first
+is the only way to get an answer that is not already contaminated.</p>
+
+<p><b>So please do not go looking for the conversation before you answer stage
+1</b>, and do not worry if your stage 2 answer disagrees with your stage 1
+answer. That disagreement is the measurement. It is supposed to happen.</p>
+
+<h3>Stage 1 &mdash; the line alone</h3>
+
+<p>Listen to the recording. Then ask: <i>could a competent speaker who was handed
+only this sentence, with no idea what came before, have said it like
+this?</i></p>
+
+<table>
+<tr><th>Answer</th><th>When</th></tr>
+<tr><td><b>Yes &mdash; a natural cold reading</b></td>
+    <td>Nothing about the delivery is surprising. Read the sentence off a page
+        and this is roughly what you would do.</td></tr>
+<tr><td><b>No &mdash; something is driving this</b></td>
+    <td>The delivery has a shape you would not have guessed: an odd word
+        stressed, a flatness or sharpness the words do not call for, a reply-ish
+        timing. Something outside the sentence is clearly steering it.</td></tr>
+<tr><td><b>Can't tell</b></td>
+    <td>Too short, too quiet, too mumbled, or genuinely borderline. Use it
+        freely &mdash; a forced guess here is worse than an honest shrug.</td></tr>
+</table>
+
+<h3>Stage 2 &mdash; with the conversation</h3>
+
+<p>Now read and listen to the run-up, then hear the line again in place.</p>
+
+<table>
+<tr><th>Answer</th><th>When</th></tr>
+<tr><td><b>Depends on the conversation</b></td>
+    <td>The delivery is answering something in the run-up. Take the
+        conversation away and the reading stops being explicable.</td></tr>
+<tr><td><b>Fits, but would work alone</b></td>
+    <td>It sits fine in the conversation, but the same reading would be
+        unremarkable with no context at all. This is the common case and it is
+        not a failure &mdash; say it when you see it.</td></tr>
+<tr><td><b>Doesn't fit</b></td>
+    <td>The delivery sits oddly against the run-up, or seems to be answering
+        something else.</td></tr>
+</table>
+
+<h3>Please do say when something is wrong</h3>
+
+<p>If the audio is cut off, the wrong speaker, overlapped to the point of being
+unusable, or the transcript does not match what you hear, tick <b>flag</b> and
+say so. Those are findings, not nuisances.</p>
+
+<h3>Keys</h3>
+<p><kbd>Space</kbd> play · <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> answer the open
+stage · <kbd>Enter</kbd> next · <kbd>Backspace</kbd> previous ·
+<kbd>R</kbd> review grid</p>
+
+<p style="text-align:right"><button class="nav" onclick="hideGuide()">Close</button></p>
+</template>
+
+
+<!-- ══════════════════ GATE ══════════════════ -->
+<div id="gate" style="max-width:620px;margin:60px auto;padding:0 20px">
+  <h1 style="font-size:24px;margin-bottom:4px">Emotion &mdash; does it need the conversation?</h1>
+  <p class="muted">10 real recordings. Two quick questions each.</p>
+  <p>Everything here is a real person, not a speech system. For each line you
+     decide whether it could have been said that way by someone who had not
+     heard the conversation.</p>
+  <p><button class="link" onclick="showGuide()">Read the guidelines first</button>
+     &mdash; they explain why the page is in two locked stages, which is worth
+     one minute before you start.</p>
+  <p style="margin-top:22px"><label>Annotator ID<br>
+    <input id="aid" style="font:inherit;padding:8px 11px;border:1px solid var(--line);border-radius:7px;width:260px"
+           placeholder="e.g. your first name" onkeydown="if(event.key==='Enter')start()"></label></p>
+  <p><button class="nav" onclick="start()" style="font-size:16px;padding:10px 26px">Start</button></p>
+  <p class="muted">Your answers are kept in this browser, so you can close the
+     tab and come back. Export the CSV when you finish.</p>
+</div>
+
+
+<!-- ══════════════════ APP ══════════════════ -->
+<header id="hdr" hidden>
+  <b id="pos">1 / 10</b>
+  <div class="bar"><div id="prog"></div></div>
+  <span class="muted" id="who"></span>
+  <button class="link" onclick="showReview()">review</button>
+  <button class="link" onclick="showGuide()">guidelines</button>
+</header>
+
+<main id="app" hidden>
+  <div id="stages"></div>
+  <div class="verdict" id="verdict"></div>
+</main>
+
+<footer id="ftr" hidden>
+  <button class="nav" id="prev" onclick="go(-1)">&larr; Previous</button>
+  <button class="nav" id="next" onclick="go(1)">Next &rarr;</button>
+  <button class="nav" onclick="exportCsv()">Export CSV</button>
+</footer>
+
+<div id="modal" hidden onclick="if(event.target===this)hideGuide()">
+  <div class="inner"><div id="modalbody"></div></div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+let AID="", TRIALS=[], PAGES=[], I=0, R={}, WANT=null;
+
+// Stage 1 options are deliberately NOT "yes it needs context / no it doesn't".
+// At this point the annotator has not been told there is a context, and asking
+// about one would tell them. The question is only about the line.
+const S1=[
+  {v:"cold",   t:"Yes — a natural cold reading",
+   d:"Read the bare sentence off a page and you would land here."},
+  {v:"driven", t:"No — something is driving this",
+   d:"The delivery has a shape the words alone do not account for."},
+  {v:"unsure", t:"Can't tell",
+   d:"Too short, unclear, or genuinely borderline."}
+];
+const S2=[
+  {v:"depends", t:"Depends on the conversation",
+   d:"Take the run-up away and this reading stops making sense."},
+  {v:"standalone", t:"Fits, but would work alone",
+   d:"Sits fine here, but is unremarkable with no context. Common — say it."},
+  {v:"misfit", t:"Doesn't fit",
+   d:"Sits oddly against the run-up, or answers something else."}
+];
+
+const VERDICT={
+  requires:"Requires the conversation",
+  standalone:"Works without the conversation",
+  unclear:"Unclear",
+  misfit:"Delivery does not fit the conversation"
+};
+
+function showGuide(){
+  const b=document.getElementById("modalbody");
+  b.innerHTML="";
+  b.appendChild(document.getElementById("guide").content.cloneNode(true));
+  document.getElementById("modal").hidden=false;
+}
+function hideGuide(){document.getElementById("modal").hidden=true}
+
+function showReview(){
+  const cells=PAGES.map((p,i)=>{
+    const r=rec(p);
+    const cls=pageDone(p)?"ga":(r.s1?"gh":"gu");
+    const lab={requires:"★",standalone:"·",unclear:"?",misfit:"!"}[verdict(p)]||"";
+    const note=(r.comment||"").trim()||r.flag?"<i>·</i>":"";
+    return `<div class="gcell ${cls} ${i===I?"gnow":""}" onclick="jump(${i})">`+
+           `${i+1}${lab?" "+lab:""}${note}</div>`;
+  }).join("");
+  const n=PAGES.filter(pageDone).length;
+  document.getElementById("modalbody").innerHTML=
+    `<h1 style="font-size:20px">Review</h1>
+     <p class="muted">${n} of ${PAGES.length} finished.
+     <span class="key ga"></span> done (★ needs context · &middot; works alone ·
+     ? unclear · ! misfit)
+     <span class="key gh"></span> stage 1 only
+     <span class="key gu"></span> not started · a dot marks a comment or flag.
+     Click any cell to jump.</p>
+     <div class="grid">${cells}</div>`;
+  document.getElementById("modal").hidden=false;
+}
+function jump(idx){I=idx;hideGuide();save();render()}
+
+function toast(msg){
+  const t=document.getElementById("toast");
+  t.textContent=msg;t.classList.add("on");
+  clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1600);
+}
+
+function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function shuffle(arr,seed){const a=arr.slice(),r=rng(seed);for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+const SET=()=>(location.pathname.replace(/\/index\.html$/,"").replace(/\/$/,"").split("/").pop()||"vfy");
+const KEY=()=>"ctts_vfy_"+SET()+"_"+AID;
+function load(){try{return JSON.parse(localStorage.getItem(KEY()))}catch(e){return null}}
+function mergeStored(){
+  const prev=load();
+  if(!prev||!prev.r)return;
+  for(const [k,v] of Object.entries(prev.r))
+    if(!R[k]||(v.u||0)>(R[k].u||0))R[k]=v;
+}
+function save(){mergeStored();localStorage.setItem(KEY(),JSON.stringify({aid:AID,i:I,r:R}))}
+window.addEventListener("storage",e=>{
+  if(e.key!==KEY()||!PAGES.length)return;
+  mergeStored();render();
+});
+
+function parseHash(){
+  const m=/^#([a-z0-9_]+)$/.exec(location.hash||"");
+  return m?{trial:m[1]}:null;
+}
+function syncHash(){
+  if(!PAGES.length)return;
+  history.replaceState(null,"",location.pathname+location.search+"#"+PAGES[I].trial.trial_id);
+}
+
+async function start(){
+  AID=document.getElementById("aid").value.trim().toLowerCase();
+  if(!AID){alert("Please enter an annotator ID.");return}
+  TRIALS=await (await fetch("trials.json")).json();
+  PAGES=shuffle(TRIALS,hash(AID+"|order")).map(t=>({trial:t}));
+
+  const prev=load(); if(prev&&prev.r){R=prev.r;I=prev.i||0}
+  const valid=new Set(PAGES.map(rkey));
+  for(const k of Object.keys(R)) if(!valid.has(k)) delete R[k];
+
+  if(WANT){
+    const j=PAGES.findIndex(p=>p.trial.trial_id===WANT.trial);
+    if(j>=0)I=j; else toast("That link points at a page not in your set.");
+    WANT=null;
+  }
+  I=Math.max(0,Math.min(PAGES.length-1,I));
+
+  document.getElementById("gate").hidden=true;
+  for(const id of ["hdr","app","ftr"])document.getElementById(id).hidden=false;
+  document.getElementById("who").textContent=AID;
+  render();
+}
+
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+const rkey=p=>p.trial.trial_id;
+
+function cur(){
+  const k=rkey(PAGES[I]);
+  R[k]=R[k]||{t0:Date.now()};
+  R[k].u=Date.now();
+  return R[k];
+}
+function rec(p){return R[rkey(p)]||{}}
+
+// The derived answer. `requires` needs BOTH halves to agree: the line had to
+// look unexplainable on its own AND the conversation had to be what explains
+// it. One without the other is a different finding, not a weaker version of
+// the same one.
+function verdict(p){
+  const r=rec(p);
+  if(!r.s1||!r.s2)return null;
+  if(r.s2==="misfit")return "misfit";
+  if(r.s1==="unsure")return "unclear";
+  if(r.s1==="driven"&&r.s2==="depends")return "requires";
+  return "standalone";
+}
+const pageDone=p=>!!verdict(p);
+
+function render(){
+  const p=PAGES[I], t=p.trial, r=rec(p);
+  const host=document.getElementById("stages");
+
+  // Stage 2 is appended only once stage 1 is answered: the conversation must
+  // not be reachable, by scroll or by view-source curiosity, before then.
+  let h=`
+  <div class="stage ${r.s1?"locked":"active"}">
+    <h4><span class="num">1</span>The line on its own</h4>
+    <p class="muted" style="margin:2px 0 0 29px">No conversation yet. Just this.</p>
+    <div class="target" style="margin-top:12px">${esc(t.target_text)}</div>
+    <p class="muted" style="margin:8px 0 4px">A real person saying it:</p>
+    <audio id="aud1" controls preload="none" src="audio/${esc(t.target_clip)}"></audio>
+    <p class="ask">Could a speaker who was handed only this sentence &mdash;
+       nothing else &mdash; have said it like this?</p>
+    <div class="opts">${S1.map((o,i)=>
+      `<button class="${r.s1===o.v?"sel":""}" onclick="mark('s1','${o.v}')">
+         ${esc(o.t)}<small>${esc(o.d)}</small></button>`).join("")}</div>
+    ${r.s1?`<p class="locknote">Locked &mdash; this is what you thought before
+       seeing the conversation, and changing it afterwards would defeat the
+       point. <button class="link" onclick="unlock()">unlock anyway</button></p>`
+      :`<p class="locknote">Once you answer, this locks and the conversation
+        appears.</p>`}
+  </div>`;
+
+  if(r.s1){
+    const turns=(t.context||[]).map(c=>
+      `<p class="turn"><span class="spk">${esc(c.speaker||"")}</span>${esc(c.text)}</p>`).join("");
+    h+=`
+    <div class="stage ${r.s2?"":"active"}">
+      <h4><span class="num">2</span>With the conversation</h4>
+      <p class="muted" style="margin:2px 0 10px 29px">What came immediately before.</p>
+      <div class="scrollwrap"><div class="scroller" id="scr">${turns}</div></div>
+      <p class="muted" style="margin:10px 0 4px">The run-up as audio
+         (it stops the instant the line begins):</p>
+      <audio id="aud2" controls preload="none" src="audio/${esc(t.context_clip)}"></audio>
+      <p class="muted" style="margin:12px 0 4px">And the line again, in place:</p>
+      <audio id="aud3" controls preload="none" src="audio/${esc(t.target_clip)}"></audio>
+      <p class="ask">Knowing all of that &mdash; does the delivery depend on it?</p>
+      <div class="opts">${S2.map(o=>
+        `<button class="${r.s2===o.v?"sel":""}" onclick="mark('s2','${o.v}')">
+           ${esc(o.t)}<small>${esc(o.d)}</small></button>`).join("")}</div>
+      <p style="margin-top:14px"><label class="muted">
+        <input type="checkbox" id="flag" ${r.flag?"checked":""}
+          onchange="cur().flag=this.checked;save();render()">
+        flag &mdash; audio or transcript is broken</label></p>
+      <textarea id="cmt" placeholder="Optional: what made you answer that way?"
+        oninput="cur().comment=this.value;save()">${esc(r.comment||"")}</textarea>
+    </div>`;
+  }
+  host.innerHTML=h;
+
+  const scr=document.getElementById("scr");
+  if(scr){
+    const wrap=scr.parentElement;
+    const upd=()=>wrap.classList.toggle("more",
+      scr.scrollHeight-scr.scrollTop-scr.clientHeight>8);
+    scr.addEventListener("scroll",upd);upd();
+  }
+
+  const v=verdict(p);
+  const vd=document.getElementById("verdict");
+  vd.className="verdict"+(v?" on":"");
+  vd.innerHTML=v
+    ? `<span class="big">${esc(VERDICT[v])}</span>`+
+      (v==="requires"?` <span class="muted">&mdash; this one earns its place in the benchmark.</span>`
+       :v==="standalone"?` <span class="muted">&mdash; useful to know; it will be dropped.</span>`:"")
+    : `<span class="muted">${r.s1?"Answer stage 2 to finish this one."
+                               :"Answer stage 1 to continue."}</span>`;
+
+  document.getElementById("pos").textContent=`${I+1} / ${PAGES.length}`;
+  document.getElementById("prog").style.width=
+    (100*PAGES.filter(pageDone).length/PAGES.length)+"%";
+  document.getElementById("prev").disabled=I===0;
+  document.getElementById("next").disabled=I===PAGES.length-1;
+  syncHash();
+}
+
+function mark(stage,v){
+  const r=cur();
+  if(stage==="s1"&&r.s1&&r.s1!==v&&!r._unlocked){toast("Stage 1 is locked.");return}
+  r[stage]=v;
+  if(stage==="s1")r.t1=r.t1||Date.now()-(r.t0||Date.now());
+  if(stage==="s2")r.ms=Date.now()-(r.t0||Date.now());
+  delete r._unlocked;
+  save();render();
+}
+function unlock(){cur()._unlocked=true;save();toast("Stage 1 unlocked — the change is recorded.");render()}
+
+function go(d){
+  const j=I+d;
+  if(j<0||j>=PAGES.length)return;
+  I=j;save();render();window.scrollTo(0,0);
+}
+
+document.addEventListener("keydown",e=>{
+  if(!PAGES.length||document.getElementById("gate").hidden===false)return;
+  if(!document.getElementById("modal").hidden){if(e.key==="Escape")hideGuide();return}
+  if(/^(INPUT|TEXTAREA)$/.test((e.target.tagName||"")))return;
+  const r=rec(PAGES[I]);
+  if(e.key==="Enter"){e.preventDefault();go(1);return}
+  if(e.key==="Backspace"){e.preventDefault();go(-1);return}
+  if(e.key==="r"||e.key==="R"){e.preventDefault();showReview();return}
+  if(e.key===" "){
+    e.preventDefault();
+    const a=document.getElementById(r.s1?"aud3":"aud1");
+    if(a){a.paused?a.play():a.pause()}
+    return;
+  }
+  if(/^[123]$/.test(e.key)){
+    e.preventDefault();
+    const i=+e.key-1;
+    if(!r.s1)mark("s1",S1[i].v); else mark("s2",S2[i].v);
+  }
+});
+
+function csvCell(v){
+  const s=String(v??"");
+  return /[",\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;
+}
+function exportCsv(){
+  const base=location.origin+location.pathname+location.search;
+  const rows=PAGES.map((p,idx)=>{
+    const t=p.trial, r=rec(p), v=verdict(p);
+    return {
+      annotator:AID, page:idx+1, trial_id:t.trial_id, axis:t.axis,
+      target_text:t.target_text, target_speaker:t.target_speaker||"",
+      n_context_turns:(t.context||[]).length,
+      // Both raw answers travel with the derived one: the disagreement between
+      // the two stages is the interesting signal, and a verdict column alone
+      // would throw it away.
+      stage1:r.s1||"", stage2:r.s2||"", verdict:v||"",
+      requires_context:v?(v==="requires"?1:0):"",
+      stage1_relocked:r.s1&&r._unlocked?1:0,
+      flag:r.flag?1:0, comment:(r.comment||"").trim(),
+      stage1_ms:r.t1??"", response_ms:r.ms??"",
+      share_url:base+"#"+t.trial_id,
+      exported_at:new Date().toISOString()
+    };
+  });
+  const cols=Object.keys(rows[0]);
+  const csv=[cols.join(",")].concat(
+    rows.map(r=>cols.map(c=>csvCell(r[c])).join(","))).join("\n");
+  dl(new Blob(["﻿"+csv],{type:"text/csv;charset=utf-8"}),
+     `ctts_verify_${SET()}_${AID}.csv`);
+  const n=rows.filter(r=>r.verdict).length;
+  toast(`Exported ${n} of ${rows.length} finished.`);
+}
+function dl(blob,name){
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);a.download=name;a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+
+WANT=parseHash();
+</script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+[
+  {
+    "trial_id": "vis001",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "That is putrid."
+      },
+      {
+        "speaker": "A",
+        "text": "That used to be a hamburger bun, but now it's growing fuzz. There are hairs that are growing off that and wiggling around."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, my God."
+      },
+      {
+        "speaker": "A",
+        "text": "Ugh."
+      },
+      {
+        "speaker": "A",
+        "text": "that was a half-eaten burger someone's left under the couch, and now it's like, yeah, it's like oozing, it's like, oh, I just took a close look, it's like bubbling up, and"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, that smell is so just overpowering."
+      },
+      {
+        "speaker": "B",
+        "text": "What does it smell like? I can't even describe it."
+      },
+      {
+        "speaker": "A",
+        "text": "It's like pus, but like if an entire room was full of pus."
+      },
+      {
+        "speaker": "B",
+        "text": "That's gross."
+      }
+    ],
+    "context_clip": "c332c9cf12aa.opus",
+    "target_clip": "014b13397373.opus",
+    "target_text": "And then like that pus like had its own pus coming out of it.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vis002",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "You're running low on water. Well, I guess we all are on a day like today. Let me refill that for you."
+      },
+      {
+        "speaker": "A",
+        "text": "How we doing there, Einstein?"
+      },
+      {
+        "speaker": "B",
+        "text": "Trying to stay in the shade."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, well, I wish I could do that. I've been shoveling compost all day."
+      },
+      {
+        "speaker": "B",
+        "text": "They smell like when I roll around in the mud."
+      },
+      {
+        "speaker": "A",
+        "text": "Well, I guess our lives aren't all that different, are they, Einstein?"
+      },
+      {
+        "speaker": "B",
+        "text": "I guess not."
+      }
+    ],
+    "context_clip": "2657845c079c.opus",
+    "target_clip": "56780e5d1f8d.opus",
+    "target_text": "You know, you're my favorite. You're my favorite pig. You know that, right?",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vis003",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Wow, being by the ocean like this makes me feel really small and tiny and unimportant."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, well, you're very important, so..."
+      },
+      {
+        "speaker": "A",
+        "text": "It's a good unimportant, you know?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah. Well, like we fit into everything."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, like we were part of all of it, yeah."
+      },
+      {
+        "speaker": "B",
+        "text": "I don't know about you. Sometimes when I look out on the water like this, like I love watching the sunset with you like this. But does it ever make you feel a little bit scared about like how vast the ocean really is?"
+      }
+    ],
+    "context_clip": "9a276e315287.opus",
+    "target_clip": "20ac7be63e4c.opus",
+    "target_text": "I'm sorry. I love sitting by the ocean like this with you.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vis004",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh, do you think they're having a meeting? Like, uh, maybe we stumbled upon a ritual sacrifice time that we didn't know about. Yeah."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah."
+      },
+      {
+        "speaker": "B",
+        "text": "Tuesdays at my favorite coffee place, I guess."
+      },
+      {
+        "speaker": "A",
+        "text": "I guess so. You like weird coffee places, don't you?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not anymore. I don't... I think we..."
+      },
+      {
+        "speaker": "A",
+        "text": "Why did they pick a coffee shop? Wouldn't like a warehouse be better? I don't know. Where do they do ritual sacrifices?"
+      }
+    ],
+    "context_clip": "afbb7c5c214c.opus",
+    "target_clip": "ec914d67ac2e.opus",
+    "target_text": "I don't know, but I guess it seems more inconspicuous in a coffee shop. Well, you know, you learn something new in New York every day, I guess.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vis005",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh my god, Sarah, back up, back up, back up."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh."
+      },
+      {
+        "speaker": "A",
+        "text": "oh lord have mercy on my soul she just uh she just threw a uh out a bedpan uh we almost got covered in the the bedpan contents there's there's there's actual there's actual feces in there"
+      },
+      {
+        "speaker": "B",
+        "text": "Uh..."
+      },
+      {
+        "speaker": "A",
+        "text": "And it's, uh, it's liquid. It's liquidy."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, Jess, I'm so sorry to tell you, but it's all down your back."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god. Ew. Ew. Ew. Ew. It's in your hair. Ew. Ew. Ew."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god, you smell... It smells like... It smells like..."
+      },
+      {
+        "speaker": "A",
+        "text": "It smells like that's been sitting there for a really long, long time."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, it's squishing in my shoes. Oh, is it in yours?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, yep, it certainly is."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. Oh, don't touch my back. Please don't touch my back. Oh, please don't touch my back. I don't want it against my neck. Ew. I need to know. Is there, is there, is there, um, I'm gonna, I'm gonna swear. Is there shit in my, on my back?"
+      }
+    ],
+    "context_clip": "e5d3e074acea.opus",
+    "target_clip": "725521daa218.opus",
+    "target_text": "There's a lot on your back. I'm so sorry. Ugh.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vis006",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh my god. That deer is full grown and half of its body is missing."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, yeah, where is its eye? It's like, like half of its face is missing."
+      },
+      {
+        "speaker": "A",
+        "text": "And look it, its intestines are hanging out the entrails."
+      },
+      {
+        "speaker": "A",
+        "text": "The entrails."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, he..."
+      },
+      {
+        "speaker": "B",
+        "text": "You can see what he ate at lunch. It's like leaves in his belly."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god. Oh, look at all the maggots. All the maggots."
+      },
+      {
+        "speaker": "B",
+        "text": "Ugh."
+      },
+      {
+        "speaker": "A",
+        "text": "That's been dead for a while."
+      },
+      {
+        "speaker": "B",
+        "text": "Why would Buster want to eat that? That's so gross."
+      }
+    ],
+    "context_clip": "27aae81e5712.opus",
+    "target_clip": "d671ae33c80e.opus",
+    "target_text": "You picked this dog out of the litter.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vis007",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I got the job. I got the job. I did. I did. They called me at my other job and I got to quit today. I got to give them my two weeks notice."
+      },
+      {
+        "speaker": "B",
+        "text": "No way!"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh my gosh. Oh my gosh. What do you want to do? What's the first thing you want to do? You're home. Now you're safe. So we could do anything you want. We can literally change. We could do anything."
+      },
+      {
+        "speaker": "A",
+        "text": "Let's go to the ice cream shop, yeah, on the corner of Kenneth. And we'll also, I really, really want to just go to Firefly. Have you been there yet? It's that cute little restaurant. It's so nice. It's so expensive, but it's so fancy."
+      },
+      {
+        "speaker": "B",
+        "text": "It doesn't matter. Everything's on me tonight. I'm so excited."
+      }
+    ],
+    "context_clip": "4681179f3e49.opus",
+    "target_clip": "dd78dd9788a1.opus",
+    "target_text": "No, everything gets to be on me because I'm going to make a lot more money now.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vis008",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I mean, why settle in Manhattan? Let's buy a vacation home by your family. We could totally just have trips whenever we want and be there with your mom and dad and your brother. And we could fly anywhere we want."
+      },
+      {
+        "speaker": "B",
+        "text": "we could honestly we don't even have to stay in washington we could absolutely you know what we should do we should we should buy property over in france so that we can go and vacation we can you know that they have um they have vacation rentals there that are like castles old castles and ruins we should absolutely buy property over in europe and make sure that we have somewhere that we can go at any point any time of year it doesn't really matter because it doesn't get cold like it does here"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my gosh, I can't wait. I've never been to France. I would love to have like a little cottage in the middle of like Nice or somewhere. I don't even speak French, but I'll learn."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, we don't even have to because at that point they're going to bend to you because you're going to have so much money that it doesn't matter if you speak French or not. You're going to have anything that you want."
+      }
+    ],
+    "context_clip": "8c643b109801.opus",
+    "target_clip": "3f506bdecf3c.opus",
+    "target_text": "How about instead of buying a single vacation home in France, we just, we get timeshares and we go, we go to Germany, we go to Munich, we go, we go to Malta.",
+    "target_speaker": "A"
+  },
+  {
+    "trial_id": "vis009",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I can't believe that Kevin's class did. Macbeth. Like, at their age, seven years old, you're doing Macbeth? Are you kidding?"
+      },
+      {
+        "speaker": "B",
+        "text": "It was like the best worst rendition I've ever seen. Lady Macbeth, her outfit."
+      },
+      {
+        "speaker": "A",
+        "text": "Right? And the teacher, like, Mrs. Proxy, like, running out after the kids, chasing out because they're half-dressed, and they're like..."
+      },
+      {
+        "speaker": "A",
+        "text": "They're yelling their lines. They don't even know half of what they're saying. They're just screaming and singing like that kid that was in the corner."
+      },
+      {
+        "speaker": "A",
+        "text": "the entire play. Just singing and playing with the set."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, he seemed like he wouldn't even know where he was. And then the other kid that was so afraid of the fake dagger."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god. He just broke down crying. His parents had to come out on stage and get him."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my gosh. I'm surprised they chose Macbeth. It was so cute though, watching them do the three witches. It was adorable, but they were like, like trying to mix everything and all the potions and everything."
+      },
+      {
+        "speaker": "A",
+        "text": "Just everything, like water all over the stage and the kids that were like slipping all over it."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, they had so much fun putting things into that pot that they didn't notice it was going to bubble over."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, man."
+      },
+      {
+        "speaker": "B",
+        "text": "Did you see the kid playing Macduff?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, my God."
+      },
+      {
+        "speaker": "A",
+        "text": "Not suited and like the hat just coming down over his eyes every time he went to tell him."
+      }
+    ],
+    "context_clip": "dd99b39adc7d.opus",
+    "target_clip": "2a4afaf37804.opus",
+    "target_text": "And then he just really wanted to stand next to Lady Macduff the whole time.",
+    "target_speaker": "B"
+  },
+  {
+    "trial_id": "vis010",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "oh it's so smoky in here is there i think the cat tree is on fire we gotta get we gotta get stuff out of here maybe the cats where are the cats"
+      },
+      {
+        "speaker": "B",
+        "text": "Um... Jinx and... Mittens are..."
+      },
+      {
+        "speaker": "B",
+        "text": "In your room. Why don't you go get them? And I'll grab your purse."
+      },
+      {
+        "speaker": "B",
+        "text": "And the box of our important documents?"
+      }
+    ],
+    "context_clip": "b2ad7c73f40f.opus",
+    "target_clip": "7526934ed323.opus",
+    "target_text": "Okay, I'll get the cat carrier from the closet and put them both in it, but can you get the photo album too?",
+    "target_speaker": "A"
+  }
+]
