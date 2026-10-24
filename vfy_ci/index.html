@@ -12,45 +12,55 @@
   header{position:sticky;top:34px;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;gap:14px;align-items:center;z-index:20}
   .bar{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
   .bar>div{height:100%;background:var(--acc);width:0;transition:width .2s}
-  main{max-width:860px;margin:0 auto;padding:16px 20px 96px}
-  h2{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);margin:20px 0 8px;font-weight:600}
+  main{max-width:760px;margin:0 auto;padding:16px 20px 96px}
   h3{font-size:15px;margin:20px 0 6px}
-  .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px}
-  .turn{margin:3px 0}
-  .spk{display:inline-block;min-width:22px;font-weight:700;color:var(--mut)}
-  .target{background:#fffbe8;border:1px solid #f0e2a8;border-radius:8px;padding:12px 14px;font-size:17px}
   .muted{color:var(--mut);font-size:13px}
   .link{background:none;border:none;color:var(--acc);cursor:pointer;font:inherit;padding:0;text-decoration:underline}
-  textarea{width:100%;min-height:54px;border:1px solid var(--line);border-radius:8px;padding:9px 11px;font:inherit;resize:vertical}
-  .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
-  .chip{border:1px solid var(--line);border-radius:20px;padding:6px 14px;cursor:pointer;background:#fff;font-size:14px}
-  .chip.sel{border-color:var(--acc);background:var(--acc);color:#fff}
-  audio{width:100%;height:40px}
+  textarea{width:100%;min-height:50px;border:1px solid var(--line);border-radius:8px;padding:9px 11px;font:inherit;resize:vertical}
+  audio{width:100%;height:38px}
 
-  /* ── the single panel ─────────────────────────────────────────────────
-     Conversation, run-up audio, line, line audio, question. One screen, in
-     the order someone would actually work through it. */
-  .stage{border:1px solid var(--line);border-radius:10px;background:#fff;padding:18px 20px;margin-top:14px}
-  .stage h4{margin:0 0 4px;font-size:16px}
-  .ask{font-size:16px;margin:18px 0 2px;font-weight:600}
-  .opts{display:flex;flex-direction:column;gap:8px;margin-top:10px}
-  .opts button{border:2px solid var(--line);background:#fff;border-radius:8px;padding:11px 14px;
-    cursor:pointer;font:inherit;font-size:15px;text-align:left}
-  .opts button small{display:block;color:var(--mut);font-size:12.5px;font-weight:400;margin-top:2px}
-  .opts button.sel{border-color:var(--acc);background:#eef4fb;font-weight:700}
-  .opts button.sel small{color:#3a6a9c}
-  .opts button:disabled{cursor:default;opacity:.75}
-  .locknote{font-size:12.5px;color:var(--mut);margin-top:10px}
-  .scroller{max-height:34vh;overflow:auto;padding-right:4px}
+  /* ── cards ────────────────────────────────────────────────────────────
+     One card, one thing to do. Nothing below a card exists until the card
+     above it is answered: the first question has to be answered without the
+     conversation, and a conversation that is merely further down the page is
+     a conversation the annotator has already read. */
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;
+        padding:16px 18px;margin:12px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+  .card.q{border-color:#cfd9e4}
+  .card.done{background:#fcfcfc}
+  .step{display:flex;align-items:center;gap:8px;margin:0 0 10px}
+  .step b{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);font-weight:600}
+  .num{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;
+       background:var(--line);color:var(--mut);font-size:11px;font-weight:700;flex:none}
+  .card.q .num{background:var(--acc);color:#fff}
+  .card.done .num{background:var(--yes);color:#fff}
+  .line{background:#fffbe8;border:1px solid #f0e2a8;border-radius:8px;padding:13px 15px;
+        font-size:18px;line-height:1.45}
+  .ask{font-size:15.5px;font-weight:600;margin:0 0 2px}
+  .hint{color:var(--mut);font-size:13px;margin:2px 0 10px}
+
+  .opts{display:flex;flex-direction:column;gap:7px;margin-top:10px}
+  .opts button{display:flex;gap:10px;align-items:flex-start;width:100%;
+    border:2px solid var(--line);background:#fff;border-radius:9px;padding:10px 13px;
+    cursor:pointer;font:inherit;font-size:14.5px;line-height:1.45;text-align:left}
+  .opts button:hover{border-color:#bcc8d6}
+  .opts button .k{flex:none;font:12px ui-monospace,Menlo,Consolas,monospace;color:var(--mut);
+    background:#f4f4f2;border:1px solid var(--line);border-radius:4px;padding:0 6px;line-height:19px}
+  .opts button.sel{border-color:var(--acc);background:#eef4fb}
+  .opts button.sel .k{background:var(--acc);border-color:var(--acc);color:#fff}
+  .opts button.was{border-color:#d7c48a;background:#fffdf5}
+  .opts button.was .k{background:#f0e2a8;border-color:#e3d191}
+  .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;
+       text-transform:uppercase;color:#8a6d1f;margin-left:6px}
+
+  .turns{max-height:30vh;overflow:auto;padding-right:4px}
+  .turn{margin:3px 0}
+  .spk{display:inline-block;min-width:22px;font-weight:700;color:var(--mut)}
   .scrollwrap{position:relative}
-  .scrollwrap::after{content:"";position:absolute;left:0;right:4px;bottom:0;height:40px;
+  .scrollwrap::after{content:"";position:absolute;left:0;right:4px;bottom:0;height:34px;
     background:linear-gradient(rgba(255,255,255,0),#fff);pointer-events:none;
     opacity:0;transition:opacity .15s}
   .scrollwrap.more::after{opacity:1}
-
-  .verdict{margin-top:18px;border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:#fff}
-  .verdict.on{border-color:var(--acc);background:#eef4fb}
-  .verdict .big{font-size:18px;font-weight:700}
 
   footer{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);
          padding:10px 20px;display:flex;gap:12px;align-items:center;justify-content:center;z-index:30}
@@ -65,12 +75,10 @@
   #modal .inner{background:#fff;max-width:800px;margin:0 auto;border-radius:10px;padding:6px 30px 30px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:5px;margin-top:10px}
   .gcell{position:relative;padding:7px 2px;font-size:12px;border-radius:5px;border:1px solid var(--line);cursor:pointer}
-  .gcell i{position:absolute;top:0;right:3px;font-size:14px;font-style:normal;line-height:1}
   .ga{background:#eef4fb;border-color:#a9c6e3;color:#24567f}
   .gh{background:#fffbe8;border-color:#f0e2a8;color:#8a6d1f}
   .gu{background:#fff;color:var(--mut)}
   .gnow{outline:2px solid var(--acc);outline-offset:1px}
-  .key{display:inline-block;width:12px;height:12px;border-radius:3px;border:1px solid var(--line);vertical-align:-1px;margin:0 2px 0 8px}
   #toast{position:fixed;left:50%;bottom:70px;transform:translateX(-50%);background:#1a1a19;color:#fff;
          padding:8px 16px;border-radius:6px;font-size:14px;z-index:60;opacity:0;transition:opacity .18s;pointer-events:none}
   #toast.on{opacity:1}
@@ -122,70 +130,50 @@
 
 <!-- ══════════════════ GUIDELINES ══════════════════ -->
 <template id="guide">
-<h1 style="font-size:22px">What you are checking</h1>
+<h1 style="font-size:22px">What you are doing</h1>
 
-<p>Everything in this set is a <b>real recording of a real person</b>. Nothing
-here is synthetic, and nothing is being scored for quality. You are not judging
-whether a delivery is good.</p>
+<p>Everything here is a <b>real recording of a real person</b>. Nothing is
+synthetic and nothing is being scored for quality.</p>
 
-<p style="font-size:16px"><b>You are checking one thing: does this line need the
-conversation around it in order to be said the way it is said?</b></p>
+<p>Each item gives you the same five descriptions of <b>how a line is said</b>
+&mdash; the tone, the emotion, which word carries the weight, and the reason in
+the conversation for it. Exactly one of the five is what the speaker actually
+does.</p>
 
-<p>Some lines carry their delivery in their own words &mdash; anyone reading them
-cold would land on roughly the same reading. Others only make sense as a reply:
-the stress, the timing, the flatness or the lift come from what was just said,
-and a speaker handed the bare sentence would have no way to guess them. The
-second kind is what this benchmark is built on, and this set checks how often we
-actually have it.</p>
-
-<h3>How to decide</h3>
-
-<p>Read the conversation, play the run-up, then play the target line. Then try
-the thought experiment that the whole question turns on:</p>
-
-<p style="font-size:16px;margin-left:16px"><i>If I handed this one sentence to a
-competent speaker who knew nothing about the conversation, would they have said
-it like this?</i></p>
-
-<p>If they plausibly would, the line <b>does not</b> need the context &mdash;
-however well it fits. If they could not have guessed this reading, it does.</p>
+<p style="font-size:16px"><b>You pick twice.</b></p>
 
 <table>
-<tr><th>Answer</th><th>When</th></tr>
-<tr><td><b>Needs the conversation</b></td>
-    <td>The delivery is answering something in the run-up. An odd word carries
-        the stress, or the energy, flatness or timing only make sense as a
-        reply. Take the conversation away and the reading stops being
-        explicable.</td></tr>
-<tr><td><b>Would work on its own</b></td>
-    <td>It sits fine here, but the same reading is what you would get from the
-        bare sentence. <b>This is the common case.</b> It is not a failure and
-        it is not a boring answer &mdash; it is the finding. Please use it
-        freely.</td></tr>
-<tr><td><b>Can't tell</b></td>
-    <td>Too short, too quiet, too overlapped, or genuinely borderline. An
-        honest shrug is worth more than a forced guess.</td></tr>
-<tr><td><b>Doesn't fit</b></td>
-    <td>The delivery sits oddly against the run-up, or seems to be answering
-        something else entirely.</td></tr>
+<tr><th>Step 2</th>
+    <td>You have only the written sentence. No conversation, no audio.
+        <b>Guess.</b> You are meant to be unsure here &mdash; that is the
+        point of the step, not a failure of it.</td></tr>
+<tr><th>Step 5</th>
+    <td>Now you have read the conversation and heard both clips. Pick again.
+        Keep your first answer or change it, whichever is honest.</td></tr>
 </table>
 
-<p class="muted">There is no target proportion. If most of a category turns out
-to work on its own, that is exactly what we need to know, and saying so is the
-job.</p>
+<p>That is the whole measurement. If people can already pick the right delivery
+from the bare sentence, the line does not need its conversation. If they only
+get there after hearing the run-up, it does. Nobody has to judge that
+themselves &mdash; it falls out of the two answers.</p>
 
-<h3>Please do say when something is wrong</h3>
+<h3>So, two things to avoid</h3>
+<p><b>Do not try to be right in step 2.</b> A careful guess and a wild guess
+count the same. Answer in a few seconds and move on.</p>
+<p><b>Do not keep your first answer out of loyalty to it.</b> Changing your mind
+in step 5 is the most useful thing you can do. Keeping it is equally useful when
+it is genuinely still your answer.</p>
 
-<p>Some of these recordings come from sessions where the speakers were doing
-unusual things with their voices. If a clip is cut off, is the wrong speaker, is
-overlapped to the point of being unusable, or the transcript does not match what
-you hear, tick <b>flag</b> and say so in the comment. Those are findings, not
-nuisances, and they are acted on.</p>
+<h3>If none of the five fit</h3>
+<p>Pick the closest, tick <b>flag</b>, and say so in the comment. Same for a
+clip that is cut off, is the wrong speaker, is unusable through overlap, or a
+transcript that does not match what you hear. Those are findings and they are
+acted on.</p>
 
 <h3>Keys</h3>
-<p><kbd>Space</kbd> play the line · <kbd>C</kbd> play the run-up ·
-<kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd> answer ·
-<kbd>Enter</kbd> next · <kbd>Backspace</kbd> previous · <kbd>R</kbd> review</p>
+<p><kbd>1</kbd>&hellip;<kbd>5</kbd> pick &middot; <kbd>Space</kbd> play the line
+&middot; <kbd>C</kbd> play the run-up &middot; <kbd>Enter</kbd> next &middot;
+<kbd>Backspace</kbd> previous &middot; <kbd>R</kbd> review</p>
 
 <p style="text-align:right"><button class="nav" onclick="hideGuide()">Close</button></p>
 </template>
@@ -194,13 +182,13 @@ nuisances, and they are acted on.</p>
 <!-- ══════════════════ GATE ══════════════════ -->
 <div id="gate" style="max-width:620px;margin:60px auto;padding:0 20px">
   <h1 style="font-size:24px;margin-bottom:4px">Intent &mdash; does it need the conversation?</h1>
-  <p class="muted">9 real recordings. One question each.</p>
-  <p>Everything here is a real person, not a speech system. For each line you
-     decide whether it could have been said that way by someone who had never
-     heard the conversation.</p>
+  <p class="muted">9 real recordings. Two picks each, about a minute.</p>
+  <p>You get five descriptions of how a line might be said. You pick one from
+     the written sentence alone, then hear the conversation and the recording
+     and pick again.</p>
   <p><button class="link" onclick="showGuide()">Read the guidelines</button>
-     &mdash; one minute, and they explain the one thought experiment the whole
-     task turns on.</p>
+     &mdash; one minute, and they explain why the first pick is meant to be a
+     guess.</p>
   <p style="margin-top:22px"><label>Annotator ID<br>
     <input id="aid" style="font:inherit;padding:8px 11px;border:1px solid var(--line);border-radius:7px;width:260px"
            placeholder="e.g. your first name" onkeydown="if(event.key==='Enter')start()"></label></p>
@@ -219,10 +207,7 @@ nuisances, and they are acted on.</p>
   <button class="link" onclick="showGuide()">guidelines</button>
 </header>
 
-<main id="app" hidden>
-  <div id="body"></div>
-  <div class="verdict" id="verdict"></div>
-</main>
+<main id="app" hidden><div id="body"></div></main>
 
 <footer id="ftr" hidden>
   <button class="nav" id="prev" onclick="go(-1)">&larr; Previous</button>
@@ -239,23 +224,6 @@ nuisances, and they are acted on.</p>
 <script>
 let AID="", TRIALS=[], PAGES=[], I=0, R={}, WANT=null;
 
-const OPTS=[
-  {v:"depends", t:"Needs the conversation",
-   d:"Take the run-up away and this reading stops making sense."},
-  {v:"standalone", t:"Would work on its own",
-   d:"Fits here, but it is also what you would get from the bare sentence. Common — say it."},
-  {v:"unsure", t:"Can't tell",
-   d:"Too short, unclear, or genuinely borderline."},
-  {v:"misfit", t:"Doesn't fit",
-   d:"Sits oddly against the run-up, or answers something else."}
-];
-const VERDICT={
-  depends:"Needs the conversation",
-  standalone:"Works without the conversation",
-  unsure:"Unclear",
-  misfit:"Delivery does not fit the conversation"
-};
-
 function showGuide(){
   const b=document.getElementById("modalbody");
   b.innerHTML="";
@@ -267,21 +235,19 @@ function hideGuide(){document.getElementById("modal").hidden=true}
 function showReview(){
   const cells=PAGES.map((p,i)=>{
     const r=rec(p);
-    const cls=pageDone(p)?"ga":"gu";
-    const lab={depends:"★",standalone:"·",unsure:"?",misfit:"!"}[r.a]||"";
-    const note=((r.comment||"").trim()||r.flag)?"<i>·</i>":"";
-    return `<div class="gcell ${cls} ${i===I?"gnow":""}" onclick="jump(${i})">`+
-           `${i+1}${lab?" "+lab:""}${note}</div>`;
+    // Half-done is its own state: a page with a blind pick and no second pick
+    // is the one shape of unfinished work that looks finished from the grid.
+    const cls=pageDone(p)?"ga":(r.a!=null?"gh":"gu");
+    return `<div class="gcell ${cls}${i===I?" gnow":""}" onclick="jump(${i})">${i+1}</div>`;
   }).join("");
   const n=PAGES.filter(pageDone).length;
+  const half=PAGES.filter(p=>!pageDone(p)&&rec(p).a!=null).length;
   document.getElementById("modalbody").innerHTML=
-    `<h1 style="font-size:20px">Review</h1>
-     <p class="muted">${n} of ${PAGES.length} answered.
-     <span class="key ga"></span> done (★ needs context · &middot; works alone ·
-     ? unclear · ! misfit)
-     <span class="key gu"></span> not yet · a dot marks a comment or flag.
-     Click any cell to jump.</p>
-     <div class="grid">${cells}</div>`;
+    `<h1 style="font-size:20px">Progress</h1>
+     <p class="muted">${n} of ${PAGES.length} done${half?`, ${half} part-way`:""}.</p>
+     <div class="grid">${cells}</div>
+     <p style="text-align:right;margin-top:18px">
+       <button class="nav" onclick="hideGuide()">Close</button></p>`;
   document.getElementById("modal").hidden=false;
 }
 function jump(idx){I=idx;hideGuide();save();render()}
@@ -289,7 +255,7 @@ function jump(idx){I=idx;hideGuide();save();render()}
 function toast(msg){
   const t=document.getElementById("toast");
   t.textContent=msg;t.classList.add("on");
-  clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1600);
+  clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1900);
 }
 
 function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
@@ -324,17 +290,28 @@ async function start(){
   AID=document.getElementById("aid").value.trim().toLowerCase();
   if(!AID){alert("Please enter an annotator ID.");return}
   TRIALS=await (await fetch("trials.json")).json();
-  PAGES=shuffle(TRIALS,hash(AID+"|order")).map(t=>({trial:t}));
+  // Two shuffles, both seeded off the annotator: the page order, and the
+  // option order within each page. The published option order is fixed, so
+  // without the second shuffle every annotator would face the same five in
+  // the same positions and a leak of one answer would leak all of them.
+  PAGES=shuffle(TRIALS,hash(AID+"|order")).map(t=>({
+    trial:t,
+    // ord[shown position] = canonical index. Everything stored and exported
+    // is canonical; `ord` exists only to paint the screen.
+    ord:shuffle(t.options.map((_,i)=>i),hash(AID+"|opt|"+t.trial_id)),
+  }));
 
   const prev=load(); if(prev&&prev.r){R=prev.r;I=prev.i||0}
   const valid=new Set(PAGES.map(rkey));
   for(const k of Object.keys(R)) if(!valid.has(k)) delete R[k];
-  // Answers from the earlier two-stage build carried the judgement in `s2`.
-  // Move it across rather than silently dropping work already done.
+  // Earlier builds of this set asked a different question (a four-way
+  // judgement, keyed `a` on its own, then an `s1`/`s2` pair before that).
+  // Neither answer means anything under the two-pick design, and a stale `a`
+  // would read as a completed blind pick, so they go.
   for(const r of Object.values(R)){
-    if(r.s2&&!r.a){r.a=r.s2==="depends"?"depends":r.s2==="misfit"?"misfit":
-                        r.s1==="unsure"?"unsure":"standalone"}
-    delete r.s1;delete r.s2;
+    if(r.s1!==undefined||r.s2!==undefined||typeof r.a==="string"){
+      delete r.a;delete r.b;delete r.s1;delete r.s2;
+    }
   }
 
   if(WANT){
@@ -360,40 +337,80 @@ function cur(){
   return R[k];
 }
 function rec(p){return R[rkey(p)]||{}}
-const pageDone=p=>!!rec(p).a;
+// Done means both picks. The blind pick alone is half an item and scores as
+// nothing: the whole measurement is the pair.
+const pageDone=p=>rec(p).a!=null&&rec(p).b!=null;
+
+function optCard(p,phase,n,label,ask,hint){
+  const r=rec(p), opts=p.trial.options;
+  const mine=r[phase];                      // canonical index or undefined
+  const blind=phase==="b"?r.a:null;         // show what they picked cold
+  const rows=p.ord.map((ci,pos)=>{
+    const sel=mine===ci, was=blind===ci&&!sel;
+    return `<button class="${sel?"sel":was?"was":""}" onclick="mark('${phase}',${ci})">
+      <span class="k">${pos+1}</span>
+      <span>${esc(opts[ci])}${was?`<span class="tag">your first pick</span>`:""}</span>
+    </button>`;
+  }).join("");
+  return `<div class="card q${mine!=null?" done":""}">
+    <div class="step"><span class="num">${n}</span><b>${label}</b></div>
+    <p class="ask">${ask}</p>
+    <p class="hint">${hint}</p>
+    <div class="opts">${rows}</div>
+  </div>`;
+}
 
 function render(){
   const p=PAGES[I], t=p.trial, r=rec(p);
-  const turns=(t.context||[]).map(c=>
-    `<p class="turn"><span class="spk">${esc(c.speaker||"")}</span>${esc(c.text)}</p>`).join("");
 
-  document.getElementById("body").innerHTML=`
-  <div class="stage">
-    <h2 style="margin-top:0">The conversation so far</h2>
-    <div class="scrollwrap"><div class="scroller" id="scr">${turns}</div></div>
-    <p class="muted" style="margin:10px 0 4px">The run-up as audio
-       (it stops the instant the line begins):</p>
-    <audio id="audc" controls preload="none" src="audio/${esc(t.context_clip)}"></audio>
+  // Step 1 and 2 only, until the blind pick is in. Scrolling further must not
+  // be possible, because everything further down answers the question.
+  let h=`
+  <div class="card">
+    <div class="step"><span class="num">1</span><b>The line</b></div>
+    <div class="line">${esc(t.target_text)}</div>
+    <p class="hint" style="margin-bottom:0">Spoken by ${esc(t.target_speaker||"one speaker")},
+       somewhere in a real conversation.</p>
+  </div>`
+  + optCard(p,"a",2,"Without the conversation",
+      "Reading only that sentence &mdash; which of these is how it was said?",
+      "You cannot know. Guess, in a few seconds, and move on.");
 
-    <h2>The line</h2>
-    <div class="target">${esc(t.target_text)}</div>
-    <p class="muted" style="margin:8px 0 4px">A real person saying it,
-       at that point in the conversation:</p>
-    <audio id="audt" controls preload="none" src="audio/${esc(t.target_clip)}"></audio>
+  if(r.a!=null){
+    const turns=(t.context||[]).map(c=>
+      `<p class="turn"><span class="spk">${esc(c.speaker||"")}</span>${esc(c.text)}</p>`).join("");
+    h+=`
+    <div class="card">
+      <div class="step"><span class="num">3</span><b>What came before</b></div>
+      <div class="scrollwrap"><div class="turns" id="scr">${turns}</div></div>
+      <p class="hint" style="margin:10px 0 4px">The run-up as audio &mdash; it stops
+         the instant the line begins.</p>
+      <audio id="audc" controls preload="none" src="audio/${esc(t.context_clip)}"></audio>
+    </div>
 
-    <p class="ask">If someone had been handed only this sentence, knowing nothing
-       about the conversation &mdash; could they have said it like this?</p>
-    <div class="opts">${OPTS.map(o=>
-      `<button class="${r.a===o.v?"sel":""}" onclick="mark('${o.v}')">
-         ${esc(o.t)}<small>${esc(o.d)}</small></button>`).join("")}</div>
+    <div class="card">
+      <div class="step"><span class="num">4</span><b>How they said it</b></div>
+      <audio id="audt" controls preload="none" src="audio/${esc(t.target_clip)}"></audio>
+      <p class="hint" style="margin:8px 0 0">${esc(t.target_text)}</p>
+    </div>`
+    + optCard(p,"b",5,"Now that you have heard it",
+        "Which of these is how it was said?",
+        "Same five. Keep your first answer or change it &mdash; both are useful.");
+  }
 
-    <p style="margin-top:14px"><label class="muted">
-      <input type="checkbox" id="flag" ${r.flag?"checked":""}
-        onchange="cur().flag=this.checked;save();render()">
-      flag &mdash; audio or transcript is broken</label></p>
-    <textarea id="cmt" placeholder="Optional: what made you answer that way?"
-      oninput="cur().comment=this.value;save()">${esc(r.comment||"")}</textarea>
-  </div>`;
+  if(pageDone(p)){
+    h+=`<div class="card">
+      <div class="step"><span class="num">6</span><b>Anything wrong?</b></div>
+      <p style="margin:0 0 8px"><label class="muted">
+        <input type="checkbox" id="flag" ${r.flag?"checked":""}
+          onchange="cur().flag=this.checked;save();render()">
+        flag &mdash; broken audio, wrong speaker, or none of the five fit</label></p>
+      <textarea id="cmt" placeholder="Optional"
+        oninput="cur().comment=this.value;save()">${esc(r.comment||"")}</textarea>
+    </div>`;
+  }
+
+  document.getElementById("body").innerHTML=h;
 
   const scr=document.getElementById("scr");
   if(scr){
@@ -403,14 +420,6 @@ function render(){
     scr.addEventListener("scroll",upd);upd();
   }
 
-  const vd=document.getElementById("verdict");
-  vd.className="verdict"+(r.a?" on":"");
-  vd.innerHTML=r.a
-    ? `<span class="big">${esc(VERDICT[r.a])}</span>`+
-      (r.a==="depends"?` <span class="muted">&mdash; earns its place in the benchmark.</span>`
-       :r.a==="standalone"?` <span class="muted">&mdash; useful to know; it will be dropped.</span>`:"")
-    : `<span class="muted">Pick one to continue.</span>`;
-
   document.getElementById("pos").textContent=`${I+1} / ${PAGES.length}`;
   document.getElementById("prog").style.width=
     (100*PAGES.filter(pageDone).length/PAGES.length)+"%";
@@ -419,11 +428,22 @@ function render(){
   syncHash();
 }
 
-function mark(v){
+function mark(phase,ci){
   const r=cur();
-  r.a=v;
-  r.ms=Date.now()-(r.t0||Date.now());
+  // The blind pick is written once. Changing it after the conversation has
+  // been read is not a correction, it is the measurement being overwritten by
+  // its own outcome, and there would be no way to tell afterwards.
+  if(phase==="a"&&r.a!=null&&r.a!==ci){
+    toast("Your first pick is locked — change your answer in step 5 instead.");
+    return;
+  }
+  r[phase]=ci;
+  if(phase==="a")r.ms_a=Date.now()-(r.t0||Date.now());
+  else r.ms_b=Date.now()-(r.t0||Date.now());
   save();render();
+  if(phase==="a")setTimeout(()=>{
+    const el=document.getElementById("audc"); if(el&&el.scrollIntoView)el.scrollIntoView({block:"center"});
+  },30);
 }
 
 function go(d){
@@ -445,7 +465,13 @@ document.addEventListener("keydown",e=>{
     if(a){a.paused?a.play():a.pause()}
     return;
   }
-  if(/^[1-4]$/.test(e.key)){e.preventDefault();mark(OPTS[+e.key-1].v)}
+  const p=PAGES[I];
+  if(/^[1-5]$/.test(e.key)&&+e.key<=p.trial.options.length){
+    e.preventDefault();
+    // One number key, whichever pick is open. Same digit, same screen
+    // position, both times.
+    mark(rec(p).a==null?"a":"b", p.ord[+e.key-1]);
+  }
 });
 
 function csvCell(v){
@@ -460,13 +486,17 @@ function exportCsv(){
       annotator:AID, page:idx+1, trial_id:t.trial_id, axis:t.axis,
       target_text:t.target_text, target_speaker:t.target_speaker||"",
       n_context_turns:(t.context||[]).length,
-      answer:r.a||"",
-      // Kept separate from `answer` so the headline stays one unambiguous
-      // column while "can't tell" and "doesn't fit" remain distinguishable
-      // from a plain no.
-      requires_context:r.a?(r.a==="depends"?1:0):"",
+      // Canonical indices. Which one is true is not in this browser, so
+      // whether the pick was right is resolved offline against the key.
+      blind_pick:r.a??"", informed_pick:r.b??"",
+      changed_mind:(r.a!=null&&r.b!=null)?(r.a===r.b?0:1):"",
+      blind_text:r.a!=null?t.options[r.a]:"",
+      informed_text:r.b!=null?t.options[r.b]:"",
+      // The order this annotator saw, so a position bias is checkable rather
+      // than assumed away.
+      shown_order:p.ord.join("|"),
       flag:r.flag?1:0, comment:(r.comment||"").trim(),
-      response_ms:r.ms??"",
+      blind_ms:r.ms_a??"", informed_ms:r.ms_b??"",
       share_url:base+"#"+t.trial_id,
       exported_at:new Date().toISOString()
     };
@@ -476,8 +506,8 @@ function exportCsv(){
     rows.map(r=>cols.map(c=>csvCell(r[c])).join(","))).join("\n");
   dl(new Blob(["﻿"+csv],{type:"text/csv;charset=utf-8"}),
      `ctts_verify_${SET()}_${AID}.csv`);
-  const n=rows.filter(r=>r.answer).length;
-  toast(`Exported ${n} of ${rows.length} answered.`);
+  const n=rows.filter(r=>r.informed_pick!=="").length;
+  toast(`Exported ${n} of ${rows.length} complete.`);
 }
 function dl(blob,name){
   const a=document.createElement("a");

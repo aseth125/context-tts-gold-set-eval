@@ -43,7 +43,14 @@
     "context_clip": "c332c9cf12aa.opus",
     "target_clip": "014b13397373.opus",
     "target_text": "And then like that pus like had its own pus coming out of it.",
-    "target_speaker": "A"
+    "target_speaker": "A",
+    "options": [
+      "Animated and amused with a bright burst of laughter, weight on the second 'pus', because they are treating the bizarre escalation as the punchline to an already ridiculous story.",
+      "Deliberate and halting with rising pitch at the end, weight on 'own', because they are inventing an increasingly grotesque hypothetical on the spot to top their previous description.",
+      "Brisk and incredulous with rising pitch, weight on 'had', because their listener doubted how bad the infection was and they are doubling down on the visual reality.",
+      "Deadpan and conversational with dry vocal fry, weight on 'coming', because they are casually dropping a revolting memory into conversation to test their friend's squeamishness.",
+      "Fast and emphatic with a sharp stress peak, weight on 'that', because they are contrasting this specific, horrifying eruption with the initial drainage they were already describing."
+    ]
   },
   {
     "trial_id": "vis002",
@@ -77,7 +84,14 @@
     "context_clip": "9a276e315287.opus",
     "target_clip": "20ac7be63e4c.opus",
     "target_text": "I'm sorry. I love sitting by the ocean like this with you.",
-    "target_speaker": "A"
+    "target_speaker": "A",
+    "options": [
+      "Quiet and earnest, slowing down at the end to place the weight heavily on 'you', because they want to reassure their companion of their affection after getting distracted by philosophy.",
+      "Bright and conversational with steady tempo, emphasizing 'sitting' with a playful upward lilt, because they are contrasting their passive presence right now with the active, overwhelming power of the sea.",
+      "Brisk and dismissive of the apology, placing punchy weight on 'ocean', because they want to steer the conversation away from their personal embarrassment back toward the majestic scenery around them.",
+      "Contrite and hushed, placing the heaviest downward weight on 'sorry' before trailing off, because they genuinely fear they sounded ridiculous and are seeking quick validation from their partner.",
+      "Soft and warm, chuckling through 'sorry' then placing elongated, breathy weight on 'love', because they are embarrassed by their rambling speech and want to return to shared intimacy."
+    ]
   },
   {
     "trial_id": "vis003",
@@ -111,7 +125,14 @@
     "context_clip": "afbb7c5c214c.opus",
     "target_clip": "ec914d67ac2e.opus",
     "target_text": "I don't know, but I guess it seems more inconspicuous in a coffee shop. Well, you know, you learn something new in New York every day, I guess.",
-    "target_speaker": "B"
+    "target_speaker": "B",
+    "options": [
+      "Hesitant and low, dropping pitch and murmuring weight onto 'know', because they are worried the people nearby might overhear them openly making fun of the gathering.",
+      "Quiet and deliberate with a reflective pause, putting weight on 'inconspicuous', because they are genuinely entertaining the absurd logic of hiding a sacrifice in plain sight.",
+      "Bright and animated, landing hard on 'New York' with rising pitch, because they find the absurdity typical of the city and want to share an appreciative laugh.",
+      "Sarcastic and snappy, emphasizing 'every' with a sharp downward cadence, because they are annoyed that their regular quiet hangout has been completely ruined by this bizarre crowd.",
+      "Deadpan and brisk, hitting the setting by stressing 'coffee', because they want to dismiss the ridiculous speculation and redirect the conversation back to ordering their morning drinks."
+    ]
   },
   {
     "trial_id": "vis004",
@@ -169,7 +190,14 @@
     "context_clip": "e5d3e074acea.opus",
     "target_clip": "725521daa218.opus",
     "target_text": "There's a lot on your back. I'm so sorry. Ugh.",
-    "target_speaker": "B"
+    "target_speaker": "B",
+    "options": [
+      "Tender and rueful, dropping in volume with weight falling on 'sorry', because their sympathy for their friend's terrible luck outweighs their own initial squeamishness.",
+      "Grimacing and breathy, steady tempo breaking into an exhale with weight hitting 'Ugh', because the physical repulsion finally overtakes their attempt to remain politely supportive.",
+      "Strained and sympathetic, pitch rising with an emphatic stress on 'so', because the sheer scale of the mishap makes a casual reassurance feel completely inadequate.",
+      "Soft and wincing, gently paced with weight landing on 'lot', because they hate having to confirm the grim reality their panicked friend is dreading.",
+      "Cautious and measured, pausing briefly with falling pitch and weight landing on 'back', because their friend couldn't see where the spill hit and needed direct confirmation."
+    ]
   },
   {
     "trial_id": "vis005",
@@ -219,7 +247,14 @@
     "context_clip": "27aae81e5712.opus",
     "target_clip": "d671ae33c80e.opus",
     "target_text": "You picked this dog out of the litter.",
-    "target_speaker": "A"
+    "target_speaker": "A",
+    "options": [
+      "Amused and breathy with an audible chuckle, putting the weight on 'this', because they are teasingly reminding the other speaker that Buster was their personal choice.",
+      "Wry and amused, putting the weight on 'You' with a rising pitch, because they are playfully pinning the blame on their partner as the dog misbehaves.",
+      "Teasing and rhythmic, putting the weight on 'picked' with a drawn-out vowel, because they are poking fun at the idea that this was an intentional, careful selection.",
+      "Warm and skeptical, putting the weight on 'litter' with a trailing lilt, because they are jokingly wondering what the rest of the puppies could have possibly been like.",
+      "Dry and deadpan, putting the weight on 'dog' with a quiet chuckle, because they are comically questioning whether this goofy creature really counts as an actual dog."
+    ]
   },
   {
     "trial_id": "vis006",
@@ -249,7 +284,14 @@
     "context_clip": "4681179f3e49.opus",
     "target_clip": "dd78dd9788a1.opus",
     "target_text": "No, everything gets to be on me because I'm going to make a lot more money now.",
-    "target_speaker": "A"
+    "target_speaker": "A",
+    "options": [
+      "Gracious and expansive, weight on 'everything', because they are claiming the whole bill as their personal treat after landing a lucrative new job.",
+      "Bright and teasing, weight on 'more', because they are happily flaunting their upgraded financial status to convince their companion to let them pay.",
+      "Bubbly and celebratory, weight on 'me', because they are joyfully overriding the friend's generous offer to treat using their exciting new pay raise.",
+      "Firm and affectionately stubborn, weight on 'No', because they are immediately brushing aside their friend's polite protest before eagerly claiming the bill.",
+      "Playful and grandiose, weight on 'lot', because they are dramatically overstating their bump in pay to justify treating their friend to dinner."
+    ]
   },
   {
     "trial_id": "vis007",
@@ -275,7 +317,14 @@
     "context_clip": "8c643b109801.opus",
     "target_clip": "3f506bdecf3c.opus",
     "target_text": "How about instead of buying a single vacation home in France, we just, we get timeshares and we go, we go to Germany, we go to Munich, we go, we go to Malta.",
-    "target_speaker": "A"
+    "target_speaker": "A",
+    "options": [
+      "Eager and breathy, pace accelerating through the list with bouncing upward inflections on 'timeshares' and each country, because the sudden realization of endless travel makes France feel unnecessarily limiting.",
+      "Playful and persuasive, leaning weight into 'timeshares' with an exaggerated rising pitch, because they are half-jokingly pitching a chaotic variety tour to break their partner's rigid focus on settling down.",
+      "Casual and improvisational, stumbling slightly on 'just' before putting easy weight on 'Germany', because they are tossing out random destinations off the cuff rather than presenting a well-considered plan.",
+      "Warm and coaxing, slowing on 'vacation home' with gentle weight on 'Munich', because they know their partner loves Bavaria and want to make the timeshare compromise sound personally enticing.",
+      "Wry and self-amused, dropping pitch on 'timeshares' while putting dry weight on 'Malta', because they find the absurd contrast between an upscale French villa and timeshare hopping genuinely hilarious."
+    ]
   },
   {
     "trial_id": "vis008",
@@ -341,7 +390,14 @@
     "context_clip": "dd99b39adc7d.opus",
     "target_clip": "2a4afaf37804.opus",
     "target_text": "And then he just really wanted to stand next to Lady Macduff the whole time.",
-    "target_speaker": "B"
+    "target_speaker": "B",
+    "options": [
+      "Dry and deadpan, steady measured pace with weight on 'whole', because treating the ridiculous staging choice as completely routine makes the absurdity of his persistence much funnier.",
+      "Bemused and baffled, slowing down with an upward lilt and weight on 'really', because the boy's bizarre fixation made no narrative sense given how the scene was blocked.",
+      "Playfully incredulous, quickening through the middle with weight on 'just', because abandoning his assigned mark to shadow a random character was such a comically brazen choice.",
+      "Breathy and bubbling with laughter, pausing mid-sentence before 'next', weight on 'Lady Macduff', because the visual absurdity of his stage clinginess is too funny to deliver with a straight face.",
+      "Wry and mock-weary, exhaling in amused disbelief with weight on 'stand', because watching someone stubbornly refuse to move away from another actor was hopelessly disruptive to the rehearsal."
+    ]
   },
   {
     "trial_id": "vis009",
@@ -363,7 +419,14 @@
     "context_clip": "c75eaa5f3182.opus",
     "target_clip": "303d8db8c5a8.opus",
     "target_text": "Oh boy, there will be a lot of humidity.",
-    "target_speaker": "B"
+    "target_speaker": "B",
+    "options": [
+      "Weary and resigned with a heavy sigh on 'Oh boy' and dragged-out weight on 'humidity', because they just checked the weekend forecast and dread running outdoors in stifling air.",
+      "Light and upbeat with an amused chuckle on 'Oh boy' and strong emphasis on 'lot', because they are playing up the forecast's muggy reality with cheerful broadcast showmanship.",
+      "Dry and deadpan with a flat pitch on 'boy' and sardonic weight on 'lot', because they are casually remarking on the notoriously sticky summer weather they both have to endure.",
+      "Mildly grumbling with an irritated drop on 'Oh boy' and sharp stress on 'will', because a look outside confirms their fear that the swampy heat has already settled in.",
+      "Cautioning and sympathetic with a soft rise on 'boy' and gentle emphasis on 'humidity', because their friend is packing heavy layers for a summer trip down to the coast."
+    ]
   },
   {
     "trial_id": "vis010",
@@ -397,6 +460,13 @@
     "context_clip": "f06e54867bd4.opus",
     "target_clip": "2f1de6c51e85.opus",
     "target_text": "Wow. Strong, strong. Best place you've ever been. That's strong words to endorse the city.",
-    "target_speaker": "A"
+    "target_speaker": "A",
+    "options": [
+      "Brisk and theatrical with a wide pitch arc, weight on \"ever\", because he is playfully challenging her claim that nowhere else in the country could compare.",
+      "Dry and deliberate, flat pitch with heavy weight on \"strong\", because he suspects she is romanticizing a vacation destination that he remembers as chaotic and seedy.",
+      "Loud and punchy, rising sharply with weight on \"endorse\", because he shares her enthusiasm and wants to validate her high opinion of New Orleans right away.",
+      "Slow and meditative, trailing downward with weight on \"city\", because he is mentally comparing New Orleans to other places he might recommend to his traveling buddy.",
+      "Amused and chuckling with an aborted start, weight on \"best\", because her sweeping praise of the city caught him off guard and sounds delightfully over the top."
+    ]
   }
 ]
