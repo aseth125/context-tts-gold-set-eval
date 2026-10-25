@@ -49,11 +49,11 @@
     "target_text": "Oh, you think I'm impaired. Okay.",
     "target_speaker": "A",
     "options": [
-      "Deadpan and cold, voice dropping flat, weight on 'okay' -- they are quietly accepting the challenge.",
-      "Quiet and hurt, voice trailing off, weight on 'I'm' -- they feel genuinely insulted.",
-      "Sharp and aggressive, shouting loudly, weight on 'you' -- they are turning the blame around.",
-      "Slow and mocking, drawling each word, weight on 'think' -- they are savoring the insult.",
-      "High and incredulous, rising fast, weight on 'impaired' -- they find the accusation ridiculous."
+      "Tired and giving up",
+      "Calm and polite",
+      "Furious and aggressive",
+      "Sarcastic, laughing a bit",
+      "Offended and defensive"
     ]
   },
   {
@@ -106,11 +106,11 @@
     "target_text": "Gotcha. So Jason and you ordered the lasagna. Wait, actually, no, I see a third lasagna here. Did someone else order lasagna?",
     "target_speaker": "A",
     "options": [
-      "Relaxed then amused, weight on 'else' -- expecting another person to claim it.",
-      "Confident then hesitant, weight on 'actually' -- correcting their own mistake out loud.",
-      "Brisk then skeptical, weight on 'no' -- stopping short after spotting an error.",
-      "Friendly then inquiring, weight on 'someone' -- inviting the rest of the group to respond.",
-      "Calm then puzzled, weight on 'third' -- realizing the count does not match."
+      "Surprised and amused",
+      "Annoyed and exasperated",
+      "Distracted and hurried",
+      "Puzzled and checking",
+      "Suspicious and accusatory"
     ]
   },
   {
@@ -143,11 +143,11 @@
     "target_text": "I don't think I've seen that many clothes fall down.",
     "target_speaker": "B",
     "options": [
-      "Deadpan and dry, voice flat, weight on 'seen' -- they are playing it down as ordinary.",
-      "Breathless and chuckling, breaking into laughter, weight on 'clothes' -- they are still cracking up.",
-      "Baffled and stunned, voice rising, weight on 'that' -- they cannot believe the sheer scale.",
-      "Teasing and lively, bouncy delivery, weight on 'fall' -- they are playfully mocking what happened.",
-      "Quiet and reflective, trailing off, weight on 'down' -- they are picturing it in disbelief."
+      "Calm and matter-of-fact",
+      "Puzzled and curious",
+      "Dry and unimpressed",
+      "Laughing hard, barely speaking",
+      "Shocked and appalled"
     ]
   },
   {
@@ -196,11 +196,11 @@
     "target_text": "Whose decision was it to put on Con Air Kindergarten Edition?",
     "target_speaker": "B",
     "options": [
-      "Stern and irritated, clipping words, weight on 'put' -- expressing annoyance at an irresponsible choice.",
-      "Dry and deadpan, dropping pitch, weight on 'Whose' -- pretending to seriously investigate who is to blame.",
-      "Chuckling and amused, bubbling with laughter, weight on 'decision' -- laughing together at the shared absurdity.",
-      "Incredulous and sharp, pitch rising, weight on 'was' -- expressing genuine disbelief at what was allowed.",
-      "Mock-serious, slowing down at the end, weight on 'Edition' -- delivering it dryly like an official title."
+      "Amused and laughing",
+      "Puzzled and confused",
+      "Exasperated and tired",
+      "Stern and demanding",
+      "Annoyed and critical"
     ]
   },
   {
@@ -229,11 +229,11 @@
     "target_text": "Ooh, the best thing to get at Gates is probably a Kansas City, Missouri specialty, burnt ends. Do you know what a burnt end is?",
     "target_speaker": "A",
     "options": [
-      "Playful and teasing, questioning lift, weight on 'know' -- they expect the listener to be stumped.",
-      "Thoughtful and deliberate, gradual drop, weight on 'probably' -- they are weighing several good options.",
-      "Bright and lively, melodic rise, weight on 'burnt' -- they are eager to recommend something.",
-      "Warm and earnest, steady lilt, weight on 'best' -- they want to share their favorite pick.",
-      "Curious and open, buoyant finish, weight on 'is' -- they are checking if this sounds familiar."
+      "Casual and relaxed",
+      "Bright and enthusiastic",
+      "Proud and confident",
+      "Thoughtful and reflective",
+      "Curious and engaged"
     ]
   },
   {
@@ -294,11 +294,11 @@
     "target_text": "Tell me your worst.",
     "target_speaker": "A",
     "options": [
-      "Dry and skeptical, flat tone, weight on 'worst' -- doubting it was really that bad.",
-      "Bright and loud, pitch rising fast, weight on 'worst' -- excited to hear the story.",
-      "Hushed and low, dropping to a murmur, weight on 'worst' -- eager for the drama.",
-      "Teasing and drawn out, voice playful, weight on 'tell' -- nudging them for a confession.",
-      "Breezy and light, clipped delivery, weight on 'your' -- casually keeping the conversation moving along."
+      "Playful and teasing",
+      "Excited and rushed",
+      "Tense, bracing for it",
+      "Quiet and curious",
+      "Dramatic and intense"
     ]
   },
   {
@@ -367,11 +367,11 @@
     "target_text": "Ugh, I mean, it's not my fault that you left three-day chicken water, but I guess... Ugh, if you're really that sick, but... Ugh.",
     "target_speaker": "B",
     "options": [
-      "Repulsed and defensive, snapping between phrases, weight on 'fault' -- making them feel guilty.",
-      "Skeptical and grossed out, scoffing on pauses, weight on 'really' -- doubting their excuse.",
-      "Nauseated and irritated, shuddering between phrases, weight on 'left' -- blaming them for it.",
-      "Grudging and weary, trailing off each time, weight on 'guess' -- reluctantly backing down.",
-      "Disgusted and reluctant, groaning between pauses, weight on 'my' -- giving in against their will."
+      "Annoyed but feeling sympathetic",
+      "Suspicious but backing down",
+      "Grossed out and reluctant",
+      "Flustered and feeling guilty",
+      "Petulant and deeply begrudging"
     ]
   },
   {
@@ -412,11 +412,11 @@
     "target_text": "Yeah, they definitely connect because we did not eat mac and cheese.",
     "target_speaker": "B",
     "options": [
-      "Weary and flat, trailing off, weight on 'connect' -- they are tired of the debate.",
-      "Smug and brisk, voice brightening, weight on 'eat' -- they have proved their point.",
-      "Dry and sarcastic, deadpan drop, weight on 'definitely' -- they are mocking an obvious lie.",
-      "Indignant and sharp, rising pitch, weight on 'we' -- they resent being blamed for it.",
-      "Gagging and strained, voice groaning, weight on 'not' -- they are physically revolted while agreeing."
+      "Confused and puzzled",
+      "Disgusted and grossed out",
+      "Amused and laughing",
+      "Calm and matter-of-fact",
+      "Angry and confrontational"
     ]
   },
   {
@@ -457,11 +457,11 @@
     "target_text": "Yeah, okay. Just try to air out the house, I guess.",
     "target_speaker": "A",
     "options": [
-      "Snappish and sharp, voice rising, weight on 'try' -- they are frustrated by the situation.",
-      "Casual and airy, slight chuckle, weight on 'guess' -- they are trying to shrug it off.",
-      "Brisk and efficient, quick pace, weight on 'house' -- they are dividing up the tasks.",
-      "Weary and breathless, sighing heavily, weight on 'air' -- they are overwhelmed and resigned.",
-      "Timid and hesitant, trailing off, weight on 'okay' -- they are unsure what else to suggest."
+      "Annoyed and impatient",
+      "Weary and overwhelmed",
+      "Casual and unbothered",
+      "Disgusted and grossed out",
+      "Calm and matter-of-fact"
     ]
   },
   {
@@ -526,11 +526,11 @@
     "target_text": "I don't know, I'm starving, and they're like, they're pretty salty. Oh, okay, yeah, no, I can't do it.",
     "target_speaker": "B",
     "options": [
-      "Amused, trailing into a laugh, weight on 'no' -- they find their sudden reversal funny.",
-      "Resigned, fading into a sigh, weight on 'salty' -- they realize they have to give up.",
-      "Blunt, speeding up at the end, weight on 'starving' -- they cut short their own excuse.",
-      "Hesitant, breaking into a groan, weight on 'can't' -- they try to push through and fail.",
-      "Sheepish, softening to a whisper, weight on 'do' -- they feel bad about backing down."
+      "Dramatic and theatrical",
+      "Conflicted, then backing out",
+      "Disgusted, giving up",
+      "Disappointed and bummed out",
+      "Whiny and miserable"
     ]
   }
 ]

@@ -53,11 +53,11 @@
     "target_text": "He is making it angry, but I'm having a good time.",
     "target_speaker": "B",
     "options": [
-      "Quiet and flat, weight on 'angry' -- they are stating the obvious without much emotion.",
-      "Amused and chuckling, weight on 'is' -- they are agreeing and enjoying what is happening.",
-      "Bright with a rise, weight on 'I'm' -- they are contrasting their mood with the situation.",
-      "Sharp and sarcastic, weight on 'good' -- they are mocking how badly things are going.",
-      "Tense and rushed, weight on 'making' -- they worry things are getting out of hand."
+      "Breezy and unbothered",
+      "Amused, laughing along",
+      "Dry and deadpan",
+      "Cheerful and upbeat",
+      "Smug and unapologetic"
     ]
   },
   {
@@ -106,11 +106,11 @@
     "target_text": "But we tried that and it didn't work.",
     "target_speaker": "A",
     "options": [
-      "Firm and emphatic, weight on 'work' -- shutting down any further debate.",
-      "Tense and biting, weight on 'we' -- reminding them of their shared past.",
-      "Flat and defeated, trailing off at the end -- they have given up arguing.",
-      "Sharp and defensive, weight on 'that' -- they are annoyed at being blamed.",
-      "Soft with a faint chuckle, weight on 'tried' -- stating a painful, obvious truth."
+      "Cold and blunt",
+      "Tearful and desperate",
+      "Frustrated and fed up",
+      "Angry and sharp",
+      "Quiet, with a sad laugh"
     ]
   },
   {
@@ -135,11 +135,11 @@
     "target_text": "Weed a book.",
     "target_speaker": "A",
     "options": [
-      "Flat and dry, steady pace, weight on 'a' -- reciting an instruction without enthusiasm.",
-      "Bright and high-pitched, jaunty bounce, weight on 'book' -- issuing a playful command.",
-      "Shy and timid, rising pitch, weight on 'book' -- nervously trying to speak up.",
-      "Mocking and sneering, exaggerated drawl, weight on 'Weed' -- making fun of someone.",
-      "Gruff and commanding, falling tone, weight on 'Weed' -- aggressively bossing someone around."
+      "Playful and childlike",
+      "Bossy and demanding",
+      "Whiny and frustrated",
+      "Shy and hesitant",
+      "Warm and gentle"
     ]
   },
   {
@@ -172,11 +172,11 @@
     "target_text": "What's a burnt end?",
     "target_speaker": "B",
     "options": [
-      "Eager and bright, pitch jumps, weight on 'What's' -- they are excited to find out.",
-      "Amused and teasing, lilting tone, weight on 'end' -- they think it sounds like a joke.",
-      "Skeptical and dry, dropping pitch, weight on 'burnt' -- the term sounds unappealing to them.",
-      "Baffled and slow, flat tone, weight on 'end' -- they find the phrasing strange.",
-      "Curious and mild, rising pitch, weight on 'burnt' -- they genuinely want clarification."
+      "Quietly curious, gently asking",
+      "Casual and completely offhand",
+      "Puzzled and slightly skeptical",
+      "Brisk and mildly impatient",
+      "Amused and genuinely baffled"
     ]
   },
   {
@@ -229,11 +229,11 @@
     "target_text": "You picked this dog out of the litter.",
     "target_speaker": "A",
     "options": [
-      "Dryly with a wry smirk, weight on 'this' -- they are mocking the choice.",
-      "Teasing with a chuckle, weight on 'you' -- they are playfully shifting the blame.",
-      "Warmly with a gentle smile, weight on 'picked' -- they are affirming a deliberate choice.",
-      "Incredulous with a baffled laugh, weight on 'litter' -- they are noting all the missed alternatives.",
-      "Bluntly with a cold stare, weight on 'you' -- they are firmly assigning sole responsibility."
+      "Warm and nostalgic",
+      "Calm and matter-of-fact",
+      "Surprised and disbelieving",
+      "Amused and teasing",
+      "Exasperated and blaming"
     ]
   },
   {
@@ -266,11 +266,11 @@
     "target_text": "No, everything gets to be on me because I'm going to make a lot more money now.",
     "target_speaker": "A",
     "options": [
-      "Warm and gentle, slowing down, weight on 'everything' -- softening an insistence to pay.",
-      "Teasing and smug, rising tone, weight on 'money' -- playfully showing off their upgrade.",
-      "Excited and breathless, laughing through, weight on 'me' -- celebrating their good fortune.",
-      "Quiet and modest, dropping pitch, weight on 'now' -- downplaying their recent good luck.",
-      "Firm and assertive, deliberate pace, weight on 'No' -- refusing to let the other pay."
+      "Triumphant and proud",
+      "Sweet and affectionate",
+      "Cocky and self-assured",
+      "Excited and playful",
+      "Firm and reassuring"
     ]
   },
   {
@@ -351,11 +351,11 @@
     "target_text": "I know. Wait, it's starting.",
     "target_speaker": "A",
     "options": [
-      "Weary then tense, weight dragging on 'know' -- they are dreading what comes next.",
-      "Dismissive then hurried, weight snapping on 'Wait' -- they cut the other person off.",
-      "Panicked and breathless, weight landing on 'starting' -- they are caught totally unprepared.",
-      "Chuckling then hushed, weight falling on 'Wait' -- they suddenly spot something happening.",
-      "Bored then eager, weight jumping onto 'starting' -- they suddenly care about what happens."
+      "Distracted, impatient and abrupt",
+      "Quiet, curious and attentive",
+      "Excited, energetic and breathless",
+      "Casual, relaxed and intrigued",
+      "Amused, hushed and eager"
     ]
   },
   {
@@ -396,11 +396,11 @@
     "target_text": "Ah, they're pretty, they're relatively thick.",
     "target_speaker": "B",
     "options": [
-      "Hesitant and slow, slight stumble, weight on 'thick' -- they are picturing it from memory.",
-      "Warm and admiring, lingering pause, weight on 'pretty' -- they are genuinely pleased by the appearance.",
-      "Casual and brisk, quick correction, weight on 'relatively' -- they are refining a hasty estimate.",
-      "Mildly defensive, sharp recovery, weight on 'relatively' -- they are backing down from an exaggeration.",
-      "Thoughtful and measured, soft taper, weight on 'thick' -- they are carefully reconsidering an objection."
+      "Thoughtful, sizing them up",
+      "Hesitant, trying to remember",
+      "Impressed and pleasantly surprised",
+      "Gentle, trying to reassure",
+      "Casual, making an observation"
     ]
   },
   {
@@ -469,11 +469,11 @@
     "target_text": "That's right. You know it.",
     "target_speaker": "A",
     "options": [
-      "Warm and casual, falling intonation, weight on 'That's' -- they are simply confirming what was said.",
-      "Sharp and impatient, clipped pace, weight on 'it' -- they are dismissing the conversation.",
-      "Smug and dry, dropping at the end, weight on 'know' -- they are asserting superiority.",
-      "Laughing and playful, chuckling through words, weight on 'right' -- they are sharing an inside joke.",
-      "Sarcastic and drawled, rising tone, weight on 'right' -- they are mocking the other person's guess."
+      "Smug and boastful",
+      "Encouraging and supportive",
+      "Fired up and excited",
+      "Calm and reassuring",
+      "Laughing and amused"
     ]
   }
 ]

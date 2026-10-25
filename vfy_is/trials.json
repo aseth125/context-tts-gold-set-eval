@@ -45,11 +45,11 @@
     "target_text": "And then like that pus like had its own pus coming out of it.",
     "target_speaker": "A",
     "options": [
-      "Incredulous and baffled, pitch rising steadily, weight on 'had' -- struggling to convey the shock.",
-      "Horrified and squeamish, rushing the end, weight on 'pus' -- recoiling from the memory.",
-      "Deadpan and dry, voice staying level, weight on 'that' -- treating the detail as routine.",
-      "Disgusted and halting, pausing throughout, weight on 'own' -- pushing the grotesque description even further.",
-      "Morbidly amused, chuckling under breath, weight on 'out' -- playing the image for laughs."
+      "Baffled and utterly confused",
+      "Disgusted, totally grossed out",
+      "Morbidly curious and fascinated",
+      "Laughing and cracking up",
+      "Calm and totally unbothered"
     ]
   },
   {
@@ -86,11 +86,11 @@
     "target_text": "I'm sorry. I love sitting by the ocean like this with you.",
     "target_speaker": "A",
     "options": [
-      "Warm with a gentle chuckle, weight on 'love' -- reassuring them and returning the affection.",
-      "Light and breezy, rising tone, weight on 'this' -- changing the subject after getting heavy.",
-      "Teasing and upbeat, voice lifting, weight on 'you' -- playfully brushing off the awkwardness.",
-      "Sincere and hushed, slow pace, weight on 'sitting' -- savoring the quietness between them.",
-      "Soft and apologetic, dropping pitch, weight on 'sorry' -- regretting rambling on so much."
+      "Embarrassed and awkward",
+      "Sad and wistful",
+      "Deeply apologetic and guilty",
+      "Bored and detached",
+      "Warm and affectionate"
     ]
   },
   {
@@ -127,11 +127,11 @@
     "target_text": "I don't know, but I guess it seems more inconspicuous in a coffee shop. Well, you know, you learn something new in New York every day, I guess.",
     "target_speaker": "B",
     "options": [
-      "Sarcastic and dry, flat pitch, weight on 'new' -- they think it is totally obvious.",
-      "Thoughtful and earnest, softening, weight on 'coffee' -- they are genuinely considering the point.",
-      "Musing and amused, speaking slowly, weight on 'inconspicuous' -- they are playing along with the joke.",
-      "Breezy and lighthearted, chuckling slightly, weight on 'every' -- they are brushing off the weirdness.",
-      "Wry and resigned, voice trailing off, weight on 'guess' -- they are accepting the absurdity."
+      "Hesitant and uncertain",
+      "Casual and indifferent",
+      "Thoughtful and reflective",
+      "Dry and deadpan",
+      "Playful and amused"
     ]
   },
   {
@@ -192,11 +192,11 @@
     "target_text": "There's a lot on your back. I'm so sorry. Ugh.",
     "target_speaker": "B",
     "options": [
-      "Cringing and guilty, voice trailing off, weight on 'sorry' -- admitting to an accidental mess.",
-      "Grimacing and gentle, voice dipping softly, weight on 'lot' -- breaking bad news with sympathy.",
-      "Squeamish and repulsed, voice tightening, weight on 'Ugh' -- shuddering at something gross.",
-      "Pitying and dismayed, voice dropping low, weight on 'back' -- looking at a painful sight.",
-      "Weary and exasperated, voice rising slightly, weight on 'There's' -- dealing with another headache."
+      "Tired and overwhelmed",
+      "Frustrated and helpless",
+      "Sympathetic and apologetic",
+      "Awkward and embarrassed",
+      "Distressed and upset"
     ]
   },
   {
@@ -249,11 +249,11 @@
     "target_text": "You picked this dog out of the litter.",
     "target_speaker": "A",
     "options": [
-      "Resigned and weary, trailing off, weight on 'litter' -- they accept nothing can be done.",
-      "Amused and wry, chuckling, weight on 'picked' -- they are teasingly blaming the other person.",
-      "Defensive and loud, voice rising, weight on 'dog' -- they are rejecting an unfair criticism.",
-      "Perplexed and slow, pitch dropping, weight on 'this' -- they are baffled by the decision.",
-      "Bitter and sharp, snaps, weight on 'you' -- they are angry at the bad choice."
+      "Proud and admiring",
+      "Annoyed and exasperated",
+      "Amused and teasing",
+      "Blunt and matter-of-fact",
+      "Resigned and weary"
     ]
   },
   {
@@ -286,11 +286,11 @@
     "target_text": "No, everything gets to be on me because I'm going to make a lot more money now.",
     "target_speaker": "A",
     "options": [
-      "Playful and bright, laughing at the end, weight on 'me' -- they are happily insisting.",
-      "Warm and firm, slowing right down, weight on 'everything' -- they are brushing off an objection.",
-      "Teasing and cocky, drawing out words, weight on 'lot' -- they are playfully bragging.",
-      "Gentle and reassuring, dropping their volume, weight on 'now' -- they are putting concerns to rest.",
-      "Breezy and offhand, rushing through words, weight on 'money' -- they treat it as completely settled."
+      "Dry and sarcastic",
+      "Affectionate and stubborn",
+      "Playful and celebratory",
+      "Casual and breezy",
+      "Excited and eager"
     ]
   },
   {
@@ -319,11 +319,11 @@
     "target_text": "How about instead of buying a single vacation home in France, we just, we get timeshares and we go, we go to Germany, we go to Munich, we go, we go to Malta.",
     "target_speaker": "A",
     "options": [
-      "Breathless and rapid, rushing forward, weight on 'timeshares' -- they are excited by a new possibility.",
-      "Hesitant and searching, pausing between repeats, weight on 'just' -- they are testing the waters.",
-      "Dry and mocking, rattling off items, weight on 'single' -- they are ridiculing an earlier suggestion.",
-      "Playful and loose, tumbling over words, weight on 'Malta' -- they are improvising as they go.",
-      "Coaxing and persuasive, leaning in, weight on 'instead' -- they are gently floating a compromise."
+      "Casual and spontaneous",
+      "Hesitant and tentative",
+      "Excited and eager",
+      "Calm and reasonable",
+      "Gentle and diplomatic"
     ]
   },
   {
@@ -392,11 +392,11 @@
     "target_text": "And then he just really wanted to stand next to Lady Macduff the whole time.",
     "target_speaker": "B",
     "options": [
-      "Dry and ironic, dropping low, weight on 'stand' -- they are underscoring the ridiculous behavior.",
-      "Playful and conspiratorial, voice dropping, weight on 'wanted' -- they are sharing a secret motive.",
-      "Warm and fond, smiling through it, weight on 'just' -- they are remembering something endearing.",
-      "Mildly exasperated, speeding up, weight on 'whole' -- they are recounting someone being difficult.",
-      "Amused and breathless, laughing through the words, weight on 'really' -- they find the detail hilarious."
+      "Confused and baffled",
+      "Amused and giggling",
+      "Annoyed and irritated",
+      "Sarcastic and dismissive",
+      "Flat and matter-of-fact"
     ]
   },
   {
@@ -421,11 +421,11 @@
     "target_text": "Oh boy, there will be a lot of humidity.",
     "target_speaker": "B",
     "options": [
-      "Groaning and drawn-out, weight on 'boy' -- dreading what is about to happen.",
-      "Flat and brisk, dropping low, weight on 'humidity' -- stating an obvious fact.",
-      "High and alarmed, rushing ahead, weight on 'lot' -- panicking about a bad situation.",
-      "Dry and deadpan, monotone throughout, weight on 'will' -- answering without any emotion.",
-      "Amused with a chuckle, weight on 'lot' -- playfully confirming their suspicion."
+      "Bored and unbothered",
+      "Annoyed and snappy",
+      "Serious and cautious",
+      "Amused and chuckling",
+      "Dreading it, miserable"
     ]
   },
   {
@@ -462,11 +462,11 @@
     "target_text": "Wow. Strong, strong. Best place you've ever been. That's strong words to endorse the city.",
     "target_speaker": "A",
     "options": [
-      "Impressed and respectful, nodding along, weight on 'best' -- they are taking the compliment seriously.",
-      "Dry and deadpan, flat delivery, weight on 'ever' -- they are mocking the huge exaggeration.",
-      "Thoughtful and deliberate, slow pace, weight on 'endorse' -- they are weighing up the big claim.",
-      "Amused and playful, chuckling, weight on 'strong' -- they are teasing the bold claim.",
-      "Skeptical and wry, slight smirk, weight on 'words' -- they are questioning the high praise."
+      "Playful and skeptical",
+      "Surprised and curious",
+      "Deadpan and sarcastic",
+      "Amused and impressed",
+      "Warm and approving"
     ]
   }
 ]

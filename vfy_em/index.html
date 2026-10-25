@@ -39,20 +39,23 @@
   .ask{font-size:15.5px;font-weight:600;margin:0 0 2px}
   .hint{color:var(--mut);font-size:13px;margin:2px 0 10px}
 
-  .opts{display:flex;flex-direction:column;gap:7px;margin-top:10px}
-  .opts button{display:flex;gap:10px;align-items:flex-start;width:100%;
-    border:2px solid var(--line);background:#fff;border-radius:9px;padding:10px 13px;
-    cursor:pointer;font:inherit;font-size:14.5px;line-height:1.45;text-align:left}
+  /* Options are three or four words now, so a column of full-width rows was
+     mostly empty space and made five short labels look like five paragraphs.
+     They wrap as chips instead, which is readable at a glance. */
+  .opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .opts button{display:inline-flex;gap:8px;align-items:center;
+    border:2px solid var(--line);background:#fff;border-radius:999px;
+    padding:9px 16px 9px 10px;cursor:pointer;font:inherit;font-size:15.5px;text-align:left}
   .opts button:hover{border-color:#bcc8d6}
   .opts button .k{flex:none;font:12px ui-monospace,Menlo,Consolas,monospace;color:var(--mut);
     background:#f4f4f2;border:1px solid var(--line);border-radius:4px;padding:0 6px;line-height:19px}
-  .opts button.sel{border-color:var(--acc);background:#eef4fb}
+  .opts button.sel{border-color:var(--acc);background:#eef4fb;font-weight:600}
   .opts button.sel .k{background:var(--acc);border-color:var(--acc);color:#fff}
   .opts button.was{border-color:#d7c48a;background:#fffdf5}
   .opts button.was .k{background:#f0e2a8;border-color:#e3d191}
-  .opts button.none{border-style:dashed;color:var(--mut)}
+  .opts button.none{border-style:dashed;color:var(--mut);flex-basis:100%;justify-content:flex-start}
   .opts button.none.sel{border-style:solid;color:var(--fg)}
-  .opts button small{display:block;font-size:12.5px;color:var(--mut);margin-top:2px}
+  .opts button small{color:var(--mut);font-size:12.5px;margin-left:6px}
   .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;
        text-transform:uppercase;color:#8a6d1f;margin-left:6px}
 
@@ -138,13 +141,14 @@
 <p>Everything here is a <b>real recording of a real person</b>. Nothing is
 synthetic and nothing is being scored for quality.</p>
 
-<p>Each item gives you the same five short descriptions of <b>how a line is
-said</b> &mdash; the tone, what the voice does, and which word carries the
-weight. Exactly one of the five is what the speaker actually does.</p>
+<p>Each item gives you the same five short labels for <b>how a line is said</b>
+&mdash; the feeling and the tone, three or four words each, like
+<i>confident and certain</i>, <i>grossed out</i>, <i>hesitant and unsure</i>.
+Exactly one of the five is what the speaker actually does.</p>
 
-<p class="muted">They are deliberately kept general, and none of them names
-anything from the conversation. All five are meant to be arguable from the
-written sentence, so that step 2 is a real guess rather than a lottery.</p>
+<p class="muted">None of them names anything from the conversation, and all
+five are meant to be a way the written sentence could plausibly be said &mdash;
+so that step 2 is a real guess rather than a lottery.</p>
 
 <p style="font-size:16px"><b>You pick twice.</b></p>
 
@@ -403,7 +407,7 @@ function render(){
        somewhere in a real conversation.</p>
   </div>`
   + optCard(p,"a",2,"Your best guess from the words",
-      "From the sentence alone &mdash; which of these sounds most likely?",
+      "From the sentence alone &mdash; how do you think they said it?",
       "You have not heard anything yet, so this is a guess. Go with your gut, "
       +"a few seconds, and move on.");
 
@@ -425,7 +429,7 @@ function render(){
       <p class="hint" style="margin:8px 0 0">${esc(t.target_text)}</p>
     </div>`
     + optCard(p,"b",5,"Now that you have heard it",
-        "Which of these is how it actually was said?",
+        "How did they actually say it?",
         "Same five. Keep your first answer or change it &mdash; both are useful.");
   }
 
