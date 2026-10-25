@@ -230,58 +230,5 @@
       "Amused, laughing along",
       "Excited and hyped up"
     ]
-  },
-  {
-    "trial_id": "vci005",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "All right, everybody, we're gonna start on our next item in the queue. We have this painting of a Russian space dog. We're gonna start the bidding around $500. Remember that all... Oh, 510, perfect. 510, I see a 510. Oh, I forgot a 520. Remember, all of the money goes to the animal 600. I got a 700 right here. Man in the back?"
-      },
-      {
-        "speaker": "B",
-        "text": "510."
-      },
-      {
-        "speaker": "B",
-        "text": "600!"
-      },
-      {
-        "speaker": "B",
-        "text": "7.05!"
-      },
-      {
-        "speaker": "A",
-        "text": "7.05. We got a 7.05. Anybody want a 7.10? 7.10. Anywhere I see it, 7.10. I see a 7.10. Man in the back, you got an up? You want to up it?"
-      },
-      {
-        "speaker": "B",
-        "text": "7.30."
-      },
-      {
-        "speaker": "A",
-        "text": "7.30, 7.30, we got a 7.30. And sold to the man in the back for 7.30."
-      },
-      {
-        "speaker": "B",
-        "text": "Woo! Yeah!"
-      },
-      {
-        "speaker": "A",
-        "text": "Amazing. Any questions about this item in particular, sir, that you've just purchased?"
-      }
-    ],
-    "context_clip": "96e001f2ffd9.opus",
-    "target_clip": "bd0e82d9112e.opus",
-    "target_text": "Uh, I'm good.",
-    "target_speaker": "B",
-    "options": [
-      "Flat and indifferent",
-      "Polite and firm",
-      "Amused and casual",
-      "Hesitant and unsure",
-      "Awkward and sheepish"
-    ]
   }
 ]
