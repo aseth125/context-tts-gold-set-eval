@@ -45,11 +45,11 @@
     "target_text": "And then like that pus like had its own pus coming out of it.",
     "target_speaker": "A",
     "options": [
-      "Animated and amused with a bright burst of laughter, weight on the second 'pus', because they are treating the bizarre escalation as the punchline to an already ridiculous story.",
-      "Deliberate and halting with rising pitch at the end, weight on 'own', because they are inventing an increasingly grotesque hypothetical on the spot to top their previous description.",
-      "Brisk and incredulous with rising pitch, weight on 'had', because their listener doubted how bad the infection was and they are doubling down on the visual reality.",
-      "Deadpan and conversational with dry vocal fry, weight on 'coming', because they are casually dropping a revolting memory into conversation to test their friend's squeamishness.",
-      "Fast and emphatic with a sharp stress peak, weight on 'that', because they are contrasting this specific, horrifying eruption with the initial drainage they were already describing."
+      "Incredulous and baffled, pitch rising steadily, weight on 'had' -- struggling to convey the shock.",
+      "Horrified and squeamish, rushing the end, weight on 'pus' -- recoiling from the memory.",
+      "Deadpan and dry, voice staying level, weight on 'that' -- treating the detail as routine.",
+      "Disgusted and halting, pausing throughout, weight on 'own' -- pushing the grotesque description even further.",
+      "Morbidly amused, chuckling under breath, weight on 'out' -- playing the image for laughs."
     ]
   },
   {
@@ -86,11 +86,11 @@
     "target_text": "I'm sorry. I love sitting by the ocean like this with you.",
     "target_speaker": "A",
     "options": [
-      "Quiet and earnest, slowing down at the end to place the weight heavily on 'you', because they want to reassure their companion of their affection after getting distracted by philosophy.",
-      "Bright and conversational with steady tempo, emphasizing 'sitting' with a playful upward lilt, because they are contrasting their passive presence right now with the active, overwhelming power of the sea.",
-      "Brisk and dismissive of the apology, placing punchy weight on 'ocean', because they want to steer the conversation away from their personal embarrassment back toward the majestic scenery around them.",
-      "Contrite and hushed, placing the heaviest downward weight on 'sorry' before trailing off, because they genuinely fear they sounded ridiculous and are seeking quick validation from their partner.",
-      "Soft and warm, chuckling through 'sorry' then placing elongated, breathy weight on 'love', because they are embarrassed by their rambling speech and want to return to shared intimacy."
+      "Warm with a gentle chuckle, weight on 'love' -- reassuring them and returning the affection.",
+      "Light and breezy, rising tone, weight on 'this' -- changing the subject after getting heavy.",
+      "Teasing and upbeat, voice lifting, weight on 'you' -- playfully brushing off the awkwardness.",
+      "Sincere and hushed, slow pace, weight on 'sitting' -- savoring the quietness between them.",
+      "Soft and apologetic, dropping pitch, weight on 'sorry' -- regretting rambling on so much."
     ]
   },
   {
@@ -127,11 +127,11 @@
     "target_text": "I don't know, but I guess it seems more inconspicuous in a coffee shop. Well, you know, you learn something new in New York every day, I guess.",
     "target_speaker": "B",
     "options": [
-      "Hesitant and low, dropping pitch and murmuring weight onto 'know', because they are worried the people nearby might overhear them openly making fun of the gathering.",
-      "Quiet and deliberate with a reflective pause, putting weight on 'inconspicuous', because they are genuinely entertaining the absurd logic of hiding a sacrifice in plain sight.",
-      "Bright and animated, landing hard on 'New York' with rising pitch, because they find the absurdity typical of the city and want to share an appreciative laugh.",
-      "Sarcastic and snappy, emphasizing 'every' with a sharp downward cadence, because they are annoyed that their regular quiet hangout has been completely ruined by this bizarre crowd.",
-      "Deadpan and brisk, hitting the setting by stressing 'coffee', because they want to dismiss the ridiculous speculation and redirect the conversation back to ordering their morning drinks."
+      "Sarcastic and dry, flat pitch, weight on 'new' -- they think it is totally obvious.",
+      "Thoughtful and earnest, softening, weight on 'coffee' -- they are genuinely considering the point.",
+      "Musing and amused, speaking slowly, weight on 'inconspicuous' -- they are playing along with the joke.",
+      "Breezy and lighthearted, chuckling slightly, weight on 'every' -- they are brushing off the weirdness.",
+      "Wry and resigned, voice trailing off, weight on 'guess' -- they are accepting the absurdity."
     ]
   },
   {
@@ -192,11 +192,11 @@
     "target_text": "There's a lot on your back. I'm so sorry. Ugh.",
     "target_speaker": "B",
     "options": [
-      "Tender and rueful, dropping in volume with weight falling on 'sorry', because their sympathy for their friend's terrible luck outweighs their own initial squeamishness.",
-      "Grimacing and breathy, steady tempo breaking into an exhale with weight hitting 'Ugh', because the physical repulsion finally overtakes their attempt to remain politely supportive.",
-      "Strained and sympathetic, pitch rising with an emphatic stress on 'so', because the sheer scale of the mishap makes a casual reassurance feel completely inadequate.",
-      "Soft and wincing, gently paced with weight landing on 'lot', because they hate having to confirm the grim reality their panicked friend is dreading.",
-      "Cautious and measured, pausing briefly with falling pitch and weight landing on 'back', because their friend couldn't see where the spill hit and needed direct confirmation."
+      "Cringing and guilty, voice trailing off, weight on 'sorry' -- admitting to an accidental mess.",
+      "Grimacing and gentle, voice dipping softly, weight on 'lot' -- breaking bad news with sympathy.",
+      "Squeamish and repulsed, voice tightening, weight on 'Ugh' -- shuddering at something gross.",
+      "Pitying and dismayed, voice dropping low, weight on 'back' -- looking at a painful sight.",
+      "Weary and exasperated, voice rising slightly, weight on 'There's' -- dealing with another headache."
     ]
   },
   {
@@ -249,11 +249,11 @@
     "target_text": "You picked this dog out of the litter.",
     "target_speaker": "A",
     "options": [
-      "Amused and breathy with an audible chuckle, putting the weight on 'this', because they are teasingly reminding the other speaker that Buster was their personal choice.",
-      "Wry and amused, putting the weight on 'You' with a rising pitch, because they are playfully pinning the blame on their partner as the dog misbehaves.",
-      "Teasing and rhythmic, putting the weight on 'picked' with a drawn-out vowel, because they are poking fun at the idea that this was an intentional, careful selection.",
-      "Warm and skeptical, putting the weight on 'litter' with a trailing lilt, because they are jokingly wondering what the rest of the puppies could have possibly been like.",
-      "Dry and deadpan, putting the weight on 'dog' with a quiet chuckle, because they are comically questioning whether this goofy creature really counts as an actual dog."
+      "Resigned and weary, trailing off, weight on 'litter' -- they accept nothing can be done.",
+      "Amused and wry, chuckling, weight on 'picked' -- they are teasingly blaming the other person.",
+      "Defensive and loud, voice rising, weight on 'dog' -- they are rejecting an unfair criticism.",
+      "Perplexed and slow, pitch dropping, weight on 'this' -- they are baffled by the decision.",
+      "Bitter and sharp, snaps, weight on 'you' -- they are angry at the bad choice."
     ]
   },
   {
@@ -286,11 +286,11 @@
     "target_text": "No, everything gets to be on me because I'm going to make a lot more money now.",
     "target_speaker": "A",
     "options": [
-      "Gracious and expansive, weight on 'everything', because they are claiming the whole bill as their personal treat after landing a lucrative new job.",
-      "Bright and teasing, weight on 'more', because they are happily flaunting their upgraded financial status to convince their companion to let them pay.",
-      "Bubbly and celebratory, weight on 'me', because they are joyfully overriding the friend's generous offer to treat using their exciting new pay raise.",
-      "Firm and affectionately stubborn, weight on 'No', because they are immediately brushing aside their friend's polite protest before eagerly claiming the bill.",
-      "Playful and grandiose, weight on 'lot', because they are dramatically overstating their bump in pay to justify treating their friend to dinner."
+      "Playful and bright, laughing at the end, weight on 'me' -- they are happily insisting.",
+      "Warm and firm, slowing right down, weight on 'everything' -- they are brushing off an objection.",
+      "Teasing and cocky, drawing out words, weight on 'lot' -- they are playfully bragging.",
+      "Gentle and reassuring, dropping their volume, weight on 'now' -- they are putting concerns to rest.",
+      "Breezy and offhand, rushing through words, weight on 'money' -- they treat it as completely settled."
     ]
   },
   {
@@ -319,11 +319,11 @@
     "target_text": "How about instead of buying a single vacation home in France, we just, we get timeshares and we go, we go to Germany, we go to Munich, we go, we go to Malta.",
     "target_speaker": "A",
     "options": [
-      "Eager and breathy, pace accelerating through the list with bouncing upward inflections on 'timeshares' and each country, because the sudden realization of endless travel makes France feel unnecessarily limiting.",
-      "Playful and persuasive, leaning weight into 'timeshares' with an exaggerated rising pitch, because they are half-jokingly pitching a chaotic variety tour to break their partner's rigid focus on settling down.",
-      "Casual and improvisational, stumbling slightly on 'just' before putting easy weight on 'Germany', because they are tossing out random destinations off the cuff rather than presenting a well-considered plan.",
-      "Warm and coaxing, slowing on 'vacation home' with gentle weight on 'Munich', because they know their partner loves Bavaria and want to make the timeshare compromise sound personally enticing.",
-      "Wry and self-amused, dropping pitch on 'timeshares' while putting dry weight on 'Malta', because they find the absurd contrast between an upscale French villa and timeshare hopping genuinely hilarious."
+      "Breathless and rapid, rushing forward, weight on 'timeshares' -- they are excited by a new possibility.",
+      "Hesitant and searching, pausing between repeats, weight on 'just' -- they are testing the waters.",
+      "Dry and mocking, rattling off items, weight on 'single' -- they are ridiculing an earlier suggestion.",
+      "Playful and loose, tumbling over words, weight on 'Malta' -- they are improvising as they go.",
+      "Coaxing and persuasive, leaning in, weight on 'instead' -- they are gently floating a compromise."
     ]
   },
   {
@@ -392,11 +392,11 @@
     "target_text": "And then he just really wanted to stand next to Lady Macduff the whole time.",
     "target_speaker": "B",
     "options": [
-      "Dry and deadpan, steady measured pace with weight on 'whole', because treating the ridiculous staging choice as completely routine makes the absurdity of his persistence much funnier.",
-      "Bemused and baffled, slowing down with an upward lilt and weight on 'really', because the boy's bizarre fixation made no narrative sense given how the scene was blocked.",
-      "Playfully incredulous, quickening through the middle with weight on 'just', because abandoning his assigned mark to shadow a random character was such a comically brazen choice.",
-      "Breathy and bubbling with laughter, pausing mid-sentence before 'next', weight on 'Lady Macduff', because the visual absurdity of his stage clinginess is too funny to deliver with a straight face.",
-      "Wry and mock-weary, exhaling in amused disbelief with weight on 'stand', because watching someone stubbornly refuse to move away from another actor was hopelessly disruptive to the rehearsal."
+      "Dry and ironic, dropping low, weight on 'stand' -- they are underscoring the ridiculous behavior.",
+      "Playful and conspiratorial, voice dropping, weight on 'wanted' -- they are sharing a secret motive.",
+      "Warm and fond, smiling through it, weight on 'just' -- they are remembering something endearing.",
+      "Mildly exasperated, speeding up, weight on 'whole' -- they are recounting someone being difficult.",
+      "Amused and breathless, laughing through the words, weight on 'really' -- they find the detail hilarious."
     ]
   },
   {
@@ -421,11 +421,11 @@
     "target_text": "Oh boy, there will be a lot of humidity.",
     "target_speaker": "B",
     "options": [
-      "Weary and resigned with a heavy sigh on 'Oh boy' and dragged-out weight on 'humidity', because they just checked the weekend forecast and dread running outdoors in stifling air.",
-      "Light and upbeat with an amused chuckle on 'Oh boy' and strong emphasis on 'lot', because they are playing up the forecast's muggy reality with cheerful broadcast showmanship.",
-      "Dry and deadpan with a flat pitch on 'boy' and sardonic weight on 'lot', because they are casually remarking on the notoriously sticky summer weather they both have to endure.",
-      "Mildly grumbling with an irritated drop on 'Oh boy' and sharp stress on 'will', because a look outside confirms their fear that the swampy heat has already settled in.",
-      "Cautioning and sympathetic with a soft rise on 'boy' and gentle emphasis on 'humidity', because their friend is packing heavy layers for a summer trip down to the coast."
+      "Groaning and drawn-out, weight on 'boy' -- dreading what is about to happen.",
+      "Flat and brisk, dropping low, weight on 'humidity' -- stating an obvious fact.",
+      "High and alarmed, rushing ahead, weight on 'lot' -- panicking about a bad situation.",
+      "Dry and deadpan, monotone throughout, weight on 'will' -- answering without any emotion.",
+      "Amused with a chuckle, weight on 'lot' -- playfully confirming their suspicion."
     ]
   },
   {
@@ -462,11 +462,11 @@
     "target_text": "Wow. Strong, strong. Best place you've ever been. That's strong words to endorse the city.",
     "target_speaker": "A",
     "options": [
-      "Brisk and theatrical with a wide pitch arc, weight on \"ever\", because he is playfully challenging her claim that nowhere else in the country could compare.",
-      "Dry and deliberate, flat pitch with heavy weight on \"strong\", because he suspects she is romanticizing a vacation destination that he remembers as chaotic and seedy.",
-      "Loud and punchy, rising sharply with weight on \"endorse\", because he shares her enthusiasm and wants to validate her high opinion of New Orleans right away.",
-      "Slow and meditative, trailing downward with weight on \"city\", because he is mentally comparing New Orleans to other places he might recommend to his traveling buddy.",
-      "Amused and chuckling with an aborted start, weight on \"best\", because her sweeping praise of the city caught him off guard and sounds delightfully over the top."
+      "Impressed and respectful, nodding along, weight on 'best' -- they are taking the compliment seriously.",
+      "Dry and deadpan, flat delivery, weight on 'ever' -- they are mocking the huge exaggeration.",
+      "Thoughtful and deliberate, slow pace, weight on 'endorse' -- they are weighing up the big claim.",
+      "Amused and playful, chuckling, weight on 'strong' -- they are teasing the bold claim.",
+      "Skeptical and wry, slight smirk, weight on 'words' -- they are questioning the high praise."
     ]
   }
 ]

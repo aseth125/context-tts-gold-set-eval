@@ -49,11 +49,11 @@
     "target_text": "Oh, you think I'm impaired. Okay.",
     "target_speaker": "A",
     "options": [
-      "Loud and furious, slamming all the volume into 'Oh' before trailing off, because they are outraged at having the blame shifted onto them after being rear-ended.",
-      "Sharp and sarcastic, pitch spiking high on 'impaired' before a dry scoffing drop, because they find the accusation absurd and are mockingly noting it down against the driver.",
-      "Deadpan and deliberately flat, weight heavily on 'Okay', because they are refusing to validate the ridiculous accusation and want to shut down any further debate instantly.",
-      "Hesitant and bewildered, dropping pitch softly on 'impaired', because they are caught completely off guard by the suggestion that their own driving ability was at fault.",
-      "Quiet and menacing, drawing out 'think' with a low growl, because they are warning the other driver that questioning their mental state will escalate the confrontation further."
+      "Deadpan and cold, voice dropping flat, weight on 'okay' -- they are quietly accepting the challenge.",
+      "Quiet and hurt, voice trailing off, weight on 'I'm' -- they feel genuinely insulted.",
+      "Sharp and aggressive, shouting loudly, weight on 'you' -- they are turning the blame around.",
+      "Slow and mocking, drawling each word, weight on 'think' -- they are savoring the insult.",
+      "High and incredulous, rising fast, weight on 'impaired' -- they find the accusation ridiculous."
     ]
   },
   {
@@ -106,11 +106,11 @@
     "target_text": "Gotcha. So Jason and you ordered the lasagna. Wait, actually, no, I see a third lasagna here. Did someone else order lasagna?",
     "target_speaker": "A",
     "options": [
-      "Relaxed and inquiring, putting a bright lift on 'else', because Jason and the listener are already accounted for and another friend must have chosen the same meal.",
-      "Even-paced and conversational, pausing slightly before stressing 'third' with sudden realization, because the bill suddenly contradicts the two-person assumption they had just agreed on.",
-      "Abrupt and alert, hitting 'Wait' with a sharp intake of breath, because catching sight of the extra line item derails the simple headcount they had just begun verifying.",
-      "Deliberate and reflective, leaning into 'actually' with a slight pause, because the printed receipt in front of them immediately disproves the two-order consensus they were wrapping up.",
-      "Skeptical and tentative, landing the main stress on 'order', because they suspect the extra dish might be an unrequested kitchen mistake rather than someone's deliberate addition to the bill."
+      "Relaxed then amused, weight on 'else' -- expecting another person to claim it.",
+      "Confident then hesitant, weight on 'actually' -- correcting their own mistake out loud.",
+      "Brisk then skeptical, weight on 'no' -- stopping short after spotting an error.",
+      "Friendly then inquiring, weight on 'someone' -- inviting the rest of the group to respond.",
+      "Calm then puzzled, weight on 'third' -- realizing the count does not match."
     ]
   },
   {
@@ -143,11 +143,11 @@
     "target_text": "I don't think I've seen that many clothes fall down.",
     "target_speaker": "B",
     "options": [
-      "Brisk and briskly falling in pitch, clipping words short without hesitation, weight on 'down', because they are eager to brush past the slapstick and discuss the candidate's actual qualifications.",
-      "Soft and sympathetic, hesitant pace with descending pitch, weight on 'fall', because they feel an empathetic pang of embarrassment for the candidate despite finding the story inherently funny.",
-      "Pondering and subdued, slow tempo with a slight upward tilt, weight on 'clothes', because they are genuinely trying to recall if any past incident ever produced a comparable mess.",
-      "Breathless and wheezy, pitch climbing as giggles interrupt the line, weight on 'that many', because they are picturing the absurd avalanche and can barely speak through laughter.",
-      "Dry and deadpan, flat volume and unhurried pace, weight on 'seen', because they want an understated reaction to contrast against the other speaker's wild, energetic storytelling."
+      "Deadpan and dry, voice flat, weight on 'seen' -- they are playing it down as ordinary.",
+      "Breathless and chuckling, breaking into laughter, weight on 'clothes' -- they are still cracking up.",
+      "Baffled and stunned, voice rising, weight on 'that' -- they cannot believe the sheer scale.",
+      "Teasing and lively, bouncy delivery, weight on 'fall' -- they are playfully mocking what happened.",
+      "Quiet and reflective, trailing off, weight on 'down' -- they are picturing it in disbelief."
     ]
   },
   {
@@ -196,11 +196,11 @@
     "target_text": "Whose decision was it to put on Con Air Kindergarten Edition?",
     "target_speaker": "B",
     "options": [
-      "Shrill and exasperated, sharp quick tempo with rising pitch, weight landing on 'put on', because they find the whole thing totally scandalous and cannot understand how parents allowed it.",
-      "Hushed and conspiratorial, slowing down toward the end, weight placed on 'Kindergarten', because they are underscoring the comical mismatch between a gritty action film and five-year-old performers.",
-      "Deadpan and dry, low flat pitch with steady pacing, weight falling on 'Whose', because they are humorously treating the baffling choice of production like an administrative blunder needing an investigation.",
-      "Skeptical and blunt, loud volume with an incredulous upward sweep, weight on 'Con Air', because they are fixated purely on the violent movie selection rather than who decided to stage it.",
-      "Chuckling and amused, bouncy pace with laughter bubbling through, weight landing on 'decision', because they are marveling at the sheer absurdity of any adult approving such an unhinged school play."
+      "Stern and irritated, clipping words, weight on 'put' -- expressing annoyance at an irresponsible choice.",
+      "Dry and deadpan, dropping pitch, weight on 'Whose' -- pretending to seriously investigate who is to blame.",
+      "Chuckling and amused, bubbling with laughter, weight on 'decision' -- laughing together at the shared absurdity.",
+      "Incredulous and sharp, pitch rising, weight on 'was' -- expressing genuine disbelief at what was allowed.",
+      "Mock-serious, slowing down at the end, weight on 'Edition' -- delivering it dryly like an official title."
     ]
   },
   {
@@ -229,11 +229,11 @@
     "target_text": "Ooh, the best thing to get at Gates is probably a Kansas City, Missouri specialty, burnt ends. Do you know what a burnt end is?",
     "target_speaker": "A",
     "options": [
-      "Warm and lilting, with a slight hesitation before landing firmly on 'burnt ends', because introducing the signature dish is the culmination of the recommendation.",
-      "Bright and enthusiastic, surging with volume on 'best', because they are eager to steer a first-timer straight to the restaurant's finest offering.",
-      "Playful and inviting, rising in pitch on 'know', because they want to gauge whether the listener needs a quick introduction before describing the meat.",
-      "Engaged and upbeat, hitting 'Gates' with emphasis, because they are contrasting this specific menu with other barbecue spots already mentioned in the conversation.",
-      "Proud and lively, emphasizing 'Kansas City' with fond local pride, because they are framing the order as an authentic regional tradition rather than just lunch."
+      "Playful and teasing, questioning lift, weight on 'know' -- they expect the listener to be stumped.",
+      "Thoughtful and deliberate, gradual drop, weight on 'probably' -- they are weighing several good options.",
+      "Bright and lively, melodic rise, weight on 'burnt' -- they are eager to recommend something.",
+      "Warm and earnest, steady lilt, weight on 'best' -- they want to share their favorite pick.",
+      "Curious and open, buoyant finish, weight on 'is' -- they are checking if this sounds familiar."
     ]
   },
   {
@@ -294,11 +294,11 @@
     "target_text": "Tell me your worst.",
     "target_speaker": "A",
     "options": [
-      "Hesitant and apologetic, lingering on 'me' with a nervous dip, because asking someone to relive a serious injury feels slightly invasive.",
-      "Quiet and conspiratorial, hushed tone with the emphasis settling softly on 'worst', because they are eagerly inviting an intimate, gruesome riding story.",
-      "Rapid and teasing, rising sharply on 'worst' like an interrogation, because they suspect the other person is exaggerating how many times they fell.",
-      "Brisk and dry, stressing 'your' with a flat cadence, because they expect dressage spills to be far tamer than jumping falls.",
-      "Loud and dramatic, hitting 'Tell' with a wide theatrical grin, because they want to build suspense before hearing a crazy riding accident story."
+      "Dry and skeptical, flat tone, weight on 'worst' -- doubting it was really that bad.",
+      "Bright and loud, pitch rising fast, weight on 'worst' -- excited to hear the story.",
+      "Hushed and low, dropping to a murmur, weight on 'worst' -- eager for the drama.",
+      "Teasing and drawn out, voice playful, weight on 'tell' -- nudging them for a confession.",
+      "Breezy and light, clipped delivery, weight on 'your' -- casually keeping the conversation moving along."
     ]
   },
   {
@@ -367,11 +367,11 @@
     "target_text": "Ugh, I mean, it's not my fault that you left three-day chicken water, but I guess... Ugh, if you're really that sick, but... Ugh.",
     "target_speaker": "B",
     "options": [
-      "Grudging and resigned, heavy exhales between pauses, stress landing on \"you\", because she feels unfairly burdened when the other person caused the disgusting situation in the first place.",
-      "Sickened and wavering, muttered under breath with stress landing on \"chicken\", because the repulsive detail of the spoiled food keeps cutting through her effort to show sympathy.",
-      "Groaned and reluctant, punctuated with disgusted sighs, stress landing on \"my\", because she resents being pressured into cleaning up an appalling mess that wasn't hers to begin with.",
-      "Defeated and hesitant, voice softening to an exasperated whisper, stress landing on \"really\", because she is trying to verify whether the illness justifies taking on such a foul chore.",
-      "Weary and yielding, trailing off into drawn-out pauses, stress landing on \"guess\", because her resistance collapses as she reluctantly concedes she cannot leave a sick person to deal with it."
+      "Repulsed and defensive, snapping between phrases, weight on 'fault' -- making them feel guilty.",
+      "Skeptical and grossed out, scoffing on pauses, weight on 'really' -- doubting their excuse.",
+      "Nauseated and irritated, shuddering between phrases, weight on 'left' -- blaming them for it.",
+      "Grudging and weary, trailing off each time, weight on 'guess' -- reluctantly backing down.",
+      "Disgusted and reluctant, groaning between pauses, weight on 'my' -- giving in against their will."
     ]
   },
   {
@@ -412,11 +412,11 @@
     "target_text": "Yeah, they definitely connect because we did not eat mac and cheese.",
     "target_speaker": "B",
     "options": [
-      "Nauseated and strained, groaning with disgust while punching 'definitely' and 'not', because the foreign food in their sink provides sickening, undeniable proof of the shared plumbing.",
-      "Dry and deadpan, keeping the pace even with heavy stress on 'connect', because they are treating the apartment management's repeated denials as obviously ridiculous.",
-      "Grimly resigned and quiet, letting the voice drop flatly on 'did not', because they are exhausted by the ongoing pipe dispute and dreaded this inevitable outcome.",
-      "Sardonic and amused, chuckling through 'definitely' with a rising cadence on 'cheese', because the absurdity of identifying the neighbors' specific dinner makes them laugh despite the mess.",
-      "Brisk and exasperated, raising pitch sharply on 'mac and cheese', because they want to cut through the confusion immediately by presenting obvious forensic evidence."
+      "Weary and flat, trailing off, weight on 'connect' -- they are tired of the debate.",
+      "Smug and brisk, voice brightening, weight on 'eat' -- they have proved their point.",
+      "Dry and sarcastic, deadpan drop, weight on 'definitely' -- they are mocking an obvious lie.",
+      "Indignant and sharp, rising pitch, weight on 'we' -- they resent being blamed for it.",
+      "Gagging and strained, voice groaning, weight on 'not' -- they are physically revolted while agreeing."
     ]
   },
   {
@@ -457,11 +457,11 @@
     "target_text": "Yeah, okay. Just try to air out the house, I guess.",
     "target_speaker": "A",
     "options": [
-      "Dismissive and distracted, trailing off with flat pitch and weight on 'okay', because they are preoccupied with their own work and simply granting perfunctory agreement to end the call.",
-      "Light and wryly amused, chuckling under their breath with a playful lift on 'guess', because someone's cooking mishap is funny and airing things out is the only sensible advice.",
-      "Reluctant and conceding, letting out a deflated exhale with weight on 'try', because their partner's idea feels inadequate against the burnt smell, but they have no better alternative.",
-      "Weary and low, pausing for a heavy defeated breath with weight on 'air', because the sheer disgustingness has drained them and practical ventilation is their only immediate recourse.",
-      "Breezy and offhand, keeping the pace brisk with light emphasis on 'house', because the smoky kitchen seems like a minor nuisance that will clear up before they arrive home."
+      "Snappish and sharp, voice rising, weight on 'try' -- they are frustrated by the situation.",
+      "Casual and airy, slight chuckle, weight on 'guess' -- they are trying to shrug it off.",
+      "Brisk and efficient, quick pace, weight on 'house' -- they are dividing up the tasks.",
+      "Weary and breathless, sighing heavily, weight on 'air' -- they are overwhelmed and resigned.",
+      "Timid and hesitant, trailing off, weight on 'okay' -- they are unsure what else to suggest."
     ]
   },
   {
@@ -526,11 +526,11 @@
     "target_text": "I don't know, I'm starving, and they're like, they're pretty salty. Oh, okay, yeah, no, I can't do it.",
     "target_speaker": "B",
     "options": [
-      "Lighthearted and wry, building tempo before collapsing into self-mocking laughter with bright emphasis landing on 'no', because tasting the overwhelming brine instantly shatters their initial optimism about powering through.",
-      "Weary and deadpan, speaking softly before letting out a flat, defeated exhale with dull weight landing on 'do', because the reality of the terrible seasoning completely overrides their desperate appetite.",
-      "Whiny and petulant, groaning the opening with loud emphasis landing on 'starving' before trailing into disgusted quiet, because having to abandon the foul food feels unbearable given how hungry they already are.",
-      "Hesitant and chewing at first, breaking into a disgusted groan with heavy weight falling on 'can't', because they attempt to brave the terrible food before finally admitting defeat.",
-      "Frustrated and impulsive, rushing through the setup before snapping into an exasperated bark with harsh weight falling on 'yeah', because the disgusting aftertaste suddenly catches them off guard and breaks their concentration."
+      "Amused, trailing into a laugh, weight on 'no' -- they find their sudden reversal funny.",
+      "Resigned, fading into a sigh, weight on 'salty' -- they realize they have to give up.",
+      "Blunt, speeding up at the end, weight on 'starving' -- they cut short their own excuse.",
+      "Hesitant, breaking into a groan, weight on 'can't' -- they try to push through and fail.",
+      "Sheepish, softening to a whisper, weight on 'do' -- they feel bad about backing down."
     ]
   }
 ]

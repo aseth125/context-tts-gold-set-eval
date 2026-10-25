@@ -53,11 +53,11 @@
     "target_text": "He is making it angry, but I'm having a good time.",
     "target_speaker": "B",
     "options": [
-      "Dry and understated, dropping pitch on the second clause with weight on 'good', because the brewing trouble is obvious and their own selfish pleasure is the only real revelation.",
-      "Bright and lively, lifting pitch playfully with weight on 'angry', because they are acknowledging an observer's warning while making light of whatever danger might follow.",
-      "Amused and breathy, chuckling mid-sentence with weight on 'is' and 'I'm', because they agree with the assessment while unapologetically enjoying the ridiculous spectacle.",
-      "Breezy and nonchalant, speeding up toward the end with weight on 'time', because the companion's recklessness is old news and their own enjoyment is all that matters.",
-      "Smirking and theatrical, drawing out the contrast with weight on 'he', because they are deflecting blame onto their friend while cheerfully refusing to step in and stop him."
+      "Quiet and flat, weight on 'angry' -- they are stating the obvious without much emotion.",
+      "Amused and chuckling, weight on 'is' -- they are agreeing and enjoying what is happening.",
+      "Bright with a rise, weight on 'I'm' -- they are contrasting their mood with the situation.",
+      "Sharp and sarcastic, weight on 'good' -- they are mocking how badly things are going.",
+      "Tense and rushed, weight on 'making' -- they worry things are getting out of hand."
     ]
   },
   {
@@ -106,11 +106,11 @@
     "target_text": "But we tried that and it didn't work.",
     "target_speaker": "A",
     "options": [
-      "Tired and dismissive with a weary exhale, weight on 'that', because the speaker wants to cut off a suggestion they have already tested and rejected.",
-      "Defensive and brisk with a rising inflection, weight on 'we', because they feel unfairly accused of doing nothing when they personally made the effort.",
-      "Soft and breathy with a rueful chuckle, weight on 'tried', because they are gently reminding him that an unmediated attempt has already been made and failed.",
-      "Blunt and emphatic with a clipped cadence, weight on 'didn't', because they are directly countering the assumption that the earlier attempt had shown promise.",
-      "Resigned and quiet with a small shrug, weight on 'work', because the failure is an undeniable reality that no amount of optimism can overturn."
+      "Firm and emphatic, weight on 'work' -- shutting down any further debate.",
+      "Tense and biting, weight on 'we' -- reminding them of their shared past.",
+      "Flat and defeated, trailing off at the end -- they have given up arguing.",
+      "Sharp and defensive, weight on 'that' -- they are annoyed at being blamed.",
+      "Soft with a faint chuckle, weight on 'tried' -- stating a painful, obvious truth."
     ]
   },
   {
@@ -135,11 +135,11 @@
     "target_text": "Weed a book.",
     "target_speaker": "A",
     "options": [
-      "Squeaky and rapid, rising steeply at the end with weight on \"a\", because they are stumbling over the phrasing while trying to improvise an instruction.",
-      "Hushed and conspiratorial, whispering quickly with weight on \"weed\", because they are letting the listener in on Rodney’s secret plan to trick the bully.",
-      "Gruff and commanding, booming loudly with heavy weight on \"book\", because they are mimicking how a strict teacher demands absolute silence in the classroom.",
-      "Slow and deliberate, monotonic and deadpan with weight on \"book\", because they are treating the command as an utterly mundane and boring task.",
-      "High-pitched and childlike, bright and clear with weight on \"weed\", because they are voicing the small rodent character delivering his mispronounced command."
+      "Flat and dry, steady pace, weight on 'a' -- reciting an instruction without enthusiasm.",
+      "Bright and high-pitched, jaunty bounce, weight on 'book' -- issuing a playful command.",
+      "Shy and timid, rising pitch, weight on 'book' -- nervously trying to speak up.",
+      "Mocking and sneering, exaggerated drawl, weight on 'Weed' -- making fun of someone.",
+      "Gruff and commanding, falling tone, weight on 'Weed' -- aggressively bossing someone around."
     ]
   },
   {
@@ -172,11 +172,11 @@
     "target_text": "What's a burnt end?",
     "target_speaker": "B",
     "options": [
-      "Bright and curious, brisk pace with an open rise, weight on 'end', because they treat the phrase as a single unfamiliar dish and want it defined.",
-      "Casual and offhand, flat mid pitch at a conversational speed, weight on 'What's', because the general subject is already clear and they are simply prompting for details.",
-      "Dry and amused, slightly slower tempo with an arched pitch, weight on 'burnt', because labeling food with an apparent culinary flaw strikes them as funny.",
-      "Quiet and gentle, unhurried pace with falling pitch, weight on 'burnt', because they genuinely have never heard the term and want an explanation.",
-      "Direct and businesslike, crisp articulation with a sharp upward step, weight on 'end', because they assume it refers to a specific cut of meat they cannot picture."
+      "Eager and bright, pitch jumps, weight on 'What's' -- they are excited to find out.",
+      "Amused and teasing, lilting tone, weight on 'end' -- they think it sounds like a joke.",
+      "Skeptical and dry, dropping pitch, weight on 'burnt' -- the term sounds unappealing to them.",
+      "Baffled and slow, flat tone, weight on 'end' -- they find the phrasing strange.",
+      "Curious and mild, rising pitch, weight on 'burnt' -- they genuinely want clarification."
     ]
   },
   {
@@ -229,11 +229,11 @@
     "target_text": "You picked this dog out of the litter.",
     "target_speaker": "A",
     "options": [
-      "Warm and wry with an amused puff of laughter, putting weight on \"this\", because they are jokingly blaming their companion's choice of pet for Buster's disgusting taste.",
-      "Feigning mild annoyance with a sharp chuckle, hitting \"You\" with an emphatic rise, because their partner is whining about the dog's behavior despite having been the one who chose him.",
-      "Crisp and matter-of-fact, putting firm weight on \"picked\" with an assertive drop, because their partner is acting like the adoption just happened to them rather than being an intentional choice.",
-      "Incredulous and dry, stretching out \"litter\" with an amused breath, because given a box full of perfectly sweet options, their partner somehow managed to zero in on this total lunatic.",
-      "Smirking and deadpan, dropping low to land weight on \"dog\" with a dry snort, because looking at the tiny, yapping terror right now, it barely even qualifies as one."
+      "Dryly with a wry smirk, weight on 'this' -- they are mocking the choice.",
+      "Teasing with a chuckle, weight on 'you' -- they are playfully shifting the blame.",
+      "Warmly with a gentle smile, weight on 'picked' -- they are affirming a deliberate choice.",
+      "Incredulous with a baffled laugh, weight on 'litter' -- they are noting all the missed alternatives.",
+      "Bluntly with a cold stare, weight on 'you' -- they are firmly assigning sole responsibility."
     ]
   },
   {
@@ -266,11 +266,11 @@
     "target_text": "No, everything gets to be on me because I'm going to make a lot more money now.",
     "target_speaker": "A",
     "options": [
-      "Warm and buoyant, rising in pitch on 'gets' with an affectionate chuckle, because covering the bill is an exciting novelty rather than an obligation.",
-      "Feigned-haughty and teasing, dragging out 'lot' with an amused smirk, because they are playfully flaunting their raise while overriding their friend's attempt to pay.",
-      "Brisk and triumphant, leaning heavily into 'everything' with an assertive grin, because they want to immediately shut down any split check before it starts.",
-      "Breathless and bright, pitching high with a giddy laugh on 'money', because they are thrilled to finally be able to treat their friend with their higher income.",
-      "Gentle and reassuring, dropping low on 'me' with an open smile, because they want to dismiss their friend's reluctance and insist on taking care of them."
+      "Warm and gentle, slowing down, weight on 'everything' -- softening an insistence to pay.",
+      "Teasing and smug, rising tone, weight on 'money' -- playfully showing off their upgrade.",
+      "Excited and breathless, laughing through, weight on 'me' -- celebrating their good fortune.",
+      "Quiet and modest, dropping pitch, weight on 'now' -- downplaying their recent good luck.",
+      "Firm and assertive, deliberate pace, weight on 'No' -- refusing to let the other pay."
     ]
   },
   {
@@ -351,11 +351,11 @@
     "target_text": "I know. Wait, it's starting.",
     "target_speaker": "A",
     "options": [
-      "Warm and conversational on 'I know', then cutting off with a sharp, rising gasp on 'Wait', because a sudden flash on screen pulls their focus right out of the conversation.",
-      "Tossing off a brisk, dismissive 'I know' before leaning forward with hushed, urgent weight on 'it's', because they realize the opening sequence has quietly begun playing without any warning.",
-      "Laughing through 'I know', then dropping into a breathless, hushed murmur with the stress on 'starting', because the sudden change on screen immediately interrupts their shared excitement.",
-      "Sighing in relaxed agreement on 'I know', then jerking upright with a loud, surprised lift on 'starting', because the sudden intro music catches them completely off guard mid-sentence.",
-      "Teasing and lighthearted on 'I know', shifting instantly to a conspiratorial whisper that punches 'Wait', because they want to shush their friend just as the opening scene rolls."
+      "Weary then tense, weight dragging on 'know' -- they are dreading what comes next.",
+      "Dismissive then hurried, weight snapping on 'Wait' -- they cut the other person off.",
+      "Panicked and breathless, weight landing on 'starting' -- they are caught totally unprepared.",
+      "Chuckling then hushed, weight falling on 'Wait' -- they suddenly spot something happening.",
+      "Bored then eager, weight jumping onto 'starting' -- they suddenly care about what happens."
     ]
   },
   {
@@ -396,11 +396,11 @@
     "target_text": "Ah, they're pretty, they're relatively thick.",
     "target_speaker": "B",
     "options": [
-      "Crisp and corrective, clipping the stumble short to place sharp weight on \"relatively\", because they want to walk back an exaggerated estimate before the other person takes it literally.",
-      "Hesitant and faltering at first, pausing before landing with measured weight on \"thick\", because they are visualizing the burger from memory to answer her specific cut preference.",
-      "Warm and reassuring, smoothing over the false start to land with gentle weight on \"thick\", because they want to ease the listener's doubt about whether the cut will be substantial enough.",
-      "Careful and hedging, tapering in volume to drop a soft, deliberate weight on \"relatively\", because they are wary of overcommitting to someone with exacting personal standards.",
-      "Abrupt and self-checking, hitting an emphatic pitch peak on \"pretty\" before immediately breaking off, because they catch themselves overstating the case mid-sentence and need to downgrade the claim."
+      "Hesitant and slow, slight stumble, weight on 'thick' -- they are picturing it from memory.",
+      "Warm and admiring, lingering pause, weight on 'pretty' -- they are genuinely pleased by the appearance.",
+      "Casual and brisk, quick correction, weight on 'relatively' -- they are refining a hasty estimate.",
+      "Mildly defensive, sharp recovery, weight on 'relatively' -- they are backing down from an exaggeration.",
+      "Thoughtful and measured, soft taper, weight on 'thick' -- they are carefully reconsidering an objection."
     ]
   },
   {
@@ -469,11 +469,11 @@
     "target_text": "That's right. You know it.",
     "target_speaker": "A",
     "options": [
-      "Quiet and breezy, falling pitch, dropping the weight casually onto 'that's', because they are lightly humoring the comment while letting the joke naturally wrap up.",
-      "Smug and drawled, slow pace, stretching the weight onto 'know', because they are playfully affecting the cool confidence of someone who actually outsmarts state troopers.",
-      "Dry and deadpan, flat pitch, weight falling hard on 'right', because they want to treat the absurd claim about dodging tickets as an established, matter-of-fact truth.",
-      "Brimming with hearty laughter, loud and upbeat, weight bouncing between 'right' and 'know', because they are delighted by the banter and eagerly playing along with the fantasy.",
-      "Loud and boastful, pitch climbing steeply with heavy weight on 'it', because they want to energetically brag about receiving preferential treatment from the highway patrol."
+      "Warm and casual, falling intonation, weight on 'That's' -- they are simply confirming what was said.",
+      "Sharp and impatient, clipped pace, weight on 'it' -- they are dismissing the conversation.",
+      "Smug and dry, dropping at the end, weight on 'know' -- they are asserting superiority.",
+      "Laughing and playful, chuckling through words, weight on 'right' -- they are sharing an inside joke.",
+      "Sarcastic and drawled, rising tone, weight on 'right' -- they are mocking the other person's guess."
     ]
   }
 ]
