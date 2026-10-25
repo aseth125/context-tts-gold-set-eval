@@ -5,59 +5,394 @@
     "context": [
       {
         "speaker": "A",
-        "text": "Hey, yo, what's your fucking problem?"
+        "text": "That was off the charts."
       },
       {
         "speaker": "B",
-        "text": "my problem apparently is you because you'd be just slamming on your brakes out of nowhere without any warning and"
+        "text": "That was crazy. I've never seen anything like it."
       },
       {
         "speaker": "A",
-        "text": "Oh, I'm slamming on my brakes. At least I have eyes. What did you have? Do you have like sunglasses on that are tinted 50 hundred million percent? What's your fucking deal, dude? You hit the back of my car."
+        "text": "I mean, first off, to turn an elementary school stage into the interior of an airplane, like, that was just the sheer ambition of that. And the way they created those little windows, oh my goodness."
       },
       {
         "speaker": "B",
-        "text": "Yeah, well, my sunglasses don't, uh, correct for the fact that you were driving, like, like, 20 miles an hour in the 30-mile zone, so..."
+        "text": "Ambition is a word for it."
       },
       {
         "speaker": "A",
-        "text": "Oh, so you sped up into me. Is that the story? Is that the story?"
+        "text": "And then they took that set off, and then they replicated the airfield, and they had those explosions. It was like, remember those little orange curtains? They reenacted the explosions."
       },
       {
         "speaker": "B",
-        "text": "If you would drive like a reasonable person, then maybe I wouldn't have to be on your ass trying to nudge you to speed up so I can get where I'm going because other people, not everyone in the world runs on your schedule, asshole. Sometimes people need to get to work."
+        "text": "It was the way the kids grabbed the curtains and just tried to throw them up, but they couldn't do it."
       },
       {
         "speaker": "A",
-        "text": "Well, maybe, maybe..."
+        "text": "I just can't. Oh, and then the kid, the kid who played Danny Trejo's character. You know, I mean, obviously they, you know, they couldn't, you know, they couldn't get into the fact that he was a rapist because it's, you know, children. But but the way the way they. Oh, my God. The way he played that. Oh, my God. Oh, my God."
+      },
+      {
+        "speaker": "B",
+        "text": "I thought that kid studied hard, I can tell you that."
       },
       {
         "speaker": "A",
-        "text": "Maybe you like the smell of my ass because you were just up there. Just like your nose was in the exhaust pipe of my fucking car, dude. I was going the speed limit and you just ran right into me. It's not like I'm trying to get like $5,000 in damage to my rear bumper. That's not my fucking priority. My fucking priority is getting to work on time and making the money so I can live, which you are currently a boulder in the way of my life."
-      },
-      {
-        "speaker": "B",
-        "text": "Hey, look."
-      },
-      {
-        "speaker": "B",
-        "text": "Maybe your first priority should be call AAA and get your speedometer fixed because you clearly are impaired if you think you were going the speed limit."
+        "text": "The way they modified the dialogue. They call me Johnny 23. I got 23 apples on my arm for the 23 candy bars I stole. Someday these kids, they're going to be old enough to watch the movie and then they're going to put it together what they were parodying and they're going to be like, whoa."
       }
     ],
-    "context_clip": "01e251917314.opus",
-    "target_clip": "32c73fe157e9.opus",
-    "target_text": "Oh, you think I'm impaired. Okay.",
-    "target_speaker": "A",
+    "context_clip": "8df942a811a9.opus",
+    "target_clip": "42a891dfa9e7.opus",
+    "target_text": "Whose decision was it to put on Con Air Kindergarten Edition?",
+    "target_speaker": "B",
     "options": [
-      "Tired and giving up",
-      "Calm and polite",
-      "Furious and aggressive",
-      "Sarcastic, laughing a bit",
-      "Offended and defensive"
+      "Amused and laughing",
+      "Baffled and taken aback",
+      "Tired and exasperated",
+      "Sarcastic and mocking",
+      "Irritated and impatient"
     ]
   },
   {
     "trial_id": "vem002",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh my god, Sarah, back up, back up, back up."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh."
+      },
+      {
+        "speaker": "A",
+        "text": "oh lord have mercy on my soul she just uh she just threw a uh out a bedpan uh we almost got covered in the the bedpan contents there's there's there's actual there's actual feces in there"
+      },
+      {
+        "speaker": "B",
+        "text": "Uh..."
+      },
+      {
+        "speaker": "A",
+        "text": "And it's, uh, it's liquid. It's liquidy."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, Jess, I'm so sorry to tell you, but it's all down your back."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god. Ew. Ew. Ew. Ew. It's in your hair. Ew. Ew. Ew."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god, you smell... It smells like... It smells like..."
+      },
+      {
+        "speaker": "A",
+        "text": "It smells like that's been sitting there for a really long, long time."
+      }
+    ],
+    "context_clip": "9c801f55d56b.opus",
+    "target_clip": "29787a559507.opus",
+    "target_text": "Oh, it's squishing in my shoes. Oh, is it in yours?",
+    "target_speaker": "B",
+    "options": [
+      "Amused, finding it funny",
+      "Grossed out and nauseated",
+      "Miserable and defeated",
+      "Irritated and fed up",
+      "Surprised and taken aback"
+    ]
+  },
+  {
+    "trial_id": "vem003",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "J.B.?"
+      },
+      {
+        "speaker": "B",
+        "text": "Ugh, yeah? What is that smell?"
+      },
+      {
+        "speaker": "A",
+        "text": "The neighbors were using their disposal again and it backed up in the sink while we were on vacation a lot. So it's been hot in here and it's caked to all of the... It's in the sink. It's caked to the sink with bones everywhere."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, oh, do they have, like, barbecue or something?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, it looks like chicken. Ugh."
+      },
+      {
+        "speaker": "B",
+        "text": "I've never smelled anything so bad."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, I don't, I don't know where to begin. They keep saying that these pipes don't connect, but they clearly connect."
+      }
+    ],
+    "context_clip": "278309abb06b.opus",
+    "target_clip": "cc4ed35de13c.opus",
+    "target_text": "Yeah, they definitely connect because we did not eat mac and cheese.",
+    "target_speaker": "B",
+    "options": [
+      "Sarcastic and dry",
+      "Amused and teasing",
+      "Confident and firm",
+      "Flat and matter-of-fact",
+      "Grossed out and dry"
+    ]
+  },
+  {
+    "trial_id": "vem004",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh my god. I can't believe the elevator just stopped. We're like between 7 and 8 and we're never getting home. I swear to god."
+      },
+      {
+        "speaker": "B",
+        "text": "I feel like everything that can go wrong has gone wrong today. It's like Murphy's Law of the whole day. We're so close to the hotel."
+      },
+      {
+        "speaker": "A",
+        "text": "could go wrong. I bet you our room is going to be somebody else's room and it's going to be Ocupido."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, don't forget they forgot your luggage too. They lost it."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh my god. Ugh."
+      },
+      {
+        "speaker": "A",
+        "text": "Well, I mean, look."
+      },
+      {
+        "speaker": "A",
+        "text": "We can't say that we didn't come on a trip to go for an adventure and then not have an adventure already because it's certainly been one."
+      },
+      {
+        "speaker": "B",
+        "text": "Did you press the button for the fireman?"
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, yeah. Oh, hold on. Somebody's talking. Yep, we're stuck. We are stuck. We would love to get into our room if we could. I would love to order some food, please."
+      }
+    ],
+    "context_clip": "d82a280d5e0b.opus",
+    "target_clip": "907a946b561c.opus",
+    "target_text": "Can we place an order with room service through the elevator intercom?",
+    "target_speaker": "B",
+    "options": [
+      "Hesitant and unsure",
+      "Sarcastic and dry",
+      "Excited and hopeful",
+      "Amused, laughing along",
+      "Sheepish and embarrassed"
+    ]
+  },
+  {
+    "trial_id": "vem005",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "So any word on the weather this weekend?"
+      },
+      {
+        "speaker": "B",
+        "text": "That's a really good question. The weather this weekend looks like it's going to be in the high of the 90s, and it's going to be in the lows maybe in the 60s, but mostly it's going to stay in the 70s all weekend."
+      },
+      {
+        "speaker": "A",
+        "text": "That's a pretty wide range there, 90s to 60s, so maybe like a sweatshirt and some shorts."
+      },
+      {
+        "speaker": "B",
+        "text": "Sweatshirt but a tank top underneath, yes. Maybe some shorts."
+      },
+      {
+        "speaker": "A",
+        "text": "And did I hear you say drizzle?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, there will be a drizzle late in the day on Sunday. I think that's what it's calling for."
+      },
+      {
+        "speaker": "A",
+        "text": "Well, that's good to know. I'll bring a windbreaker just in case."
+      },
+      {
+        "speaker": "B",
+        "text": "I think you're wise. Yes, a windbreaker is always a good call."
+      },
+      {
+        "speaker": "A",
+        "text": "So is it going to be cloudy? I mean, should I even bother bringing sunglasses, do you think?"
+      },
+      {
+        "speaker": "B",
+        "text": "Well, I think sunglasses always are nice, even if the clouds are there. Protect your eyes from the UVs. But, uh..."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, and they're very stylish, too. Have you seen those metal rim sunglasses that I wear?"
+      },
+      {
+        "speaker": "B",
+        "text": "Ooh, I love those metal red sunglasses that you wear. They're pretty impressive."
+      },
+      {
+        "speaker": "A",
+        "text": "Whenever I get pulled over by a state trooper, they're like, I think I'm looking in a mirror here."
+      }
+    ],
+    "context_clip": "ff1c6e9a70bd.opus",
+    "target_clip": "612175ea37bf.opus",
+    "target_text": "Yeah, they're like one of us. They don't give you a ticket.",
+    "target_speaker": "B",
+    "options": [
+      "Enthusiastic and admiring",
+      "Confident and reassuring",
+      "Amused, laughing along",
+      "Dry and sarcastic",
+      "Warm and appreciative"
+    ]
+  },
+  {
+    "trial_id": "vem006",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "All right, everybody, we're gonna start on our next item in the queue. We have this painting of a Russian space dog. We're gonna start the bidding around $500. Remember that all... Oh, 510, perfect. 510, I see a 510. Oh, I forgot a 520. Remember, all of the money goes to the animal 600. I got a 700 right here. Man in the back?"
+      },
+      {
+        "speaker": "B",
+        "text": "510."
+      },
+      {
+        "speaker": "B",
+        "text": "600!"
+      },
+      {
+        "speaker": "B",
+        "text": "7.05!"
+      },
+      {
+        "speaker": "A",
+        "text": "7.05. We got a 7.05. Anybody want a 7.10? 7.10. Anywhere I see it, 7.10. I see a 7.10. Man in the back, you got an up? You want to up it?"
+      },
+      {
+        "speaker": "B",
+        "text": "7.30."
+      },
+      {
+        "speaker": "A",
+        "text": "7.30, 7.30, we got a 7.30. And sold to the man in the back for 7.30."
+      },
+      {
+        "speaker": "B",
+        "text": "Woo! Yeah!"
+      },
+      {
+        "speaker": "A",
+        "text": "Amazing. Any questions about this item in particular, sir, that you've just purchased?"
+      },
+      {
+        "speaker": "B",
+        "text": "Uh, I'm good."
+      },
+      {
+        "speaker": "A",
+        "text": "You're good, you won it, perfect. All right, next in the queue, we've got a bunch of kitten toys, primarily, it's yarn made from the wool of sheep in Peru, so it's very expensive wool, that's why we're starting the bidding at $100. Now, $100 for this kitten yarn, where can I see? Anybody wanna start the bidding at $100?"
+      }
+    ],
+    "context_clip": "4fd26697c168.opus",
+    "target_clip": "3f4fb4388d10.opus",
+    "target_text": "$100 right here.",
+    "target_speaker": "B",
+    "options": [
+      "Calm and matter-of-fact",
+      "Playful and amused",
+      "Annoyed and impatient",
+      "Confident and firm",
+      "Eager and enthusiastic"
+    ]
+  },
+  {
+    "trial_id": "vem007",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey, Tim."
+      },
+      {
+        "speaker": "B",
+        "text": "Yo, what's up?"
+      },
+      {
+        "speaker": "A",
+        "text": "Um, this is so silly. I left my phone at home and I didn't mean to leave it on the charger. I meant to bring it with me. Yeah, I, so I need to get down to Balboa Park. Um, and I'm going down there to see my friend and I just really need some assistance. So do you think you could, um, I have pen and paper ready to go. If you wouldn't mind, I'm just going to take some notes so that I can get onto the highway and get down there. I usually know once I'm like down in the area, it's just hard from here to there."
+      }
+    ],
+    "context_clip": "b033513b1bdd.opus",
+    "target_clip": "1af415daf389.opus",
+    "target_text": "Oh, that happens to the best of us.",
+    "target_speaker": "B",
+    "options": [
+      "Amused and playful",
+      "Weary and resigned",
+      "Warm and reassuring",
+      "Dry and sarcastic",
+      "Flat and indifferent"
+    ]
+  },
+  {
+    "trial_id": "vem008",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hello, everybody! I am Professor Layton. Welcome to D&D 101. Most of you guys are freshmen, either coming from your home life or, you know, you're taking this class for fun, in which case I welcome all of you. If you have any questions at any time about the procedure or the history of Dungeons & Dragons, feel free to ask. I'm an open book."
+      },
+      {
+        "speaker": "A",
+        "text": "All right, to get started,"
+      },
+      {
+        "speaker": "A",
+        "text": "Dungeons and Dragons was created in the 1970s technically, but it was popularized by Gary Gygax, who created the first well-known module in 1970."
+      }
+    ],
+    "context_clip": "216b51199a34.opus",
+    "target_clip": "4df9075330a1.opus",
+    "target_text": "Excuse me, Professor?",
+    "target_speaker": "B",
+    "options": [
+      "Confident and direct",
+      "Annoyed and impatient",
+      "Eager and curious",
+      "Flat and routine",
+      "Hesitant and polite"
+    ]
+  },
+  {
+    "trial_id": "vem009",
     "axis": "em",
     "context": [
       {
@@ -106,15 +441,15 @@
     "target_text": "Gotcha. So Jason and you ordered the lasagna. Wait, actually, no, I see a third lasagna here. Did someone else order lasagna?",
     "target_speaker": "A",
     "options": [
-      "Surprised and amused",
-      "Annoyed and exasperated",
-      "Distracted and hurried",
-      "Puzzled and checking",
-      "Suspicious and accusatory"
+      "Confused and surprised",
+      "Annoyed and impatient",
+      "Sheepish and apologetic",
+      "Hesitant and unsure",
+      "Amused and entertained"
     ]
   },
   {
-    "trial_id": "vem003",
+    "trial_id": "vem010",
     "axis": "em",
     "context": [
       {
@@ -143,394 +478,11 @@
     "target_text": "I don't think I've seen that many clothes fall down.",
     "target_speaker": "B",
     "options": [
-      "Calm and matter-of-fact",
-      "Puzzled and curious",
-      "Dry and unimpressed",
-      "Laughing hard, barely speaking",
-      "Shocked and appalled"
-    ]
-  },
-  {
-    "trial_id": "vem004",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "That was off the charts."
-      },
-      {
-        "speaker": "B",
-        "text": "That was crazy. I've never seen anything like it."
-      },
-      {
-        "speaker": "A",
-        "text": "I mean, first off, to turn an elementary school stage into the interior of an airplane, like, that was just the sheer ambition of that. And the way they created those little windows, oh my goodness."
-      },
-      {
-        "speaker": "B",
-        "text": "Ambition is a word for it."
-      },
-      {
-        "speaker": "A",
-        "text": "And then they took that set off, and then they replicated the airfield, and they had those explosions. It was like, remember those little orange curtains? They reenacted the explosions."
-      },
-      {
-        "speaker": "B",
-        "text": "It was the way the kids grabbed the curtains and just tried to throw them up, but they couldn't do it."
-      },
-      {
-        "speaker": "A",
-        "text": "I just can't. Oh, and then the kid, the kid who played Danny Trejo's character. You know, I mean, obviously they, you know, they couldn't, you know, they couldn't get into the fact that he was a rapist because it's, you know, children. But but the way the way they. Oh, my God. The way he played that. Oh, my God. Oh, my God."
-      },
-      {
-        "speaker": "B",
-        "text": "I thought that kid studied hard, I can tell you that."
-      },
-      {
-        "speaker": "A",
-        "text": "The way they modified the dialogue. They call me Johnny 23. I got 23 apples on my arm for the 23 candy bars I stole. Someday these kids, they're going to be old enough to watch the movie and then they're going to put it together what they were parodying and they're going to be like, whoa."
-      }
-    ],
-    "context_clip": "8df942a811a9.opus",
-    "target_clip": "42a891dfa9e7.opus",
-    "target_text": "Whose decision was it to put on Con Air Kindergarten Edition?",
-    "target_speaker": "B",
-    "options": [
-      "Amused and laughing",
-      "Puzzled and confused",
-      "Exasperated and tired",
-      "Stern and demanding",
-      "Annoyed and critical"
-    ]
-  },
-  {
-    "trial_id": "vem005",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I'm going to tell you about the magical land of Kansas City, Missouri. Have you ever heard of Kansas City, Missouri?"
-      },
-      {
-        "speaker": "B",
-        "text": "No, I haven't."
-      },
-      {
-        "speaker": "A",
-        "text": "that gates barbecue is the hot spot because when you walk into gates it's an exciting time people start yelling at you immediately they say welcome to gates what do you want and they're pretty rude but it's the tastiest beef you will ever eat and the tastiest"
-      },
-      {
-        "speaker": "B",
-        "text": "What's the best thing to get at Gates?"
-      }
-    ],
-    "context_clip": "6b2b9edd62b9.opus",
-    "target_clip": "cbf32f0193a6.opus",
-    "target_text": "Ooh, the best thing to get at Gates is probably a Kansas City, Missouri specialty, burnt ends. Do you know what a burnt end is?",
-    "target_speaker": "A",
-    "options": [
-      "Casual and relaxed",
-      "Bright and enthusiastic",
-      "Proud and confident",
-      "Thoughtful and reflective",
-      "Curious and engaged"
-    ]
-  },
-  {
-    "trial_id": "vem006",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Did you ride?"
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, I did. I worked for many years in a horse barn. That was my job in school. Yeah. So."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, I did summer like summers where I would just board with horses and and tack them and groom them and take care of them all day every day as well. And I did this like for years as well. So like I spent time with horses all the time."
-      },
-      {
-        "speaker": "B",
-        "text": "What kind of discipline?"
-      },
-      {
-        "speaker": "A",
-        "text": "So I was just about to ask you the same thing. Did you ride Western or English?"
-      },
-      {
-        "speaker": "B",
-        "text": "I did dressage for many years. So yeah, I did like super competitive, eventually dressage. I miss it so much."
-      },
-      {
-        "speaker": "A",
-        "text": "Wow, that's so disciplined."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, how about you?"
-      },
-      {
-        "speaker": "A",
-        "text": "Mostly. So I did equestrian, so I mostly did English saddle because that's how I was raised. So I wrote English and I would do jumping. Yeah."
-      },
-      {
-        "speaker": "B",
-        "text": "I was always a little too scared to jump. I always really wanted to not be scared, but I was always a little too intimidated by the really high ones after we'd get to a certain level."
-      },
-      {
-        "speaker": "A",
-        "text": "I have to ask you this too, just because if I don't, I'll be remiss if I don't. Have you ever been thrown?"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, more times than I can count. Yeah. I think I've lost track after like the fifth one. And then, yeah. But I've gotten to the place."
-      }
-    ],
-    "context_clip": "ce32acf910c1.opus",
-    "target_clip": "d770bc540497.opus",
-    "target_text": "Tell me your worst.",
-    "target_speaker": "A",
-    "options": [
-      "Playful and teasing",
-      "Excited and rushed",
-      "Tense, bracing for it",
-      "Quiet and curious",
-      "Dramatic and intense"
-    ]
-  },
-  {
-    "trial_id": "vem007",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Uhhh..."
-      },
-      {
-        "speaker": "A",
-        "text": "Marie, I'm so sorry for the smell. I found the source. It's my fault. I'm so sorry. I used the Instapot the other day, and by the other day, I mean three to four days ago, and forgot to clean it. Forgot to clean it. There's chicken water in the bottom here."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, are you sure that was three to four days ago? Cause, oh, I'm pretty sure it was like five to six because that is, that is rancid."
-      },
-      {
-        "speaker": "A",
-        "text": "It's been sitting in the sun. It's been sitting in the sun. Yeah, yeah."
-      },
-      {
-        "speaker": "B",
-        "text": "Ugh, what did you cook in there?"
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, chicken. Some chicken. That's chicken water."
-      },
-      {
-        "speaker": "B",
-        "text": "Did you put any other spices or anything on there? Because it smells horrible."
-      },
-      {
-        "speaker": "A",
-        "text": "Nope. No, no, no. That was just boiled chicken, baby. That was... Sorry."
-      },
-      {
-        "speaker": "A",
-        "text": "That's just boiled chicken. That's boiled chicken. I was boiling it down plain because I wasn't feeling well with some rice and now I regret it."
-      },
-      {
-        "speaker": "B",
-        "text": "How could you forget it for that many days?"
-      },
-      {
-        "speaker": "A",
-        "text": "I was sick."
-      },
-      {
-        "speaker": "A",
-        "text": "And I can see why."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, are you feeling better now?"
-      },
-      {
-        "speaker": "A",
-        "text": "Uh, a little, um, but, uh, I'm really trying not to throw up again and, uh, this, this chicken water is going to make me do it. So do you want to clean it for me, please?"
-      }
-    ],
-    "context_clip": "389d2f700d2f.opus",
-    "target_clip": "a0ecb6888a1b.opus",
-    "target_text": "Ugh, I mean, it's not my fault that you left three-day chicken water, but I guess... Ugh, if you're really that sick, but... Ugh.",
-    "target_speaker": "B",
-    "options": [
-      "Annoyed but feeling sympathetic",
-      "Suspicious but backing down",
-      "Grossed out and reluctant",
-      "Flustered and feeling guilty",
-      "Petulant and deeply begrudging"
-    ]
-  },
-  {
-    "trial_id": "vem008",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "J.B.?"
-      },
-      {
-        "speaker": "B",
-        "text": "Ugh, yeah? What is that smell?"
-      },
-      {
-        "speaker": "A",
-        "text": "The neighbors were using their disposal again and it backed up in the sink while we were on vacation a lot. So it's been hot in here and it's caked to all of the... It's in the sink. It's caked to the sink with bones everywhere."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, oh, do they have, like, barbecue or something?"
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, it looks like chicken. Ugh."
-      },
-      {
-        "speaker": "B",
-        "text": "I've never smelled anything so bad."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, I don't, I don't know where to begin. They keep saying that these pipes don't connect, but they clearly connect."
-      }
-    ],
-    "context_clip": "278309abb06b.opus",
-    "target_clip": "cc4ed35de13c.opus",
-    "target_text": "Yeah, they definitely connect because we did not eat mac and cheese.",
-    "target_speaker": "B",
-    "options": [
-      "Confused and puzzled",
-      "Disgusted and grossed out",
-      "Amused and laughing",
-      "Calm and matter-of-fact",
-      "Angry and confrontational"
-    ]
-  },
-  {
-    "trial_id": "vem009",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "oh my god oh my god there's more we need to call them right now we need to call them right now"
-      },
-      {
-        "speaker": "B",
-        "text": "You, you, you, you, oh, yeah, you, you call them."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh. Oh my god. Oh my god, there's a baby diaper in the bathroom and in the sink in the kitchen. There's..."
-      },
-      {
-        "speaker": "A",
-        "text": "It looks like there's something black that's coming up out of the sink from here. I don't even know what that is."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, clearly they are misusing their pipes next door. That is gross. There should not be a diaper in here."
-      },
-      {
-        "speaker": "A",
-        "text": "No, this, we need an emergency plumber."
-      },
-      {
-        "speaker": "B",
-        "text": "Why don't you call them and see how fast they can get here?"
-      }
-    ],
-    "context_clip": "a895601709ab.opus",
-    "target_clip": "4b8cb3dd610a.opus",
-    "target_text": "Yeah, okay. Just try to air out the house, I guess.",
-    "target_speaker": "A",
-    "options": [
-      "Annoyed and impatient",
+      "Hesitant and uncertain",
       "Weary and overwhelmed",
-      "Casual and unbothered",
-      "Disgusted and grossed out",
-      "Calm and matter-of-fact"
-    ]
-  },
-  {
-    "trial_id": "vem010",
-    "axis": "em",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Well, Sophia, I'm really sorry. Um..."
-      },
-      {
-        "speaker": "A",
-        "text": "You don't have to eat the scones if you don't want to. I'm so sorry. I baked them and I did it wrong."
-      },
-      {
-        "speaker": "B",
-        "text": "It's okay, Vanessa. Like, they're really bad, but I appreciate the love that went into these. Ugh."
-      },
-      {
-        "speaker": "A",
-        "text": "I'm sorry. No, if you keep biting into it, the more you bite, it bubbles more."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, oh, it tastes, yeah, yeah, the more you bite, the worse it gets."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, it's like bubbling into my throat."
-      },
-      {
-        "speaker": "B",
-        "text": "Ugh, what did you do to these? Ugh."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, too much baking soda."
-      },
-      {
-        "speaker": "B",
-        "text": "Baking soda?"
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, it bubbles up. It's like a science experiment."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh."
-      },
-      {
-        "speaker": "B",
-        "text": "It's nasty. I wouldn't ever put baking soda in anything again."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, well, you need it just a little bit to rise and for leavening. But this is this is unpalatable. Please just throw them out, please. Let's just throw them out. I'll make a new batch. Please just throw it out. I know that I know that you're hungry, but I'll I'll buy us dinner. I don't care."
-      }
-    ],
-    "context_clip": "896305d72063.opus",
-    "target_clip": "9ce1485c7336.opus",
-    "target_text": "I don't know, I'm starving, and they're like, they're pretty salty. Oh, okay, yeah, no, I can't do it.",
-    "target_speaker": "B",
-    "options": [
-      "Dramatic and theatrical",
-      "Conflicted, then backing out",
-      "Disgusted, giving up",
-      "Disappointed and bummed out",
-      "Whiny and miserable"
+      "Shocked and taken aback",
+      "Exasperated and annoyed",
+      "Amused, laughing along"
     ]
   }
 ]

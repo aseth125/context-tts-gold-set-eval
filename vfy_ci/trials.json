@@ -5,59 +5,47 @@
     "context": [
       {
         "speaker": "A",
-        "text": "I mean, don't get me wrong. I'd be kind of freaking out, too, if I was being chased by a moose. But, oh, just the way he was running."
+        "text": "Hey, Tim."
       },
       {
         "speaker": "B",
-        "text": "It was so great. I don't think... He looked like a human-embodied Muppet. With his arms flailing around him. All that stuff."
+        "text": "Yo, what's up?"
       },
       {
         "speaker": "A",
-        "text": "And then he was, like, going in circles. Like, he was so confused. And then the moose was just kind of, like, just casually just kind of lumbering along."
+        "text": "Um, this is so silly. I left my phone at home and I didn't mean to leave it on the charger. I meant to bring it with me. Yeah, I, so I need to get down to Balboa Park. Um, and I'm going down there to see my friend and I just really need some assistance. So do you think you could, um, I have pen and paper ready to go. If you wouldn't mind, I'm just going to take some notes so that I can get onto the highway and get down there. I usually know once I'm like down in the area, it's just hard from here to there."
       },
       {
         "speaker": "B",
-        "text": "Did you see the part where they... What was it? What was the part? What was the part?"
-      },
-      {
-        "speaker": "A",
-        "text": "Whoa! That's something you don't see every day. A moose chase. Oh, that guy is terrified."
+        "text": "Oh, that happens to the best of us."
       },
       {
         "speaker": "B",
-        "text": "Running for his life. I..."
-      },
-      {
-        "speaker": "A",
-        "text": "It's like you'd think that the guy had an affair with a moose's husband."
+        "text": "Bumblebuck, what you doing down there?"
       },
       {
         "speaker": "B",
-        "text": "Oh, look, there he goes. He's climbing up the tree. The moose is..."
+        "text": "Gotcha. All right. Also, if you have a camera, bring a camera as well because Balboa Park is absolutely gorgeous. Absolutely gorgeous."
       },
       {
         "speaker": "A",
-        "text": "Oh, no! And the moose is just, like, sniffing him out, sniffing one leaf at a time. That moose, like, is so relaxed, it doesn't even care."
+        "text": "I do have a small camera in the car. Thank you for mentioning that."
       },
       {
         "speaker": "B",
-        "text": "And then, well, wait, how..."
-      },
-      {
-        "speaker": "A",
-        "text": "What is he doing? He's throwing acorns at the moose? What is he thinking? That is so not the right thing to do. He's making it angry."
+        "text": "want to get stuck in that traffic for three hours that sucks um so weave and dodge and all that stuff because i assume your friend's waiting for you down there in balboa um yeah okay so once you once you're down there you're going to get off on uh 12th street and once you're on 12th street you're going to take that straight all the way down past the arch on your right hand side and then take a right on zoo entrance and we need to take a right on zoo entrance that's right next to the san diego zoo is balboa park um don't confuse the two"
       }
     ],
-    "context_clip": "34680a1e28ce.opus",
-    "target_clip": "d08e65562ce2.opus",
-    "target_text": "He is making it angry, but I'm having a good time.",
-    "target_speaker": "B",
+    "context_clip": "9cf0c3df7917.opus",
+    "target_clip": "0c2675ca66e4.opus",
+    "target_text": "Yeah yeah yeah.",
+    "target_speaker": "A",
     "options": [
-      "Breezy and unbothered",
-      "Amused, laughing along",
-      "Dry and deadpan",
-      "Cheerful and upbeat",
-      "Smug and unapologetic"
+      "reassuring, following along",
+      "Annoyed and dismissive",
+      "Bored, barely listening",
+      "Sarcastic and skeptical",
+      "Excited, jumping in"
     ]
   },
   {
@@ -66,121 +54,55 @@
     "context": [
       {
         "speaker": "A",
-        "text": "Brian, I know we're not really supposed to talk to each other,"
+        "text": "Some weight, huh?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, it's been about an hour and 40 minutes now."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah? Ugh, I think I'm ready to go home. How about you?"
       },
       {
         "speaker": "A",
-        "text": "before the session. But I just wanted to say I didn't want this to go this way and I'm really, really sorry. I'm not trying to take stuff from you. I wasn't ever trying to keep anything from you. I wasn't trying to keep anything that you brought into the house."
+        "text": "Yeah, me too. I mean, to be honest, I'm just going to go to the store after and try to take it easy today. This was supposed to be a rest day."
       },
       {
         "speaker": "B",
-        "text": "Look, I don't blame you. I just..."
-      },
-      {
-        "speaker": "B",
-        "text": "I know what the boundaries are and I know what's mine. I know what's ours."
-      },
-      {
-        "speaker": "B",
-        "text": "And."
-      },
-      {
-        "speaker": "B",
-        "text": "I just don't... I don't understand..."
-      },
-      {
-        "speaker": "B",
-        "text": "I don't understand why we're in this fight."
+        "text": "Yeah, it's hard to rest when you're waiting for a long time, isn't it? Yeah, I'm registering a new boat today, and hopeful we can get it out on the water by next week, but I'm not really too positive that that's gonna happen today."
       },
       {
         "speaker": "A",
-        "text": "i mean it just felt like it wasn't being resolved um without some kind of mediation and some interjection here and i'm sorry i didn't want it to go this way but it just felt like we couldn't see eye to eye on some of the bigger items and you know we both have assets and you have a lot that you deserve and i want to make sure you get that"
+        "text": "Yeah, I'm just renewing my plates. And then they said, Oh, it looks like you also need to bring in proof of your smog. And it's, you know, I tried to do it online. And they said, No, this time you have to bring it in. So it's fine. But, you know,"
       },
       {
         "speaker": "B",
-        "text": "I just don't understand why we couldn't just work this out civilly."
+        "text": "It's a lot of work though, yeah."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah. What number do you have in the queue?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm 72. How about you?"
       }
     ],
-    "context_clip": "fd0ca4360055.opus",
-    "target_clip": "3aad7cdc3832.opus",
-    "target_text": "But we tried that and it didn't work.",
+    "context_clip": "975344289e73.opus",
+    "target_clip": "9ccd018a20eb.opus",
+    "target_text": "Ugh, 81.",
     "target_speaker": "A",
     "options": [
-      "Cold and blunt",
-      "Tearful and desperate",
-      "Frustrated and fed up",
-      "Angry and sharp",
-      "Quiet, with a sad laugh"
+      "Disgusted and repulsed",
+      "Sheepish and embarrassed",
+      "Sarcastic and mocking",
+      "Resigned and defeated",
+      "Annoyed and impatient"
     ]
   },
   {
     "trial_id": "vci003",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "And she was a new student. She was much bigger than all of the other rats and all of the other rodents. She was a capybara, and her name was Camilla."
-      },
-      {
-        "speaker": "A",
-        "text": "Simon got up in front of the whole class and he said,"
-      },
-      {
-        "speaker": "A",
-        "text": "Wadney says,"
-      }
-    ],
-    "context_clip": "ada0aa56b033.opus",
-    "target_clip": "3ac1a9fd6825.opus",
-    "target_text": "Weed a book.",
-    "target_speaker": "A",
-    "options": [
-      "Playful and childlike",
-      "Bossy and demanding",
-      "Whiny and frustrated",
-      "Shy and hesitant",
-      "Warm and gentle"
-    ]
-  },
-  {
-    "trial_id": "vci004",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I'm going to tell you about the magical land of Kansas City, Missouri. Have you ever heard of Kansas City, Missouri?"
-      },
-      {
-        "speaker": "B",
-        "text": "No, I haven't."
-      },
-      {
-        "speaker": "A",
-        "text": "that gates barbecue is the hot spot because when you walk into gates it's an exciting time people start yelling at you immediately they say welcome to gates what do you want and they're pretty rude but it's the tastiest beef you will ever eat and the tastiest"
-      },
-      {
-        "speaker": "B",
-        "text": "What's the best thing to get at Gates?"
-      },
-      {
-        "speaker": "A",
-        "text": "Ooh, the best thing to get at Gates is probably a Kansas City, Missouri specialty, burnt ends. Do you know what a burnt end is?"
-      }
-    ],
-    "context_clip": "67d7468579c6.opus",
-    "target_clip": "4252d6e34e96.opus",
-    "target_text": "What's a burnt end?",
-    "target_speaker": "B",
-    "options": [
-      "Quietly curious, gently asking",
-      "Casual and completely offhand",
-      "Puzzled and slightly skeptical",
-      "Brisk and mildly impatient",
-      "Amused and genuinely baffled"
-    ]
-  },
-  {
-    "trial_id": "vci005",
     "axis": "ci",
     "context": [
       {
@@ -229,182 +151,15 @@
     "target_text": "You picked this dog out of the litter.",
     "target_speaker": "A",
     "options": [
-      "Warm and nostalgic",
-      "Calm and matter-of-fact",
-      "Surprised and disbelieving",
-      "Amused and teasing",
-      "Exasperated and blaming"
+      "Annoyed and blaming",
+      "Stern and direct",
+      "Weary and exasperated",
+      "Warm and fond",
+      "Amused and teasing"
     ]
   },
   {
-    "trial_id": "vci006",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I got the job. I got the job. I did. I did. They called me at my other job and I got to quit today. I got to give them my two weeks notice."
-      },
-      {
-        "speaker": "B",
-        "text": "No way!"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh my gosh. Oh my gosh. What do you want to do? What's the first thing you want to do? You're home. Now you're safe. So we could do anything you want. We can literally change. We could do anything."
-      },
-      {
-        "speaker": "A",
-        "text": "Let's go to the ice cream shop, yeah, on the corner of Kenneth. And we'll also, I really, really want to just go to Firefly. Have you been there yet? It's that cute little restaurant. It's so nice. It's so expensive, but it's so fancy."
-      },
-      {
-        "speaker": "B",
-        "text": "It doesn't matter. Everything's on me tonight. I'm so excited."
-      }
-    ],
-    "context_clip": "8d9a0956ef87.opus",
-    "target_clip": "9b7939a8f10d.opus",
-    "target_text": "No, everything gets to be on me because I'm going to make a lot more money now.",
-    "target_speaker": "A",
-    "options": [
-      "Triumphant and proud",
-      "Sweet and affectionate",
-      "Cocky and self-assured",
-      "Excited and playful",
-      "Firm and reassuring"
-    ]
-  },
-  {
-    "trial_id": "vci007",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Did you see that?"
-      },
-      {
-        "speaker": "A",
-        "text": "Is Benedict Cumberbatch gonna be in this? Oh my god!"
-      },
-      {
-        "speaker": "B",
-        "text": "They're adding him to the cast! They're adding him to the cast! Along with all the other actors who've played Doctor Whos!"
-      },
-      {
-        "speaker": "A",
-        "text": "And Keira Knightley! Oh my god, you were right! She is gonna be in it!"
-      },
-      {
-        "speaker": "B",
-        "text": "I love her. I've loved her since Bend It Like Beckham and then ever since she's just had an upward trajectory in her career and it's just been amazing. Oh my gosh."
-      },
-      {
-        "speaker": "A",
-        "text": "No wonder you knew that she was going to be on the docket because of this."
-      },
-      {
-        "speaker": "B",
-        "text": "She had to be. It was the best show. It's the only show that she could be on that's a leg up in her career because, like, oh my gosh, it's the best show in the world. Look who else. Look who else. It's... I can't believe it. Don Knotts? I thought he died."
-      },
-      {
-        "speaker": "A",
-        "text": "It looks like they're doing a hologram version of Don Knotts!"
-      },
-      {
-        "speaker": "B",
-        "text": "What? That's amazing! I had no idea they could do that!"
-      },
-      {
-        "speaker": "A",
-        "text": "That's so cool. Yeah, they have this like holographic like this new technology that they do with like holograms and stuff like that. And they're like putting them in all of these different things. And they're like putting them all over the world. Yeah, it's insane."
-      },
-      {
-        "speaker": "B",
-        "text": "It kind of fits with the themes, though, too, because it's so medieval, but then it's also so modern. It's like a mix-up of two worlds, so it makes sense that they would pull a classic actor and just put him in the middle of it. I love that. It's going to be... Oh!"
-      },
-      {
-        "speaker": "A",
-        "text": "And Alan Rickman. Surprise, surprise."
-      },
-      {
-        "speaker": "B",
-        "text": "Aww, that's amazing! I thought I would never see him act again! This is amazing!"
-      },
-      {
-        "speaker": "A",
-        "text": "I know. I can't believe that they've done that, but he absolutely fits in this world."
-      },
-      {
-        "speaker": "B",
-        "text": "It's totally perfect. I mean, I couldn't think of a better. I always was like, oh, what a shame he's not here to be a part of it, right? Yeah. Oh, how amazing that we could just like keep old actors from the past and put them back into new things. This is so cool."
-      },
-      {
-        "speaker": "A",
-        "text": "It's so amazing."
-      },
-      {
-        "speaker": "B",
-        "text": "I hope we get more TV shows like this."
-      }
-    ],
-    "context_clip": "5300e4e75914.opus",
-    "target_clip": "ab9f63b5dc97.opus",
-    "target_text": "I know. Wait, it's starting.",
-    "target_speaker": "A",
-    "options": [
-      "Distracted, impatient and abrupt",
-      "Quiet, curious and attentive",
-      "Excited, energetic and breathless",
-      "Casual, relaxed and intrigued",
-      "Amused, hushed and eager"
-    ]
-  },
-  {
-    "trial_id": "vci008",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "So we're talking about making burgers at home. Where is the best burger that you've ever purchased at a restaurant or a fast food place?"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, that's a good question. Well, this answer might surprise you, but I was in Silver Lake the other day, and this is a place called Monty's Good Burger. It's all plant-based, and they had this massive, massive double burger that was out of this world."
-      },
-      {
-        "speaker": "A",
-        "text": "That sounds amazing. I've driven by there before."
-      },
-      {
-        "speaker": "B",
-        "text": "I didn't expect it, but"
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah. What was on it?"
-      },
-      {
-        "speaker": "B",
-        "text": "Um, they have, like, their own signature sauce. It's, um, it's kind of like Thousand Island, but it's like their own, you know, their own flavor. And, um, you know, all the usual stuff, pickles, onions, lettuce, tomato, all the, you know, all the usual suspects."
-      },
-      {
-        "speaker": "A",
-        "text": "Are their pickles thick cut or thin cut? That's an important distinction for me."
-      }
-    ],
-    "context_clip": "5abfd97274e2.opus",
-    "target_clip": "17dc20933410.opus",
-    "target_text": "Ah, they're pretty, they're relatively thick.",
-    "target_speaker": "B",
-    "options": [
-      "Thoughtful, sizing them up",
-      "Hesitant, trying to remember",
-      "Impressed and pleasantly surprised",
-      "Gentle, trying to reassure",
-      "Casual, making an observation"
-    ]
-  },
-  {
-    "trial_id": "vci009",
+    "trial_id": "vci004",
     "axis": "ci",
     "context": [
       {
@@ -469,11 +224,273 @@
     "target_text": "That's right. You know it.",
     "target_speaker": "A",
     "options": [
-      "Smug and boastful",
-      "Encouraging and supportive",
-      "Fired up and excited",
-      "Calm and reassuring",
-      "Laughing and amused"
+      "Smug and sarcastic",
+      "Warm and encouraging",
+      "Confident and self-assured",
+      "Amused, laughing along",
+      "Excited and hyped up"
+    ]
+  },
+  {
+    "trial_id": "vci005",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "All right, everybody, we're gonna start on our next item in the queue. We have this painting of a Russian space dog. We're gonna start the bidding around $500. Remember that all... Oh, 510, perfect. 510, I see a 510. Oh, I forgot a 520. Remember, all of the money goes to the animal 600. I got a 700 right here. Man in the back?"
+      },
+      {
+        "speaker": "B",
+        "text": "510."
+      },
+      {
+        "speaker": "B",
+        "text": "600!"
+      },
+      {
+        "speaker": "B",
+        "text": "7.05!"
+      },
+      {
+        "speaker": "A",
+        "text": "7.05. We got a 7.05. Anybody want a 7.10? 7.10. Anywhere I see it, 7.10. I see a 7.10. Man in the back, you got an up? You want to up it?"
+      },
+      {
+        "speaker": "B",
+        "text": "7.30."
+      },
+      {
+        "speaker": "A",
+        "text": "7.30, 7.30, we got a 7.30. And sold to the man in the back for 7.30."
+      },
+      {
+        "speaker": "B",
+        "text": "Woo! Yeah!"
+      },
+      {
+        "speaker": "A",
+        "text": "Amazing. Any questions about this item in particular, sir, that you've just purchased?"
+      }
+    ],
+    "context_clip": "96e001f2ffd9.opus",
+    "target_clip": "bd0e82d9112e.opus",
+    "target_text": "Uh, I'm good.",
+    "target_speaker": "B",
+    "options": [
+      "Flat and indifferent",
+      "Polite and firm",
+      "Amused and casual",
+      "Hesitant and unsure",
+      "Awkward and sheepish"
+    ]
+  },
+  {
+    "trial_id": "vci006",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "It is pronounced Zed. It's much more simplistic to figure that out too. I'm just, no, I'm just letting you know, like you can sing the alphabet however you want, but if you don't end it in a Zed, there's even, there's even an artist named Zed's dead. I'm not even going to get into it. It's a thing."
+      },
+      {
+        "speaker": "B",
+        "text": "it sounds like you kind of want to get into it jackie well look i i've been pronouncing it z my entire life and i'm open to new ideas because my opinion is malleable like clay"
+      },
+      {
+        "speaker": "A",
+        "text": "Same. I moved to the U.S. I have to adapt."
+      },
+      {
+        "speaker": "B",
+        "text": "That's kind of true. You also moved to freaking L.A., which is like, oh, you know, everything is changing all the time out here. You got to just like go with the flow. The punches are real."
+      },
+      {
+        "speaker": "A",
+        "text": "But what about you? Like, where are you from specifically?"
+      }
+    ],
+    "context_clip": "d0dc6e716aff.opus",
+    "target_clip": "b82485460edc.opus",
+    "target_text": "Where am I from?",
+    "target_speaker": "B",
+    "options": [
+      "Confident and challenging",
+      "Thoughtful, buying time",
+      "Amused and teasing",
+      "Annoyed and defensive",
+      "Surprised and taken aback"
+    ]
+  },
+  {
+    "trial_id": "vci007",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I mean, don't get me wrong. I'd be kind of freaking out, too, if I was being chased by a moose. But, oh, just the way he was running."
+      },
+      {
+        "speaker": "B",
+        "text": "It was so great. I don't think... He looked like a human-embodied Muppet. With his arms flailing around him. All that stuff."
+      },
+      {
+        "speaker": "A",
+        "text": "And then he was, like, going in circles. Like, he was so confused. And then the moose was just kind of, like, just casually just kind of lumbering along."
+      },
+      {
+        "speaker": "B",
+        "text": "Did you see the part where they... What was it? What was the part? What was the part?"
+      },
+      {
+        "speaker": "A",
+        "text": "Whoa! That's something you don't see every day. A moose chase. Oh, that guy is terrified."
+      },
+      {
+        "speaker": "B",
+        "text": "Running for his life. I..."
+      },
+      {
+        "speaker": "A",
+        "text": "It's like you'd think that the guy had an affair with a moose's husband."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, look, there he goes. He's climbing up the tree. The moose is..."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, no! And the moose is just, like, sniffing him out, sniffing one leaf at a time. That moose, like, is so relaxed, it doesn't even care."
+      },
+      {
+        "speaker": "B",
+        "text": "And then, well, wait, how..."
+      },
+      {
+        "speaker": "A",
+        "text": "What is he doing? He's throwing acorns at the moose? What is he thinking? That is so not the right thing to do. He's making it angry."
+      }
+    ],
+    "context_clip": "34680a1e28ce.opus",
+    "target_clip": "d08e65562ce2.opus",
+    "target_text": "He is making it angry, but I'm having a good time.",
+    "target_speaker": "B",
+    "options": [
+      "Amused, laughing along",
+      "Sarcastic and dry",
+      "Relaxed and untroubled",
+      "Excited and upbeat",
+      "Sheepish and guilty"
+    ]
+  },
+  {
+    "trial_id": "vci008",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I'm going to tell you about the magical land of Kansas City, Missouri. Have you ever heard of Kansas City, Missouri?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I haven't."
+      },
+      {
+        "speaker": "A",
+        "text": "that gates barbecue is the hot spot because when you walk into gates it's an exciting time people start yelling at you immediately they say welcome to gates what do you want and they're pretty rude but it's the tastiest beef you will ever eat and the tastiest"
+      },
+      {
+        "speaker": "B",
+        "text": "What's the best thing to get at Gates?"
+      },
+      {
+        "speaker": "A",
+        "text": "Ooh, the best thing to get at Gates is probably a Kansas City, Missouri specialty, burnt ends. Do you know what a burnt end is?"
+      }
+    ],
+    "context_clip": "67d7468579c6.opus",
+    "target_clip": "4252d6e34e96.opus",
+    "target_text": "What's a burnt end?",
+    "target_speaker": "B",
+    "options": [
+      "Surprised and puzzled",
+      "Hesitant and unsure",
+      "Curious and intrigued",
+      "Disgusted and skeptical",
+      "Amused and entertained"
+    ]
+  },
+  {
+    "trial_id": "vci009",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Did you ride?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I did. I worked for many years in a horse barn. That was my job in school. Yeah. So."
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, I did summer like summers where I would just board with horses and and tack them and groom them and take care of them all day every day as well. And I did this like for years as well. So like I spent time with horses all the time."
+      },
+      {
+        "speaker": "B",
+        "text": "What kind of discipline?"
+      },
+      {
+        "speaker": "A",
+        "text": "So I was just about to ask you the same thing. Did you ride Western or English?"
+      },
+      {
+        "speaker": "B",
+        "text": "I did dressage for many years. So yeah, I did like super competitive, eventually dressage. I miss it so much."
+      }
+    ],
+    "context_clip": "97f336606747.opus",
+    "target_clip": "6c4af822c269.opus",
+    "target_text": "Wow, that's so disciplined.",
+    "target_speaker": "A",
+    "options": [
+      "Sarcastic and mocking",
+      "Enthusiastic and eager",
+      "Amused and entertained",
+      "Warm and encouraging",
+      "Impressed and admiring"
+    ]
+  },
+  {
+    "trial_id": "vci010",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "I got the job. I got the job. I did. I did. They called me at my other job and I got to quit today. I got to give them my two weeks notice."
+      },
+      {
+        "speaker": "B",
+        "text": "No way!"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh my gosh. Oh my gosh. What do you want to do? What's the first thing you want to do? You're home. Now you're safe. So we could do anything you want. We can literally change. We could do anything."
+      },
+      {
+        "speaker": "A",
+        "text": "Let's go to the ice cream shop, yeah, on the corner of Kenneth. And we'll also, I really, really want to just go to Firefly. Have you been there yet? It's that cute little restaurant. It's so nice. It's so expensive, but it's so fancy."
+      }
+    ],
+    "context_clip": "8bdd0f959043.opus",
+    "target_clip": "2a33b3ba0ce1.opus",
+    "target_text": "It doesn't matter. Everything's on me tonight. I'm so excited.",
+    "target_speaker": "B",
+    "options": [
+      "Sarcastic and dry",
+      "Excited and celebratory",
+      "Warm and reassuring",
+      "Amused and playful",
+      "Confident and generous"
     ]
   }
 ]

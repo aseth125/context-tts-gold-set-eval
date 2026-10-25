@@ -5,59 +5,6 @@
     "context": [
       {
         "speaker": "A",
-        "text": "That is putrid."
-      },
-      {
-        "speaker": "A",
-        "text": "That used to be a hamburger bun, but now it's growing fuzz. There are hairs that are growing off that and wiggling around."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, my God."
-      },
-      {
-        "speaker": "A",
-        "text": "Ugh."
-      },
-      {
-        "speaker": "A",
-        "text": "that was a half-eaten burger someone's left under the couch, and now it's like, yeah, it's like oozing, it's like, oh, I just took a close look, it's like bubbling up, and"
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, that smell is so just overpowering."
-      },
-      {
-        "speaker": "B",
-        "text": "What does it smell like? I can't even describe it."
-      },
-      {
-        "speaker": "A",
-        "text": "It's like pus, but like if an entire room was full of pus."
-      },
-      {
-        "speaker": "B",
-        "text": "That's gross."
-      }
-    ],
-    "context_clip": "c332c9cf12aa.opus",
-    "target_clip": "014b13397373.opus",
-    "target_text": "And then like that pus like had its own pus coming out of it.",
-    "target_speaker": "A",
-    "options": [
-      "Baffled and utterly confused",
-      "Disgusted, totally grossed out",
-      "Morbidly curious and fascinated",
-      "Laughing and cracking up",
-      "Calm and totally unbothered"
-    ]
-  },
-  {
-    "trial_id": "vis002",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
         "text": "Wow, being by the ocean like this makes me feel really small and tiny and unimportant."
       },
       {
@@ -86,121 +33,15 @@
     "target_text": "I'm sorry. I love sitting by the ocean like this with you.",
     "target_speaker": "A",
     "options": [
-      "Embarrassed and awkward",
-      "Sad and wistful",
-      "Deeply apologetic and guilty",
-      "Bored and detached",
-      "Warm and affectionate"
+      "Hesitant and unsure",
+      "Sheepish and mildly embarrassed",
+      "Sad and quietly wistful",
+      "Gentle, warm and comforting",
+      "Anxious and insecure"
     ]
   },
   {
-    "trial_id": "vis003",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Oh, do you think they're having a meeting? Like, uh, maybe we stumbled upon a ritual sacrifice time that we didn't know about. Yeah."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah."
-      },
-      {
-        "speaker": "B",
-        "text": "Tuesdays at my favorite coffee place, I guess."
-      },
-      {
-        "speaker": "A",
-        "text": "I guess so. You like weird coffee places, don't you?"
-      },
-      {
-        "speaker": "B",
-        "text": "Not anymore. I don't... I think we..."
-      },
-      {
-        "speaker": "A",
-        "text": "Why did they pick a coffee shop? Wouldn't like a warehouse be better? I don't know. Where do they do ritual sacrifices?"
-      }
-    ],
-    "context_clip": "afbb7c5c214c.opus",
-    "target_clip": "ec914d67ac2e.opus",
-    "target_text": "I don't know, but I guess it seems more inconspicuous in a coffee shop. Well, you know, you learn something new in New York every day, I guess.",
-    "target_speaker": "B",
-    "options": [
-      "Hesitant and uncertain",
-      "Casual and indifferent",
-      "Thoughtful and reflective",
-      "Dry and deadpan",
-      "Playful and amused"
-    ]
-  },
-  {
-    "trial_id": "vis004",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Oh my god, Sarah, back up, back up, back up."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh."
-      },
-      {
-        "speaker": "A",
-        "text": "oh lord have mercy on my soul she just uh she just threw a uh out a bedpan uh we almost got covered in the the bedpan contents there's there's there's actual there's actual feces in there"
-      },
-      {
-        "speaker": "B",
-        "text": "Uh..."
-      },
-      {
-        "speaker": "A",
-        "text": "And it's, uh, it's liquid. It's liquidy."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, Jess, I'm so sorry to tell you, but it's all down your back."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh my god. Ew. Ew. Ew. Ew. It's in your hair. Ew. Ew. Ew."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh my god, you smell... It smells like... It smells like..."
-      },
-      {
-        "speaker": "A",
-        "text": "It smells like that's been sitting there for a really long, long time."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, it's squishing in my shoes. Oh, is it in yours?"
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, yep, it certainly is."
-      },
-      {
-        "speaker": "A",
-        "text": "Okay. Oh, don't touch my back. Please don't touch my back. Oh, please don't touch my back. I don't want it against my neck. Ew. I need to know. Is there, is there, is there, um, I'm gonna, I'm gonna swear. Is there shit in my, on my back?"
-      }
-    ],
-    "context_clip": "e5d3e074acea.opus",
-    "target_clip": "725521daa218.opus",
-    "target_text": "There's a lot on your back. I'm so sorry. Ugh.",
-    "target_speaker": "B",
-    "options": [
-      "Tired and overwhelmed",
-      "Frustrated and helpless",
-      "Sympathetic and apologetic",
-      "Awkward and embarrassed",
-      "Distressed and upset"
-    ]
-  },
-  {
-    "trial_id": "vis005",
+    "trial_id": "vis002",
     "axis": "is",
     "context": [
       {
@@ -249,158 +90,15 @@
     "target_text": "You picked this dog out of the litter.",
     "target_speaker": "A",
     "options": [
-      "Proud and admiring",
-      "Annoyed and exasperated",
-      "Amused and teasing",
-      "Blunt and matter-of-fact",
-      "Resigned and weary"
+      "Weary and resigned",
+      "Irritated and snappy",
+      "Firm and matter-of-fact",
+      "Fond and reminiscing",
+      "Sarcastic and teasing"
     ]
   },
   {
-    "trial_id": "vis006",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I got the job. I got the job. I did. I did. They called me at my other job and I got to quit today. I got to give them my two weeks notice."
-      },
-      {
-        "speaker": "B",
-        "text": "No way!"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh my gosh. Oh my gosh. What do you want to do? What's the first thing you want to do? You're home. Now you're safe. So we could do anything you want. We can literally change. We could do anything."
-      },
-      {
-        "speaker": "A",
-        "text": "Let's go to the ice cream shop, yeah, on the corner of Kenneth. And we'll also, I really, really want to just go to Firefly. Have you been there yet? It's that cute little restaurant. It's so nice. It's so expensive, but it's so fancy."
-      },
-      {
-        "speaker": "B",
-        "text": "It doesn't matter. Everything's on me tonight. I'm so excited."
-      }
-    ],
-    "context_clip": "4681179f3e49.opus",
-    "target_clip": "dd78dd9788a1.opus",
-    "target_text": "No, everything gets to be on me because I'm going to make a lot more money now.",
-    "target_speaker": "A",
-    "options": [
-      "Dry and sarcastic",
-      "Affectionate and stubborn",
-      "Playful and celebratory",
-      "Casual and breezy",
-      "Excited and eager"
-    ]
-  },
-  {
-    "trial_id": "vis007",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I mean, why settle in Manhattan? Let's buy a vacation home by your family. We could totally just have trips whenever we want and be there with your mom and dad and your brother. And we could fly anywhere we want."
-      },
-      {
-        "speaker": "B",
-        "text": "we could honestly we don't even have to stay in washington we could absolutely you know what we should do we should we should buy property over in france so that we can go and vacation we can you know that they have um they have vacation rentals there that are like castles old castles and ruins we should absolutely buy property over in europe and make sure that we have somewhere that we can go at any point any time of year it doesn't really matter because it doesn't get cold like it does here"
-      },
-      {
-        "speaker": "A",
-        "text": "Oh my gosh, I can't wait. I've never been to France. I would love to have like a little cottage in the middle of like Nice or somewhere. I don't even speak French, but I'll learn."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, we don't even have to because at that point they're going to bend to you because you're going to have so much money that it doesn't matter if you speak French or not. You're going to have anything that you want."
-      }
-    ],
-    "context_clip": "8c643b109801.opus",
-    "target_clip": "3f506bdecf3c.opus",
-    "target_text": "How about instead of buying a single vacation home in France, we just, we get timeshares and we go, we go to Germany, we go to Munich, we go, we go to Malta.",
-    "target_speaker": "A",
-    "options": [
-      "Casual and spontaneous",
-      "Hesitant and tentative",
-      "Excited and eager",
-      "Calm and reasonable",
-      "Gentle and diplomatic"
-    ]
-  },
-  {
-    "trial_id": "vis008",
-    "axis": "is",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "I can't believe that Kevin's class did. Macbeth. Like, at their age, seven years old, you're doing Macbeth? Are you kidding?"
-      },
-      {
-        "speaker": "B",
-        "text": "It was like the best worst rendition I've ever seen. Lady Macbeth, her outfit."
-      },
-      {
-        "speaker": "A",
-        "text": "Right? And the teacher, like, Mrs. Proxy, like, running out after the kids, chasing out because they're half-dressed, and they're like..."
-      },
-      {
-        "speaker": "A",
-        "text": "They're yelling their lines. They don't even know half of what they're saying. They're just screaming and singing like that kid that was in the corner."
-      },
-      {
-        "speaker": "A",
-        "text": "the entire play. Just singing and playing with the set."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, he seemed like he wouldn't even know where he was. And then the other kid that was so afraid of the fake dagger."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh my god. He just broke down crying. His parents had to come out on stage and get him."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh my gosh. I'm surprised they chose Macbeth. It was so cute though, watching them do the three witches. It was adorable, but they were like, like trying to mix everything and all the potions and everything."
-      },
-      {
-        "speaker": "A",
-        "text": "Just everything, like water all over the stage and the kids that were like slipping all over it."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, they had so much fun putting things into that pot that they didn't notice it was going to bubble over."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, man."
-      },
-      {
-        "speaker": "B",
-        "text": "Did you see the kid playing Macduff?"
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, my God."
-      },
-      {
-        "speaker": "A",
-        "text": "Not suited and like the hat just coming down over his eyes every time he went to tell him."
-      }
-    ],
-    "context_clip": "dd99b39adc7d.opus",
-    "target_clip": "2a4afaf37804.opus",
-    "target_text": "And then he just really wanted to stand next to Lady Macduff the whole time.",
-    "target_speaker": "B",
-    "options": [
-      "Confused and baffled",
-      "Amused and giggling",
-      "Annoyed and irritated",
-      "Sarcastic and dismissive",
-      "Flat and matter-of-fact"
-    ]
-  },
-  {
-    "trial_id": "vis009",
+    "trial_id": "vis003",
     "axis": "is",
     "context": [
       {
@@ -421,11 +119,313 @@
     "target_text": "Oh boy, there will be a lot of humidity.",
     "target_speaker": "B",
     "options": [
-      "Bored and unbothered",
-      "Annoyed and snappy",
-      "Serious and cautious",
-      "Amused and chuckling",
-      "Dreading it, miserable"
+      "Amused and playful",
+      "Resigned and defeated",
+      "Weary and exhausted",
+      "Worried and apprehensive",
+      "Annoyed and frustrated"
+    ]
+  },
+  {
+    "trial_id": "vis004",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "so last night i come into the kitchen at like midnight and my roommate just spontaneously bursts in a song as as she does sometimes and she starts singing songs from the little mermaid and me too and i mean i haven't seen that since i was a kid but it just reminded me like that was just that was just like the greatest you know golden age of disney movies"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, I love that musical."
+      },
+      {
+        "speaker": "B",
+        "text": "I love Little Mermaid, but I have to say my favorite is probably The Lion King. I think that soundtrack beats out Little Mermaid for me."
+      },
+      {
+        "speaker": "A",
+        "text": "I'm going to have to disagree with you pretty strongly on that."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh."
+      }
+    ],
+    "context_clip": "1e90611069aa.opus",
+    "target_clip": "8ccaaf311194.opus",
+    "target_text": "Okay. You prefer Little Mermaid?",
+    "target_speaker": "B",
+    "options": [
+      "Amused and playful",
+      "Surprised and curious",
+      "Hesitant and uncertain",
+      "Flat and matter-of-fact",
+      "Warm and accommodating"
+    ]
+  },
+  {
+    "trial_id": "vis005",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hollywood has this trend right now where they're just making films out of movies and I think they need to stop because they keep botching movies."
+      },
+      {
+        "speaker": "B",
+        "text": "Hold on, hold on. You misspoke. I know what you meant to say, but making films out of movies, you meant books, right?"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, yes, you're right. I messed up my words there. Thank you. Yep, thank you. Good catch. So Hollywood has this thing where they keep making books into movies and they need to knock it off because they keep butchering all of these different stories and I'm mad about it."
+      },
+      {
+        "speaker": "B",
+        "text": "Ha ha ha!"
+      },
+      {
+        "speaker": "B",
+        "text": "OK, now, I mean, I can definitely think of some, you know, some books that they've misrepresented, but I don't think on the whole you can say that like every book adaptation, every film adaptation of a book is gone the wrong way."
+      },
+      {
+        "speaker": "A",
+        "text": "I mean, but if we talk about all of the specific examples, I think we're going to realize that they're not so good. Like The Lovely Bones, did you ever read that book?"
+      },
+      {
+        "speaker": "B",
+        "text": "I never heard of it."
+      },
+      {
+        "speaker": "A",
+        "text": "It's a book about a girl. It's from the point of view of a little girl who's been murdered. And she's helping her family find who murdered her. And it was on all the book lists for a while of books to read. Great book. And then they made it into a film. And they cast Mark Wahlberg in it. And it's just bad. It's just bad. They completely... Marky Mark, he's going to try to find who killed her. And it just loses all of its poignance and all of its..."
+      },
+      {
+        "speaker": "B",
+        "text": "Was that your Mark Wahlberg impression?"
+      }
+    ],
+    "context_clip": "b46bf37e221d.opus",
+    "target_clip": "a111bbe2af41.opus",
+    "target_text": "That was a bad Mark Wahlberg impression, but it was an attempt. Well, thank you.",
+    "target_speaker": "A",
+    "options": [
+      "Gentle and reassuring",
+      "Flat and unimpressed",
+      "Dry and sarcastic",
+      "Weary and exasperated",
+      "Amused, laughing along"
+    ]
+  },
+  {
+    "trial_id": "vis006",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey, just got off the bus. I'm on Glen Oaks in San Fernando."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, that makes sense. Perfect. You're just going to go north. You're going to face towards the mountain. Look up. Yep, you're going to just walk towards the mountain, walk uphill. You're going to walk up Glen Oaks. Once you get, it'll be maybe about half a mile before you're going to get to Kenneth Village."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, okay, I got it."
+      },
+      {
+        "speaker": "A",
+        "text": "Half mile uphill, I didn't bring enough water for this."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, it's gonna... not very fun, but I promise it'll be worth it. The views are amazing here."
+      },
+      {
+        "speaker": "A",
+        "text": "Well, I trust you."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah. But yeah, just once you get the stuff from the gas station, just walk on up the hill, keep going. You're going to see the arches right in front of you. It's yeah, you're going to be you can keep going up Glen Oaks or you can go to the right and go up Sonora. Both you're going to see the big arches that line the park, the entrance of the park. It kind of looks like a temple. Do you see the temple looking thing?"
+      },
+      {
+        "speaker": "A",
+        "text": "Kenneth."
+      },
+      {
+        "speaker": "A",
+        "text": "So get a paper bag is what you're saying. Wink, wink. It's what you're saying without saying it. Okay."
+      },
+      {
+        "speaker": "A",
+        "text": "Hold on. I'm looking. I'm looking. Yeah. Okay. I think I'm there. Yeah."
+      }
+    ],
+    "context_clip": "08d6cf1d20b7.opus",
+    "target_clip": "40596c154ed9.opus",
+    "target_text": "Yeah, it's not a temple. It's a library.",
+    "target_speaker": "B",
+    "options": [
+      "Firm and matter-of-fact",
+      "Irritated and snappy",
+      "Gentle and reassuring",
+      "Amused and playful",
+      "Dry and sarcastic"
+    ]
+  },
+  {
+    "trial_id": "vis007",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Hey Kyle, how's it going?"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, hey, Barbara. Haven't heard from you in a little bit. What's going on?"
+      },
+      {
+        "speaker": "A",
+        "text": "Um, I didn't want to bother you, but I was really hoping I could start cooking your favorite dish that you made for me. Oh my gosh, yeah, I love grilled cheese, yeah."
+      },
+      {
+        "speaker": "B",
+        "text": "The grilled cheese, right?"
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, it was, okay, yeah. I am so willing to help you. Do you have your ingredients?"
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, you have to remind me. I just want to make sure I have everything."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, okay. So you want to get a good sourdough bread. You want to get your two cheeses. You can get cheddar Swiss. You can get manchego. You can also get goat."
+      }
+    ],
+    "context_clip": "6d3b26420ba5.opus",
+    "target_clip": "59c814d8e0c6.opus",
+    "target_text": "Ooh, I have manchego and I have cheddar, so perfect.",
+    "target_speaker": "A",
+    "options": [
+      "Excited and pleased",
+      "Surprised and impressed",
+      "Warm and reassuring",
+      "Amused and playful",
+      "Sarcastic and dry"
+    ]
+  },
+  {
+    "trial_id": "vis008",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Oh, this, this is a lot longer than I was expecting. Um, okay, we'll just go down the list. Do you have, do you, um, know who got the, um, uh, like the, the, the bottle of wine? Was that, uh, Sarah or was that Jeffrey?"
+      },
+      {
+        "speaker": "B",
+        "text": "Well, easy way to determine that. If it says red wine, then that would definitely be Sarah, right? Yeah."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. So red wine is Sarah. What is, what did Jeffrey get? Cause I think I remember him saying like he got some kind of alcohol. Was it the, did he get the, um, the, the, the, the, the beer or did he get the, uh, the white wine?"
+      },
+      {
+        "speaker": "B",
+        "text": "Uh, I think, I think he, I'm pretty sure he had like at least three beers. There was, um, it was a Sam Adams on draft. I think that that was him."
+      },
+      {
+        "speaker": "A",
+        "text": "I see that here, okay."
+      },
+      {
+        "speaker": "A",
+        "text": "Um, okay. Okay. Okay. So he got the beer and, uh, Sarah got the wine. Um, but Sarah got the red wine. That means who got the white wine? I don't remember."
+      },
+      {
+        "speaker": "B",
+        "text": "I can't keep track of all these people. But okay, we'll start with what I know. I know that I have a lasagna."
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, you had the lasagna. It looks like we had like, uh, it looks like two people ordered lasagna. Do you know who else ordered the lasagna?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I'm pretty sure that was..."
+      },
+      {
+        "speaker": "B",
+        "text": "Pretty sure that was Jason. Cause I remember he and I, yeah, he and I like, we laughed about the fact that we both ordered the same thing."
+      }
+    ],
+    "context_clip": "6630336847b6.opus",
+    "target_clip": "b4e40731bbfa.opus",
+    "target_text": "Gotcha. So Jason and you ordered the lasagna. Wait, actually, no, I see a third lasagna here. Did someone else order lasagna?",
+    "target_speaker": "A",
+    "options": [
+      "Sheepish and apologetic",
+      "Amused and lighthearted",
+      "Hesitant and uncertain",
+      "Surprised and puzzled",
+      "Annoyed and impatient"
+    ]
+  },
+  {
+    "trial_id": "vis009",
+    "axis": "is",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "That is putrid."
+      },
+      {
+        "speaker": "A",
+        "text": "That used to be a hamburger bun, but now it's growing fuzz. There are hairs that are growing off that and wiggling around."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, my God."
+      },
+      {
+        "speaker": "A",
+        "text": "Ugh."
+      },
+      {
+        "speaker": "A",
+        "text": "that was a half-eaten burger someone's left under the couch, and now it's like, yeah, it's like oozing, it's like, oh, I just took a close look, it's like bubbling up, and"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, that smell is so just overpowering."
+      },
+      {
+        "speaker": "B",
+        "text": "What does it smell like? I can't even describe it."
+      },
+      {
+        "speaker": "A",
+        "text": "It's like pus, but like if an entire room was full of pus."
+      },
+      {
+        "speaker": "B",
+        "text": "That's gross."
+      }
+    ],
+    "context_clip": "c332c9cf12aa.opus",
+    "target_clip": "014b13397373.opus",
+    "target_text": "And then like that pus like had its own pus coming out of it.",
+    "target_speaker": "A",
+    "options": [
+      "Revolted and disgusted",
+      "Shocked and stunned",
+      "Fascinated and eager",
+      "Amused and laughing",
+      "Casual and indifferent"
     ]
   },
   {
@@ -434,39 +434,31 @@
     "context": [
       {
         "speaker": "A",
-        "text": "So this buddy of mine, he's got some free time next month and he just wants to just get out of town and just take some time for himself and see something exotic."
+        "text": "I'm going to tell you about the magical land of Kansas City, Missouri. Have you ever heard of Kansas City, Missouri?"
       },
       {
         "speaker": "B",
-        "text": "Oh man, I'm so jealous. I wish I had some time off to go see something exotic."
+        "text": "No, I haven't."
       },
       {
         "speaker": "A",
-        "text": "You and me both. But he was asking me for advice and he can't he can't go overseas because he's got a bit of a legal situation. And I was trying to think like where where I should suggest in New Orleans popped into my mind at a had a few wild nights there back in 2019."
+        "text": "that gates barbecue is the hot spot because when you walk into gates it's an exciting time people start yelling at you immediately they say welcome to gates what do you want and they're pretty rude but it's the tastiest beef you will ever eat and the tastiest"
       },
       {
         "speaker": "B",
-        "text": "Ooh, you know, that's what I was going to say."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah. I was going to say, that's where I had my bachelorette party. And oh, yeah, man, best place I've ever been. I think it was definitely my favorite city I visited in the U.S."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh no way."
+        "text": "What's the best thing to get at Gates?"
       }
     ],
-    "context_clip": "f06e54867bd4.opus",
-    "target_clip": "2f1de6c51e85.opus",
-    "target_text": "Wow. Strong, strong. Best place you've ever been. That's strong words to endorse the city.",
+    "context_clip": "e64666014a57.opus",
+    "target_clip": "afa719a28b30.opus",
+    "target_text": "Ooh, the best thing to get at Gates is probably a Kansas City, Missouri specialty, burnt ends.",
     "target_speaker": "A",
     "options": [
-      "Playful and skeptical",
-      "Surprised and curious",
-      "Deadpan and sarcastic",
-      "Amused and impressed",
-      "Warm and approving"
+      "Excited and eager",
+      "Amused and playful",
+      "Hesitant and unsure",
+      "Confident and assured",
+      "Warm and friendly"
     ]
   }
 ]
