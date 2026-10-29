@@ -34,9 +34,17 @@
      One task on screen at a time, with the instruction for it at the top. */
   .slide{padding:0 0 18px;overflow:hidden}
   .todo{background:#f3f6fa;border-bottom:1px solid #e1e8f0;padding:13px 18px;margin-bottom:16px}
+  .todo em{display:block;font-style:normal;font-size:12px;font-weight:700;
+           letter-spacing:.07em;text-transform:uppercase;color:var(--acc);margin-bottom:4px}
   .todo b{display:block;font-size:16px;line-height:1.35}
   .todo span{display:block;color:var(--mut);font-size:13px;margin-top:3px}
   .slide>:not(.todo){margin-left:18px;margin-right:18px}
+  .conf{display:flex;align-items:center;gap:7px;margin-top:14px;padding-top:12px;
+        border-top:1px solid var(--line);flex-wrap:wrap}
+  .conf>span{color:var(--mut);font-size:13.5px;margin-right:2px}
+  .conf button{border:1px solid var(--line);background:#fff;border-radius:999px;
+               padding:6px 15px;cursor:pointer;font:inherit;font-size:14px}
+  .conf button.sel{border-color:var(--acc);background:var(--acc);color:#fff;font-weight:600}
   .dots{display:flex;align-items:center;gap:7px;justify-content:center;margin:14px 0 0}
   .dot{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:#fff;
        cursor:pointer;font:inherit;font-size:13px;color:var(--mut)}
@@ -162,54 +170,62 @@ Exactly one of the five is what the speaker actually does.</p>
 
 <p class="muted">None of them names anything from the conversation, and all
 five are meant to be a way the written sentence could plausibly be said &mdash;
-so that step 2 is a real guess rather than a lottery.</p>
+so that the first task is a real guess rather than a lottery.</p>
 
 <p style="font-size:16px"><b>You pick three times</b>, and each time you are
 given one more thing to go on.</p>
 
 <table>
-<tr><th>Step 2</th>
+<tr><th>Just the sentence</th>
     <td>The written sentence. Nothing else. <b>Guess.</b> You are meant to be
-        unsure here &mdash; that is the point of the step, not a failure of it.
+        unsure here &mdash; that is the point of the task, not a failure of it.
         A few seconds is right.</td></tr>
-<tr><th>Step 4</th>
+<tr><th>With the conversation</th>
     <td>Now you have read the conversation and heard the run-up, but
         <b>not the line itself</b>. Pick again. This is the one that matters
         most: it asks whether the conversation tells you how the line has to be
         said.</td></tr>
-<tr><th>Step 6</th>
+<tr><th>With the recording</th>
     <td>Now you hear the line. Pick again, for what the speaker actually
         does.</td></tr>
 </table>
 
-<p>The three answers together say something no single question could. If step 2
+<p>The three answers together say something no single question could. If the first task
 already lands on it, the words carried the tone and the conversation was not
-needed. If step 4 lands on it and step 2 did not, the conversation supplied it
-&mdash; which is the whole premise of this benchmark. If step 6 disagrees with
-step 4, the speaker did something the conversation did not lead you to expect.</p>
+needed. If the second lands on it and the first did not, the conversation supplied it
+&mdash; which is the whole premise of this benchmark. If the third disagrees with
+the second, the speaker did something the conversation did not lead you to expect.</p>
 
 <h3>So, three things to avoid</h3>
-<p><b>Do not try to be right in step 2.</b> A careful guess and a wild guess
+<p><b>Do not try to be right on the first task.</b> A careful guess and a wild guess
 count the same.</p>
-<p><b>Do not guess the recording in step 4.</b> Answer what the conversation
+<p><b>Do not guess the recording on the second task.</b> Answer what the conversation
 implies, not what you suspect a real person probably did.</p>
-<p><b>Do not keep an answer out of loyalty to it.</b> Changing your mind at
-step 4 or step 6 is the most useful thing you can do. Keeping it is equally
+<p><b>Do not keep an answer out of loyalty to it.</b> Changing your mind on
+the second or third task is the most useful thing you can do. Keeping it is equally
 useful when it is genuinely still your answer.</p>
 
+<h3>How sure are you?</h3>
+<p>After each pick, say how confident you are: <b>Low</b>, <b>Medium</b> or
+<b>High</b>. It is part of the answer, not an extra.</p>
+<p>Expect <b>Low</b> on the first task &mdash; you are guessing from a bare sentence. If
+the second is High where the first was Low, that is the conversation doing the work,
+and it is exactly what we are trying to measure. Marking Low when you are
+unsure costs nothing and makes your sure answers worth more.</p>
+
 <h3>None of these fit</h3>
-<p>The last choice on both steps. Use it freely, on either step:</p>
+<p>The last choice on all three tasks. Use it freely on any of them:</p>
 <ul>
-<li>in <b>step 2</b>, if the sentence gives you nothing to go on at all &mdash;
+<li>on <b>just the sentence</b>, if the sentence gives you nothing to go on at all &mdash;
     not "I am unsure between two", but "none of these is a reading of this
     sentence";</li>
-<li>in <b>step 4</b>, if the conversation genuinely does not point at any of
+<li>on <b>with the conversation</b>, if the conversation genuinely does not point at any of
     them;</li>
-<li>in <b>step 6</b>, if what you heard is not any of the five.</li>
+<li>on <b>with the recording</b>, if what you heard is not any of the five.</li>
 </ul>
 <p>It is a real answer and it is recorded as one. Forcing a pick you do not
-believe is worse than useless &mdash; a random wrong answer at step 2 followed
-by a right one at step 4 looks exactly like a line that needed its
+believe is worse than useless &mdash; a random wrong answer on the first task followed
+by a right one on the second looks exactly like a line that needed its
 conversation, which is the thing we are trying to count.</p>
 
 <h3>If a clip is broken</h3>
@@ -219,6 +235,7 @@ and they are acted on.</p>
 
 <h3>Keys</h3>
 <p><kbd>1</kbd>&hellip;<kbd>5</kbd> pick &middot; <kbd>0</kbd> none of these
+&middot; then click a confidence
 &middot; <kbd>Space</kbd> play the sentence &middot; <kbd>C</kbd> play the run-up
 &middot; <kbd>Enter</kbd> next item &middot;
 <kbd>Backspace</kbd> previous &middot; <kbd>R</kbd> review</p>
@@ -365,6 +382,7 @@ async function start(){
        (r.b!==undefined&&r.c===undefined)){
       delete r.a;delete r.b;delete r.c;delete r.s1;delete r.s2;
       delete r.ms_a;delete r.ms_b;delete r.ms_c;
+      delete r.c_a;delete r.c_b;delete r.c_c;
     }
   }
 
@@ -394,7 +412,14 @@ function rec(p){return R[rkey(p)]||{}}
 // Which slide the annotator is looking at. Defaults to the first one they
 // have not answered, so reopening a part-finished page lands on the work
 // rather than on something already done.
-const firstOpen=p=>rec(p).a==null?0:rec(p).b==null?1:2;
+const firstOpen=p=>{
+  const r=rec(p);
+  // Both the pick and its confidence, or the task is not done. Advancing on
+  // the pick alone would leave the meter blank on most pages.
+  if(r.a==null||!r.c_a)return 0;
+  if(r.b==null||!r.c_b)return 1;
+  return 2;
+};
 function slide(p){
   const k=rkey(p);
   if(VIEW[k]==null)VIEW[k]=firstOpen(p);
@@ -404,7 +429,10 @@ function slide(p){
 function goSlide(n){const p=PAGES[I];VIEW[rkey(p)]=Math.max(0,Math.min(n,firstOpen(p)));render();window.scrollTo(0,0)}
 // Done means all THREE picks. Any two of them on their own answer a different
 // question than the one this set exists to ask.
-const pageDone=p=>rec(p).a!=null&&rec(p).b!=null&&rec(p).c!=null;
+const pageDone=p=>{
+  const r=rec(p);
+  return r.a!=null&&r.b!=null&&r.c!=null&&!!r.c_a&&!!r.c_b&&!!r.c_c;
+};
 
 // "None of these" is NONE, not a sixth option. It is never shuffled into the
 // five and always sits last, because it is not a peer of them: picking it says
@@ -412,6 +440,33 @@ const pageDone=p=>rec(p).a!=null&&rec(p).b!=null&&rec(p).c!=null;
 // would turn "none of these fit" into a random wrong answer, which is exactly
 // the data that would make a broken item look like a context-dependent one.
 const NONE=-1;
+
+// A confidence reading per task, because the three tasks are meant to differ
+// in how sure anyone can be. Task 1 should be a shrug; if task 2 is confident
+// where task 1 was not, the conversation did the work -- and a right answer
+// given at "low" is a lucky guess that should not count the same as a sure
+// one. Recorded separately for each task, never pooled.
+const CONF=[{v:"low",t:"Low"},{v:"medium",t:"Medium"},{v:"high",t:"High"}];
+
+function confBlock(p,phase){
+  const r=rec(p), mine=r["c_"+phase];
+  if(r[phase]==null)return "";          // nothing to be confident about yet
+  return `<div class="conf">
+    <span>How sure are you?</span>
+    ${CONF.map(c=>`<button class="${mine===c.v?"sel":""}"
+        onclick="setConf('${phase}','${c.v}')">${c.t}</button>`).join("")}
+  </div>`;
+}
+function setConf(phase,v){
+  const p=PAGES[I], r=cur();
+  r["c_"+phase]=v;
+  // The confidence answer is what advances the slide, since it is the last
+  // thing asked on each task.
+  const before=VIEW[rkey(p)];
+  VIEW[rkey(p)]=firstOpen(p);
+  save();render();
+  if(VIEW[rkey(p)]!==before)window.scrollTo(0,0);
+}
 
 function optBlock(p,phase,ask,hint){
   const r=rec(p), opts=p.trial.options;
@@ -432,18 +487,26 @@ function optBlock(p,phase,ask,hint){
           " none");
   return `<p class="ask">${ask}</p>
     <p class="hint">${hint}</p>
-    <div class="opts">${rows}</div>`;
+    <div class="opts">${rows}</div>
+    ${confBlock(p,phase)}`;
 }
 
 // One line at the top of every slide saying what to do. Deliberately the
 // first thing on the card: an annotator who reads nothing else should still
 // know what is being asked and what they are allowed to use.
+// Named, not numbered. They were "step 2 / step 4 / step 6" -- leftovers from
+// an earlier layout where the cards ran 1 to 7 -- which told an annotator
+// nothing and did not match the three dots on screen. A name says what you
+// have in front of you, which is the only thing that differs between them.
 const TASKS=[
-  {n:1, of:"Task 1 of 3", do:"Read the sentence. Guess how it was said.",
+  {name:"Just the sentence",
+   do:"Read the sentence. Guess how it was said.",
    has:"You have the words and nothing else."},
-  {n:2, of:"Task 2 of 3", do:"Read and listen to the conversation. Now say how the sentence should be said.",
+  {name:"With the conversation",
+   do:"Read and listen to the conversation. Now say how the sentence should be said.",
    has:"You have the conversation. You will NOT hear the sentence yet."},
-  {n:3, of:"Task 3 of 3", do:"Listen to the sentence. Say how it was actually said.",
+  {name:"With the recording",
+   do:"Listen to the sentence. Say how it was actually said.",
    has:"You have everything: the conversation, and now the sentence itself."},
 ];
 
@@ -452,8 +515,8 @@ function dots(p){
   return `<div class="dots">` + TASKS.map((t,i)=>
     `<button class="dot${i===at?" at":""}${i<open?" ok":""}"
        ${i>open?"disabled":""} onclick="goSlide(${i})"
-       title="${esc(t.do)}">${i+1}</button>`).join("")
-    + `<span class="muted" style="margin-left:8px">${TASKS[at].of}</span></div>`;
+       title="${esc(t.name)} — ${esc(t.do)}">${i+1}</button>`).join("")
+    + `<span class="muted" style="margin-left:8px">${esc(TASKS[at].name)}</span></div>`;
 }
 
 // The conversation, as both transcript and audio. Shown at task 2 and again
@@ -507,7 +570,9 @@ function render(){
   }
 
   let h=`<div class="card slide">
-    <div class="todo"><b>${esc(task.do)}</b><span>${esc(task.has)}</span></div>
+    <div class="todo">
+      <em>${esc(task.name)}</em>
+      <b>${esc(task.do)}</b><span>${esc(task.has)}</span></div>
     ${body}
   </div>
   ${dots(p)}`;
@@ -548,20 +613,18 @@ function mark(phase,ci){
   // been read is not a correction, it is the measurement being overwritten by
   // its own outcome, and there would be no way to tell afterwards.
   if(phase==="a"&&r.a!=null&&r.a!==ci){
-    toast("Locked — you can change your answer at step 4 or 6.");
+    toast("Locked — you can change your answer on the later tasks.");
     return;
   }
   if(phase==="b"&&r.b!=null&&r.b!==ci&&r.c!=null){
-    toast("Locked once you have heard the line — change it at step 6.");
+    toast("Locked once you have heard the line — change it on the last task.");
     return;
   }
   r[phase]=ci;
   r["ms_"+phase]=Date.now()-(r.t0||Date.now());
   // Answering moves to the next task. The annotator never has to find the
   // next thing to do, and cannot answer a later task before an earlier one.
-  if(phase!=="c")VIEW[rkey(p)]=firstOpen(p);
   save();render();
-  if(phase!=="c")window.scrollTo(0,0);
 }
 
 function go(d){
@@ -618,6 +681,7 @@ function exportCsv(){
       // Three picks: words only, words+conversation, words+conversation+the
       // recording. The pair of transitions between them is the measurement.
       text_pick:r.a??"", context_pick:r.b??"", audio_pick:r.c??"",
+      text_conf:r.c_a||"", context_conf:r.c_b||"", audio_conf:r.c_c||"",
       text_none:r.a===-1?1:0, context_none:r.b===-1?1:0, audio_none:r.c===-1?1:0,
       changed_on_context:(r.a!=null&&r.b!=null)?(r.a===r.b?0:1):"",
       changed_on_audio:(r.b!=null&&r.c!=null)?(r.b===r.c?0:1):"",
