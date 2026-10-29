@@ -57,11 +57,11 @@
     "target_text": "I did buy the honey smoked ham.",
     "target_speaker": "A",
     "options": [
-      "Flatly contradicting what they said",
-      "Something clicking into place",
-      "Worn down by it",
-      "Stating something as fact",
-      "Carrying on with the story"
+      "Continuing the story",
+      "Strongly agreeing",
+      "Stating a fact",
+      "Suddenly realising something",
+      "Correcting a detail"
     ]
   },
   {
@@ -118,15 +118,68 @@
     "target_text": "He is making it angry, but I'm having a good time.",
     "target_speaker": "B",
     "options": [
-      "Giving a verdict on it — good or bad",
-      "Strongly agreeing — \"yes, exactly\"",
-      "Carrying on with the story",
+      "Brushing it off as unimportant",
+      "Strongly agreeing",
+      "Continuing the story",
       "Finding it funny",
-      "Pushing back, but softening it"
+      "Describing what it is like"
     ]
   },
   {
     "trial_id": "vci003",
+    "axis": "ci",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "Brian, I know we're not really supposed to talk to each other,"
+      },
+      {
+        "speaker": "A",
+        "text": "before the session. But I just wanted to say I didn't want this to go this way and I'm really, really sorry. I'm not trying to take stuff from you. I wasn't ever trying to keep anything from you. I wasn't trying to keep anything that you brought into the house."
+      },
+      {
+        "speaker": "B",
+        "text": "Look, I don't blame you. I just..."
+      },
+      {
+        "speaker": "B",
+        "text": "I know what the boundaries are and I know what's mine. I know what's ours."
+      },
+      {
+        "speaker": "B",
+        "text": "And."
+      },
+      {
+        "speaker": "B",
+        "text": "I just don't... I don't understand..."
+      },
+      {
+        "speaker": "B",
+        "text": "I don't understand why we're in this fight."
+      },
+      {
+        "speaker": "A",
+        "text": "i mean it just felt like it wasn't being resolved um without some kind of mediation and some interjection here and i'm sorry i didn't want it to go this way but it just felt like we couldn't see eye to eye on some of the bigger items and you know we both have assets and you have a lot that you deserve and i want to make sure you get that"
+      },
+      {
+        "speaker": "B",
+        "text": "I just don't understand why we couldn't just work this out civilly."
+      }
+    ],
+    "context_clip": "fd0ca4360055.opus",
+    "target_clip": "3aad7cdc3832.opus",
+    "target_text": "But we tried that and it didn't work.",
+    "target_speaker": "A",
+    "options": [
+      "Thinking it over",
+      "Continuing the story",
+      "Stating a fact",
+      "Worn out and fed up",
+      "Telling them they got it wrong"
+    ]
+  },
+  {
+    "trial_id": "vci004",
     "axis": "ci",
     "context": [
       {
@@ -147,222 +200,11 @@
     "target_text": "Weed a book.",
     "target_speaker": "A",
     "options": [
-      "Stating something as fact",
-      "Correcting them — they said the wrong thing",
-      "Carrying on with the story",
-      "Caught off guard by it",
-      "Turning it over"
-    ]
-  },
-  {
-    "trial_id": "vci004",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Can you even see? You just pulled out in traffic. I can't believe you hit me."
-      },
-      {
-        "speaker": "B",
-        "text": "Look, I was absolutely watching where I was going. I saw you erratically cross over two lanes of traffic just to try to cut in front of me because you were apparently making a left-hand turn."
-      },
-      {
-        "speaker": "A",
-        "text": "That's absolutely ridiculous. I was clearly looking. I knew there was plenty of time and you just, you had to speed up and gun it so you weren't going to let me over and you ran into me. That's ridiculous."
-      },
-      {
-        "speaker": "B",
-        "text": "I think it comes from the side. Look at where my car is hit."
-      },
-      {
-        "speaker": "A",
-        "text": "But see, I was already in motion and you chose to speed up. That's not how it works."
-      },
-      {
-        "speaker": "B",
-        "text": "You hit my passenger side door, which means that you drove into me, not the other way around."
-      },
-      {
-        "speaker": "A",
-        "text": "Well, but the thing is, I had the right of way because I was already in the middle of changing lanes. You see, it's kind of like the front of your bumper and the side at the same time."
-      },
-      {
-        "speaker": "B",
-        "text": "I don't know what driving school you went to, but that doesn't give you the right of way."
-      },
-      {
-        "speaker": "A",
-        "text": "Oh, excuse me, but that is not how you talk to somebody who you just hit with your car."
-      },
-      {
-        "speaker": "B",
-        "text": "I'm pretty sure that people report this stuff and the insurance companies will look it over because I can guarantee you that if they see this, they're going to look at you and they're going to make an assessment based off of that. Also, if you put in a crime report with the police, they're going to look at this information and they're going to be able to assess who made the damages."
-      },
-      {
-        "speaker": "A",
-        "text": "All right, well, then we'll just have the police and the insurance company steal it out because I have a feeling that it's not going to come out the way that you say that it's coming out. I think it's almost certain that when you gun it in traffic, and I have a dash cam on my back dashboard, and so I have proof."
-      }
-    ],
-    "context_clip": "d0be5aec2003.opus",
-    "target_clip": "f24903c8a66c.opus",
-    "target_text": "Does that help the front of your car?",
-    "target_speaker": "B",
-    "options": [
-      "Not a real question — they know the answer",
-      "Asking them to explain it better",
-      "Actually asking — they want to know",
-      "Asking a straight yes-or-no question",
-      "Repeating the question back — \"did I hear that right?\""
-    ]
-  },
-  {
-    "trial_id": "vci005",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Did you see that?"
-      },
-      {
-        "speaker": "A",
-        "text": "Is Benedict Cumberbatch gonna be in this? Oh my god!"
-      },
-      {
-        "speaker": "B",
-        "text": "They're adding him to the cast! They're adding him to the cast! Along with all the other actors who've played Doctor Whos!"
-      },
-      {
-        "speaker": "A",
-        "text": "And Keira Knightley! Oh my god, you were right! She is gonna be in it!"
-      },
-      {
-        "speaker": "B",
-        "text": "I love her. I've loved her since Bend It Like Beckham and then ever since she's just had an upward trajectory in her career and it's just been amazing. Oh my gosh."
-      },
-      {
-        "speaker": "A",
-        "text": "No wonder you knew that she was going to be on the docket because of this."
-      },
-      {
-        "speaker": "B",
-        "text": "She had to be. It was the best show. It's the only show that she could be on that's a leg up in her career because, like, oh my gosh, it's the best show in the world. Look who else. Look who else. It's... I can't believe it. Don Knotts? I thought he died."
-      },
-      {
-        "speaker": "A",
-        "text": "It looks like they're doing a hologram version of Don Knotts!"
-      },
-      {
-        "speaker": "B",
-        "text": "What? That's amazing! I had no idea they could do that!"
-      },
-      {
-        "speaker": "A",
-        "text": "That's so cool. Yeah, they have this like holographic like this new technology that they do with like holograms and stuff like that. And they're like putting them in all of these different things. And they're like putting them all over the world. Yeah, it's insane."
-      },
-      {
-        "speaker": "B",
-        "text": "It kind of fits with the themes, though, too, because it's so medieval, but then it's also so modern. It's like a mix-up of two worlds, so it makes sense that they would pull a classic actor and just put him in the middle of it. I love that. It's going to be... Oh!"
-      },
-      {
-        "speaker": "A",
-        "text": "And Alan Rickman. Surprise, surprise."
-      },
-      {
-        "speaker": "B",
-        "text": "Aww, that's amazing! I thought I would never see him act again! This is amazing!"
-      },
-      {
-        "speaker": "A",
-        "text": "I know. I can't believe that they've done that, but he absolutely fits in this world."
-      },
-      {
-        "speaker": "B",
-        "text": "It's totally perfect. I mean, I couldn't think of a better. I always was like, oh, what a shame he's not here to be a part of it, right? Yeah. Oh, how amazing that we could just like keep old actors from the past and put them back into new things. This is so cool."
-      },
-      {
-        "speaker": "A",
-        "text": "It's so amazing."
-      },
-      {
-        "speaker": "B",
-        "text": "I hope we get more TV shows like this."
-      }
-    ],
-    "context_clip": "5300e4e75914.opus",
-    "target_clip": "ab9f63b5dc97.opus",
-    "target_text": "I know. Wait, it's starting.",
-    "target_speaker": "A",
-    "options": [
-      "Strongly agreeing — \"yes, exactly\"",
-      "Agreeing half-heartedly, just going along with it",
-      "Caught off guard by it",
-      "Waving it away",
-      "Stating something as fact"
-    ]
-  },
-  {
-    "trial_id": "vci006",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "So we're talking about making burgers at home. Where is the best burger that you've ever purchased at a restaurant or a fast food place?"
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, that's a good question. Well, this answer might surprise you, but I was in Silver Lake the other day, and this is a place called Monty's Good Burger. It's all plant-based, and they had this massive, massive double burger that was out of this world."
-      },
-      {
-        "speaker": "A",
-        "text": "That sounds amazing. I've driven by there before."
-      },
-      {
-        "speaker": "B",
-        "text": "I didn't expect it, but"
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah. What was on it?"
-      },
-      {
-        "speaker": "B",
-        "text": "Um, they have, like, their own signature sauce. It's, um, it's kind of like Thousand Island, but it's like their own, you know, their own flavor. And, um, you know, all the usual stuff, pickles, onions, lettuce, tomato, all the, you know, all the usual suspects."
-      },
-      {
-        "speaker": "A",
-        "text": "Are their pickles thick cut or thin cut? That's an important distinction for me."
-      },
-      {
-        "speaker": "B",
-        "text": "Ah, they're pretty, they're relatively thick."
-      },
-      {
-        "speaker": "A",
-        "text": "Okay, good, good, good. I like a good thick pickle. I'm a fan. Yeah."
-      },
-      {
-        "speaker": "B",
-        "text": "Me too. Me too."
-      },
-      {
-        "speaker": "A",
-        "text": "It's in Silver Lake, you said?"
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, I think they're a chain, but yeah, it's on Sunset. It's like out by Dodger Stadium."
-      }
-    ],
-    "context_clip": "3fdf490f6659.opus",
-    "target_clip": "9962eb65aa31.opus",
-    "target_text": "Okay, yeah. I'll have to check it out.",
-    "target_speaker": "A",
-    "options": [
-      "Turning it over",
-      "Agreeing half-heartedly, just going along with it",
-      "Accepting something that was offered to them",
-      "Taking in new information they did not have before",
-      "Meaning the opposite of the words"
+      "Hearing something new to them",
+      "Correcting a detail",
+      "Continuing the story",
+      "Thinking it over",
+      "Stating a fact"
     ]
   }
 ]
