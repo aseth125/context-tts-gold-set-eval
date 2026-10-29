@@ -219,7 +219,7 @@ and they are acted on.</p>
 
 <h3>Keys</h3>
 <p><kbd>1</kbd>&hellip;<kbd>5</kbd> pick &middot; <kbd>0</kbd> none of these
-&middot; <kbd>Space</kbd> play the audio on this slide
+&middot; <kbd>Space</kbd> play the sentence &middot; <kbd>C</kbd> play the run-up
 &middot; <kbd>Enter</kbd> next item &middot;
 <kbd>Backspace</kbd> previous &middot; <kbd>R</kbd> review</p>
 
@@ -444,7 +444,7 @@ const TASKS=[
   {n:2, of:"Task 2 of 3", do:"Read and listen to the conversation. Now say how the sentence should be said.",
    has:"You have the conversation. You will NOT hear the sentence yet."},
   {n:3, of:"Task 3 of 3", do:"Listen to the sentence. Say how it was actually said.",
-   has:"You have everything."},
+   has:"You have everything: the conversation, and now the sentence itself."},
 ];
 
 function dots(p){
@@ -454,6 +454,21 @@ function dots(p){
        ${i>open?"disabled":""} onclick="goSlide(${i})"
        title="${esc(t.do)}">${i+1}</button>`).join("")
     + `<span class="muted" style="margin-left:8px">${TASKS[at].of}</span></div>`;
+}
+
+// The conversation, as both transcript and audio. Shown at task 2 and again
+// at task 3: once the run-up has been heard there is no reason to take it away,
+// and judging the real delivery against it is the whole job. Absent at task 1,
+// where it would answer the question.
+function contextBlock(t){
+  const turns=(t.context||[]).map(c=>
+    `<p class="turn"><span class="spk">${esc(c.speaker||"")}</span>${esc(c.text)}</p>`).join("");
+  return `
+    <p class="hint" style="margin-top:0">What was said before:</p>
+    <div class="scrollwrap"><div class="turns" id="scr">${turns}</div></div>
+    <p class="hint" style="margin:12px 0 4px">The same thing as audio. It stops
+       the instant the sentence begins.</p>
+    <audio id="audc" controls preload="none" src="audio/${esc(t.context_clip)}"></audio>`;
 }
 
 function render(){
@@ -475,23 +490,16 @@ function render(){
   }
 
   if(at===1){
-    const turns=(t.context||[]).map(c=>
-      `<p class="turn"><span class="spk">${esc(c.speaker||"")}</span>${esc(c.text)}</p>`).join("");
-    body=`
-      <p class="hint" style="margin-top:0">What was said before:</p>
-      <div class="scrollwrap"><div class="turns" id="scr">${turns}</div></div>
-      <p class="hint" style="margin:12px 0 4px">The same thing as audio. It stops
-         the instant the sentence begins.</p>
-      <audio id="audc" controls preload="none" src="audio/${esc(t.context_clip)}"></audio>
-      <div class="line" style="margin-top:14px">${esc(t.target_text)}</div>`
+    body=contextBlock(t)
+      + `<div class="line" style="margin-top:14px">${esc(t.target_text)}</div>`
       + optBlock(p,"b","Knowing all that &mdash; how should the sentence be said?",
           "Answer what the conversation points to, not what you suspect the "
           +"person actually did.");
   }
 
   if(at===2){
-    body=`
-      <div class="line">${esc(t.target_text)}</div>
+    body=contextBlock(t)
+      + `<div class="line" style="margin-top:14px">${esc(t.target_text)}</div>
       <p class="hint" style="margin:12px 0 4px">How they really said it:</p>
       <audio id="audt" controls preload="none" src="audio/${esc(t.target_clip)}"></audio>`
       + optBlock(p,"c","How did they actually say it?",
@@ -571,8 +579,10 @@ document.addEventListener("keydown",e=>{
   if(e.key==="r"||e.key==="R"){e.preventDefault();showReview();return}
   if(e.key===" "||e.key==="c"||e.key==="C"){
     e.preventDefault();
-    // One slide carries one clip, so Space plays whichever is on screen.
-    const a=document.getElementById("audt")||document.getElementById("audc");
+    // Space plays the sentence where there is one, else the run-up; C always
+    // plays the run-up, which task 3 keeps on screen alongside the sentence.
+    const want=(e.key==="c"||e.key==="C")?"audc":null;
+    const a=document.getElementById(want||"audt")||document.getElementById("audc");
     if(a){a.paused?a.play():a.pause()}
     return;
   }
