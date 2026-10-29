@@ -39,6 +39,11 @@
   .todo b{display:block;font-size:16px;line-height:1.35}
   .todo span{display:block;color:var(--mut);font-size:13px;margin-top:3px}
   .slide>:not(.todo){margin-left:18px;margin-right:18px}
+  .advance{margin:18px 18px 0;padding-top:14px;border-top:1px solid var(--line)}
+  .go{border:1px solid var(--acc);background:var(--acc);color:#fff;border-radius:8px;
+      padding:10px 20px;cursor:pointer;font:inherit;font-size:15px;font-weight:600}
+  .go:hover{filter:brightness(1.08)}
+
   .earlier{list-style:none;margin:0 0 16px;padding:10px 14px;background:#f7f9fb;
            border:1px solid #e4ebf2;border-radius:8px;font-size:13.5px}
   .earlier li{display:flex;flex-wrap:wrap;gap:6px;align-items:baseline;margin:3px 0}
@@ -472,14 +477,12 @@ function confBlock(p,phase){
   </div>`;
 }
 function setConf(phase,v){
-  const p=PAGES[I], r=cur();
+  const r=cur();
   r["c_"+phase]=v;
-  // The confidence answer is what advances the slide, since it is the last
-  // thing asked on each task.
-  const before=VIEW[rkey(p)];
-  VIEW[rkey(p)]=firstOpen(p);
+  // Deliberately does NOT advance. It used to, and since every slide replaces
+  // the whole screen, clicking a confidence threw the annotator somewhere
+  // else with no warning. Moving on is now an explicit button.
   save();render();
-  if(VIEW[rkey(p)]!==before)window.scrollTo(0,0);
 }
 
 function optBlock(p,phase,ask,hint){
@@ -601,11 +604,24 @@ function render(){
           "Keep your last answer or change it &mdash; both are useful.");
   }
 
+  // Answered means pick AND confidence. Only then is there a next task to
+  // offer, and the annotator chooses when to take it.
+  const answered=r[["a","b","c"][at]]!=null && !!r["c_"+["a","b","c"][at]];
+  const nextName=at<2?TASKS[at+1].name:null;
+  const advance=answered&&nextName
+    ? `<div class="advance"><button class="go" onclick="goSlide(${at+1})">
+         Next: ${esc(nextName)} &rarr;</button></div>`
+    : answered&&at===2
+      ? `<div class="advance"><span class="muted">That is all three. Use
+           <b>Next &rarr;</b> at the bottom for the next recording.</span></div>`
+      : "";
+
   let h=`<div class="card slide">
     <div class="todo">
       <em>${esc(task.name)}</em>
       <b>${esc(task.do)}</b><span>${esc(task.has)}</span></div>
     ${body}
+    ${advance}
   </div>
   ${dots(p)}`;
 
@@ -688,7 +704,9 @@ document.addEventListener("keydown",e=>{
     e.preventDefault();
     // One number key, whichever pick is open. Same digit, same screen
     // position, both times. 0 is "none of these".
-    const ph=rec(p).a==null?"a":rec(p).b==null?"b":"c";
+    // Always the task on screen, never the first unanswered one -- a number
+    // key must not answer a task the annotator cannot see.
+    const ph=["a","b","c"][slide(p)];
     mark(ph, n===0?NONE:p.ord[n-1]);
   }
 });
