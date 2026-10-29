@@ -29,6 +29,20 @@
   .card.q{border-color:#cfd9e4}
   .card.done{background:#fcfcfc}
   .step{display:flex;align-items:center;gap:8px;margin:0 0 10px}
+
+  /* ── the slide ─────────────────────────────────────────────────────────
+     One task on screen at a time, with the instruction for it at the top. */
+  .slide{padding:0 0 18px;overflow:hidden}
+  .todo{background:#f3f6fa;border-bottom:1px solid #e1e8f0;padding:13px 18px;margin-bottom:16px}
+  .todo b{display:block;font-size:16px;line-height:1.35}
+  .todo span{display:block;color:var(--mut);font-size:13px;margin-top:3px}
+  .slide>:not(.todo){margin-left:18px;margin-right:18px}
+  .dots{display:flex;align-items:center;gap:7px;justify-content:center;margin:14px 0 0}
+  .dot{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:#fff;
+       cursor:pointer;font:inherit;font-size:13px;color:var(--mut)}
+  .dot.ok{background:#e8f1e9;border-color:#a9c9b2;color:#2f855a}
+  .dot.at{border-color:var(--acc);color:var(--acc);font-weight:700;box-shadow:0 0 0 3px #dfeaf6}
+  .dot:disabled{opacity:.4;cursor:not-allowed}
   .step b{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);font-weight:600}
   .num{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;
        background:var(--line);color:var(--mut);font-size:11px;font-weight:700;flex:none}
@@ -205,8 +219,8 @@ and they are acted on.</p>
 
 <h3>Keys</h3>
 <p><kbd>1</kbd>&hellip;<kbd>5</kbd> pick &middot; <kbd>0</kbd> none of these
-&middot; <kbd>Space</kbd> play the line
-&middot; <kbd>C</kbd> play the run-up &middot; <kbd>Enter</kbd> next &middot;
+&middot; <kbd>Space</kbd> play the audio on this slide
+&middot; <kbd>Enter</kbd> next item &middot;
 <kbd>Backspace</kbd> previous &middot; <kbd>R</kbd> review</p>
 
 <p style="text-align:right"><button class="nav" onclick="hideGuide()">Close</button></p>
@@ -256,7 +270,7 @@ and they are acted on.</p>
 <div id="toast"></div>
 
 <script>
-let AID="", TRIALS=[], PAGES=[], I=0, R={}, WANT=null;
+let AID="", TRIALS=[], PAGES=[], I=0, R={}, WANT=null, VIEW={};
 
 function showGuide(){
   const b=document.getElementById("modalbody");
@@ -377,6 +391,17 @@ function cur(){
   return R[k];
 }
 function rec(p){return R[rkey(p)]||{}}
+// Which slide the annotator is looking at. Defaults to the first one they
+// have not answered, so reopening a part-finished page lands on the work
+// rather than on something already done.
+const firstOpen=p=>rec(p).a==null?0:rec(p).b==null?1:2;
+function slide(p){
+  const k=rkey(p);
+  if(VIEW[k]==null)VIEW[k]=firstOpen(p);
+  // Never show a slide whose inputs have not been unlocked yet.
+  return Math.min(VIEW[k],firstOpen(p));
+}
+function goSlide(n){const p=PAGES[I];VIEW[rkey(p)]=Math.max(0,Math.min(n,firstOpen(p)));render();window.scrollTo(0,0)}
 // Done means all THREE picks. Any two of them on their own answer a different
 // question than the one this set exists to ask.
 const pageDone=p=>rec(p).a!=null&&rec(p).b!=null&&rec(p).c!=null;
@@ -388,7 +413,7 @@ const pageDone=p=>rec(p).a!=null&&rec(p).b!=null&&rec(p).c!=null;
 // the data that would make a broken item look like a context-dependent one.
 const NONE=-1;
 
-function optCard(p,phase,n,label,ask,hint){
+function optBlock(p,phase,ask,hint){
   const r=rec(p), opts=p.trial.options;
   const mine=r[phase];                      // canonical index, NONE, or undefined
   // Mark what they picked at the previous stage, so keeping an answer is a
@@ -405,66 +430,83 @@ function optCard(p,phase,n,label,ask,hint){
     + row(NONE,"0","None of these fit"
           +`<small>Say so rather than forcing one &mdash; it is a useful answer.</small>`,
           " none");
-  return `<div class="card q${mine!=null?" done":""}">
-    <div class="step"><span class="num">${n}</span><b>${label}</b></div>
-    <p class="ask">${ask}</p>
+  return `<p class="ask">${ask}</p>
     <p class="hint">${hint}</p>
-    <div class="opts">${rows}</div>
-  </div>`;
+    <div class="opts">${rows}</div>`;
+}
+
+// One line at the top of every slide saying what to do. Deliberately the
+// first thing on the card: an annotator who reads nothing else should still
+// know what is being asked and what they are allowed to use.
+const TASKS=[
+  {n:1, of:"Task 1 of 3", do:"Read the sentence. Guess how it was said.",
+   has:"You have the words and nothing else."},
+  {n:2, of:"Task 2 of 3", do:"Read and listen to the conversation. Now say how the sentence should be said.",
+   has:"You have the conversation. You will NOT hear the sentence yet."},
+  {n:3, of:"Task 3 of 3", do:"Listen to the sentence. Say how it was actually said.",
+   has:"You have everything."},
+];
+
+function dots(p){
+  const open=firstOpen(p), at=slide(p);
+  return `<div class="dots">` + TASKS.map((t,i)=>
+    `<button class="dot${i===at?" at":""}${i<open?" ok":""}"
+       ${i>open?"disabled":""} onclick="goSlide(${i})"
+       title="${esc(t.do)}">${i+1}</button>`).join("")
+    + `<span class="muted" style="margin-left:8px">${TASKS[at].of}</span></div>`;
 }
 
 function render(){
-  const p=PAGES[I], t=p.trial, r=rec(p);
+  const p=PAGES[I], t=p.trial, r=rec(p), at=slide(p), task=TASKS[at];
 
-  // THREE stages, each revealing only what the next question is allowed to
-  // use. Nothing below a stage exists in the page until that stage is
-  // answered: a conversation further down the page is one the annotator has
-  // already read, and an audio element further down is one they can already
-  // play. Hidden would not be enough.
-  let h=`
-  <div class="card">
-    <div class="step"><span class="num">1</span><b>The line</b></div>
-    <div class="line">${esc(t.target_text)}</div>
-    <p class="hint" style="margin-bottom:0">Spoken by ${esc(t.target_speaker||"one speaker")},
-       somewhere in a real conversation.</p>
-  </div>`
-  + optCard(p,"a",2,"From the words alone",
-      "Reading only that sentence &mdash; how do you think they said it?",
-      "You have heard nothing, so this is a guess. Go with your gut, a few "
-      +"seconds, and move on.");
+  // ONE slide at a time. Beyond keeping the screen short, this is what keeps
+  // the measurement honest: the conversation and the recording are not in the
+  // page at all until the task that may use them, and hidden would not be
+  // enough -- an audio element further down is one that can already be played.
+  let body="";
 
-  if(r.a!=null){
+  if(at===0){
+    body=`
+      <div class="line">${esc(t.target_text)}</div>
+      <p class="hint">Spoken by ${esc(t.target_speaker||"one speaker")} somewhere in
+         a real conversation.</p>`
+      + optBlock(p,"a","Which of these was it?",
+          "You cannot know yet &mdash; that is the point. Go with your gut.");
+  }
+
+  if(at===1){
     const turns=(t.context||[]).map(c=>
       `<p class="turn"><span class="spk">${esc(c.speaker||"")}</span>${esc(c.text)}</p>`).join("");
-    h+=`
-    <div class="card">
-      <div class="step"><span class="num">3</span><b>What came before</b></div>
+    body=`
+      <p class="hint" style="margin-top:0">What was said before:</p>
       <div class="scrollwrap"><div class="turns" id="scr">${turns}</div></div>
-      <p class="hint" style="margin:10px 0 4px">The run-up as audio &mdash; it stops
-         the instant the line begins. You are <b>not</b> hearing the line itself yet.</p>
+      <p class="hint" style="margin:12px 0 4px">The same thing as audio. It stops
+         the instant the sentence begins.</p>
       <audio id="audc" controls preload="none" src="audio/${esc(t.context_clip)}"></audio>
-    </div>`
-    + optCard(p,"b",4,"With the conversation, before hearing the line",
-        "Knowing how the conversation got here &mdash; how should the line be said?",
-        "Still no recording of the line. This is the one that matters most: it "
-        +"asks whether the conversation tells you the answer.");
+      <div class="line" style="margin-top:14px">${esc(t.target_text)}</div>`
+      + optBlock(p,"b","Knowing all that &mdash; how should the sentence be said?",
+          "Answer what the conversation points to, not what you suspect the "
+          +"person actually did.");
   }
 
-  if(r.a!=null&&r.b!=null){
-    h+=`
-    <div class="card">
-      <div class="step"><span class="num">5</span><b>How they said it</b></div>
-      <audio id="audt" controls preload="none" src="audio/${esc(t.target_clip)}"></audio>
-      <p class="hint" style="margin:8px 0 0">${esc(t.target_text)}</p>
-    </div>`
-    + optCard(p,"c",6,"Now that you have heard the line",
-        "How did they actually say it?",
-        "Same five. Keep your previous answer or change it &mdash; both are useful.");
+  if(at===2){
+    body=`
+      <div class="line">${esc(t.target_text)}</div>
+      <p class="hint" style="margin:12px 0 4px">How they really said it:</p>
+      <audio id="audt" controls preload="none" src="audio/${esc(t.target_clip)}"></audio>`
+      + optBlock(p,"c","How did they actually say it?",
+          "Keep your last answer or change it &mdash; both are useful.");
   }
 
-  if(pageDone(p)){
+  let h=`<div class="card slide">
+    <div class="todo"><b>${esc(task.do)}</b><span>${esc(task.has)}</span></div>
+    ${body}
+  </div>
+  ${dots(p)}`;
+
+  if(pageDone(p)&&at===2){
     h+=`<div class="card">
-      <div class="step"><span class="num">7</span><b>Anything wrong?</b></div>
+      <div class="todo"><b>Anything wrong with this one?</b><span>Optional.</span></div>
       <p style="margin:0 0 8px"><label class="muted">
         <input type="checkbox" id="flag" ${r.flag?"checked":""}
           onchange="cur().flag=this.checked;save();render()">
@@ -493,7 +535,7 @@ function render(){
 }
 
 function mark(phase,ci){
-  const r=cur();
+  const p=PAGES[I], r=cur();
   // The blind pick is written once. Changing it after the conversation has
   // been read is not a correction, it is the measurement being overwritten by
   // its own outcome, and there would be no way to tell afterwards.
@@ -507,14 +549,11 @@ function mark(phase,ci){
   }
   r[phase]=ci;
   r["ms_"+phase]=Date.now()-(r.t0||Date.now());
+  // Answering moves to the next task. The annotator never has to find the
+  // next thing to do, and cannot answer a later task before an earlier one.
+  if(phase!=="c")VIEW[rkey(p)]=firstOpen(p);
   save();render();
-  // Scroll to whatever the answer just unlocked, so the next thing to do is
-  // on screen rather than below the fold.
-  const next=phase==="a"?"audc":phase==="b"?"audt":null;
-  if(next)setTimeout(()=>{
-    const el=document.getElementById(next);
-    if(el&&el.scrollIntoView)el.scrollIntoView({block:"center"});
-  },30);
+  if(phase!=="c")window.scrollTo(0,0);
 }
 
 function go(d){
@@ -532,7 +571,8 @@ document.addEventListener("keydown",e=>{
   if(e.key==="r"||e.key==="R"){e.preventDefault();showReview();return}
   if(e.key===" "||e.key==="c"||e.key==="C"){
     e.preventDefault();
-    const a=document.getElementById(e.key===" "?"audt":"audc");
+    // One slide carries one clip, so Space plays whichever is on screen.
+    const a=document.getElementById("audt")||document.getElementById("audc");
     if(a){a.paused?a.play():a.pause()}
     return;
   }
