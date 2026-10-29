@@ -39,12 +39,22 @@
   .todo b{display:block;font-size:16px;line-height:1.35}
   .todo span{display:block;color:var(--mut);font-size:13px;margin-top:3px}
   .slide>:not(.todo){margin-left:18px;margin-right:18px}
+  .earlier{list-style:none;margin:0 0 16px;padding:10px 14px;background:#f7f9fb;
+           border:1px solid #e4ebf2;border-radius:8px;font-size:13.5px}
+  .earlier li{display:flex;flex-wrap:wrap;gap:6px;align-items:baseline;margin:3px 0}
+  .earlier li span{color:var(--mut);min-width:148px}
+  .earlier li b{font-weight:600}
+  .earlier li i{color:var(--mut);font-style:normal;font-size:12.5px}
+
   .conf{display:flex;align-items:center;gap:7px;margin-top:14px;padding-top:12px;
         border-top:1px solid var(--line);flex-wrap:wrap}
   .conf>span{color:var(--mut);font-size:13.5px;margin-right:2px}
   .conf button{border:1px solid var(--line);background:#fff;border-radius:999px;
                padding:6px 15px;cursor:pointer;font:inherit;font-size:14px}
   .conf button.sel{border-color:var(--acc);background:var(--acc);color:#fff;font-weight:600}
+  .conf button:disabled{opacity:.45;cursor:not-allowed}
+  .conf.off>span{opacity:.6}
+  .conf em{font-style:normal;color:var(--mut);font-size:12.5px}
   .dots{display:flex;align-items:center;gap:7px;justify-content:center;margin:14px 0 0}
   .dot{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:#fff;
        cursor:pointer;font:inherit;font-size:13px;color:var(--mut)}
@@ -449,12 +459,16 @@ const NONE=-1;
 const CONF=[{v:"low",t:"Low"},{v:"medium",t:"Medium"},{v:"high",t:"High"}];
 
 function confBlock(p,phase){
-  const r=rec(p), mine=r["c_"+phase];
-  if(r[phase]==null)return "";          // nothing to be confident about yet
-  return `<div class="conf">
+  const r=rec(p), mine=r["c_"+phase], picked=r[phase]!=null;
+  // ALWAYS rendered. It used to appear only after a pick, which meant the
+  // meter was invisible every time someone looked at a fresh task -- so it
+  // read as missing rather than as not-yet-applicable. Greyed until there is
+  // a pick to be confident about.
+  return `<div class="conf${picked?"":" off"}">
     <span>How sure are you?</span>
-    ${CONF.map(c=>`<button class="${mine===c.v?"sel":""}"
+    ${CONF.map(c=>`<button class="${mine===c.v?"sel":""}" ${picked?"":"disabled"}
         onclick="setConf('${phase}','${c.v}')">${c.t}</button>`).join("")}
+    ${picked?"":`<em>pick one of the options above first</em>`}
   </div>`;
 }
 function setConf(phase,v){
@@ -519,6 +533,24 @@ function dots(p){
     + `<span class="muted" style="margin-left:8px">${esc(TASKS[at].name)}</span></div>`;
 }
 
+// What they already answered, carried forward onto the later tasks. Without
+// this an annotator on the last task cannot see what they said on the first
+// two, so "has my answer changed?" -- the thing the whole set measures -- is a
+// question they would have to answer from memory.
+function earlierBlock(p,upto){
+  const r=rec(p), t=p.trial, rows=[];
+  for(let i=0;i<upto;i++){
+    const ph=["a","b","c"][i], pick=r[ph];
+    if(pick==null)continue;
+    const txt=pick===NONE?"None of these fit":t.options[pick];
+    rows.push(`<li><span>${esc(TASKS[i].name)}</span>
+      <b>${esc(txt)}</b>
+      ${r["c_"+ph]?`<i>${esc(r["c_"+ph])} confidence</i>`:""}</li>`);
+  }
+  if(!rows.length)return "";
+  return `<ul class="earlier">${rows.join("")}</ul>`;
+}
+
 // The conversation, as both transcript and audio. Shown at task 2 and again
 // at task 3: once the run-up has been heard there is no reason to take it away,
 // and judging the real delivery against it is the whole job. Absent at task 1,
@@ -553,7 +585,7 @@ function render(){
   }
 
   if(at===1){
-    body=contextBlock(t)
+    body=earlierBlock(p,1)+contextBlock(t)
       + `<div class="line" style="margin-top:14px">${esc(t.target_text)}</div>`
       + optBlock(p,"b","Knowing all that &mdash; how should the sentence be said?",
           "Answer what the conversation points to, not what you suspect the "
@@ -561,7 +593,7 @@ function render(){
   }
 
   if(at===2){
-    body=contextBlock(t)
+    body=earlierBlock(p,2)+contextBlock(t)
       + `<div class="line" style="margin-top:14px">${esc(t.target_text)}</div>
       <p class="hint" style="margin:12px 0 4px">How they really said it:</p>
       <audio id="audt" controls preload="none" src="audio/${esc(t.target_clip)}"></audio>`
