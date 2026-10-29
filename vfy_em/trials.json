@@ -271,5 +271,66 @@
       "Dry and sarcastic",
       "Warm and appreciative"
     ]
+  },
+  {
+    "trial_id": "vem006",
+    "axis": "em",
+    "context": [
+      {
+        "speaker": "A",
+        "text": "All right, everybody, we're gonna start on our next item in the queue. We have this painting of a Russian space dog. We're gonna start the bidding around $500. Remember that all... Oh, 510, perfect. 510, I see a 510. Oh, I forgot a 520. Remember, all of the money goes to the animal 600. I got a 700 right here. Man in the back?"
+      },
+      {
+        "speaker": "B",
+        "text": "510."
+      },
+      {
+        "speaker": "B",
+        "text": "600!"
+      },
+      {
+        "speaker": "B",
+        "text": "7.05!"
+      },
+      {
+        "speaker": "A",
+        "text": "7.05. We got a 7.05. Anybody want a 7.10? 7.10. Anywhere I see it, 7.10. I see a 7.10. Man in the back, you got an up? You want to up it?"
+      },
+      {
+        "speaker": "B",
+        "text": "7.30."
+      },
+      {
+        "speaker": "A",
+        "text": "7.30, 7.30, we got a 7.30. And sold to the man in the back for 7.30."
+      },
+      {
+        "speaker": "B",
+        "text": "Woo! Yeah!"
+      },
+      {
+        "speaker": "A",
+        "text": "Amazing. Any questions about this item in particular, sir, that you've just purchased?"
+      },
+      {
+        "speaker": "B",
+        "text": "Uh, I'm good."
+      },
+      {
+        "speaker": "A",
+        "text": "You're good, you won it, perfect. All right, next in the queue, we've got a bunch of kitten toys, primarily, it's yarn made from the wool of sheep in Peru, so it's very expensive wool, that's why we're starting the bidding at $100. Now, $100 for this kitten yarn, where can I see? Anybody wanna start the bidding at $100?"
+      }
+    ],
+    "context_clip": "4fd26697c168.opus",
+    "target_clip": "3f4fb4388d10.opus",
+    "target_text": "$100 right here.",
+    "target_speaker": "B",
+    "options": [
+      "Calm and matter-of-fact",
+      "Playful and amused",
+      "Annoyed and impatient",
+      "Confident and firm",
+      "Eager and enthusiastic"
+    ]
   }
 ]
