@@ -5,108 +5,6 @@
     "context": [
       {
         "speaker": "A",
-        "text": "Hey, Tim."
-      },
-      {
-        "speaker": "B",
-        "text": "Yo, what's up?"
-      },
-      {
-        "speaker": "A",
-        "text": "Um, this is so silly. I left my phone at home and I didn't mean to leave it on the charger. I meant to bring it with me. Yeah, I, so I need to get down to Balboa Park. Um, and I'm going down there to see my friend and I just really need some assistance. So do you think you could, um, I have pen and paper ready to go. If you wouldn't mind, I'm just going to take some notes so that I can get onto the highway and get down there. I usually know once I'm like down in the area, it's just hard from here to there."
-      },
-      {
-        "speaker": "B",
-        "text": "Oh, that happens to the best of us."
-      },
-      {
-        "speaker": "B",
-        "text": "Bumblebuck, what you doing down there?"
-      },
-      {
-        "speaker": "B",
-        "text": "Gotcha. All right. Also, if you have a camera, bring a camera as well because Balboa Park is absolutely gorgeous. Absolutely gorgeous."
-      },
-      {
-        "speaker": "A",
-        "text": "I do have a small camera in the car. Thank you for mentioning that."
-      },
-      {
-        "speaker": "B",
-        "text": "want to get stuck in that traffic for three hours that sucks um so weave and dodge and all that stuff because i assume your friend's waiting for you down there in balboa um yeah okay so once you once you're down there you're going to get off on uh 12th street and once you're on 12th street you're going to take that straight all the way down past the arch on your right hand side and then take a right on zoo entrance and we need to take a right on zoo entrance that's right next to the san diego zoo is balboa park um don't confuse the two"
-      }
-    ],
-    "context_clip": "9cf0c3df7917.opus",
-    "target_clip": "0c2675ca66e4.opus",
-    "target_text": "Yeah yeah yeah.",
-    "target_speaker": "A",
-    "options": [
-      "reassuring, following along",
-      "Annoyed and dismissive",
-      "Bored, barely listening",
-      "Sarcastic and skeptical",
-      "Excited, jumping in"
-    ]
-  },
-  {
-    "trial_id": "vci002",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
-        "text": "Some weight, huh?"
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, it's been about an hour and 40 minutes now."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah? Ugh, I think I'm ready to go home. How about you?"
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, me too. I mean, to be honest, I'm just going to go to the store after and try to take it easy today. This was supposed to be a rest day."
-      },
-      {
-        "speaker": "B",
-        "text": "Yeah, it's hard to rest when you're waiting for a long time, isn't it? Yeah, I'm registering a new boat today, and hopeful we can get it out on the water by next week, but I'm not really too positive that that's gonna happen today."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah, I'm just renewing my plates. And then they said, Oh, it looks like you also need to bring in proof of your smog. And it's, you know, I tried to do it online. And they said, No, this time you have to bring it in. So it's fine. But, you know,"
-      },
-      {
-        "speaker": "B",
-        "text": "It's a lot of work though, yeah."
-      },
-      {
-        "speaker": "A",
-        "text": "Yeah. What number do you have in the queue?"
-      },
-      {
-        "speaker": "B",
-        "text": "I'm 72. How about you?"
-      }
-    ],
-    "context_clip": "975344289e73.opus",
-    "target_clip": "9ccd018a20eb.opus",
-    "target_text": "Ugh, 81.",
-    "target_speaker": "A",
-    "options": [
-      "Disgusted and repulsed",
-      "Sheepish and embarrassed",
-      "Sarcastic and mocking",
-      "Resigned and defeated",
-      "Annoyed and impatient"
-    ]
-  },
-  {
-    "trial_id": "vci003",
-    "axis": "ci",
-    "context": [
-      {
-        "speaker": "A",
         "text": "Oh my god. That deer is full grown and half of its body is missing."
       },
       {
@@ -159,7 +57,7 @@
     ]
   },
   {
-    "trial_id": "vci004",
+    "trial_id": "vci002",
     "axis": "ci",
     "context": [
       {

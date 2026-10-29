@@ -150,29 +150,38 @@ Exactly one of the five is what the speaker actually does.</p>
 five are meant to be a way the written sentence could plausibly be said &mdash;
 so that step 2 is a real guess rather than a lottery.</p>
 
-<p style="font-size:16px"><b>You pick twice.</b></p>
+<p style="font-size:16px"><b>You pick three times</b>, and each time you are
+given one more thing to go on.</p>
 
 <table>
 <tr><th>Step 2</th>
-    <td>You have only the written sentence. No conversation, no audio.
-        <b>Guess.</b> You are meant to be unsure here &mdash; that is the point
-        of the step, not a failure of it. A few seconds is right.</td></tr>
-<tr><th>Step 5</th>
-    <td>Now you have read the conversation and heard both clips. Pick again.
-        Keep your first answer or change it, whichever is honest.</td></tr>
+    <td>The written sentence. Nothing else. <b>Guess.</b> You are meant to be
+        unsure here &mdash; that is the point of the step, not a failure of it.
+        A few seconds is right.</td></tr>
+<tr><th>Step 4</th>
+    <td>Now you have read the conversation and heard the run-up, but
+        <b>not the line itself</b>. Pick again. This is the one that matters
+        most: it asks whether the conversation tells you how the line has to be
+        said.</td></tr>
+<tr><th>Step 6</th>
+    <td>Now you hear the line. Pick again, for what the speaker actually
+        does.</td></tr>
 </table>
 
-<p>That is the whole measurement. If people can already pick the right delivery
-from the bare sentence, the line does not need its conversation. If they only
-get there after hearing the run-up, it does. Nobody has to judge that
-themselves &mdash; it falls out of the two answers.</p>
+<p>The three answers together say something no single question could. If step 2
+already lands on it, the words carried the tone and the conversation was not
+needed. If step 4 lands on it and step 2 did not, the conversation supplied it
+&mdash; which is the whole premise of this benchmark. If step 6 disagrees with
+step 4, the speaker did something the conversation did not lead you to expect.</p>
 
-<h3>So, two things to avoid</h3>
+<h3>So, three things to avoid</h3>
 <p><b>Do not try to be right in step 2.</b> A careful guess and a wild guess
 count the same.</p>
-<p><b>Do not keep your first answer out of loyalty to it.</b> Changing your mind
-in step 5 is the most useful thing you can do. Keeping it is equally useful when
-it is genuinely still your answer.</p>
+<p><b>Do not guess the recording in step 4.</b> Answer what the conversation
+implies, not what you suspect a real person probably did.</p>
+<p><b>Do not keep an answer out of loyalty to it.</b> Changing your mind at
+step 4 or step 6 is the most useful thing you can do. Keeping it is equally
+useful when it is genuinely still your answer.</p>
 
 <h3>None of these fit</h3>
 <p>The last choice on both steps. Use it freely, on either step:</p>
@@ -180,11 +189,13 @@ it is genuinely still your answer.</p>
 <li>in <b>step 2</b>, if the sentence gives you nothing to go on at all &mdash;
     not "I am unsure between two", but "none of these is a reading of this
     sentence";</li>
-<li>in <b>step 5</b>, if what you heard is not any of the five.</li>
+<li>in <b>step 4</b>, if the conversation genuinely does not point at any of
+    them;</li>
+<li>in <b>step 6</b>, if what you heard is not any of the five.</li>
 </ul>
 <p>It is a real answer and it is recorded as one. Forcing a pick you do not
-believe is worse than useless &mdash; a random wrong answer in step 2 followed
-by a right one in step 5 looks exactly like a line that needed its
+believe is worse than useless &mdash; a random wrong answer at step 2 followed
+by a right one at step 4 looks exactly like a line that needed its
 conversation, which is the thing we are trying to count.</p>
 
 <h3>If a clip is broken</h3>
@@ -205,10 +216,10 @@ and they are acted on.</p>
 <!-- ══════════════════ GATE ══════════════════ -->
 <div id="gate" style="max-width:620px;margin:60px auto;padding:0 20px">
   <h1 style="font-size:24px;margin-bottom:4px">Intent &mdash; does it need the conversation?</h1>
-  <p class="muted">4 real recordings. Two picks each, about a minute.</p>
-  <p>You get five descriptions of how a line might be said. You pick one from
-     the written sentence alone, then hear the conversation and the recording
-     and pick again.</p>
+  <p class="muted">2 real recordings. Three picks each.</p>
+  <p>You get five short labels for how a line might be said. You pick one from
+     the written sentence alone, then again once you have heard the
+     conversation, then again once you have heard the line itself.</p>
   <p><button class="link" onclick="showGuide()">Read the guidelines</button>
      &mdash; one minute, and they explain why the first pick is meant to be a
      guess.</p>
@@ -223,7 +234,7 @@ and they are acted on.</p>
 
 <!-- ══════════════════ APP ══════════════════ -->
 <header id="hdr" hidden>
-  <b id="pos">1 / 4</b>
+  <b id="pos">1 / 2</b>
   <div class="bar"><div id="prog"></div></div>
   <span class="muted" id="who"></span>
   <button class="link" onclick="showReview()">review</button>
@@ -260,7 +271,7 @@ function showReview(){
     const r=rec(p);
     // Half-done is its own state: a page with a blind pick and no second pick
     // is the one shape of unfinished work that looks finished from the grid.
-    const cls=pageDone(p)?"ga":(r.a!=null?"gh":"gu");
+    const cls=pageDone(p)?"ga":(r.a!=null||r.b!=null?"gh":"gu");
     return `<div class="gcell ${cls}${i===I?" gnow":""}" onclick="jump(${i})">${i+1}</div>`;
   }).join("");
   const n=PAGES.filter(pageDone).length;
@@ -331,9 +342,15 @@ async function start(){
   // judgement, keyed `a` on its own, then an `s1`/`s2` pair before that).
   // Neither answer means anything under the two-pick design, and a stale `a`
   // would read as a completed blind pick, so they go.
+  // Earlier builds asked two stages (or one four-way judgement). A stored `b`
+  // from the two-stage build was answered WITH the recording playing, which is
+  // stage `c` now -- carrying it into `b` would record a context-only answer
+  // that nobody gave. Those records are void.
   for(const r of Object.values(R)){
-    if(r.s1!==undefined||r.s2!==undefined||typeof r.a==="string"){
-      delete r.a;delete r.b;delete r.s1;delete r.s2;
+    if(r.s1!==undefined||r.s2!==undefined||typeof r.a==="string"||
+       (r.b!==undefined&&r.c===undefined)){
+      delete r.a;delete r.b;delete r.c;delete r.s1;delete r.s2;
+      delete r.ms_a;delete r.ms_b;delete r.ms_c;
     }
   }
 
@@ -360,9 +377,9 @@ function cur(){
   return R[k];
 }
 function rec(p){return R[rkey(p)]||{}}
-// Done means both picks. The blind pick alone is half an item and scores as
-// nothing: the whole measurement is the pair.
-const pageDone=p=>rec(p).a!=null&&rec(p).b!=null;
+// Done means all THREE picks. Any two of them on their own answer a different
+// question than the one this set exists to ask.
+const pageDone=p=>rec(p).a!=null&&rec(p).b!=null&&rec(p).c!=null;
 
 // "None of these" is NONE, not a sixth option. It is never shuffled into the
 // five and always sits last, because it is not a peer of them: picking it says
@@ -374,12 +391,14 @@ const NONE=-1;
 function optCard(p,phase,n,label,ask,hint){
   const r=rec(p), opts=p.trial.options;
   const mine=r[phase];                      // canonical index, NONE, or undefined
-  const blind=phase==="b"?r.a:null;         // show what they picked cold
+  // Mark what they picked at the previous stage, so keeping an answer is a
+  // deliberate act rather than a failure to notice it moved.
+  const prev=phase==="b"?r.a:phase==="c"?r.b:null;
   const row=(ci,pos,text,extra)=>{
-    const sel=mine===ci, was=blind===ci&&!sel;
+    const sel=mine===ci, was=prev===ci&&!sel;
     return `<button class="${sel?"sel":was?"was":""}${extra||""}" onclick="mark('${phase}',${ci})">
       <span class="k">${pos}</span>
-      <span>${text}${was?`<span class="tag">your first pick</span>`:""}</span>
+      <span>${text}${was?`<span class="tag">${phase==="c"?"your previous pick":"your first pick"}</span>`:""}</span>
     </button>`;
   };
   const rows=p.ord.map((ci,i)=>row(ci,i+1,esc(opts[ci]))).join("")
@@ -397,8 +416,11 @@ function optCard(p,phase,n,label,ask,hint){
 function render(){
   const p=PAGES[I], t=p.trial, r=rec(p);
 
-  // Step 1 and 2 only, until the blind pick is in. Scrolling further must not
-  // be possible, because everything further down answers the question.
+  // THREE stages, each revealing only what the next question is allowed to
+  // use. Nothing below a stage exists in the page until that stage is
+  // answered: a conversation further down the page is one the annotator has
+  // already read, and an audio element further down is one they can already
+  // play. Hidden would not be enough.
   let h=`
   <div class="card">
     <div class="step"><span class="num">1</span><b>The line</b></div>
@@ -406,10 +428,10 @@ function render(){
     <p class="hint" style="margin-bottom:0">Spoken by ${esc(t.target_speaker||"one speaker")},
        somewhere in a real conversation.</p>
   </div>`
-  + optCard(p,"a",2,"Your best guess from the words",
-      "From the sentence alone &mdash; how do you think they said it?",
-      "You have not heard anything yet, so this is a guess. Go with your gut, "
-      +"a few seconds, and move on.");
+  + optCard(p,"a",2,"From the words alone",
+      "Reading only that sentence &mdash; how do you think they said it?",
+      "You have heard nothing, so this is a guess. Go with your gut, a few "
+      +"seconds, and move on.");
 
   if(r.a!=null){
     const turns=(t.context||[]).map(c=>
@@ -419,23 +441,30 @@ function render(){
       <div class="step"><span class="num">3</span><b>What came before</b></div>
       <div class="scrollwrap"><div class="turns" id="scr">${turns}</div></div>
       <p class="hint" style="margin:10px 0 4px">The run-up as audio &mdash; it stops
-         the instant the line begins.</p>
+         the instant the line begins. You are <b>not</b> hearing the line itself yet.</p>
       <audio id="audc" controls preload="none" src="audio/${esc(t.context_clip)}"></audio>
-    </div>
+    </div>`
+    + optCard(p,"b",4,"With the conversation, before hearing the line",
+        "Knowing how the conversation got here &mdash; how should the line be said?",
+        "Still no recording of the line. This is the one that matters most: it "
+        +"asks whether the conversation tells you the answer.");
+  }
 
+  if(r.a!=null&&r.b!=null){
+    h+=`
     <div class="card">
-      <div class="step"><span class="num">4</span><b>How they said it</b></div>
+      <div class="step"><span class="num">5</span><b>How they said it</b></div>
       <audio id="audt" controls preload="none" src="audio/${esc(t.target_clip)}"></audio>
       <p class="hint" style="margin:8px 0 0">${esc(t.target_text)}</p>
     </div>`
-    + optCard(p,"b",5,"Now that you have heard it",
+    + optCard(p,"c",6,"Now that you have heard the line",
         "How did they actually say it?",
-        "Same five. Keep your first answer or change it &mdash; both are useful.");
+        "Same five. Keep your previous answer or change it &mdash; both are useful.");
   }
 
   if(pageDone(p)){
     h+=`<div class="card">
-      <div class="step"><span class="num">6</span><b>Anything wrong?</b></div>
+      <div class="step"><span class="num">7</span><b>Anything wrong?</b></div>
       <p style="margin:0 0 8px"><label class="muted">
         <input type="checkbox" id="flag" ${r.flag?"checked":""}
           onchange="cur().flag=this.checked;save();render()">
@@ -469,15 +498,22 @@ function mark(phase,ci){
   // been read is not a correction, it is the measurement being overwritten by
   // its own outcome, and there would be no way to tell afterwards.
   if(phase==="a"&&r.a!=null&&r.a!==ci){
-    toast("Your first pick is locked — change your answer in step 5 instead.");
+    toast("Locked — you can change your answer at step 4 or 6.");
+    return;
+  }
+  if(phase==="b"&&r.b!=null&&r.b!==ci&&r.c!=null){
+    toast("Locked once you have heard the line — change it at step 6.");
     return;
   }
   r[phase]=ci;
-  if(phase==="a")r.ms_a=Date.now()-(r.t0||Date.now());
-  else r.ms_b=Date.now()-(r.t0||Date.now());
+  r["ms_"+phase]=Date.now()-(r.t0||Date.now());
   save();render();
-  if(phase==="a")setTimeout(()=>{
-    const el=document.getElementById("audc"); if(el&&el.scrollIntoView)el.scrollIntoView({block:"center"});
+  // Scroll to whatever the answer just unlocked, so the next thing to do is
+  // on screen rather than below the fold.
+  const next=phase==="a"?"audc":phase==="b"?"audt":null;
+  if(next)setTimeout(()=>{
+    const el=document.getElementById(next);
+    if(el&&el.scrollIntoView)el.scrollIntoView({block:"center"});
   },30);
 }
 
@@ -507,7 +543,8 @@ document.addEventListener("keydown",e=>{
     e.preventDefault();
     // One number key, whichever pick is open. Same digit, same screen
     // position, both times. 0 is "none of these".
-    mark(rec(p).a==null?"a":"b", n===0?NONE:p.ord[n-1]);
+    const ph=rec(p).a==null?"a":rec(p).b==null?"b":"c";
+    mark(ph, n===0?NONE:p.ord[n-1]);
   }
 });
 
@@ -528,16 +565,20 @@ function exportCsv(){
       // -1 is "none of these". It is NOT a wrong pick of an option and is
       // never collapsed into one: the scorer counts it apart, because an item
       // nobody can describe is a broken item, not a context-dependent one.
-      blind_pick:r.a??"", informed_pick:r.b??"",
-      blind_none:r.a===-1?1:0, informed_none:r.b===-1?1:0,
-      changed_mind:(r.a!=null&&r.b!=null)?(r.a===r.b?0:1):"",
-      blind_text:r.a>=0?t.options[r.a]:(r.a===-1?"NONE OF THESE":""),
-      informed_text:r.b>=0?t.options[r.b]:(r.b===-1?"NONE OF THESE":""),
+      // Three picks: words only, words+conversation, words+conversation+the
+      // recording. The pair of transitions between them is the measurement.
+      text_pick:r.a??"", context_pick:r.b??"", audio_pick:r.c??"",
+      text_none:r.a===-1?1:0, context_none:r.b===-1?1:0, audio_none:r.c===-1?1:0,
+      changed_on_context:(r.a!=null&&r.b!=null)?(r.a===r.b?0:1):"",
+      changed_on_audio:(r.b!=null&&r.c!=null)?(r.b===r.c?0:1):"",
+      text_text:r.a>=0?t.options[r.a]:(r.a===-1?"NONE OF THESE":""),
+      context_text:r.b>=0?t.options[r.b]:(r.b===-1?"NONE OF THESE":""),
+      audio_text:r.c>=0?t.options[r.c]:(r.c===-1?"NONE OF THESE":""),
       // The order this annotator saw, so a position bias is checkable rather
       // than assumed away.
       shown_order:p.ord.join("|"),
       flag:r.flag?1:0, comment:(r.comment||"").trim(),
-      blind_ms:r.ms_a??"", informed_ms:r.ms_b??"",
+      text_ms:r.ms_a??"", context_ms:r.ms_b??"", audio_ms:r.ms_c??"",
       share_url:base+"#"+t.trial_id,
       exported_at:new Date().toISOString()
     };
@@ -547,7 +588,7 @@ function exportCsv(){
     rows.map(r=>cols.map(c=>csvCell(r[c])).join(","))).join("\n");
   dl(new Blob(["﻿"+csv],{type:"text/csv;charset=utf-8"}),
      `ctts_verify_${SET()}_${AID}.csv`);
-  const n=rows.filter(r=>r.informed_pick!=="").length;
+  const n=rows.filter(r=>r.audio_pick!=="").length;
   toast(`Exported ${n} of ${rows.length} complete.`);
 }
 function dl(blob,name){
