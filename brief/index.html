@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annotator brief &mdash; How a sentence was said</title>
+<style>
+  :root{--bg:#fbfbfa;--fg:#1a1a19;--mut:#6b6b68;--line:#e3e3e0;--acc:#2b6cb0}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       background:var(--bg);color:var(--fg)}
+  main{max-width:760px;margin:0 auto;padding:28px 22px 90px}
+  h1{font-size:27px;line-height:1.25;margin:0 0 6px}
+  h2{font-size:20px;margin:34px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+  h2:first-of-type{border-top:0}
+  h3{font-size:16.5px;margin:22px 0 6px}
+  p,li{font-size:16px}
+  blockquote{margin:14px 0;padding:12px 16px;background:#fffbe8;border:1px solid #f0e2a8;
+             border-radius:8px;font-size:17px}
+  blockquote p{margin:0}
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}
+  td,th{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+  th{background:#f4f4f2}
+  code{background:#f4f4f2;border:1px solid var(--line);border-radius:4px;padding:1px 5px;
+       font:14px ui-monospace,Menlo,Consolas,monospace}
+  hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+  a{color:var(--acc)}
+  .go{display:inline-block;margin:6px 8px 6px 0;padding:10px 18px;border-radius:8px;
+      background:var(--acc);color:#fff;text-decoration:none;font-weight:600}
+  .start{margin:26px 0 0;padding:18px;border:1px solid var(--line);border-radius:10px;background:#fff}
+</style>
+</head>
+<body>
+<main>
+<h1>How a sentence was said — annotator brief</h1>
+<p>Thank you for taking this on. Please read this once before you start. It takes
+about five minutes and the task will make much more sense afterwards.</p>
+<hr />
+<h2>1. What this is about</h2>
+<p>When people talk, the <em>same written sentence</em> can be said in completely
+different ways depending on what came before it.</p>
+<blockquote>
+<p><strong>"Right, I'll give it a go."</strong></p>
+</blockquote>
+<p>Read that on its own and you cannot tell much. But if the person had just been
+handed a recommendation they had never heard of, they are <em>taking something new
+on board</em>. If they had already been told twice and want the subject dropped,
+they are <em>just being polite</em>. Same words, different thing happening.</p>
+<p>We are building a test set for speech systems. For that we need to know, for
+each recording: <strong>does the conversation before it actually tell you how the
+sentence should be said, or could anyone have guessed it from the words alone?</strong></p>
+<p>You are the people who answer that. You do not need any training in speech or
+linguistics. If anything in the task needs specialist knowledge, that is a
+fault in our design, not in you — please tell us.</p>
+<hr />
+<h2>2. What you will hear</h2>
+<p>Everything is a <strong>real recording of two real people having a real
+conversation.</strong> Nothing is computer-generated, and nothing is being judged for
+quality. Some recordings are a bit messy — people talk over each other, laugh,
+trail off. That is normal and expected.</p>
+<p>For each item you get:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>what it is</th>
+<th>how long</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>The conversation so far</strong></td>
+<td>written out, and as audio</td>
+<td>about <strong>1.5 minutes</strong> (shortest 28 s, longest 2 minutes)</td>
+</tr>
+<tr>
+<td><strong>The sentence</strong></td>
+<td>one line, said next by one of the two speakers</td>
+<td>3 to 20 words</td>
+</tr>
+<tr>
+<td><strong>The recording of that sentence</strong></td>
+<td>the real person saying it</td>
+<td>about <strong>4 seconds</strong> (1.5 s to 9 s)</td>
+</tr>
+</tbody>
+</table>
+<p>The run-up audio <strong>stops the instant the sentence begins</strong>, so you never hear
+the sentence by accident before you are meant to.</p>
+<hr />
+<h2>3. The task: three questions, in this order</h2>
+<p>Each item asks you the <strong>same question three times</strong>, and each time you are
+given one more thing to go on. The page gives you them one at a time and will
+not let you skip ahead.</p>
+<h3>Task 1 — Just the sentence</h3>
+<p>You see only the written sentence. You pick, from five short descriptions, how
+you think it was said.</p>
+<p><strong>You are meant to be unsure here.</strong> You have nothing to go on. Make a quick
+guess — a few seconds — and move on. A careful guess and a wild guess count
+exactly the same to us.</p>
+<h3>Task 2 — With the conversation</h3>
+<p>Now you can read the conversation and listen to the run-up. You still <strong>do not
+hear the sentence itself</strong>. Pick again from the same five.</p>
+<p>This is the most important one. The question is: <em>now that I know how this
+conversation got here, how should that sentence be said?</em></p>
+<h3>Task 3 — With the recording</h3>
+<p>Now you hear the person actually say it. Pick again, for what they really do.</p>
+<p>At each task, keep your previous answer or change it — <strong>both are genuinely
+useful</strong>. Your earlier answers stay on screen so you do not have to remember
+them.</p>
+<hr />
+<h2>4. Why three times</h2>
+<p>This is the whole point, so it is worth a minute.</p>
+<ul>
+<li>If people get it right at <strong>Task 1</strong>, the words carried the meaning and the
+  conversation was not needed. That item is no use to us.</li>
+<li>If people only get it right at <strong>Task 2</strong>, the conversation supplied it. That
+  is exactly the kind of item we want.</li>
+<li>If <strong>Task 3</strong> disagrees with Task 2, the speaker did something the
+  conversation did not lead you to expect.</li>
+</ul>
+<p>Nobody has to judge any of that. It falls out of your three answers on its own.</p>
+<p><strong>So please do not try to be clever.</strong> Two things in particular:</p>
+<ul>
+<li><strong>Do not try to be right at Task 1.</strong> If you reason hard and get it right, you
+  make a genuinely context-dependent item look like it was not.</li>
+<li><strong>Do not guess the recording at Task 2.</strong> Answer what the <em>conversation</em>
+  points to, not what you suspect the person probably did.</li>
+</ul>
+<hr />
+<h2>5. How sure are you?</h2>
+<p>After each pick, mark <strong>Low</strong>, <strong>Medium</strong> or <strong>High</strong>. It is part of the
+answer, not an extra, and the page will not move on until you give it.</p>
+<p>Expect <strong>Low</strong> at Task 1 — you are guessing from a bare sentence. If Task 2 is
+High where Task 1 was Low, that is the conversation doing its job, and it is
+one of the most useful things you can tell us.</p>
+<p>Marking Low when you are unsure costs you nothing and makes your confident
+answers worth more. Please use it honestly.</p>
+<hr />
+<h2>6. "None of these fit"</h2>
+<p>The last choice on every task. Use it freely:</p>
+<ul>
+<li>at <strong>Task 1</strong>, if the sentence gives you nothing at all — not "I am torn
+  between two", but "none of these is a reading of this sentence";</li>
+<li>at <strong>Task 2</strong>, if the conversation genuinely does not point at any of them;</li>
+<li>at <strong>Task 3</strong>, if what you heard is none of the five.</li>
+</ul>
+<p>It is a real answer and it is recorded as one. <strong>Forcing a pick you do not
+believe is worse than useless</strong> — a random wrong answer at Task 1 followed by a
+right one at Task 2 looks exactly like a line that needed its conversation,
+which is the thing we are trying to count. You would be creating a false
+result, not avoiding one.</p>
+<hr />
+<h2>7. If something is broken</h2>
+<p>Tick <strong>flag</strong> and say what is wrong in the comment box. Please flag:</p>
+<ul>
+<li>a clip that is cut off, silent, or far too quiet</li>
+<li>the wrong person speaking</li>
+<li>speech so overlapped you cannot make out the line</li>
+<li>a transcript that does not match what you hear</li>
+<li>anything that just seems wrong</li>
+</ul>
+<p>These are useful findings and they get acted on. You are not being a nuisance.</p>
+<hr />
+<h2>8. Scale: this batch and the full job</h2>
+<p><strong>This batch is a pilot of 13 items.</strong> The full job is around <strong>500 items</strong>.</p>
+<p>The pilot exists to catch problems while they are cheap to fix. Specifically we
+want to know, before we scale:</p>
+<ul>
+<li>are any of the five choices too close together to tell apart?</li>
+<li>is anything in this brief unclear or misleading?</li>
+<li>how long does an item really take you?</li>
+<li>is the audio quality workable?</li>
+</ul>
+<p>So on this batch, <strong>please over-report</strong>. If an option is confusing, if two of
+them seem the same, if a clip is hard to hear, if a question does not make
+sense — write it in the comment box or tell us directly. On the pilot that
+feedback is worth more to us than the answers themselves, because every problem
+you find here is one that would otherwise be repeated 500 times.</p>
+<p>Pacing for the full job: at <strong>4 to 5 minutes an item</strong>, 500 items is roughly
+<strong>33 to 42 hours per pass</strong>. About <strong>13 hours of that is audio you simply have
+to sit through</strong> — the run-up averages a minute and a half — so a little over
+a third of the time is listening and the rest is reading and deciding.</p>
+<p>That is a comfortable pace rather than a tight one, and it is deliberate.
+Please use it to listen to the run-up properly rather than reading only the
+transcript: how something was said in the conversation carries as much of the
+setup as the words do, and Task 2 does not work without it.</p>
+<p>We plan <strong>3 annotators on every item</strong>, so the full job is about
+<strong>100 to 125 hours</strong> of work in total, best split across several people.</p>
+<h2>9. Practical details</h2>
+<p><strong>Where:</strong> three separate pages, one per category. Please do all three.</p>
+<table>
+<thead>
+<tr>
+<th>page</th>
+<th>what it is about</th>
+<th>items</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>…/vfy_ci/</code></td>
+<td><strong>Intent</strong> — what the speaker is <em>doing</em> (agreeing, correcting, asking)</td>
+<td>4</td>
+</tr>
+<tr>
+<td><code>…/vfy_em/</code></td>
+<td><strong>Emotion</strong> — how the speaker <em>feels</em></td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>…/vfy_is/</code></td>
+<td><strong>Emphasis</strong> — which <em>word</em> the speaker leans on</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>(Pilot counts. The full set will be far larger and split the same three ways.)</p>
+<p>Base address: <code>https://aseth125.github.io/context-tts-gold-set-eval/</code></p>
+<p><strong>How long:</strong> 13 items in this pilot. Allow about <strong>4 to 5 minutes per item</strong>,
+so roughly <strong>an hour</strong> including reading this. There is about 18 minutes of
+conversation audio across the pilot, and most of your time goes on listening to
+it. Please do listen rather than only reading the transcript — tone of voice in
+the run-up matters as much as the words.</p>
+<p><strong>Headphones</strong>, please, in a quiet room. Some of the differences are small.</p>
+<p><strong>Your answers save in your browser</strong> as you go, so you can close the tab and
+come back. Do not switch browser or computer part-way, or clear your history —
+the answers live on that machine.</p>
+<p><strong>When you finish:</strong> press <strong>Export CSV</strong> at the bottom of each page and send
+us all three files.</p>
+<p><strong>Annotator ID:</strong> use the same name on all three pages — your first name is
+fine. It only links your three files together.</p>
+<p><strong>Keyboard</strong> (optional, but much faster): <code>1</code>–<code>5</code> pick an option, <code>0</code> is "none
+of these", <code>Space</code> plays the sentence, <code>C</code> plays the run-up, <code>Enter</code> goes to
+the next item.</p>
+<hr />
+<h2>10. The three categories, in plain terms</h2>
+<p><em>(Every example below is invented. None of them is one of the real items, so
+nothing here gives away an answer.)</em></p>
+<p>The five choices you pick between are different on each page.</p>
+<p><strong>Intent — what the speaker is doing.</strong> Things like <em>Strongly agreeing</em>,
+<em>Telling them they got it wrong</em>, <em>Stating a fact</em>, <em>Checking they heard it
+right</em>, <em>Making a point, not expecting an answer</em>.</p>
+<p>Note that several of these can look identical on paper. "Weren't you there
+yesterday?" could be someone genuinely asking, someone checking they heard
+right, or someone making a point. <strong>Only the conversation separates them.</strong>
+That is deliberate — it is the whole experiment.</p>
+<p><strong>Emotion — how the speaker feels.</strong> Things like <em>Amused and laughing</em>,
+<em>Grossed out</em>, <em>Irritated and fed up</em>, <em>Excited and hopeful</em>.</p>
+<p><strong>Emphasis — which word they lean on.</strong> Here the choices describe which words
+are hit hard and which are thrown away, for example:</p>
+<blockquote>
+<p><em>Stress 'Tuesday'. Throw away 'the meeting' — say it quick and quiet.</em></p>
+</blockquote>
+<p>This one is about <strong>which word carries the weight</strong>. When something has already
+been mentioned it usually gets rushed past; when something is new it gets the
+weight. Say the options out loud to yourself if it helps — most people find
+that the quickest way to hear the difference.</p>
+<hr />
+<h2>11. Common questions</h2>
+<p><strong>"I don't know what the difference between two of the options is."</strong>
+Then they are too close together and that is our mistake. Pick either, mark
+<strong>Low</strong>, and please say so in the comment box.</p>
+<p><strong>"I picked the same answer all three times. Is that wrong?"</strong>
+No. It is a perfectly good result — it tells us the sentence carried its own
+meaning. We expect a fair number of these.</p>
+<p><strong>"I changed my mind at every task."</strong>
+Also fine, and also informative.</p>
+<p><strong>"The recording sounds nothing like what the conversation suggested."</strong>
+Say so at Task 3 — pick what you actually hear, or "None of these fit". That
+mismatch is a real finding and we want to know about it.</p>
+<p><strong>"Can I go back and change an earlier task?"</strong>
+Task 1 locks once you answer it, because the measurement depends on it being
+your honest first guess before you knew anything. Later tasks stay open until
+you have heard the recording.</p>
+<p><strong>"Am I being tested?"</strong>
+No. There is no score for you, and no right answer we are checking you against.
+We are measuring the <em>recordings</em>, not you. An honest "Low confidence, none of
+these" is worth far more to us than a confident guess.</p>
+<hr />
+<h2>12. The one thing to remember</h2>
+<p>Answer each task <strong>with only what that task has given you</strong>. Do not reach ahead
+to what you suspect, and do not reach back to defend an answer you have already
+given. Three honest answers, each from what was in front of you at the time, is
+exactly what we need.</p>
+<p>Thank you — and please do send questions. This is a pilot: anything confusing
+here is far cheaper to fix now than after 500 items have been done the wrong
+way, so tell us early and tell us bluntly.</p>
+<div class="start">
+  <h3 style="margin-top:0">Ready to start</h3>
+  <p class="muted">Do all three. Use the same annotator ID on each.</p>
+  <a class="go" href="../vfy_ci/index.html">Intent</a>
+  <a class="go" href="../vfy_em/index.html">Emotion</a>
+  <a class="go" href="../vfy_is/index.html">Emphasis</a>
+</div>
+</main>
+</body>
+</html>
